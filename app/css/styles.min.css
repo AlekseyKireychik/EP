@@ -435,6 +435,12 @@ main {
   }
 }
 
+.custom__container {
+  max-width: 1676px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn {
   background: #fff;
   font-size: 14px;
@@ -1328,7 +1334,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .category {
-  padding: 165px 122px 0;
+  padding: 165px 0 0;
   height: 100vh;
 }
 
@@ -1474,7 +1480,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   background: #205797;
 }
 
+@media screen and (max-width: 1700px) {
+  .custom__container {
+    max-width: 1500px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
+  .custom__container {
+    max-width: 1400px;
+  }
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
@@ -1535,7 +1550,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
+@media screen and (max-width: 1500px) {
+  .custom__container {
+    max-width: 1250px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
+  .custom__container {
+    max-width: 1140px;
+  }
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
@@ -1575,5 +1599,29 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .custom__container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .custom__container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom__container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom__container {
+    max-width: 100%;
   }
 }
