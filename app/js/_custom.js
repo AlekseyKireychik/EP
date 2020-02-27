@@ -39,6 +39,7 @@ jQuery.each(jQuery("textarea[data-autoresize]"), function() {
 $(document).ready(function() {
   //sliders
 
+  
   //programs
   $("#programs-list").on("init", function(event, slick) {
     $(".programs__counter").text(1 + " / " + slick.slideCount);
@@ -95,143 +96,6 @@ $(document).ready(function() {
     ]
   });
 
-  //akcii
-  $("#akcii-list").on("init", function(event, slick) {
-    $(".akcii__counter").text(1 + " / " + slick.slideCount);
-  });
-  $("#akcii-list").on("reInit", function(event, slick) {
-    $(".akcii__counter").text(1 + " / " + slick.slideCount);
-  });
-  $("#akcii-list").on("afterChange", function(
-    event,
-    slick,
-    currentSlide,
-    nextSlide
-  ) {
-    $(".akcii__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  });
-  $("#akcii-list").slick({
-    arrows: false,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          infinite: true,
-          arrows: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          focusOnSelect: true,
-          autoplay: true,
-          autoplaySpeed: 3000
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          infinite: true,
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          focusOnSelect: true,
-          autoplay: true,
-          autoplaySpeed: 3000
-        }
-      }
-    ]
-  });
-
-  $("#advantages-list").slick({
-    infinite: true,
-    dots: true,
-    arrows: false,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    customPaging: function(slider, i) {
-      var thumb = $(slider.$slides[i]).data();
-      return '<a class="advantages__dot">' + "0" + (i + 1) + "</a>";
-    }
-  });
-
-  $("#birthday-list").slick({
-    infinite: true,
-    dots: true,
-    arrows: false,
-    speed: 300,
-    slidesToShow: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    customPaging: function(slider, i) {
-      var thumb = $(slider.$slides[i]).data();
-      return '<a class="birthday__dot">' + "0" + (i + 1) + "</a>";
-    }
-  });
-
-  //seti homepage
-  $("#seti-lenta").on("init", function(event, slick) {
-    $(".seti__counter").text(1 + " / " + slick.slideCount);
-  });
-  $("#seti-lenta").on("reInit", function(event, slick) {
-    $(".seti__counter").text(1 + " / " + slick.slideCount);
-  });
-  $("#seti-lenta").on("afterChange", function(
-    event,
-    slick,
-    currentSlide,
-    nextSlide
-  ) {
-    $(".seti__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  });
-  $("#seti-lenta").slick({
-    infinite: true,
-    arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    useTransform: false,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          infinite: true,
-          arrows: true,
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1100,
-        settings: {
-          infinite: true,
-          arrows: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: false,
-          autoplay: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          infinite: true,
-          arrows: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          autoplay: true
-        }
-      }
-    ]
-  });
 
   function setSlideVisibility() {
     //Find the visible slides i.e. where aria-hidden="false"
@@ -716,27 +580,17 @@ $(document).ready(function() {
 
   $(".burger-menu").on("click", function(event) {
     event.preventDefault();
-    $("#nav-menu").toggleClass("is-active");
-    $(".burger-menu").toggleClass("is-active");
-    $(".profile__subList").removeClass("is-active");
+    $("#nav-menu").addClass("is-active");
+    $(".burger-menu").addClass("is-active");
   });
 
-  //menu
-
-  $(".menu-title").on("click", function() {
-    if ($(this).hasClass("is-active")) {
-      $(".menu-title").removeClass("is-active");
-      $(".menu__list").removeClass("is-active");
-    } else {
-      $(".menu-title").removeClass("is-active");
-      $(".menu__list").removeClass("is-active");
-      $(this)
-        .children(".menu__list")
-        .addClass("is-active");
-      $(this).addClass("is-active");
-    }
+  $(".close").on("click", function(event) {
+    event.preventDefault();
+    $("#nav-menu").removeClass("is-active");
+    $(".burger-menu").removeClass("is-active");
   });
 
+  
   //profile
   $(".profile__container").on("click", function(event) {
     event.preventDefault();
