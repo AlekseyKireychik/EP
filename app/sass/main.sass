@@ -41,7 +41,8 @@ body
 	font-family: 'Montserrat', sans-serif
 	overflow-x: hidden
 	color: $text
-
+main
+	overflow: hidden
 .container
 	padding-right: $gutter * .75
 	padding-left: $gutter * .75
@@ -522,33 +523,34 @@ header
 									text-align: center
 									letter-spacing: 0.03em
 									text-transform: uppercase
-									color: #FFFFFF
+									color: $accent
 									margin-bottom: 0
+//Tab nav
+.solutions-tab-content
+	.solutions-tab
+		.nav-pills
+			border-bottom: 2px solid $accent
+			margin-bottom: 36px
+			justify-content: space-between
+			flex-wrap: nowrap
+			.nav-item
+				width: 100%
+				text-align: center							
+				a 
+					width: 100%
+					display: block
+					font-family: Montserrat
+					font-weight: bold
+					font-size: 20px
+					line-height: 24px
+					text-align: center
+					text-transform: uppercase
+					color: $accent
+					padding: 8px 0	
+					&.active
+						background: rgba(255, 255, 255, 0.3)
+						border-radius: 5px 5px 0px 0px
 //Category Page
-.category__01	
-	background: #962783
-.category__02	
-	background: #652EBF
-.category__03	
-	background: #A10046
-.category__04	
-	background: #81942B
-.category__05	
-	background: #E67300
-.category__06	
-	background: #C93545
-.category__07	
-	background: #8E1618
-.category__08	
-	background: #1A6B80
-.category__09	
-	background: #B87F0C
-.category__10	
-	background: #19734F
-.category__11	
-	background: #BC4002
-.category__12	
-	background: #205797
 .category	
 	padding: 165px 122px 0
 	height: 100vh
@@ -568,6 +570,7 @@ header
 		justify-content: center
 		.category__item
 			margin-right: 40px
+			width: 532px
 			&:last-child
 				margin-right: 0
 			.category__imgWrap
@@ -597,5 +600,32 @@ header
 					text-align: center
 					text-transform: uppercase
 					color: $accent
-
+.category__01	
+	background: #962783
+.category__02	
+	background: #652EBF
+	.category__title
+		padding-bottom: 60px
+.category__03	
+	background: #A10046
+.category__04	
+	background: #81942B
+.category__05	
+	background: #E67300
+	.category__title
+		padding-bottom: 60px
+.category__06	
+	background: #C93545
+.category__07	
+	background: #8E1618
+.category__08	
+	background: #1A6B80
+.category__09	
+	background: #B87F0C
+.category__10	
+	background: #19734F
+.category__11	
+	background: #BC4002
+.category__12	
+	background: #205797
 @import media

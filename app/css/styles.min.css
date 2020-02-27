@@ -419,6 +419,10 @@ body {
   color: #142C60;
 }
 
+main {
+  overflow: hidden;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -1284,56 +1288,43 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 0;
 }
 
-.category__01 {
-  background: #962783;
+.solutions-tab-content .solutions-tab .nav-pills {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 36px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
 
-.category__02 {
-  background: #652EBF;
+.solutions-tab-content .solutions-tab .nav-pills .nav-item {
+  width: 100%;
+  text-align: center;
 }
 
-.category__03 {
-  background: #A10046;
+.solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+  width: 100%;
+  display: block;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px 0;
 }
 
-.category__04 {
-  background: #81942B;
-}
-
-.category__05 {
-  background: #E67300;
-}
-
-.category__06 {
-  background: #C93545;
-}
-
-.category__07 {
-  background: #8E1618;
-}
-
-.category__08 {
-  background: #1A6B80;
-}
-
-.category__09 {
-  background: #B87F0C;
-}
-
-.category__10 {
-  background: #19734F;
-}
-
-.category__11 {
-  background: #BC4002;
-}
-
-.category__12 {
-  background: #205797;
+.solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px 5px 0px 0px;
 }
 
 .category {
@@ -1370,6 +1361,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .category .category__list .category__item {
   margin-right: 40px;
+  width: 532px;
 }
 
 .category .category__list .category__item:last-child {
@@ -1424,6 +1416,62 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+}
+
+.category__01 {
+  background: #962783;
+}
+
+.category__02 {
+  background: #652EBF;
+}
+
+.category__02 .category__title {
+  padding-bottom: 60px;
+}
+
+.category__03 {
+  background: #A10046;
+}
+
+.category__04 {
+  background: #81942B;
+}
+
+.category__05 {
+  background: #E67300;
+}
+
+.category__05 .category__title {
+  padding-bottom: 60px;
+}
+
+.category__06 {
+  background: #C93545;
+}
+
+.category__07 {
+  background: #8E1618;
+}
+
+.category__08 {
+  background: #1A6B80;
+}
+
+.category__09 {
+  background: #B87F0C;
+}
+
+.category__10 {
+  background: #19734F;
+}
+
+.category__11 {
+  background: #BC4002;
+}
+
+.category__12 {
+  background: #205797;
 }
 
 @media screen and (max-width: 1600px) {
