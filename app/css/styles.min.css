@@ -1555,6 +1555,43 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   color: #BC4002;
 }
 
+.about {
+  padding-top: 260px;
+  background-color: #691D35;
+  min-height: 100vh;
+}
+
+.about .custom__container .about__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about .custom__container .about__list .about__item:first-child {
+  margin-right: 122px;
+}
+
+.about .custom__container .about__list .about__item .title {
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+.about .custom__container .about__list .about__item .title p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
