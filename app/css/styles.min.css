@@ -1528,6 +1528,33 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 30px;
 }
 
+.delivery {
+  padding-top: 165px;
+  background-color: #691D35;
+  min-height: 100vh;
+}
+
+.delivery .custom__container .title {
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.delivery .custom__container .delivery__text {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 70px 80px;
+}
+
+.delivery .custom__container .delivery__text p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.delivery .custom__container .delivery__text p a {
+  color: #BC4002;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
