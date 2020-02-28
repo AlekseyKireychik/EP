@@ -695,12 +695,16 @@ header
 	padding-top: 260px
 	background-color: $accentThree
 	min-height: 100vh
+	max-height: 100vh
 	.custom__container
 		.about__list
 			display: flex
 			align-items: flex-start
 			justify-content: flex-start
+			margin-bottom: 60px
 			.about__item
+				img
+					max-width: 820px
 				&:first-child
 					margin-right: 122px
 				.title
@@ -711,5 +715,65 @@ header
 						font-weight: 500
 						font-size: 20px
 						line-height: 24px
+	.custom__container
+		.about__logos
+			display: flex
+			align-items: center
+			justify-content: space-between
+			.about__logo
+//Personal Page
+.personal
+	padding-top: 165px
+	background-color: $accentThree
+	min-height: 100vh
+	max-height: 100vh
+	.custom__container
+		.title
+			text-align: center
+			letter-spacing: 0.03em
+	.custom__container
+		display: flex
+		.solutions-tab-content	
+			border-right: 2px solid $accent	
+			padding-right: 90px	
+			.solutions-tab
+				.nav-pills
+					background: rgba(255, 255, 255, 0.1)
+					border-radius: 10px
+					flex-direction: column
+					max-width: 532px
+					padding: 117.5px 57px
+					border-bottom: none
+					margin-bottom: 0px
+					.nav-item
+						margin-bottom: 60px
+						&:last-child
+							margin-bottom: 0px
+						a 
+							text-align: left
+							font-weight: 600
+							font-size: 24px
+							line-height: 29px
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							padding-left: 85px
+							position: relative
+							&:after
+								position: absolute
+								left: 0		
+								top: 0px						
+								content: url(../img/@2x/phone-icon.svg)
 
+							&.active
+								background: none
+								color: #481120
+		.tab-content
+			padding-left: 90px
+			.tab-pane
+				.personal__list
+					padding: 70px 80px
+					background: rgba(255, 255, 255, 0.1)
+					border-radius: 10px
+					.personal__item
 @import media
