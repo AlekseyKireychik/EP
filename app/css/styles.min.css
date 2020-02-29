@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -1675,7 +1676,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   position: absolute;
   left: 0;
   top: 0px;
-  content: url(../img/@2x/phone-icon.svg);
+  content: url(../img/@2x/иконка-01.svg);
 }
 
 .personal .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
@@ -1691,6 +1692,351 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding: 70px 80px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 145px;
+  max-width: 145px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info {
+  margin-left: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info button {
+  margin-right: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info button:last-child {
+  margin-right: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo {
+  margin-bottom: 55px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo:first-child {
+  margin-bottom: 60px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo .profile__info button {
+  padding: 0;
+  margin-right: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo .profile__info button:last-child {
+  margin-right: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 90px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input:last-child {
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap button {
+  background: -o-linear-gradient(357.79deg, #E40007 0.36%, #C70006 99.67%);
+  background: linear-gradient(92.21deg, #E40007 0.36%, #C70006 99.67%);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 14px 18px;
+  opacity: 0.5;
+  border: none;
+  margin: 0 auto;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__title {
+  min-width: 230px;
+  max-width: 230px;
+  margin-bottom: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__info {
+  max-width: 470px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__info p {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__info button {
+  margin-right: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__info button:last-child {
+  margin-right: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:last-child .profile__info {
+  margin-bottom: 40px;
+}
+
+.personal .custom__container .tab-content .tab-pane {
+  padding: 40px 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.personal .custom__container .tab-content .tab-pane h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list {
+  border-bottom: 2px solid #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__description {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__cost {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__delivery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.profile__btn {
+  font-weight: normal;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: none;
 }
 
 @media screen and (max-width: 1700px) {

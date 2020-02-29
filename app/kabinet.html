@@ -208,66 +208,139 @@
           <div class="tab-content">
             <div class="tab-pane active" id="tab-01">
               <div class="personal__list">
-                <div class="profile__info">
-                  <p>ФИО</p>
-                  <div class="">
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">ФИО</p>
+                  <div class="profile__info">
                     <p>Баркун Пётр Дмитриевич</p>
-                    <button>Изменить</button>
+                    <button class="profile__btn">Изменить</button>
                   </div>
                 </div>
-                <div class="">
-                  <div class="">
-                    <div class="profile__info">
-                      <p>E-MAIL</p>
-                      <div class="">
-                        <p>Peterbarkun@gmail.com</p>
-                        <button>Изменить</button>
+                <div class="profile__wrapform">
+                  <div class="profile__container">
+                    <div class="profile__wrapinfo">
+                      <p class="profile__title">Телефон</p>
+                      <div class="profile__info">
+                        <p>+375 (44) 111-11-11</p>
+                        <div class="btn__group">
+                          <button class="profile__btn">Добавить</button>
+                          <button class="profile__btn">Изменить</button>
+                        </div>
                       </div>
                     </div>
-                    <div class="profile__info">
-                      <p>E-MAIL</p>
-                      <div class="">
-                        <p>Peterbarkun@gmail.com</p>
-                        <button>Изменить</button>
+                    <div class="profile__wrapinfo">
+                      <p class="profile__title">Дата Рождения</p>
+                      <div class="profile__info">
+                        <p>07.08.1998</p>
+                        <button class="profile__btn">Изменить</button>
                       </div>
                     </div>
-                    <div class="profile__info">
-                      <p>E-MAIL</p>
-                      <div class="">
-                        <p>Peterbarkun@gmail.com</p>
-                        <button>Изменить</button>
+                    <div class="profile__wrapinfo">
+                      <p class="profile__title">Пол</p>
+                      <div class="profile__info">
+                        <p>Мужской</p>
+                        <button class="profile__btn">Изменить</button>
                       </div>
                     </div>
                   </div>
                   <form action="">
                     <p>сменить пароль</p>
-                    <input type="text">
-                    <input type="text">
-                    <input type="button">
+                    <div class="wrap">
+                      <div class="form__group">
+                        <input placeholder="Введите новый пароль" type="text">
+                      </div>
+                      <div class="form__group">
+                        <input placeholder="Повторите новый пароль" type="text">
+                      </div>
+                      <button>Сохранить изменения</button>
+                    </div>
                   </form>
                 </div>
-                <div class="profile__info">
-                  <p>E-MAIL</p>
-                  <div class="">
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">E-MAIL</p>
+                  <div class="profile__info">
                     <p>Peterbarkun@gmail.com</p>
-                    <button>Изменить</button>
+                    <button class="profile__btn">Изменить</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="tab-pane" id="tab-02">
-              <ul class="personal__list">
-                <li class="personal__item">
-                  
-                </li>
-              </ul>
+              <div class="personal__list address">
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">Главный адрес</p>
+                  <div class="profile__info">
+                    <p>(Офис) Минск, улица Пушкина, 111, эт. 1, кв. 1</p>
+                    <button class="profile__btn">Изменить</button>
+                  </div>
+                </div>
+                <div class="profile__wrapinfo">
+                  <div class="profile__item">
+                    <p class="profile__title">Дополнительные адреса</p>
+                    <button class="profile__btn">Добавить</button>
+                  </div>
+                  <div class="profile__item">
+                    <div class="profile__info">
+                      <p>(Дом) Минск, улица Тимерязева,
+                        72, эт. 5, кв. 54</p>
+                      <button class="profile__btn">Удалить</button>
+                    </div>
+                    <div class="profile__info">
+                      <p>(Дом) Минск, улица Тимерязева,
+                        72, эт. 5, кв. 54</p>
+                      <button class="profile__btn">Удалить</button>
+                    </div>
+                    <div class="profile__info">
+                      <p>(Минск, проспект Рокоссовского 67, эт. 1, кв. 1</p>
+                      <button class="profile__btn">Удалить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tab-pane" id="tab-03">
-              <ul class="personal__list">
-                <li class="personal__item">
-                  
-                </li>
-              </ul>
+              <h2>История заказов</h2>
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading1">
+                    <div class="order__top">
+                      <h3 class="panel-title">Заказ за <span class="order__date">26.12.2019</span></h3>
+                      <div class="wrap__btn">
+                        <button>Повторить заказ</button>
+                        <a class="collapsed" role="button" data-toggle="collapse"  href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                          <span class="wrap"><span class="value"><span class="disabled">Подробнее</span><span class="active">Свернуть</span></span><span class="btn__icon"><span class="btn__line"></span></span></span>
+                        </a>
+                      </div>                      
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse order__body" data-parent="#accordion" role="tabpanel" aria-labelledby="heading1">                      
+                      <ul class="order__list">
+                        <li class="order__item">
+                          <div class="order__title">Салат «Сaprese»</div>
+                          <div class="order__description">Количество: 12 порций</div>
+                          <div class="order__cost">19.50 руб.</div>
+                        </li>
+                        <li class="order__item">
+                          <div class="order__title">Салат «Сaprese»</div>
+                          <div class="order__description">Количество: 12 порций</div>
+                          <div class="order__cost">19.50 руб.</div>
+                        </li>
+                        <li class="order__item">
+                          <div class="order__title">Салат «Сaprese»</div>
+                          <div class="order__description">Количество: 12 порций</div>
+                          <div class="order__cost">19.50 руб.</div>
+                        </li>
+                      </ul>
+                      <div class="order__delivery">
+                        <div class="order__title">Адрес доставки</div>
+                        <div class="order__address">Минск, проспект Рокосовского 67, эт. 1, кв. 1</div>
+                      </div>
+                    </div>
+                    <div class="order__container">
+                        Сумма к оплате: <span class="order__value">68.00 руб.</span>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+            </div>
             </div>
             <div class="tab-pane" id="tab-04">
               <ul class="personal__list">

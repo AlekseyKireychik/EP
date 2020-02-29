@@ -763,7 +763,7 @@ header
 								position: absolute
 								left: 0		
 								top: 0px						
-								content: url(../img/@2x/phone-icon.svg)
+								content: url(../img/@2x/иконка-01.svg)
 
 							&.active
 								background: none
@@ -775,5 +775,201 @@ header
 					padding: 70px 80px
 					background: rgba(255, 255, 255, 0.1)
 					border-radius: 10px
-					.personal__item
+					.profile__wrapinfo
+						display: flex
+						align-items: flex-start
+						justify-content: flex-start
+						margin-bottom: 40px
+						.profile__title 
+							font-weight: 600
+							font-size: 20px
+							line-height: 24px
+							align-items: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							min-width: 145px
+							max-width: 145px
+						.profile__info
+							margin-left: 20px
+							p 
+								font-weight: 600
+								font-size: 20px
+								line-height: 24px
+								align-items: center
+								letter-spacing: 0.03em
+								text-transform: uppercase
+								color: $accent
+							button								
+								margin-right: 30px
+								&:last-child
+									margin-right: 0px
+					.profile__wrapform
+						display: flex
+						align-items: flex-start
+						justify-content: flex-start
+						.profile__container
+							.profile__wrapinfo
+								margin-bottom: 55px
+								&:first-child
+									margin-bottom: 60px
+								.profile__title 
+								.profile__info
+									p 
+									button
+										padding: 0
+										margin-right: 30px
+										&:last-child
+											margin-right: 0px
+						form
+							background: rgba(255, 255, 255, 0.1)
+							border-radius: 10px
+							padding: 20px
+							margin-left: 90px
+							p 
+								font-weight: 600
+								font-size: 20px
+								line-height: 24px
+								text-align: center
+								letter-spacing: 0.03em
+								text-transform: uppercase
+								color: $accent
+								margin-bottom: 20px
+							.wrap
+								display: flex
+								align-items: center
+								justify-content: flex-start
+								flex-direction: column
+								.form__group
+									input
+										border: 2px solid $accent
+										border-radius: 5px
+										color: $accent
+										padding: 17px
+										width: 100%
+										background-color: transparent
+										margin-bottom: 15px
+										&:last-child
+											margin-bottom: 20px	
+										&::placeholder
+											font-weight: normal
+											font-size: 14px
+											line-height: 14px
+											color: $accent
+								button
+									background: linear-gradient(92.21deg, #E40007 0.36%, #C70006 99.67%);
+									border-radius: 5px
+									font-weight: bold
+									font-size: 14px
+									line-height: 17px
+									text-align: center
+									letter-spacing: 0.03em
+									text-transform: uppercase
+									color: $accent
+									padding: 14px 18px
+									opacity: 0.5
+									border: none
+									margin: 0 auto
+					&.address
+						.profile__title 
+							min-width: 230px
+							max-width: 230px
+							margin-bottom: 0px
+						.profile__info
+							max-width: 470px
+							p 
+								font-size: 24px
+								line-height: 29px
+								margin-bottom: 0px
+							button								
+								margin-right: 30px
+								&:last-child
+									margin-right: 0px
+						.profile__wrapinfo
+							.profile__item
+								&:last-child
+									.profile__info
+										margin-bottom: 40px
+			.tab-pane
+				padding: 40px 80px
+				background: rgba(255, 255, 255, 0.1)
+				border-radius: 10px
+				h2 
+					font-weight: 600
+					font-size: 20px
+					line-height: 24px
+					letter-spacing: 0.03em
+					text-transform: uppercase
+					color: $accent
+					margin-bottom: 30px
+				.panel-group
+					padding: 20px
+					background: rgba(255, 255, 255, 0.2)
+					border-radius: 10px
+					.panel
+						.panel-heading
+							.order__top
+								display: flex
+								align-items: center
+								justify-content: space-between
+								margin-bottom: 40px
+								.panel-title
+								.wrap__btn
+									button 
+									.collapsed
+										.wrap
+											.value
+												.disabled
+												.active
+											.btn__icon
+												.btn__line
+							.order__body
+								.order__list
+									border-bottom: 2px solid $accent
+									.order__item
+										display: flex
+										align-items: center
+										justify-content: space-between
+										margin-bottom: 20px
+										.order__title
+											font-weight: bold
+											font-size: 18px
+											line-height: 22px
+											color: $accent
+										.order__description
+											font-weight: bold
+											font-size: 18px
+											line-height: 22px
+											color: $accent
+										.order__cost
+											font-weight: bold
+											font-size: 18px
+											line-height: 22px
+											color: $accent
+								.order__delivery
+									display: flex
+									align-items: center
+									justify-content: space-between
+									.order__title
+									.order__address
+							.order__container
+								display: flex
+								align-items: center
+								justify-content: flex-start
+								.order__value
+
+.profile__btn
+	font-weight: normal
+	padding: 0
+	font-size: 16px
+	line-height: 20px
+	align-items: center
+	letter-spacing: 0.03em
+	text-transform: uppercase
+	color: $accent
+	background-color: transparent
+	border: none
+
+							
+
 @import media
