@@ -82,7 +82,98 @@ select.error
 	border-bottom: 1px solid $accent
 input.error
 	border-bottom: 1px solid $accent
+main
+	position: relative
+.account__formWrap
+	background: #691D35
+	position: absolute
+	right: 0
+	top: 0
+	bottom: 0
+	z-index: 99
+	width: 50vw
+	.account__form
+		.title
+			max-width: 550px
+			text-align: center
+			margin: 165px auto 80px
+		.form__btnClose
+			.form__line
+		.account__formContent
+			padding: 0 88px
+			.form__top
+				.mainform__group
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					.mainform__control
+						border: 2px solid $accent
+						border-radius: 5px
+						color: $accent
+						padding: 17px
+						width: 100%
+						background-color: transparent
+						margin-bottom: 15px
+						&:last-child
+							margin-bottom: 20px	
+						&::placeholder
+							font-weight: normal
+							font-size: 14px
+							line-height: 14px
+							color: $accent
+					.mainform__label
+						font-weight: bold
+						font-size: 14px
+						line-height: 17px
+						text-align: right
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						.required-star
+				.form__box
+					display: flex
+					align-items: center
+					justify-content: space-between
+					.simple__btn
+						font-weight: bold
+						font-size: 14px
+						line-height: 17px
+						text-align: right
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						background-color: transparent
+						border: none
+					.btn
+			.form__bottom
+				p 
+				.form__box
+					.registration
 
+.reviews__form
+	padding: 108px 148px
+	.title
+		font-weight: 600
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 30px
+		.formWrap
+			.mainform__group
+				.mainform__control
+					border: 2px solid $accent
+					border-radius: 5px
+					color: $accent
+					padding: 17px
+					width: 100%
+					background-color: transparent
+					margin-bottom: 15px
+					&:last-child
+						margin-bottom: 20px	
+						&::placeholder
+							font-weight: normal
+							font-size: 14px
+							line-height: 14px
+							color: $accent
 .slider__counter
 	position: absolute
 	left: 64px
