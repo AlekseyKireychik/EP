@@ -1647,6 +1647,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 532px;
+  min-width: 532px;
   padding: 117.5px 57px;
   border-bottom: none;
   margin-bottom: 0px;
@@ -1686,12 +1687,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .personal .custom__container .tab-content {
   padding-left: 90px;
+  width: 100%;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list {
   padding: 70px 80px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  min-height: 700px;
+  max-height: 700px;
+  overflow: hidden;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
@@ -1721,8 +1726,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  min-width: 145px;
+  width: 100%;
   max-width: 145px;
+  min-width: 145px;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info {
@@ -1742,11 +1748,26 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   color: #fff;
 }
 
-.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info button {
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info .btn__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info .btn__group button {
   margin-right: 30px;
 }
 
-.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info button:last-child {
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__info .btn__group button:last-child {
   margin-right: 0px;
 }
 
@@ -1914,13 +1935,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 40px;
 }
 
-.personal .custom__container .tab-content .tab-pane {
+.personal .custom__container .tab-content .tab-pane .orders__wrap {
   padding: 40px 80px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
+  min-height: 700px;
+  max-height: 700px;
+  overflow: auto;
 }
 
-.personal .custom__container .tab-content .tab-pane h2 {
+.personal .custom__container .tab-content .tab-pane .orders__wrap h2 {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -1930,13 +1954,22 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 30px;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap {
+  overflow: auto;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel {
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__top {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel:last-child {
+  margin-bottom: 0px;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1952,11 +1985,42 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 40px;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap {
+  padding-left: 35px;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap .value .disabled {
+  width: 122px;
+  display: none;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap .value .active {
+  width: 122px;
+  display: inline;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a.collapsed .wrap .value .disabled {
+  display: inline;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a.collapsed .wrap .value .active {
+  display: none;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__list {
   border-bottom: 2px solid #fff;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__list .order__item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1972,28 +2036,30 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 20px;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__title {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__list .order__item .order__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  max-width: 190px;
+  width: 100%;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__list .order__item .order__description {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__description {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__list .order__item .order__cost {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
   color: #fff;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__list .order__item .order__cost {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
-}
-
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__body .order__delivery {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__delivery {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2002,13 +2068,18 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
-.personal .custom__container .tab-content .tab-pane .panel-group .panel .panel-heading .order__container {
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__delivery .order__address {
+  padding-left: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2017,6 +2088,138 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__container .order__value {
+  padding-left: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap {
+  padding: 0;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
+  padding: 108px 148px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control:last-child {
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea:last-child {
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .bottom__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;

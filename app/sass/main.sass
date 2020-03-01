@@ -742,6 +742,7 @@ header
 					border-radius: 10px
 					flex-direction: column
 					max-width: 532px
+					min-width: 532px
 					padding: 117.5px 57px
 					border-bottom: none
 					margin-bottom: 0px
@@ -770,11 +771,15 @@ header
 								color: #481120
 		.tab-content
 			padding-left: 90px
+			width: 100%
 			.tab-pane
 				.personal__list
 					padding: 70px 80px
 					background: rgba(255, 255, 255, 0.1)
 					border-radius: 10px
+					min-height: 700px
+					max-height: 700px
+					overflow: hidden
 					.profile__wrapinfo
 						display: flex
 						align-items: flex-start
@@ -788,8 +793,9 @@ header
 							letter-spacing: 0.03em
 							text-transform: uppercase
 							color: $accent
-							min-width: 145px
+							width: 100%
 							max-width: 145px
+							min-width: 145px
 						.profile__info
 							margin-left: 20px
 							p 
@@ -800,10 +806,14 @@ header
 								letter-spacing: 0.03em
 								text-transform: uppercase
 								color: $accent
-							button								
-								margin-right: 30px
-								&:last-child
-									margin-right: 0px
+							.btn__group
+								display: flex
+								align-items: flex-start
+								justify-content: space-between
+								button								
+									margin-right: 30px
+									&:last-child
+										margin-right: 0px
 					.profile__wrapform
 						display: flex
 						align-items: flex-start
@@ -890,73 +900,160 @@ header
 								&:last-child
 									.profile__info
 										margin-bottom: 40px
-			.tab-pane
-				padding: 40px 80px
-				background: rgba(255, 255, 255, 0.1)
-				border-radius: 10px
-				h2 
-					font-weight: 600
-					font-size: 20px
-					line-height: 24px
-					letter-spacing: 0.03em
-					text-transform: uppercase
-					color: $accent
-					margin-bottom: 30px
-				.panel-group
-					padding: 20px
-					background: rgba(255, 255, 255, 0.2)
+			.tab-pane				
+				.orders__wrap
+					padding: 40px 80px
+					background: rgba(255, 255, 255, 0.1)
 					border-radius: 10px
-					.panel
-						.panel-heading
-							.order__top
-								display: flex
-								align-items: center
-								justify-content: space-between
-								margin-bottom: 40px
-								.panel-title
-								.wrap__btn
-									button 
-									.collapsed
-										.wrap
-											.value
-												.disabled
-												.active
-											.btn__icon
-												.btn__line
-							.order__body
-								.order__list
-									border-bottom: 2px solid $accent
-									.order__item
+					min-height: 700px
+					max-height: 700px
+					overflow: auto
+					h2 
+						font-weight: 600
+						font-size: 20px
+						line-height: 24px
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						margin-bottom: 30px
+					.order__contentWrap
+						overflow: auto
+						.order__content					
+							.panel-group										
+								.panel
+									padding: 20px
+									background: rgba(255, 255, 255, 0.2)
+									border-radius: 10px
+									margin-bottom: 25px
+									&:last-child
+										margin-bottom: 0px
+									.panel-heading
+										.order__top
+											display: flex
+											align-items: center
+											justify-content: space-between
+											margin-bottom: 40px
+											.panel-title
+											.wrap__btn
+												button 
+													font-weight: 600
+													font-size: 16px
+													line-height: 20px
+													color: $accent
+													background-color: transparent
+													border: none
+												a 
+													.wrap
+														padding-left: 35px
+														.value
+															
+															.disabled
+																width: 122px
+																display: none
+															.active
+																width: 122px
+																display: inline
+														.btn__icon
+															.btn__line
+													&.collapsed
+														.wrap
+															.value
+																.disabled
+																	display: inline
+																.active
+																	display: none
+															.btn__icon
+																.btn__line
+										.order__body
+											.order__list
+												border-bottom: 2px solid $accent
+												.order__item
+													display: flex
+													align-items: center
+													justify-content: space-between
+													margin-bottom: 20px
+													.order__title
+														font-weight: bold
+														font-size: 18px
+														line-height: 22px
+														color: $accent
+														max-width: 190px
+														width: 100%
+													.order__description
+														font-weight: bold
+														font-size: 18px
+														line-height: 22px
+														color: $accent
+													.order__cost
+														font-weight: bold
+														font-size: 18px
+														line-height: 22px
+														color: $accent
+											.order__delivery
+												display: flex
+												align-items: center
+												justify-content: flex-start
+												margin-bottom: 20px									
+												.order__title
+												.order__address
+													padding-left: 30px
+										.order__container
+											display: flex
+											align-items: center
+											justify-content: flex-start
+											.order__value
+												padding-left: 30px
+				.personal__list
+					&.reviews__formWrap
+						padding: 0
+						.reviews__form
+							padding: 108px 148px
+							.title
+								font-weight: 600
+								font-size: 20px
+								line-height: 24px
+								margin-bottom: 30px
+							.formWrap
+								.mainform__group
+									.mainform__control
+										border: 2px solid $accent
+										border-radius: 5px
+										color: $accent
+										padding: 17px
+										width: 100%
+										background-color: transparent
+										margin-bottom: 15px
+										&:last-child
+											margin-bottom: 20px	
+										&::placeholder
+											font-weight: normal
+											font-size: 14px
+											line-height: 14px
+											color: $accent
+									&.comment
+										textarea
+											border: 2px solid $accent
+											border-radius: 5px
+											color: $accent
+											padding: 17px
+											width: 100%
+											background-color: transparent
+											margin-bottom: 15px
+											&:last-child
+												margin-bottom: 20px	
+											&::placeholder
+												font-weight: normal
+												font-size: 14px
+												line-height: 14px
+												color: $accent
+									.bottom__wrap
 										display: flex
-										align-items: center
-										justify-content: space-between
-										margin-bottom: 20px
-										.order__title
-											font-weight: bold
-											font-size: 18px
-											line-height: 22px
-											color: $accent
-										.order__description
-											font-weight: bold
-											font-size: 18px
-											line-height: 22px
-											color: $accent
-										.order__cost
-											font-weight: bold
-											font-size: 18px
-											line-height: 22px
-											color: $accent
-								.order__delivery
-									display: flex
-									align-items: center
-									justify-content: space-between
-									.order__title
-									.order__address
-							.order__container
-								display: flex
-								align-items: center
-								justify-content: flex-start
-								.order__value
+										align-items: flex-start
+										justify-content: flex-start
+										.file
+											input
+										.form__box
+											.btn
 
 .profile__btn
 	font-weight: normal
@@ -969,6 +1066,8 @@ header
 	color: $accent
 	background-color: transparent
 	border: none
+				
+
 
 							
 
