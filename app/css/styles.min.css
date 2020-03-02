@@ -2717,8 +2717,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .contacts .custom__container .title {
-  text-align: center;
+  text-align: left;
+  margin-left: 15%;
   letter-spacing: 0.03em;
+  margin-bottom: 60px;
 }
 
 .contacts .custom__container .solutions-tab-content {
@@ -2738,6 +2740,118 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contacts .custom__container .contacts__content .tab-pane {
+  margin-right: 120px;
+  width: 100%;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list {
+  width: 100%;
+  padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item .text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  width: 200px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .socila__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .socila__list .socila__item {
+  margin-right: 25px;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .socila__list .socila__item .socila__link {
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+}
+
+.contacts .custom__container .contacts__content .tab-pane .header__overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 135px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 55;
 }
 
 @media screen and (max-width: 1700px) {
