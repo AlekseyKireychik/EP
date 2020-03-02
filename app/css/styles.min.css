@@ -2749,7 +2749,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .contacts .custom__container .contacts__content .tab-pane .contacts__list {
   width: 100%;
-  padding: 30px 40px;
+  padding: 50px 40px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   margin-bottom: 30px;
@@ -2762,7 +2762,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
@@ -2835,6 +2835,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
