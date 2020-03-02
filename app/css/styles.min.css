@@ -2855,6 +2855,33 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   z-index: 55;
 }
 
+.product {
+  padding-top: 165px;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #C88C1C;
+  text-align: center;
+}
+
+.product .custom__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product .custom__container .product__left .product__wrapImg .product__img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
