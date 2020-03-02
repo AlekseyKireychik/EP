@@ -57,16 +57,16 @@ main
 	margin-left: auto
 	margin-right: auto
 .btn
-	background: linear-gradient(93.03deg, #E40007 0.36%, #C70006 99.67%)
+	background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%);
+	box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+	border-radius: 5px
 	font-weight: bold
 	font-size: 24px
 	line-height: 29px
 	letter-spacing: 0.03em
 	text-transform: uppercase
-	padding: 14px 75px 14px 45px
+	padding: 22px 20px
 	color: $accent
-	box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
-	border-radius: 5px
 	&:hover
 		color: $accent
 		text-decoration: none
@@ -91,22 +91,34 @@ main
 	top: 0
 	bottom: 0
 	z-index: 99
-	width: 50vw
+	width: 50vw	
+	display: none
+	&.is-active
+		display: inline
+	.form__btnClose
+		position: absolute
+		top: 45px
+		right: 50px
+		cursor: pointer
 	.account__form
+		display: none
+		&.is-active
+			display: inline
 		.title
 			max-width: 550px
 			text-align: center
 			margin: 165px auto 80px
-		.form__btnClose
-			.form__line
 		.account__formContent
 			padding: 0 88px
 			.form__top
+				margin-bottom: 285px
+				padding-left: 112px
 				.mainform__group
 					display: flex
 					align-items: flex-start
 					justify-content: flex-start
-					.mainform__control
+					position: relative
+					.mainform__control						
 						border: 2px solid $accent
 						border-radius: 5px
 						color: $accent
@@ -122,6 +134,9 @@ main
 							line-height: 14px
 							color: $accent
 					.mainform__label
+						position: absolute
+						left: -110px
+						top: 30%
 						font-weight: bold
 						font-size: 14px
 						line-height: 17px
@@ -129,11 +144,13 @@ main
 						letter-spacing: 0.03em
 						text-transform: uppercase
 						color: $accent
+						margin-bottom: 0px
 						.required-star
 				.form__box
 					display: flex
 					align-items: center
 					justify-content: space-between
+					padding-top: 10px
 					.simple__btn
 						font-weight: bold
 						font-size: 14px
@@ -143,37 +160,180 @@ main
 						text-transform: uppercase
 						color: $accent
 						background-color: transparent
-						border: none
+						border: none						
 					.btn
+						width: 240px
 			.form__bottom
+				display: flex
+				align-items: center
+				justify-content: flex-start
+				flex-direction: column
 				p 
 				.form__box
 					.registration
-
-.reviews__form
-	padding: 108px 148px
-	.title
-		font-weight: 600
-		font-size: 20px
-		line-height: 24px
-		margin-bottom: 30px
-		.formWrap
-			.mainform__group
-				.mainform__control
-					border: 2px solid $accent
-					border-radius: 5px
-					color: $accent
-					padding: 17px
-					width: 100%
-					background-color: transparent
-					margin-bottom: 15px
-					&:last-child
-						margin-bottom: 20px	
+						border: 1px solid $accent
+						box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+						border-radius: 5px
+						background-color: transparent
+						font-family: "Montserrat"
+						font-weight: bold
+						font-size: 24px
+						line-height: 29px
+						text-align: center
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						padding: 22px 5px
+						width: 400px
+	.account__formRegistration
+		display: none
+		&.is-active
+			display: inline
+		.title
+			max-width: 510px
+			text-align: center
+			margin: 165px auto 80px
+		.account__formContent
+			padding: 0 88px			
+			.form__top
+				margin-bottom: 285px
+				padding-left: 112px
+				.mainform__group
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					position: relative
+					.mainform__control						
+						border: 2px solid $accent
+						border-radius: 5px
+						color: $accent
+						padding: 17px
+						width: 100%
+						background-color: transparent
+						margin-bottom: 15px
+						&:last-child
+							margin-bottom: 20px	
 						&::placeholder
 							font-weight: normal
 							font-size: 14px
 							line-height: 14px
 							color: $accent
+					.mainform__label
+						position: absolute
+						left: -110px
+						top: 30%
+						font-weight: bold
+						font-size: 14px
+						line-height: 17px
+						text-align: right
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						margin-bottom: 0px
+						.required-star
+				.form__box
+					display: flex
+					align-items: center
+					justify-content: center
+					padding-top: 10px
+					margin-left: -112px
+					.btn
+						width: 400px
+	.account__formRecovery
+		display: none
+		&.is-active
+			display: inline
+		.title
+			max-width: 510px
+			text-align: center
+			margin: 165px auto 80px
+		.account__description
+			text-align: center
+			font-weight: 600
+			font-size: 14px
+			line-height: 17px
+			margin-bottom: 20px
+		.account__formContent
+			padding: 0 88px
+			.form__top
+				margin-bottom: 285px
+				padding-left: 112px
+				.mainform__group
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					position: relative
+					.mainform__control						
+						border: 2px solid $accent
+						border-radius: 5px
+						color: $accent
+						padding: 17px
+						width: 100%
+						background-color: transparent
+						margin-bottom: 15px
+						&:last-child
+							margin-bottom: 20px	
+						&::placeholder
+							font-weight: normal
+							font-size: 14px
+							line-height: 14px
+							color: $accent
+					.mainform__label
+						position: absolute
+						left: -110px
+						top: 30%
+						font-weight: bold
+						font-size: 14px
+						line-height: 17px
+						text-align: right
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						margin-bottom: 0px
+						.required-star
+				.form__box
+					display: flex
+					align-items: center
+					justify-content: center
+					padding-top: 20px
+					margin-left: -112px
+					.btn
+						width: 240px
+.form__overlay
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(105, 29, 53, 0.5)
+	z-index: 98
+	display: none
+	&.is-active
+		display: block
+// .reviews__form
+// 	padding: 108px 148px
+// 	.title
+// 		font-weight: 600
+// 		font-size: 20px
+// 		line-height: 24px
+// 		margin-bottom: 30px
+// 		.formWrap
+// 			.mainform__group
+// 				.mainform__control
+// 					border: 2px solid $accent
+// 					border-radius: 5px
+// 					color: $accent
+// 					padding: 17px
+// 					width: 100%
+// 					background-color: transparent
+// 					margin-bottom: 15px
+// 					&:last-child
+// 						margin-bottom: 20px	
+// 						&::placeholder
+// 							font-weight: normal
+// 							font-size: 14px
+// 							line-height: 14px
+// 							color: $accent
 .slider__counter
 	position: absolute
 	left: 64px

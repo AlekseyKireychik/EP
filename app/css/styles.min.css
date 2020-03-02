@@ -446,18 +446,18 @@ main {
 }
 
 .btn {
-  background: -o-linear-gradient(356.97deg, #E40007 0.36%, #C70006 99.67%);
-  background: linear-gradient(93.03deg, #E40007 0.36%, #C70006 99.67%);
+  background: -o-linear-gradient(358.65deg, #E40007 0.36%, #C70006 99.67%);
+  background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%);
+  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+  border-radius: 5px;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 14px 75px 14px 45px;
+  padding: 22px 20px;
   color: #fff;
-  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
-          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
-  border-radius: 5px;
 }
 
 .btn:hover {
@@ -495,6 +495,26 @@ main {
   bottom: 0;
   z-index: 99;
   width: 50vw;
+  display: none;
+}
+
+.account__formWrap.is-active {
+  display: inline;
+}
+
+.account__formWrap .form__btnClose {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.account__formWrap .account__form {
+  display: none;
+}
+
+.account__formWrap .account__form.is-active {
+  display: inline;
 }
 
 .account__formWrap .account__form .title {
@@ -505,6 +525,11 @@ main {
 
 .account__formWrap .account__form .account__formContent {
   padding: 0 88px;
+}
+
+.account__formWrap .account__form .account__formContent .form__top {
+  margin-bottom: 285px;
+  padding-left: 112px;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group {
@@ -520,6 +545,7 @@ main {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control {
@@ -572,6 +598,9 @@ main {
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__label {
+  position: absolute;
+  left: -110px;
+  top: 30%;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -579,6 +608,7 @@ main {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 0px;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .form__box {
@@ -594,6 +624,7 @@ main {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 10px;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .form__box .simple__btn {
@@ -608,18 +639,88 @@ main {
   border: none;
 }
 
-.reviews__form {
-  padding: 108px 148px;
+.account__formWrap .account__form .account__formContent .form__top .form__box .btn {
+  width: 240px;
 }
 
-.reviews__form .title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: 30px;
+.account__formWrap .account__form .account__formContent .form__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control {
+.account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+  border-radius: 5px;
+  background-color: transparent;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 22px 5px;
+  width: 400px;
+}
+
+.account__formWrap .account__formRegistration {
+  display: none;
+}
+
+.account__formWrap .account__formRegistration.is-active {
+  display: inline;
+}
+
+.account__formWrap .account__formRegistration .title {
+  max-width: 510px;
+  text-align: center;
+  margin: 165px auto 80px;
+}
+
+.account__formWrap .account__formRegistration .account__formContent {
+  padding: 0 88px;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top {
+  margin-bottom: 285px;
+  padding-left: 112px;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control {
   border: 2px solid #fff;
   border-radius: 5px;
   color: #fff;
@@ -629,43 +730,224 @@ main {
   margin-bottom: 15px;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:last-child {
   margin-bottom: 20px;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child::-webkit-input-placeholder {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child::-moz-placeholder {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child:-ms-input-placeholder {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child::-ms-input-placeholder {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
 }
 
-.reviews__form .title .formWrap .mainform__group .mainform__control:last-child::placeholder {
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: #fff;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__label {
+  position: absolute;
+  left: -110px;
+  top: 30%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top .form__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  margin-left: -112px;
+}
+
+.account__formWrap .account__formRegistration .account__formContent .form__top .form__box .btn {
+  width: 400px;
+}
+
+.account__formWrap .account__formRecovery {
+  display: none;
+}
+
+.account__formWrap .account__formRecovery.is-active {
+  display: inline;
+}
+
+.account__formWrap .account__formRecovery .title {
+  max-width: 510px;
+  text-align: center;
+  margin: 165px auto 80px;
+}
+
+.account__formWrap .account__formRecovery .account__description {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent {
+  padding: 0 88px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top {
+  margin-bottom: 285px;
+  padding-left: 112px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:last-child {
+  margin-bottom: 20px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__label {
+  position: absolute;
+  left: -110px;
+  top: 30%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .form__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  margin-left: -112px;
+}
+
+.account__formWrap .account__formRecovery .account__formContent .form__top .form__box .btn {
+  width: 240px;
+}
+
+.form__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(105, 29, 53, 0.5);
+  z-index: 98;
+  display: none;
+}
+
+.form__overlay.is-active {
+  display: block;
 }
 
 .slider__counter {
