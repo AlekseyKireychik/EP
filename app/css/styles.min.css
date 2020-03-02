@@ -2709,6 +2709,37 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   border: none;
 }
 
+.contacts {
+  padding-top: 165px;
+  background-color: #691D35;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.contacts .custom__container .title {
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.contacts .custom__container .solutions-tab-content {
+  display: none;
+}
+
+.contacts .custom__container .contacts__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
