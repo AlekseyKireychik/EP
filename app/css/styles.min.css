@@ -2881,14 +2881,14 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product .custom__container .product__left {
-  margin-right: 170px;
+  margin-left: 210px;
 }
 
 .product .custom__container .product__left .product__recomendation {
@@ -2929,6 +2929,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .product .custom__container .product__left .product__wrapImg .product__img {
   width: 100%;
+}
+
+.product .custom__container .product__right {
+  margin-right: 40px;
 }
 
 .product .custom__container .product__right form {
@@ -3065,6 +3069,64 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding-bottom: 20px;
 }
 
+.product .custom__container .product__right form .product__dopinfo .form-check {
+  padding-bottom: 40px;
+  padding-left: 50px;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check .form__check-input {
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check .form__check-input + label::before {
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  height: 35px;
+  width: 35px;
+  content: "";
+  background: #C88C1C;
+  display: inline-block;
+  vertical-align: middle;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check .form__check-label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  padding-left: 0px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check .form__check-label::after {
+  display: none;
+  position: absolute;
+  content: url(../img/_src/check.svg);
+  left: -44px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.product .custom__container .product__right form .product__dopinfo .form-check .form__check-input:checked + label::after {
+  display: block;
+}
+
 .product .custom__container .product__right form .product__dopinfo .description {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3093,6 +3155,81 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding: 6px 20px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item .product__name {
+  max-width: 300px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item .product__nameInfo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item .product__nameInfo .product__nameValue {
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-right: 4px;
+}
+
+.product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item .product__nameInfo .quantity {
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 1700px) {

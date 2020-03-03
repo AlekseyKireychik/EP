@@ -1416,9 +1416,9 @@ header
 	.custom__container
 		display: flex
 		align-items: flex-start
-		justify-content: center
+		justify-content: space-between
 		.product__left
-			margin-right: 170px
+			margin-left: 210px
 			.product__recomendation
 				position: absolute
 				left: 40px		
@@ -1448,6 +1448,7 @@ header
 				.product__img
 					width: 100%
 		.product__right
+			margin-right: 40px
 			form 
 				display: flex
 				align-items: flex-start
@@ -1527,6 +1528,50 @@ header
 					text-align: left
 					.description
 						padding-bottom: 20px
+					.form-check
+						padding-bottom: 40px
+						padding-left: 50px
+						.form__check-input
+							border: 3px solid $accent
+							border-radius: 5px
+						input[type="checkbox"]
+							display: inline-block
+							width: auto
+							margin-top: 0
+							opacity: 0
+							position: absolute
+							left: 0
+							top: 0
+						.form__check-input + label::before
+							position: absolute
+							left: -50px
+							top: 0px
+							height: 35px
+							width: 35px
+							content: ""
+							background: #C88C1C
+							display: inline-block
+							vertical-align: middle
+							border: 3px solid $accent
+							border-radius: 5px
+						.form__check-label
+							font-weight: 600
+							font-size: 24px
+							line-height: 29px
+							padding-left: 0px
+							color: $accent
+							position: relative
+							cursor: pointer
+							margin-bottom: 0
+							&::after
+								display: none
+								position: absolute
+								content: url(../img/_src/check.svg)
+								left: -44px
+								top: 2px
+								cursor: pointer
+						.form__check-input:checked + label::after
+							display: block
 					.description
 						display: flex
 						align-items: center
@@ -1549,6 +1594,40 @@ header
 										padding: 6px 20px
 										font-size: 16px
 										line-height: 20px
+					.tab-content
+						.tab-pane
+							.product__list
+								display: flex
+								align-items: flex-start
+								justify-content: flex-start
+								flex-direction: column
+								.product__item
+									display: flex
+									align-items: flex-start
+									justify-content: space-between
+									width: 100%
+									margin-bottom: 20px								
+									.product__name
+										max-width: 300px
+										width: 100%
+										font-weight: 600
+										font-size: 16px
+										line-height: 20px
+										text-align: left
+									.product__nameInfo
+										display: flex
+										align-items: flex-start
+										justify-content: flex-start	
+										font-weight: 600
+										font-size: 16px
+										line-height: 20px
+										.product__nameValue
+											font-size: 20px
+											line-height: 20px
+											margin-left: 20px
+											margin-right: 4px
+										.quantity
+											margin-left: 5px
 
 							
 
