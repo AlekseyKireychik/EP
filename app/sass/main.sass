@@ -1628,7 +1628,200 @@ header
 											margin-right: 4px
 										.quantity
 											margin-left: 5px
-
-							
+.product-two
+	padding-top: 165px
+	min-height: 100vh
+	max-height: 100vh
+	background: #E67300
+	text-align: center
+	.custom__container
+		.title
+			margin: 0 auto 60px
+	.custom__container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		.product__left
+			margin-left: 85px
+			display: flex
+			align-items: center
+			justify-content: space-between
+			flex-direction: column
+			.product__recomendation
+				margin-bottom: 80px	
+				font-weight: bold
+				font-size: 20px
+				line-height: 24px
+				text-align: center
+				letter-spacing: 0.03em
+				text-transform: uppercase
+				color: #C88C1C
+				max-width: 240px
+				width: 100%
+				background-color: $accent
+				border-radius: 10px
+				display: block
+				padding: 26px 32px
+				position: relative
+				cursor: pointer
+				&:after
+					position: absolute
+					left: 100px
+					bottom: -70px
+					transform: rotate(-90deg)	
+					content: url(../img/@2x/polygon.svg)
+			.product__wrapImg
+				max-width: 823px				
+				.product__img
+					width: 100%
+		.product__center
+			.product__wrapImg
+				max-width: 500px
+				min-width: 280px
+				.product__img
+					width: 100%
+		.product__right
+			margin-right: 40px
+			form 
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				flex-direction: column
+				.product__row
+					width: 100%
+					margin-bottom: 20px
+					.form-check
+						padding-bottom: 20px
+						padding-left: 50px
+						.form__check-input
+							border: 3px solid $accent
+							border-radius: 5px
+						input[type="checkbox"]
+							display: inline-block
+							width: auto
+							margin-top: 0
+							opacity: 0
+							position: absolute
+							left: 0
+							top: 0
+						.form__check-input + label::before
+							position: absolute
+							left: -50px
+							top: 2px
+							height: 35px
+							width: 35px
+							content: ""
+							background: #E67300
+							display: inline-block
+							vertical-align: middle
+							border: 3px solid $accent
+							border-radius: 5px
+							opacity: 0.5
+						.form__check-label
+							font-weight: 600
+							font-size: 30px
+							line-height: 37px
+							padding-left: 0px
+							color: $accent
+							position: relative
+							cursor: pointer
+							margin-bottom: 0
+							display: flex
+							justify-content: space-between
+							width: 100%
+							opacity: 0.5
+							&::after
+								display: none
+								position: absolute
+								content: url(../img/_src/check.svg)
+								left: -44px
+								top: 0px
+								cursor: pointer
+						.form__check-input:checked + label
+							opacity: 1
+						.form__check-input:checked + label::before
+							opacity: 1
+						.form__check-input:checked + label::after
+							display: block
+				.product__btnGroup
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 30px
+					.product__counter
+						margin-right: 40px
+						.product__btnReduction
+							background: $accent
+							border-radius: 5px
+							width: 60px
+							padding: 11.5px 0
+							border: none
+							font-weight: bold
+							font-size: 48px
+							line-height: 48px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: #C88C1C
+						.product__count
+							font-weight: bold
+							font-size: 30px
+							line-height: 37px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							padding: 0 25px
+						.product__btnIncrement
+							background: $accent
+							border-radius: 5px
+							width: 60px
+							padding: 11.5px 0
+							border: none
+							font-weight: bold
+							font-size: 48px
+							line-height: 48px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: #C88C1C
+				.product__tabinfo
+					width: 100%
+					.product__tabtitle
+						text-align: left
+						padding-bottom: 10px
+						border-bottom: 2px solid $accent
+					.product__list
+						display: flex
+						align-items: flex-start
+						justify-content: flex-start
+						flex-direction: column
+						.product__item
+							display: flex
+							align-items: flex-start
+							justify-content: space-between
+							width: 100%
+							margin-bottom: 20px								
+							.product__name
+								max-width: 300px
+								width: 100%
+								font-weight: 600
+								font-size: 16px
+								line-height: 20px
+								text-align: left
+								.product__nameInfo
+									display: flex
+									align-items: flex-start
+									justify-content: flex-start	
+									font-weight: 600
+									font-size: 16px
+									line-height: 20px
+									.product__nameValue
+										font-size: 20px
+										line-height: 20px
+										margin-left: 20px
+										margin-right: 4px
+									.quantity
+										margin-left: 5px
 
 @import media
