@@ -57,9 +57,9 @@ main
 	margin-left: auto
 	margin-right: auto
 .btn
-	background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%);
-	box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+	background: linear-gradient(91.12deg, #E40007 0.36%, #C70006 99.67%)
 	border-radius: 5px
+	border: none
 	font-weight: bold
 	font-size: 24px
 	line-height: 29px
@@ -67,9 +67,13 @@ main
 	text-transform: uppercase
 	padding: 22px 20px
 	color: $accent
+	transition: all .3s
 	&:hover
 		color: $accent
 		text-decoration: none
+		background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%)
+		box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+		transition: all .3s
 .title
 	font-family: 'Montserrat', sans-serif
 	font-weight: bold
@@ -1414,23 +1418,137 @@ header
 		align-items: flex-start
 		justify-content: center
 		.product__left
+			margin-right: 170px
 			.product__recomendation
+				position: absolute
+				left: 40px		
+				top: 50%
+				transform: translate(0, -50%)
 				.product__link
+					font-weight: bold
+					font-size: 20px
+					line-height: 24px
+					text-align: center
+					letter-spacing: 0.03em
+					text-transform: uppercase
+					color: #C88C1C
+					max-width: 240px
+					width: 100%
+					background-color: $accent
+					display: block
+					padding: 26px 0
+					position: relative
+					&:after
+						position: absolute
+						left: -39px		
+						top: 0px						
+						content: url(../img/@2x/polygon.svg)
 			.product__wrapImg
+				max-width: 823px
 				.product__img
 					width: 100%
 		.product__right
 			form 
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				flex-direction: column
 				.product__cost
-					.title
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 60px
+					.product__title
+						font-weight: bold
+						font-size: 30px
+						line-height: 37px
+						align-items: center
+						letter-spacing: 0.03em
+						text-transform: uppercase
+						color: $accent
+						margin-right: 100px
 					.value
 						span 
+							font-weight: bold
+							font-size: 36px
+							line-height: 37px
+							text-align: right
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
 				.product__btnGroup
+					display: flex
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 30px
 					.product__counter
+						margin-right: 40px
 						.product__btnReduction
+							background: $accent
+							border-radius: 5px
+							width: 60px
+							padding: 11.5px 0
+							border: none
+							font-weight: bold
+							font-size: 48px
+							line-height: 48px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: #C88C1C
 						.product__count
+							font-weight: bold
+							font-size: 30px
+							line-height: 37px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							padding: 0 25px
 						.product__btnIncrement
-
+							background: $accent
+							border-radius: 5px
+							width: 60px
+							padding: 11.5px 0
+							border: none
+							font-weight: bold
+							font-size: 48px
+							line-height: 48px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: #C88C1C
+				.product__dopinfo
+					font-weight: 600
+					font-size: 24px
+					line-height: 29px
+					letter-spacing: 0.03em
+					color: $accent
+					text-align: left
+					.description
+						padding-bottom: 20px
+					.description
+						display: flex
+						align-items: center
+						justify-content: flex-start
+						padding-bottom: 20px
+						.product__title
+						.weight							
+							span
+								margin-left: 40px
+								font-size: 30px
+								line-height: 37px
+				.product__tabinfo
+					.solutions-tab-content
+						.solutions-tab
+							.nav-pills
+								.nav-item
+									a 
+										white-space: nowrap
+										min-width: 191px
+										padding: 6px 20px
+										font-size: 16px
+										line-height: 20px
 
 							
 
