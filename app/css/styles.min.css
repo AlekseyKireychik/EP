@@ -3578,6 +3578,18 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-left: 5px;
 }
 
+.basket {
+  padding-top: 165px;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #691D35;
+  text-align: center;
+}
+
+.basket .custom__container .title {
+  margin: 0 auto 60px;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
