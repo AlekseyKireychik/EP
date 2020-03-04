@@ -3590,6 +3590,139 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin: 0 auto 60px;
 }
 
+.basket .custom__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.basket .custom__container .basket__left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #481120;
+  -webkit-box-shadow: 0px 0px 30px #4B0118;
+          box-shadow: 0px 0px 30px #4B0118;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item {
+  width: 100%;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__imgWrap {
+  max-width: 145px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info .product__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info .product__cost {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 @media screen and (max-width: 1700px) {
   .custom__container {
     max-width: 1500px;
