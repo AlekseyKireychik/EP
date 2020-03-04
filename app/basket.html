@@ -665,40 +665,13 @@
             </div>
           </div>
           <div class="basket__right">
+            <ul class="basket__progress">
+              <li class="basket__item active-step">Контактные<br> данные</li>
+              <li class="basket__item delivery-step">Доставка<br> самовывоз</li>
+              <li class="basket__item order-step">Способ<br> оплаты</li>              
+            </ul>
             <form action="">
-              <div class="product__cost">
-                <span class="product__title">Цена:</span>
-                <div class="value"><span>13.00</span> руб</div>
-              </div>
-              <div class="product__btnGroup">
-                <div class="product__counter">
-                  <button class="product__btnReduction">-</button>
-                  <span class="product__count">2</span>
-                  <button class="product__btnIncrement">+</button>
-                </div>
-                <button type="submit" class="product__order btn">
-                  Заказать
-                </button>
-              </div>
-              <div class="product__dopinfo">
-                <div class="description">Дополнительно:</div>
-                <div class="form-check">
-                  <input
-                    class="form__check-input"
-                    placeholder=""
-                    type="checkbox"
-                    id="check"
-                  />
-                  <label class="form__check-label" for="check"
-                    >Лук с петрушкой</label
-                  >
-                </div>
-                <div class="description">
-                  <span class="product__title">Вес порции:</span>
-                  <div class="weight"><span>1800</span>г</div>
-                </div>
-              </div>
-              <div class="product__tabinfo">
+              <div class="basket__tabinfo">
                 <div class="solutions-tab-content">
                   <div class="solutions-tab">
                     <ul class="nav nav-pills" role="tablist">
@@ -708,12 +681,12 @@
                           role="tab"
                           class="active"
                           data-toggle="tab"
-                          >Состав</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-profile.svg" alt="Новый клиент"></div>Новый клиент</a
                         >
                       </li>
                       <li class="nav-item">
                         <a href="#tab-02" role="tab" data-toggle="tab"
-                          >Пищевая ценность</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-badge.svg" alt="Есть аккаунт"></div>Есть аккаунт</a
                         >
                       </li>
                     </ul>
@@ -721,56 +694,80 @@
                 </div>
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
-                    <ul class="product__list">
-                      <li class="product__item">
-                        <span class="product__name"
-                          >Куриные крылышки «на углях»</span
-                        >
-                        <div class="product__nameInfo">
-                          <span class="product__nameValue">400</span>г
-                          <span class="quantity">X2</span>
-                        </div>
-                      </li>
-                      <li class="product__item">
-                        <span class="product__name"
-                          >Куриные крылышки «на углях»</span
-                        >
-                        <div class="product__nameInfo">
-                          <span class="product__nameValue">400</span>г
-                          <span class="quantity">X2</span>
-                        </div>
-                      </li>
-                      <li class="product__item">
-                        <span class="product__name"
-                          >Куриные крылышки «на углях»</span
-                        >
-                        <div class="product__nameInfo">
-                          <span class="product__nameValue">4</span> шт<span
-                            class="quantity"
-                          ></span>
-                        </div>
-                      </li>
-                    </ul>
+                    <div class="basket__formNew">
+                      <div class="form__group">
+                        <label for="text" class="form__label">ФИО<span class="required-star">*</span></label>
+                        <input
+                              type="text"
+                              placeholder="Введите Ваше Имя"
+                              class="form__control required"
+                              name="text"
+                              id="text"
+                              required/>                        
+                      </div>
+                      <div class="form__group group-01">
+                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
+                        <input
+                              type="tel"
+                              placeholder="+375 (__) ___-__-__"
+                              class="form__control validate-numeric required"
+                              name="tel"
+                              id="tel"
+                              required/>
+                      </div>
+                      <div class="form__group group-01">
+                        <label for="email" class="form__label">E-mail<span class="required-star">*</span></label>
+                        <input
+                              type="email"
+                              placeholder="Введите Ваш E-mail"
+                              class="form__control required"
+                              name="email"
+                              id="email"
+                              required/>
+                      </div>
+                      <div class="basket__check form-check">
+                        <input
+                          class="form__check-input"
+                          placeholder=""
+                          type="checkbox"
+                          id="check-create"/>
+                        <label class="form__check-label" for="check-create">Cоздать аккаунт</label>
+                      </div>
+                      <div class="form__box">
+                        <button type="submit" id="" class="btn">
+                          далее
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="tab-pane" id="tab-02">
-                    <ul class="product__list">
-                      <li class="product__item">
-                        <span class="product__name">Белки</span>
-                        <div class="product__nameInfo">
-                          <span class="product__nameValue">4</span> г<span
-                            class="quantity"
-                          ></span>
-                        </div>
-                      </li>
-                      <li class="product__item">
-                        <span class="product__name">Жиры</span>
-                        <div class="product__nameInfo">
-                          <span class="product__nameValue">40.2</span> г<span
-                            class="quantity"
-                          ></span>
-                        </div>
-                      </li>
-                    </ul>
+                    <div class="basket__formProfile">                      
+                      <div class="mainform__group group-01">
+                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
+                        <input
+                              type="tel"
+                              placeholder="+375 (__) ___-__-__"
+                              class="form__control validate-numeric required"
+                              name="tel"
+                              id="tel"
+                              required/>
+                      </div>
+                      <div class="mainform__group group-01">
+                        <label for="email" class="mainform__label">E-mail<span class="required-star">*</span></label>
+                        <input
+                              type="email"
+                              placeholder="Введите Ваш E-mail"
+                              class="mainform__control required"
+                              name="email"
+                              id="email"
+                              required/>
+                      </div>
+                      <div class="form__box">
+                        <button type="submit" id="" class="btn">
+                          далее
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

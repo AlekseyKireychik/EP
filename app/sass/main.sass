@@ -2051,4 +2051,137 @@ header
 						font-weight: bold
 						font-size: 36px
 						line-height: 44px
+		.basket__right
+			margin-left: 60px
+			.basket__progress
+				display: flex
+				align-items: flex-start
+				justify-content: flex-start
+				width: 100%
+				margin-bottom: 50px
+				padding-right: 24px
+				.basket__item
+					font-size: 20px
+					line-height: 24px
+					text-align: center
+					letter-spacing: 0.03em
+					text-transform: uppercase
+					min-width: 232px
+					width: 100%
+					font-weight: normal
+					color: #691D35
+					padding: 6px 0
+					max-height: 60px
+					position: relative
+					&.active-step
+						background: $accent
+						font-weight: bold	
+						&::after
+							position: absolute
+							content: url(../img/@2x/active-arr.svg)
+							right: -24px
+							top: 0px
+					&.delivery-step
+						padding-left: 44px
+						background: rgba(255, 255, 255, 0.6)
+						&::after
+							position: absolute
+							content: ""						
+							border: 30px solid transparent
+							border-left: 24px solid rgba(255, 255, 255, 0.35)
+							right: -54px
+							top: 0px
+					&.order-step
+						padding-left: 44px
+						background: rgba(255, 255, 255, 0.4)
+						&::after
+							position: absolute
+							content: ""						
+							border: 30px solid transparent
+							border-left: 24px solid rgba(255, 255, 255, 0.4)
+							right: -54px
+							top: 0px
+					&.performed-step
+			form
+				.basket__tabinfo
+					.solutions-tab-content
+						.solutions-tab
+							.nav-pills
+								border-bottom: none
+								.nav-item
+									a 
+										
+										font-weight: normal
+										font-size: 20px
+										line-height: 24px
+										letter-spacing: 0.03em
+										text-transform: uppercase
+										color: $accent
+										display: flex
+										align-items: center
+										justify-content: flex-start
+										.wrapIcon
+											display: flex
+											align-items: center
+											justify-content: center
+											background: rgba(255, 255, 255, 0.2)
+											width: 100px
+											height: 100px
+											border-radius: 50%
+											margin-right: 30px
+											.icon
+										&.active
+											background: transparent
+											font-weight: bold
+											.wrapIcon
+												background: $accent
+					.tab-content
+						width: 100%
+						.tab-pane
+							width: 100%
+							.basket__formNew
+								width: 100%
+								display: flex
+								align-items: flex-start
+								justify-content: flex-start
+								flex-direction: column
+								.form__group
+									width: 100%
+									position: relative
+									.form__control
+										width: 100%
+										background-color: transparent
+										border: 2px solid $accent
+										border-radius: 5px
+										font-weight: normal
+										font-size: 14px
+										line-height: 17px
+										color: $accent
+										padding: 17px 20px
+										margin-left: 120px
+										margin-bottom: 20px
+										&::placeholder
+											font-weight: normal
+											font-size: 14px
+											line-height: 17px
+											color: $accent
+									.form__label										
+										position: absolute
+										left: 0
+										top: 50%
+										transform: translate(0, -100%)
+										font-weight: bold
+										font-size: 14px
+										line-height: 17px
+										text-align: right
+										letter-spacing: 0.03em
+										text-transform: uppercase
+										color: $accent
+										width: 100px
+										margin-bottom: 0px
+								.basket__check
+									.form__check-input
+									.form__check-label
+								.form__box
+									button
 @import media
