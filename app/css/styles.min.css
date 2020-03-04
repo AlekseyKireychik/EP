@@ -430,13 +430,8 @@ main {
 .container {
   padding-right: 15px;
   padding-left: 15px;
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .custom__container {
@@ -3630,6 +3625,11 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding: 24px;
 }
 
+.basket .custom__container .basket__left .basket__products {
+  max-height: 520px;
+  overflow: auto;
+}
+
 .basket .custom__container .basket__left .basket__products .product__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3648,11 +3648,15 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: auto;
+  height: 100%;
+  margin-right: 20px;
 }
 
 .basket .custom__container .basket__left .basket__products .product__list .product__item {
   width: 100%;
   margin-bottom: 10px;
+  min-height: 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3670,13 +3674,36 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding: 10px 20px;
 }
 
-.basket .custom__container .basket__left .basket__products .product__list .product__item .product__imgWrap {
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__imgWrap {
   max-width: 145px;
   width: 100%;
   margin-right: 20px;
 }
 
-.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info {
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info {
+  max-width: 205px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3696,13 +3723,88 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
           flex-direction: column;
 }
 
-.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info .product__title {
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .product__title {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
+  text-align: left;
 }
 
-.basket .custom__container .basket__left .basket__products .product__list .product__item .product__info .product__cost {
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check {
+  padding-bottom: 8px;
+  padding-left: 24px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-input {
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-input + label::before {
+  position: absolute;
+  left: -24px;
+  top: 0px;
+  height: 16px;
+  width: 16px;
+  content: "";
+  border: 1px solid #fff;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 0px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-label::after {
+  display: none;
+  position: absolute;
+  content: url(../img/_src/check.svg);
+  left: -24px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-input:checked + label {
+  opacity: 1;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-input:checked + label::before {
+  opacity: 1;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-input:checked + label::after {
+  display: block;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .product__cost {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -3721,6 +3823,154 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-left: 65px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup button {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #481120;
+  background: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: 6px 0px;
+  width: 60px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .counter {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 5px;
+  width: 74px;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell {
+  background: transparent;
+  margin-left: 30px;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell:hover {
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell:hover svg circle {
+  fill-opacity: 1;
+}
+
+.basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell:hover svg path {
+  fill: #481120;
+  fill-opacity: 1;
+}
+
+.basket .custom__container .basket__left .basket__trash {
+  background-color: transparent;
+  border: none;
+  margin: 10px auto 20px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.basket .custom__container .basket__left .basket__promocode {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 0 15px;
+  padding: 0 65px;
+  width: 100%;
+}
+
+.basket .custom__container .basket__left .basket__promocode .form__promocode-input {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  padding: 15px;
+  margin-right: 20px;
+  max-width: 370px;
+  width: 100%;
+}
+
+.basket .custom__container .basket__left .basket__promocode button {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #481120;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#fff));
+  background: -o-linear-gradient(bottom, #fff, #fff);
+  background: linear-gradient(0deg, #fff, #fff);
+  -webkit-box-shadow: 0px 4px 10px #38000F;
+          box-shadow: 0px 4px 10px #38000F;
+  border-radius: 5px;
+  border: none;
+  padding: 13px;
+  width: 240px;
+}
+
+.basket .custom__container .basket__left .basket__value {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 65px;
+  width: 100%;
+}
+
+.basket .custom__container .basket__left .basket__value .text {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  max-width: 370px;
+  width: 100%;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.basket .custom__container .basket__left .basket__value .valueWrap {
+  max-width: 240px;
+  width: 100%;
+  text-align: left;
+}
+
+.basket .custom__container .basket__left .basket__value .valueWrap .value {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
 }
 
 @media screen and (max-width: 1700px) {
