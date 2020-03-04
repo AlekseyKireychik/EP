@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Елки Палки - Корзина</title>
+    <title>Елки Палки - Корзина-Доставка</title>
     <meta name="description" content="" />
 
     <meta name="viewport" content="width=device-width" />
@@ -655,8 +655,8 @@
           </div>
           <div class="basket__right">
             <ul class="basket__progress">
-              <li class="basket__item active-step">Контактные<br> данные</li>
-              <li class="basket__item delivery-step">Доставка<br> самовывоз</li>
+              <li class="basket__item performed-step ">Контактные<br> данные</li>
+              <li class="basket__item active-step">Доставка<br> самовывоз</li>
               <li class="basket__item order-step">Способ<br> оплаты</li>              
             </ul>
             <form action="">
@@ -670,12 +670,12 @@
                           role="tab"
                           class="active"
                           data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-profile.svg" alt="Новый клиент"></div>Новый клиент</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-delivery.svg" alt="Доставка"></div>Доставка</a
                         >
                       </li>
                       <li class="nav-item">
                         <a href="#tab-02" role="tab" data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-badge.svg" alt="Есть аккаунт"></div>Есть аккаунт</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-pin.svg" alt="Самовывоз"></div>Самовывоз</a
                         >
                       </li>
                     </ul>
@@ -684,46 +684,107 @@
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
                     <div class="basket__formNew">
-                      <div class="form__group">
-                        <label for="text" class="form__label">ФИО<span class="required-star">*</span></label>
-                        <input
-                              type="text"
-                              placeholder="Введите Ваше Имя"
-                              class="form__control required"
-                              name="text"
-                              id="text"
-                              required/>                        
+                      <div class="basket__formTop">
+                        <div class="form__group">
+                          <label for="text" class="form__label">Улица<span class="required-star">*</span></label>
+                          <input
+                                type="text"
+                                placeholder=""
+                                class="form__control required"
+                                name="text"
+                                id="text"
+                                required/>                        
+                        </div>
                       </div>
-                      <div class="form__group group-01">
-                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
-                        <input
-                              type="tel"
-                              placeholder="+375 (__) ___-__-__"
-                              class="form__control validate-numeric required"
-                              name="tel"
-                              id="tel"
-                              required/>
-                      </div>
-                      <div class="form__group group-01">
-                        <label for="email" class="form__label">E-mail<span class="required-star">*</span></label>
-                        <input
-                              type="email"
-                              placeholder="Введите Ваш E-mail"
-                              class="form__control required"
-                              name="email"
-                              id="email"
-                              required/>
-                      </div>
-                      <div class="basket__check form-check">
-                        <input
-                          class="form__check-input"
-                          placeholder=""
-                          type="checkbox"
-                          id="check-create"/>
-                        <label class="form__check-label" for="check-create">Cоздать аккаунт</label>
-                      </div>
+                      <div class="basket__formCenter">
+                        <div class="basket__formLeft">
+                          <div class="form__group">
+                            <label for="text" class="form__label">Дом<span class="required-star">*</span></label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control required"
+                                  name="text"
+                                  id="text"
+                                  required/>                        
+                          </div>
+                          <div class="form__group">
+                            <label for="text" class="form__label">Подъезд</label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="text"
+                                  id="text"/>                        
+                          </div>
+                          <div class="form__group">
+                            <label for="text" class="form__label">Этаж</label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="text"
+                                  id="text"/>                        
+                          </div>
+                          <div class="basket__check form-check">
+                            <input
+                              class="form__check-input"
+                              placeholder=""
+                              type="checkbox"
+                              id="check-order"/>
+                            <label class="form__check-label" for="check-order">Предварительный заказ</label>
+                          </div>
+                        </div>
+                        <div class="basket__formRight">
+                          <div class="form__group">
+                            <label for="text" class="form__label">Корпус</label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="text"
+                                  id="text"/>                        
+                          </div>
+                          <div class="form__group">
+                            <label for="text" class="form__label">Код двери</label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="text"
+                                  id="text"/>                        
+                          </div>                        
+                          <div class="form__group">
+                            <label for="text" class="form__label">Квартира<span class="required-star">*</span></label>
+                            <input
+                                  type="text"
+                                  placeholder=""
+                                  class="form__control required"
+                                  name="text"
+                                  id="text"
+                                  required/>                        
+                          </div>
+                          <div class="form__group group__input">
+                            <input
+                                  type="date"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="date"
+                                  id="date"/>    
+                            <input
+                                  type="text"
+                                  placeholder="__ : __"
+                                  class="form__control"
+                                  name="time"
+                                  id="time"/>                       
+                          </div>
+                        </div>
+                      </div>                      
                       <div class="form__box">
-                        <button type="submit" id="" class="btn">
+                        <button type="submit" id="back" class="btn back">
+                          назад
+                        </button>
+                        <button type="submit" id="next" class="btn">
                           далее
                         </button>
                       </div>
@@ -752,7 +813,10 @@
                               required/>
                       </div>
                       <div class="form__box">
-                        <button type="submit" id="" class="btn">
+                        <button type="submit" id="back" class="btn">
+                          назад
+                        </button>
+                        <button type="submit" id="next" class="btn">
                           далее
                         </button>
                       </div>

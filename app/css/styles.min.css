@@ -3810,6 +3810,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   line-height: 22px;
 }
 
+.basket .custom__container .basket__left .basket__products .product__list .product__item.box {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
 .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4001,7 +4008,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  min-width: 232px;
+  min-width: 252px;
   width: 100%;
   font-weight: normal;
   color: #691D35;
@@ -4048,6 +4055,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   border-left: 24px solid rgba(255, 255, 255, 0.4);
   right: -54px;
   top: 0px;
+}
+
+.basket .custom__container .basket__right .basket__progress .basket__item.performed-step {
+  background: #fff;
 }
 
 .basket .custom__container .basket__right form .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills {
@@ -4104,16 +4115,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   background: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content {
-  width: 100%;
-}
-
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane {
-  width: 100%;
-}
-
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew {
-  width: 100%;
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4133,61 +4135,62 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
           flex-direction: column;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group {
   width: 100%;
   position: relative;
+  padding-left: 120px;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control {
   width: 100%;
+  max-width: 664px;
   background-color: transparent;
   border: 2px solid #fff;
   border-radius: 5px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16px;
   color: #fff;
-  padding: 17px 20px;
-  margin-left: 120px;
+  padding: 15px 20px;
   margin-bottom: 20px;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-webkit-input-placeholder {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-moz-placeholder {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control:-ms-input-placeholder {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-ms-input-placeholder {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::placeholder {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::placeholder, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label {
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label {
   position: absolute;
   left: 0;
   top: 50%;
@@ -4203,6 +4206,208 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   color: #fff;
   width: 100px;
   margin-bottom: 0px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-left: 170px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input {
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check input[type="checkbox"], .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input + label::before, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input + label::before {
+  position: absolute;
+  left: -50px;
+  top: -12px;
+  height: 40px;
+  width: 40px;
+  content: "";
+  background: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 0px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label::after, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label::after {
+  display: none;
+  position: absolute;
+  content: url(../img/@2x/check.svg);
+  left: -42px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label {
+  opacity: 1;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::before {
+  opacity: 1;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::after {
+  display: block;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box {
+  margin-left: 120px;
+  width: 100%;
+  max-width: 664px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box button, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box button {
+  width: 240px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box button.back, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box button.back {
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+  border-radius: 5px;
+  background: transparent;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formTop, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group {
+  width: 100%;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group .form__control {
+  max-width: 250px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check {
+  margin-top: 10px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label {
+  text-align: left;
+  max-width: 180px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label::after {
+  top: 8px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before {
+  top: -2px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group {
+  width: 100%;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group .form__control {
+  max-width: 250px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control {
+  width: 100%;
+  max-width: 175px;
+  margin-left: 0px;
+}
+
+.basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right form .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control:first-child {
+  margin-right: 20px;
+  height: 50px;
+  position: relative;
+  background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg);
 }
 
 @media screen and (max-width: 1700px) {
