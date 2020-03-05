@@ -659,8 +659,8 @@
               <li class="basket__item active-step">Доставка<br> самовывоз</li>
               <li class="basket__item order-step">Способ<br> оплаты</li>              
             </ul>
-            <form action="">
-              <div class="basket__tabinfo">
+            <div class="basket__content">
+              <div class="basket__tabinfo registered">
                 <div class="solutions-tab-content">
                   <div class="solutions-tab">
                     <ul class="nav nav-pills" role="tablist">
@@ -670,20 +670,18 @@
                           role="tab"
                           class="active"
                           data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-delivery.svg" alt="Доставка"></div>Доставка</a
-                        >
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-delivery.svg" alt="Доставка"></div>Доставка</a>
                       </li>
                       <li class="nav-item">
                         <a href="#tab-02" role="tab" data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-pin.svg" alt="Самовывоз"></div>Самовывоз</a
-                        >
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-pin.svg" alt="Самовывоз"></div>Самовывоз</a>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
-                    <div class="basket__formNew">
+                    <form action="" class="basket__formNew">
                       <div class="basket__formTop">
                         <div class="form__group">
                           <label for="text" class="form__label">мои<br> адреса<span class="required-star">*</span></label>                            
@@ -795,43 +793,67 @@
                           далее
                         </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                   <div class="tab-pane" id="tab-02">
-                    <div class="basket__formProfile">                      
-                      <div class="form__group group-01">
-                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
-                        <input
-                              type="tel"
-                              placeholder="+375 (__) ___-__-__"
-                              class="form__control validate-numeric required"
-                              name="tel"
-                              id="tel"
-                              required/>
+                    <form action="" class="basket__pickup"> 
+                      <div class="basket__info">
+                        <ul class="basket__address">
+                          <li>
+                            <div class="address_title">Наш адрес</div>
+                            <div class="address_text">г. Минск, ул. Орловская 39</div>
+                          </li>
+                          <li>
+                            <div class="address_title">Телефон</div>
+                            <div class="address_text">+ 375 (44) 333-44-44</div>
+                          </li>
+                          <li>
+                            <div class="address_title">Мы работаем</div>
+                            <div class="address_text">Круглосуточно</div>
+                          </li>
+                          <li>
+                            <div class="address_title">Метро</div>
+                            <div class="address_text">Академия наук</div>
+                          </li>
+                        </ul>
+                        <div class="basket__preorder">
+                          <div class="basket__check form-check">
+                            <input
+                              class="form__check-input"
+                              placeholder=""
+                              type="checkbox"
+                              id="check-preorder-order-2"/>
+                            <label class="form__check-label" for="check-preorder-order-2">Предварительный заказ</label>
+                          </div>
+                          <div class="form__group group__input">
+                            <input
+                                  type="date"
+                                  placeholder=""
+                                  class="form__control"
+                                  name="date"
+                                  id="date-preorder-2"/>    
+                            <input
+                                  type="text"
+                                  placeholder="__ : __"
+                                  class="form__control"
+                                  name="time"
+                                  id="time-preorder-2"/>                       
+                          </div>
+                        </div>
                       </div>
-                      <div class="form__group group-01">
-                        <label for="email" class="form__label">E-mail<span class="required-star">*</span></label>
-                        <input
-                              type="email"
-                              placeholder="Введите Ваш E-mail"
-                              class="form__control required"
-                              name="email"
-                              id="email"
-                              required/>
-                      </div>
-                      <div class="form__box">
-                        <button type="submit" id="back" class="btn">
+                      <div class="form__box pickup">
+                        <button type="submit" id="back" class="btn back">
                           назад
                         </button>
                         <button type="submit" id="next" class="btn">
                           далее
                         </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>

@@ -74,6 +74,12 @@ main
 		background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%)
 		box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
 		transition: all .3s
+	&.back
+		border: 1px solid $accent
+		box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+		border-radius: 5px
+		background: transparent
+		padding: 21px 20px
 .title
 	font-family: 'Montserrat', sans-serif
 	font-weight: bold
@@ -2106,15 +2112,15 @@ header
 					&.performed-step
 						background: $accent
 					
-			form
+			.basket__content
 				.basket__tabinfo
 					.solutions-tab-content
 						.solutions-tab
 							.nav-pills
 								border-bottom: none
+								margin-bottom: 40px
 								.nav-item
-									a 
-										
+									a 										
 										font-weight: normal
 										font-size: 20px
 										line-height: 24px
@@ -2124,6 +2130,7 @@ header
 										display: flex
 										align-items: center
 										justify-content: flex-start
+										padding: 0
 										.wrapIcon
 											display: flex
 											align-items: center
@@ -2139,9 +2146,10 @@ header
 											font-weight: bold
 											.wrapIcon
 												background: $accent
+
 					.tab-content
 						.tab-pane
-							.basket__formNew, .basket__formProfile
+							.basket__formNew, .basket__formProfile,.basket__pickup
 								display: flex
 								align-items: flex-start
 								justify-content: flex-start
@@ -2235,7 +2243,112 @@ header
 										opacity: 1
 									.form__check-input:checked + label::after
 										display: block
-									.form__check-label
+								.basket__info
+									display: flex
+									align-items: flex-start
+									justify-content: flex-start
+									width: 100%
+									.basket__address
+										padding-left: 60px
+										width: 63%
+										li
+											display: flex
+											align-items: center
+											justify-content: flex-start
+											margin-bottom: 40px
+											&:last-child
+												margin-bottom: 0px
+											.address_title
+												max-width: 130px
+												width: 100%	
+												font-weight: bold
+												font-size: 14px
+												line-height: 17px
+												letter-spacing: 0.03em
+												text-transform: uppercase
+												color: $accent
+												margin-right: 20px
+												text-align: left
+  												white-space: nowrap												
+											.address_text	
+												width: 100%											
+												font-weight: normal
+												font-size: 12px
+												line-height: 15px
+												letter-spacing: 0.03em
+												text-transform: uppercase
+												color: $accent
+												text-align: left
+									.basket__preorder
+										width: 100%
+										max-width: 230px
+										.basket__check
+											margin-top: 0px
+											margin-bottom: 20px
+											padding-bottom: 0px
+											padding-left: 50px
+											.form__check-input
+												border: 3px solid $accent
+												border-radius: 5px
+											input[type="checkbox"]
+												display: inline-block
+												width: auto
+												margin-top: 0
+												opacity: 0
+												position: absolute
+												left: 0
+												top: 0
+											.form__check-input + label::before
+												position: absolute
+												left: -50px
+												top: -0px
+												height: 40px
+												width: 40px
+												content: ""
+												background: transparent
+												display: inline-block
+												vertical-align: middle
+												border: 2px solid $accent
+												border-radius: 5px
+											.form__check-label
+												font-weight: 600
+												font-size: 14px
+												line-height: 17px
+												padding-left: 0px
+												color: $accent
+												position: relative
+												cursor: pointer
+												margin-bottom: 0
+												display: flex
+												justify-content: space-between
+												text-transform: uppercase
+												max-width: 180px
+												width: 100%
+												text-align: left
+												&::after
+													display: none
+													position: absolute
+													content: url(../img/@2x/check.svg)
+													left: -40px
+													top: 10px
+													cursor: pointer
+											.form__check-input:checked + label
+												opacity: 1
+											.form__check-input:checked + label::before
+												opacity: 1
+											.form__check-input:checked + label::after
+												display: block
+										.group__input
+											display: flex
+											align-items: flex-start
+											justify-content: flex-start
+											flex-direction: column
+											padding-left: 0px
+											.form__control
+												width: 175px
+												&:first-child
+													background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg)
+
 								.form__box
 									margin-left: 120px
 									width: 100%
@@ -2245,11 +2358,8 @@ header
 									justify-content: space-between									
 									button
 										width: 240px
-										&.back
-											border: 1px solid $accent
-											box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
-											border-radius: 5px
-											background: transparent
+									&.pickup
+										margin-left: 60px
 								.basket__formTop
 									width: 100%
 									display: flex
@@ -2294,5 +2404,18 @@ header
 													height: 50px
 													position: relative
 													background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg)
-
+							.basket__pickup
+								padding-top: 30px
+								.basket__info
+									padding-bottom: 30px
+					&.registered
+						.solutions-tab-content
+							.solutions-tab
+								.nav-pills
+									margin-bottom: 20px
+						.tab-content
+							.tab-pane
+								.basket__formNew, .basket__formProfile
+									.basket__check
+										margin-bottom: 15px					
 @import media
