@@ -4851,9 +4851,15 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   background: #C44403;
   padding-top: 165px;
   min-height: 100vh;
-  max-height: 100vh;
-  background: #E67300;
   text-align: center;
+  position: relative;
+}
+
+.mixbox::after {
+  position: fixed;
+  content: url(../img/@2x/plaska.png);
+  right: 0;
+  top: 43%;
 }
 
 .mixbox .custom__container .title {
@@ -4888,6 +4894,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-bottom: 100px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info {
+  padding-left: 100px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top {
+  overflow: auto;
+  max-height: 470px;
 }
 
 .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__title {
@@ -4896,6 +4912,239 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   line-height: 63px;
   letter-spacing: 0.03em;
   color: #fff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__title .color {
+  color: #FFED00;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__person {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__person .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__person .icon::after {
+  position: absolute;
+  content: url(../img/@2x/icon-people-alt.svg);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions {
+  padding: 20px 0;
+  position: relative;
+  width: 600px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#C44403));
+  background: -o-linear-gradient(left, #FFFFFF 0%, #C44403 100%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #C44403 100%);
+  left: 0;
+  top: 0;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions .mixbox__elem {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions .mixbox__elem:last-child {
+  margin-bottom: 0px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions .mixbox__elem .name {
+  max-width: 500px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions .mixbox__elem .description {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFED00;
+  margin-bottom: 0px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage {
+  position: relative;
+  padding-top: 20px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#C44403));
+  background: -o-linear-gradient(left, #FFFFFF 0%, #C44403 100%);
+  background: linear-gradient(90deg, #FFFFFF 0%, #C44403 100%);
+  left: 0;
+  top: 0;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total .value {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #C44403;
+  background: #fff;
+  margin-right: 40px;
+  width: 190px;
+  padding: 8px 0;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total .value span {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total .description {
+  text-align: left;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total .description a {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFED00;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__total .description span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .mixbox__counter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 40px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .mixbox__counter button {
+  width: 60px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #C44403;
+  background: #fff;
+  border-radius: 5px;
+  padding: 8px 0;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .mixbox__counter .mixbox__count {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 25px;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .mixbox__add {
+  background: -o-linear-gradient(bottom, #FFED00, #FFED00), -o-linear-gradient(357.98deg, #E40007 0.36%, #C70006 99.67%);
+  background: linear-gradient(0deg, #FFED00, #FFED00), linear-gradient(92.02deg, #E40007 0.36%, #C70006 99.67%);
+  border-radius: 5px;
+  color: #000000;
 }
 
 @media screen and (max-width: 1700px) {
