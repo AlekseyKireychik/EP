@@ -4641,34 +4641,210 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 15px;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
   padding-left: 170px;
   text-align: right;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
   width: 150px;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
   margin-top: 10px;
   margin-bottom: 15px;
   padding-bottom: 20px;
   padding-left: 220px;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a {
   font-weight: normal;
   margin-left: 5px;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a:hover {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a:hover {
   text-decoration: underline;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
 }
 
-.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
   max-width: 610px;
   margin-left: 170px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 80px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group:last-child {
+  margin-bottom: 0px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group .control {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group .control:checked {
+  background: #fff;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group label {
+  width: 255px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  width: 100%;
+  padding-right: 70px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .right .form__group {
+  padding-left: 0;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .right .form__group.comment .form__control {
+  margin-bottom: 0px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check {
+  padding-left: 130px;
+  margin-bottom: 45px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
+  margin-left: 80px;
+  max-width: 630px;
+}
+
+.basket .custom__container.success {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 180px;
+}
+
+.basket .custom__container.success .success__body {
+  margin-bottom: 60px;
+}
+
+.basket .custom__container.success .success__body p {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.basket .custom__container.success .success__info {
+  margin-bottom: 60px;
+}
+
+.basket .custom__container.success .success__info p {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1700px) {

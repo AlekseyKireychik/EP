@@ -751,56 +751,55 @@
                   </div>
                   <div class="tab-pane" id="tab-02">
                     <form action="" class="basket__formIndividual"> 
-                      <div class="left">
-                        <div class="formWrap">
-                          <div class="delivery-pay__group">
-                            <label for="cash" class="label">Наличными</label>
+                      <div class="wrap">
+                        <div class="left">
+                          <div class="pay__group">
                             <input
-                              type="radio"
-                              class="control"
-                              name="pay"
-                              value="cash"
-                              id="cash"/>  
+                                type="radio"
+                                class="control"
+                                name="pay"
+                                value="cash"
+                                id="cash"/>
+                            <label for="cash" class="label">Наличными курьеру</label>                              
                           </div>              
-                          <div class="delivery-pay__group">
-                            <label for="courier" class="label">Картой курьеру</label>
+                          <div class="pay__group">                            
                             <input
-                              type="radio"
-                              class="control"
-                              name="pay"
-                              value="courier"
-                              id="courier"
-                            />                
+                                type="radio"
+                                class="control"
+                                name="pay"
+                                value="courier"
+                                id="courier"/>  
+                            <label for="courier" class="label">Картой курьеру</label>              
                           </div>
-                          <div class="delivery-pay__group"> 
-                            <label for="site" class="label">Картой на сайте</label>
+                          <div class="pay__group">                             
                             <input
-                              type="radio"
-                              class="control"
-                              name="pay"
-                              value="site"
-                              id="site"/> 
+                                type="radio"
+                                class="control"
+                                name="pay"
+                                value="site"
+                                id="site"/> 
+                            <label for="site" class="label">Картой онлайн</label>
                           </div>
-                        </div>
-                      </div> 
-                      <div class="right">                    
-                        <div class="form__group">
-                          <input
-                                type="text"
-                                placeholder="С какой суммы подготовить сдачу?"
-                                class="form__control"
-                                name="text"
-                                id="result-value"/>                        
-                        </div>
-                        <div class="mainform__group comment">
-                          <textarea
-                            data-autoresize
-                            name="comment"
-                            id="individual-comment"
-                            coll="5"
-                            rows="5"
-                            class="form__control"
-                            placeholder="Оставьте комментарий к заказу"></textarea>
+                        </div> 
+                        <div class="right">                    
+                          <div class="form__group">
+                            <input
+                                  type="text"
+                                  placeholder="С какой суммы подготовить сдачу?"
+                                  class="form__control"
+                                  name="text"
+                                  id="result-value"/>                        
+                          </div>
+                          <div class="form__group comment">
+                            <textarea
+                              data-autoresize
+                              name="comment"
+                              id="individual-comment"
+                              coll="4"
+                              rows="4"
+                              class="form__control"
+                              placeholder="Оставьте комментарий к заказу"></textarea>
+                          </div>
                         </div>
                       </div>
                       <div class="basket__check form-check">
