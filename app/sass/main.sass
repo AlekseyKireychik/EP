@@ -95,6 +95,146 @@ input.error
 	border-bottom: 1px solid $accent
 main
 	position: relative
+.account__change__email
+	display: none
+	width: 840px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background: #935C6D
+	border-radius: 10px
+	padding: 40px 88px 30px
+	z-index: 99
+	&.is-active
+		display: inline
+	.change__close
+		position: absolute
+		right: 48px
+		top: 47.5px
+		a 
+			cursor: pointer
+			position: relative
+			&::before
+				position: absolute
+				left: 0
+				top: 0
+				content: url(../img/@2x/close.svg)
+	.title
+		font-weight: bold
+		font-size: 36px
+		line-height: 44px
+		text-align: center
+		letter-spacing: 0.03em
+		text-transform: uppercase
+		color: $accent
+		margin-bottom: 40px
+	.form__group
+		display: flex
+		align-items: flex-start
+		justify-content: flex-start
+		flex-direction: column
+		.form__control
+			border: 2px solid $accent
+			border-radius: 5px
+			color: $accent
+			padding: 17px
+			width: 100%
+			background-color: transparent
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 20px
+		.form__label
+			font-weight: bold
+			font-size: 14px
+			line-height: 17px
+			text-align: right
+			letter-spacing: 0.03em
+			text-transform: uppercase
+			color: $accent
+			margin-bottom: 20px
+	.form__box
+		text-align: center
+		.btn
+			width: 240px
+.account__new__address
+	display: none
+	width: 840px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background: #935C6D
+	border-radius: 10px
+	padding: 40px 28px 30px
+	z-index: 99
+	&.is-active
+		display: inline
+	.change__close
+		position: absolute
+		right: 48px
+		top: 47.5px
+		a 
+			cursor: pointer
+			position: relative
+			&::before
+				position: absolute
+				left: 0
+				top: 0
+				content: url(../img/@2x/close.svg)
+	.title
+		font-weight: bold
+		font-size: 36px
+		line-height: 44px
+		text-align: center
+		letter-spacing: 0.03em
+		text-transform: uppercase
+		color: $accent
+		margin-bottom: 40px	
+	.form__group
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		.form__control
+			border: 2px solid $accent
+			border-radius: 5px
+			color: $accent
+			padding: 17px
+			width: 100%
+			max-width: 664px
+			background-color: transparent
+			margin-bottom: 15px
+			&:last-child
+				margin-bottom: 20px
+		.form__label
+			width: 120px
+			font-weight: bold
+			font-size: 14px
+			line-height: 17px
+			text-align: left
+			letter-spacing: 0.03em
+			text-transform: uppercase
+			color: $accent	
+			margin-bottom: 20px
+	.bottom
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		width: 100%
+		.left
+			width: 45%
+			.form__group
+				.form__control
+					max-width: 217px
+		.right
+			width: 45%
+			.form__group
+				.form__control
+					max-width: 250px
+	.form__box
+		text-align: center
+		.btn
+			width: 240px
 .account__formWrap
 	background: #691D35
 	position: absolute

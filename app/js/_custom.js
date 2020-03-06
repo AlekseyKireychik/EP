@@ -462,6 +462,36 @@ $(document).ready(function() {
   // Lightbox
   // $('.gallery .gallery__link').lightbox();
 
+   //form account change email
+   $("#change-btn").on("click", function(event) {
+    event.preventDefault();
+    $(".account__change__email").addClass("is-active");
+    $(".form__overlay").addClass("is-active");
+    $(".form__overlay").on("click", function(event) {
+      $(this).removeClass("is-active");
+      $(".account__change__email").removeClass("is-active");
+    });
+    $(".change__close").on("click", function(event) {
+      $(".form__overlay").removeClass("is-active");
+      $(".account__change__email").removeClass("is-active");
+    });
+  });
+
+   //form account add address
+   $("#add-address").on("click", function(event) {
+    event.preventDefault();
+    $(".account__new__address").addClass("is-active");
+    $(".form__overlay").addClass("is-active");
+    $(".form__overlay").on("click", function(event) {
+      $(this).removeClass("is-active");
+      $(".account__new__address").removeClass("is-active");
+    });
+    $(".change__close").on("click", function(event) {
+      $(".form__overlay").removeClass("is-active");
+      $(".account__new__address").removeClass("is-active");
+    });
+  });
+
   //form request
   $(".request").on("click", function(event) {
     event.preventDefault();

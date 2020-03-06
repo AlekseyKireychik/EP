@@ -328,8 +328,99 @@
               </div>
             </div>
           </div>
-        </form>
+        </form> 
       </div>
+      <form id="change-email" class="account__change__email">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Сменить E-mail</h2>
+        <div class="form__group">          
+          <label for="email" class="form__label">Ведите новый E-MAil</label>
+          <input
+          type="email"
+          placeholder=""
+          class="form__control required"
+          name="email"
+          id="input-change-email"
+          required/>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
+      <form id="new-address" class="account__new__address">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Новый адрес</h2>
+        <div class="form__group">          
+          <label for="input-new-title" class="form__label">Название</label>
+          <input
+          type="text"
+          placeholder=""
+          class="form__control"
+          name="title"
+          id="input-new-title"/>
+        </div>
+        <div class="form__group">          
+          <label for="input-new-street" class="form__label">Улица<span class="required-star">*</span></label>
+          <input
+          type="text"
+          placeholder=""
+          class="form__control required"
+          name="street"
+          id="input-new-street"
+          required/>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <div class="form__group">          
+              <label for="input-new-home" class="form__label">Дом<span class="required-star">*</span></label>
+              <input
+              type="text"
+              placeholder=""
+              class="form__control required"
+              name="home"
+              id="input-new-home"
+              required/>
+            </div>
+            <div class="form__group">          
+              <label for="input-new-floor" class="form__label">Этаж</label>
+              <input
+              type="text"
+              placeholder=""
+              class="form__control"
+              name="floor"
+              id="input-new-floor"/>
+            </div>
+          </div>
+          <div class="right">
+            <div class="form__group">          
+              <label for="input-new-porch" class="form__label">Подъезд</label>
+              <input
+              type="text"
+              placeholder=""
+              class="form__control"
+              name="porch"
+              id="input-new-porch"/>
+            </div>
+            <div class="form__group">          
+              <label for="input-new-apartment" class="form__label">Квартира<span class="required-star">*</span></label>
+              <input
+              type="text"
+              placeholder=""
+              class="form__control required"
+              name="apartment"
+              id="input-new-apartment"
+              required/>
+            </div>            
+          </div>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="" class="btn">
+            Добавить
+          </button>
+        </div>
+      </form>
       <section class="personal">
         <div class="custom__container">
           <h1 class="title">Личный кабинет</h1>
@@ -417,7 +508,7 @@
                   <p class="profile__title">E-MAIL</p>
                   <div class="profile__info">
                     <p>Peterbarkun@gmail.com</p>
-                    <button class="profile__btn">Изменить</button>
+                    <button id="change-btn" class="profile__btn">Изменить</button>
                   </div>
                 </div>
               </div>
@@ -434,7 +525,7 @@
                 <div class="profile__wrapinfo">
                   <div class="profile__item">
                     <p class="profile__title">Дополнительные адреса</p>
-                    <button class="profile__btn">Добавить</button>
+                    <button id="add-address" class="profile__btn">Добавить</button>
                   </div>
                   <div class="profile__item">
                     <div class="profile__info">
@@ -479,15 +570,12 @@
                                 data-toggle="collapse"
                                 href="#collapse1"
                                 aria-expanded="false"
-                                aria-controls="collapse1"
-                              >
+                                aria-controls="collapse1">
                                 <span class="wrap"
                                   ><span class="value"
                                     ><span class="disabled">Подробнее</span
                                     ><span class="active">Свернуть</span></span
-                                  ><span class="btn__icon"
-                                    ><span class="btn__line"></span></span
-                                ></span>
+                                  ><span class="btn__icon"><span class="btn__line"></span></span></span>
                               </a>
                             </div>
                           </div>

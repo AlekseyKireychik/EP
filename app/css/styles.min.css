@@ -503,6 +503,237 @@ main {
   position: relative;
 }
 
+.account__change__email {
+  display: none;
+  width: 840px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #935C6D;
+  border-radius: 10px;
+  padding: 40px 88px 30px;
+  z-index: 99;
+}
+
+.account__change__email.is-active {
+  display: inline;
+}
+
+.account__change__email .change__close {
+  position: absolute;
+  right: 48px;
+  top: 47.5px;
+}
+
+.account__change__email .change__close a {
+  cursor: pointer;
+  position: relative;
+}
+
+.account__change__email .change__close a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(../img/@2x/close.svg);
+}
+
+.account__change__email .title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.account__change__email .form__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account__change__email .form__group .form__control {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.account__change__email .form__group .form__control:last-child {
+  margin-bottom: 20px;
+}
+
+.account__change__email .form__group .form__label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.account__change__email .form__box {
+  text-align: center;
+}
+
+.account__change__email .form__box .btn {
+  width: 240px;
+}
+
+.account__new__address {
+  display: none;
+  width: 840px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #935C6D;
+  border-radius: 10px;
+  padding: 40px 28px 30px;
+  z-index: 99;
+}
+
+.account__new__address.is-active {
+  display: inline;
+}
+
+.account__new__address .change__close {
+  position: absolute;
+  right: 48px;
+  top: 47.5px;
+}
+
+.account__new__address .change__close a {
+  cursor: pointer;
+  position: relative;
+}
+
+.account__new__address .change__close a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(../img/@2x/close.svg);
+}
+
+.account__new__address .title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.account__new__address .form__group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.account__new__address .form__group .form__control {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 17px;
+  width: 100%;
+  max-width: 664px;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.account__new__address .form__group .form__control:last-child {
+  margin-bottom: 20px;
+}
+
+.account__new__address .form__group .form__label {
+  width: 120px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.account__new__address .bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.account__new__address .bottom .left {
+  width: 45%;
+}
+
+.account__new__address .bottom .left .form__group .form__control {
+  max-width: 217px;
+}
+
+.account__new__address .bottom .right {
+  width: 45%;
+}
+
+.account__new__address .bottom .right .form__group .form__control {
+  max-width: 250px;
+}
+
+.account__new__address .form__box {
+  text-align: center;
+}
+
+.account__new__address .form__box .btn {
+  width: 240px;
+}
+
 .account__formWrap {
   background: #691D35;
   position: absolute;
