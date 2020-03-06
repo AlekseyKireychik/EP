@@ -4847,148 +4847,199 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 0;
 }
 
+.mixbox {
+  background: #C44403;
+  padding-top: 165px;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: #E67300;
+  text-align: center;
+}
+
+.mixbox .custom__container .title {
+  margin: 0 auto 50px;
+}
+
+.mixbox .custom__container .solutions-tab-content {
+  max-width: 825px;
+  margin: 0 auto;
+}
+
+.mixbox .custom__container .solutions-tab-content .solutions-tab .nav-pills {
+  border-bottom: none;
+  margin-bottom: 80px;
+}
+
+.mixbox .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__title {
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 63px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
 @media screen and (max-width: 1700px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 1500px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 1400px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
     min-height: 115px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     line-height: 42px;
   }
 }
 
 @media screen and (max-width: 1600px) and (max-height: 750px) {
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
     max-width: 270px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     width: 100%;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
     min-height: 85px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 1250px;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 1140px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
     padding-top: 130px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
     padding-top: 110px;
   }
-  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .mixbox .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 960px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 540px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .basket .custom__container {
+  .mixbox .custom__container {
     max-width: 100%;
   }
 }
