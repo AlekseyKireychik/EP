@@ -655,11 +655,11 @@
           </div>
           <div class="basket__right">
             <ul class="basket__progress">
-              <li class="basket__item active-step">Контактные<br> данные</li>
-              <li class="basket__item delivery-step">Доставка<br> самовывоз</li>
-              <li class="basket__item order-step">Способ<br> оплаты</li>              
+              <li class="basket__item performed-step">Контактные<br> данные</li>
+              <li class="basket__item performed-step">Доставка<br> самовывоз</li>
+              <li class="basket__item active-step">Способ<br> оплаты</li>              
             </ul>
-            <form action="">
+            <div class="basket__content payment__method">
               <div class="basket__tabinfo">
                 <div class="solutions-tab-content">
                   <div class="solutions-tab">
@@ -670,12 +670,12 @@
                           role="tab"
                           class="active"
                           data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-profile.svg" alt="Новый клиент"></div>Новый клиент</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/portfolio.svg" alt="Новый клиент"></div>Организация</a
                         >
                       </li>
                       <li class="nav-item">
                         <a href="#tab-02" role="tab" data-toggle="tab"
-                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-badge.svg" alt="Есть аккаунт"></div>Есть аккаунт</a
+                          ><div class="wrapIcon"><img class="icon" src="./img/@2x/account-profile.svg" alt="Есть аккаунт"></div>Физическое лицо</a
                         >
                       </li>
                     </ul>
@@ -683,84 +683,147 @@
                 </div>
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
-                    <div class="basket__formNew">
+                    <form action="" class="basket__formOrganization">
                       <div class="form__group">
-                        <label for="text" class="form__label">ФИО<span class="required-star">*</span></label>
+                        <label for="text" class="form__label">Наименование организации<span class="required-star">*</span></label>
                         <input
                               type="text"
-                              placeholder="Введите Ваше Имя"
+                              placeholder=""
                               class="form__control required"
                               name="text"
-                              id="text"
+                              id="organization-name"
                               required/>                        
                       </div>
-                      <div class="form__group group-01">
-                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
+                      <div class="form__group">
+                        <label for="text" class="form__label">Юридический адрес<span class="required-star">*</span></label>
                         <input
-                              type="tel"
-                              placeholder="+375 (__) ___-__-__"
-                              class="form__control validate-numeric required"
-                              name="tel"
-                              id="tel"
-                              required/>
-                      </div>
-                      <div class="form__group group-01">
-                        <label for="email" class="form__label">E-mail<span class="required-star">*</span></label>
-                        <input
-                              type="email"
-                              placeholder="Введите Ваш E-mail"
+                              type="text"
+                              placeholder=""
                               class="form__control required"
-                              name="email"
-                              id="email"
-                              required/>
+                              name="text"
+                              id="legal-address"
+                              required/>                        
+                      </div>
+                      <div class="form__group">
+                        <label for="text" class="form__label">Расчетный счет</label>
+                        <input
+                              type="text"
+                              placeholder=""
+                              class="form__control"
+                              name="text"
+                              id="payment-account"/>                        
+                      </div>
+                      <div class="form__group">
+                        <label for="text" class="form__label">БИК банка</label>
+                        <input
+                              type="text"
+                              placeholder=""
+                              class="form__control"
+                              name="text"
+                              id="bik-bank-01"/>                        
+                      </div>
+                      <div class="form__group">
+                        <label for="text" class="form__label">БИК банка</label>
+                        <input
+                              type="text"
+                              placeholder=""
+                              class="form__control"
+                              name="text"
+                              id="bik-bank-02"/>                        
                       </div>
                       <div class="basket__check form-check">
                         <input
                           class="form__check-input"
                           placeholder=""
                           type="checkbox"
-                          id="check-create"/>
-                        <label class="form__check-label" for="check-create">Cоздать аккаунт</label>
+                          id="check-02"/>
+                        <label class="form__check-label" for="check-02">Согласен с <a href="./delivery.html"> Условиями Заказа и Доставки</a></label>
                       </div>
                       <div class="form__box">
+                        <button type="submit" id="" class="btn back">
+                          Назад
+                        </button>
                         <button type="submit" id="" class="btn">
-                          далее
+                          Оформить
                         </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                   <div class="tab-pane" id="tab-02">
-                    <div class="basket__formProfile">                      
-                      <div class="form__group group-01">
-                        <label for="tel" class="form__label">Телефон<span class="required-star">*</span></label>
-                        <input
-                              type="tel"
-                              placeholder="+375 (__) ___-__-__"
-                              class="form__control validate-numeric required"
-                              name="tel"
-                              id="tel"
-                              required/>
+                    <form action="" class="basket__formIndividual"> 
+                      <div class="left">
+                        <div class="formWrap">
+                          <div class="delivery-pay__group">
+                            <label for="cash" class="label">Наличными</label>
+                            <input
+                              type="radio"
+                              class="control"
+                              name="pay"
+                              value="cash"
+                              id="cash"/>  
+                          </div>              
+                          <div class="delivery-pay__group">
+                            <label for="courier" class="label">Картой курьеру</label>
+                            <input
+                              type="radio"
+                              class="control"
+                              name="pay"
+                              value="courier"
+                              id="courier"
+                            />                
+                          </div>
+                          <div class="delivery-pay__group"> 
+                            <label for="site" class="label">Картой на сайте</label>
+                            <input
+                              type="radio"
+                              class="control"
+                              name="pay"
+                              value="site"
+                              id="site"/> 
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="right">                    
+                        <div class="form__group">
+                          <input
+                                type="text"
+                                placeholder="С какой суммы подготовить сдачу?"
+                                class="form__control"
+                                name="text"
+                                id="result-value"/>                        
+                        </div>
+                        <div class="mainform__group comment">
+                          <textarea
+                            data-autoresize
+                            name="comment"
+                            id="individual-comment"
+                            coll="5"
+                            rows="5"
+                            class="form__control"
+                            placeholder="Оставьте комментарий к заказу"></textarea>
+                        </div>
                       </div>
-                      <div class="form__group group-01">
-                        <label for="email" class="form__label">E-mail<span class="required-star">*</span></label>
+                      <div class="basket__check form-check">
                         <input
-                              type="email"
-                              placeholder="Введите Ваш E-mail"
-                              class="form__control required"
-                              name="email"
-                              id="email"
-                              required/>
+                          class="form__check-input"
+                          placeholder=""
+                          type="checkbox"
+                          id="check-01"/>
+                        <label class="form__check-label" for="check-01">Согласен с <a href="./delivery.html"> Условиями Заказа и Доставки</a></label>
                       </div>
                       <div class="form__box">
+                        <button type="submit" id="" class="btn back">
+                          Назад
+                        </button>
                         <button type="submit" id="" class="btn">
-                          далее
+                          Оформить
                         </button>
                       </div>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>

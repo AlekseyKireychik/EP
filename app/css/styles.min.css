@@ -452,9 +452,9 @@ main {
   text-transform: uppercase;
   padding: 22px 20px;
   color: #fff;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .btn:hover {
@@ -464,18 +464,21 @@ main {
   background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%);
   -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
           box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .btn.back {
   border: 1px solid #fff;
-  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
-          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
   border-radius: 5px;
   background: transparent;
   padding: 21px 20px;
+}
+
+.btn.back:hover {
+  -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
+          box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
 }
 
 .title {
@@ -1061,6 +1064,9 @@ header .container-fluid.container__header .header .header__nav .header__list-nav
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 header .container-fluid.container__header .header .header__nav .header__list-nav.is-active {
@@ -1069,9 +1075,9 @@ header .container-fluid.container__header .header .header__nav .header__list-nav
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
   z-index: 1000;
 }
 
@@ -1088,9 +1094,9 @@ header .container-fluid.container__header .header .header__nav .header__list-nav
   color: #fff;
   text-decoration: none;
   padding: 0 23px 10px;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
   position: relative;
 }
 
@@ -1103,16 +1109,16 @@ header .container-fluid.container__header .header .header__nav .header__list-nav
 
 header .container-fluid.container__header .header .header__nav .header__list-nav .header__item .header__link.is-active {
   color: #fff;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 header .container-fluid.container__header .header .header__nav .header__list-nav .header__item .header__link:hover {
   color: #fff;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 header .container-fluid.container__header .header .header__nav .header__list-nav .header__item .header__subList {
@@ -4126,7 +4132,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   background: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4146,13 +4152,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
           flex-direction: column;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
   width: 100%;
   position: relative;
   padding-left: 120px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control {
   width: 100%;
   max-width: 664px;
   background-color: transparent;
@@ -4166,42 +4172,42 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 20px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-webkit-input-placeholder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control::-webkit-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-moz-placeholder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control::-moz-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control:-ms-input-placeholder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control:-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-ms-input-placeholder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control::-ms-input-placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::placeholder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control::placeholder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: #fff;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
   position: absolute;
   left: 0;
   top: 50%;
@@ -4219,19 +4225,36 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 0px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .select {
+  max-width: 660px;
+}
+
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .select option, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .select option, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .select option, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .select option, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .select option {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 660px;
+  width: 100%;
+  background: #691D35;
+  text-align: left;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
   margin-top: 20px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   padding-left: 170px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-input {
   border: 3px solid #fff;
   border-radius: 5px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check input[type="checkbox"] {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check input[type="checkbox"] {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -4241,7 +4264,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   top: 0;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input + label::before {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-input + label::before {
   position: absolute;
   left: -50px;
   top: -12px;
@@ -4255,7 +4278,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   border-radius: 5px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -4276,7 +4299,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   width: 100%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label::after {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label::after {
   display: none;
   position: absolute;
   content: url(../img/@2x/check.svg);
@@ -4285,19 +4308,19 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   cursor: pointer;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-input:checked + label {
   opacity: 1;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label::before {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-input:checked + label::before {
   opacity: 1;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label::after {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-input:checked + label::after {
   display: block;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4313,12 +4336,12 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   width: 100%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address {
   padding-left: 60px;
   width: 63%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4334,11 +4357,11 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 40px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li:last-child {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li:last-child {
   margin-bottom: 0px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_title {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li .address_title {
   max-width: 130px;
   width: 100%;
   font-weight: bold;
@@ -4352,7 +4375,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align-white-space: nowrap;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_text {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li .address_text {
   width: 100%;
   font-weight: normal;
   font-size: 12px;
@@ -4363,24 +4386,24 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: left;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder {
   width: 100%;
   max-width: 230px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check {
   margin-top: 0px;
   margin-bottom: 20px;
   padding-bottom: 0px;
   padding-left: 50px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-input {
   border: 3px solid #fff;
   border-radius: 5px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check input[type="checkbox"] {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check input[type="checkbox"], .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check input[type="checkbox"] {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -4390,7 +4413,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   top: 0;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input + label::before {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-input + label::before {
   position: absolute;
   left: -50px;
   top: -0px;
@@ -4404,7 +4427,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   border-radius: 5px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-label {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
@@ -4427,7 +4450,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   text-align: left;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-label::after {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-label::after {
   display: none;
   position: absolute;
   content: url(../img/@2x/check.svg);
@@ -4436,19 +4459,19 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   cursor: pointer;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-input:checked + label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-input:checked + label {
   opacity: 1;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-input:checked + label::before {
   opacity: 1;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .basket__check .form__check-input:checked + label::after {
   display: block;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .group__input {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4469,15 +4492,15 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding-left: 0px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .group__input .form__control {
   width: 175px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control:first-child {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .group__input .form__control:first-child {
   background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg);
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
   margin-left: 120px;
   width: 100%;
   max-width: 664px;
@@ -4495,15 +4518,15 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
           justify-content: space-between;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box button {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box button, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box button {
   width: 240px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box.pickup {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box.pickup {
   margin-left: 60px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formTop {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formTop, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formTop {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -4524,7 +4547,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
           flex-direction: column;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4540,40 +4563,40 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   width: 100%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .form__group {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .form__group {
   width: 100%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .form__group .form__control {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .form__group .form__control {
   max-width: 250px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .basket__check {
   margin-top: 10px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-label {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .basket__check .form__check-label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .basket__check .form__check-label {
   text-align: left;
   max-width: 180px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-label::after {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .basket__check .form__check-label::after, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .basket__check .form__check-label::after {
   top: 8px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .basket__check .form__check-input + label::before {
   top: -2px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .form__group {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .form__group {
   width: 100%;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .form__group .form__control {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .form__group .form__control {
   max-width: 250px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .group__input, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .group__input {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4589,13 +4612,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   padding-left: 0px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input .form__control {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .group__input .form__control {
   width: 100%;
   max-width: 175px;
   margin-left: 0px;
 }
 
-.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input .form__control:first-child {
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .group__input .form__control:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .group__input .form__control:first-child {
   margin-right: 20px;
   height: 50px;
   position: relative;
@@ -4618,148 +4641,178 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 15px;
 }
 
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
+  padding-left: 170px;
+  text-align: right;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
+  width: 150px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  padding-left: 220px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check .form__check-label a:hover, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check .form__check-label a:hover {
+  text-decoration: underline;
+}
+
+.basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
+  max-width: 610px;
+  margin-left: 170px;
+}
+
 @media screen and (max-width: 1700px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 1500px;
   }
 }
 
 @media screen and (max-width: 1600px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 1400px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
     min-height: 115px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     line-height: 42px;
   }
 }
 
 @media screen and (max-width: 1600px) and (max-height: 750px) {
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
     max-width: 270px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     width: 100%;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
     min-height: 85px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 1250px;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 1140px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
     padding-top: 130px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
     padding-top: 110px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+  .basket .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 960px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 540px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .custom__container {
+  .basket .custom__container {
     max-width: 100%;
   }
 }

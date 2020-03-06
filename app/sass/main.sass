@@ -67,19 +67,20 @@ main
 	text-transform: uppercase
 	padding: 22px 20px
 	color: $accent
-	transition: all .3s
+	transition: all .3s linear
 	&:hover
 		color: $accent
 		text-decoration: none
 		background: linear-gradient(91.35deg, #E40007 0.36%, #C70006 99.67%)
 		box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
-		transition: all .3s
+		transition: all .3s linear
 	&.back
-		border: 1px solid $accent
-		box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
+		border: 1px solid $accent		
 		border-radius: 5px
 		background: transparent
 		padding: 21px 20px
+		&:hover
+			box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5)
 .title
 	font-family: 'Montserrat', sans-serif
 	font-weight: bold
@@ -401,10 +402,11 @@ header
 						justify-content: space-between
 						align-items: center
 						margin: 0
+						transition: all .3s linear
 						&.is-active
 							height: auto
 							display: flex
-							transition: .3s
+							transition: all .3s linear
 							z-index: 1000
 						.header__item
 							margin: 0
@@ -417,7 +419,7 @@ header
 								color: $accent
 								text-decoration: none
 								padding: 0 23px 10px
-								transition: .3s
+								transition: all .3s linear
 								position: relative
 								&::before
 									position: absolute
@@ -426,10 +428,10 @@ header
 									top: -8px
 								&.is-active
 									color: $accent
-									transition: .3s
+									transition: all .3s linear
 								&:hover
 									color: $accent
-									transition: .3s
+									transition: all .3s linear
 							.header__subList
 								display: none
 								position: absolute
@@ -2149,7 +2151,7 @@ header
 
 					.tab-content
 						.tab-pane
-							.basket__formNew, .basket__formProfile,.basket__pickup
+							.basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
 								display: flex
 								align-items: flex-start
 								justify-content: flex-start
@@ -2189,6 +2191,18 @@ header
 										color: $accent
 										width: 100px
 										margin-bottom: 0px
+									.select
+										max-width: 660px
+										option
+											box-sizing: border-box
+											max-width: 660px
+											width: 100%
+											background: #691D35
+											text-align: left
+											border: 2px solid #fff
+											border-radius: 5px
+											font-size: 14px
+											line-height: 16px
 								.basket__check
 									margin-top: 20px
 									margin-bottom: 40px
@@ -2418,4 +2432,33 @@ header
 								.basket__formNew, .basket__formProfile
 									.basket__check
 										margin-bottom: 15px					
-@import media
+				&.payment__method
+					.basket__tabinfo
+						.solutions-tab-content
+							.solutions-tab
+								.nav-pills
+									.nav-item
+										a 	
+						.tab-content
+							.tab-pane
+								.basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
+									.form__group
+										padding-left: 170px
+										text-align: right
+										.form__label
+											width: 150px
+									.basket__check
+										margin-top: 10px
+										margin-bottom: 15px
+										padding-bottom: 20px
+										padding-left: 220px
+										.form__check-label
+											a 
+												font-weight: normal
+												margin-left: 5px
+												&:hover
+													text-decoration: underline
+									.form__box
+										max-width: 610px
+										margin-left: 170px
+	@import media
