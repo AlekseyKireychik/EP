@@ -38,8 +38,44 @@
                                 .carousel-title__wrap
                                     min-height: 115px
                                     .carousel-title
-                                        line-height: 42px
-@media screen and (max-width: 1600px) and (max-height: 750px)
+                                        line-height: 42px                                       
+@media screen and (max-width: 1600px) and (max-height: 800px)
+    header
+        .container-fluid
+            &.container__header
+                .nav
+                    &.is-active
+                    .menu__left
+                        padding: 10px 40px 25px 50px
+                        .wrap__logo
+                        nav
+                            padding: 40px 20px 30px
+                            .menu__list
+                                padding-bottom: 30px
+                                .menu__item
+                                    margin-bottom: 20px
+                                    .menu__link
+                            .menu__list__info
+                                padding-top: 30px 
+                                .menu__info
+                                    &:first-child
+                                        margin-bottom: 20px
+                        .wrap__logos
+                    .menu__right
+                        padding: 50px 60px 50px 60px
+                        .close
+                        .menu__title
+                        .menu__catalog
+                            .menu__item
+                                margin-bottom: 5px
+                                .menu__link
+                                    img
+                                        max-width: 100px
+                                    span
+                                        font-size: 18px
+                                        line-height: 22px
+                        .menu__info
+                            p
     .home
         .carousel
             .carousel-inner
@@ -56,6 +92,28 @@
                                     .carousel-title
                                         font-size: 24px
                                         line-height: 29px
+    .category
+        padding: 100px 0 0
+        .custom__container
+            .category__title
+                padding-top: 40px
+                padding-bottom: 60px
+        .custom__container
+            .category__list
+                justify-content: space-between;
+                .category__item
+                    width: 400px
+                    a
+                        .category__imgWrap
+                        &:hover
+                            .category__info
+                                p 
+                                    font-size: 30px
+                                    line-height: 36px
+                                    max-width: 350px
+                        .category__info
+                                p 
+                                    margin-bottom: 5px                                        
 @media screen and (max-width: 1500px)
     .custom__container
 	    max-width: 1250px
@@ -63,6 +121,44 @@
 @media screen and (max-width: 1440px)
     .custom__container
 	    max-width: 1140px
+    header
+        .container-fluid
+            &.container__header
+                .header
+                    padding: 10px 0 0 0
+                .nav
+                    margin-bottom: 35px
+                    &.is-active
+                    .menu__left
+                        .wrap__logo
+                            margin-bottom: 20px
+                        nav
+                            .menu__list
+                                .menu__item
+                                    .menu__link
+                                        font-size: 20px
+                                        line-height: 20px
+                            .menu__list__info
+                                .menu__info
+                                    &:first-child
+                        .wrap__logos
+                    .menu__right
+                        padding: 40px 40px 50px 40px
+                        .close
+                            top: 50px
+                        .menu__title
+                            margin-bottom: 30px
+                        .menu__catalog
+                            padding-right: 20px
+                            .menu__item
+                                .menu__link
+                                    img
+                                        max-width: 90px
+                                    span
+                                        font-size: 16px
+                                        line-height: 22px
+                        .menu__info
+                            p
     .home
         .carousel
             .carousel-inner
@@ -98,7 +194,54 @@
                                     .carousel-title
                                         font-size: 24px
                                         line-height: 29px
+    .category
+        padding: 100px 0 0
+        .custom__container
+            .category__title
+                padding-top: 20px
+                padding-bottom: 40px
+        .custom__container
+            .category__list
+                justify-content: space-between;
+                .category__item
+                    width: 350px
+                    a
+                        .category__imgWrap
+                            margin-bottom: 0px
+                        &:hover
+                            .category__info
+                                p 
+                                    font-size: 30px
+                                    line-height: 36px
+                                    max-width: 350px
+                        .category__info
+                                p 
+                                    margin-bottom: 5px
 
+
+@media screen and (max-width: 1300px)
+    header
+        .container-fluid
+            &.container__header
+                .nav
+                    &.is-active
+                    .menu__left
+                        .wrap__logo
+                        nav
+                            margin-bottom: 15px
+                    .menu__right
+                        .close
+                        .menu__title
+                        .menu__catalog
+                            .menu__item
+                                .menu__link
+                                    img
+                                        max-width: 80px
+                                    span
+                        .menu__info
+                            p
+                                font-size: 12px
+                                line-height: 14px
 @media screen and (max-width: 1199px)
     .custom__container
 	    max-width: 960px

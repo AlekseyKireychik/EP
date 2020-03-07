@@ -37,238 +37,352 @@ jQuery.each(jQuery("textarea[data-autoresize]"), function() {
 });
 
 $(document).ready(function() {
-  //sliders
-  
-  //programs
-  // $("#programs-list").on("init", function(event, slick) {
-  //   $(".programs__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#programs-list").on("reInit", function(event, slick) {
-  //   $(".programs__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#programs-list").on("afterChange", function(
-  //   event,
-  //   slick,
-  //   currentSlide,
-  //   nextSlide
-  // ) {
-  //   $(".programs__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  // });
-  // $("#programs-list").slick({
-  //   infinite: false,
-  //   arrows: true,
-  //   dots: false,
-  //   speed: 300,
-  //   autoplay: false,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   focusOnSelect: true,
-  //   variableWidth: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1400,
-  //       settings: {
-  //         infinite: true,
-  //         slidesToScroll: 1,
-  //         focusOnSelect: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 1200,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         infinite: true,
-  //         arrows: true,
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         focusOnSelect: true,
-  //         autoplay: true,
-  //         autoplaySpeed: 3000
-  //       }
-  //     }
-  //   ]
-  // });
 
+  //slider category
 
-  // function setSlideVisibility() {
-  //   //Find the visible slides i.e. where aria-hidden="false"
-  //   let visibleSlides = $(
-  //     '.seti__lenta > .slick-list > .slick-track > .slick-slide[aria-hidden="false"]'
-  //   );
-  //   //Make sure all of the visible slides have an opacity of 1
-  //   $(visibleSlides).each(function() {
-  //     $(this).css("opacity", 1);
-  //     // console.log($(this).html());
-  //   });
-  //   //Set the opacity of the first and last partial slides.
-  //   $(visibleSlides)
-  //     .first()
-  //     .prev()
-  //     .css("opacity", 0.4);
-  //   $(visibleSlides)
-  //     .last()
-  //     .next()
-  //     .css("opacity", 0.4);
-  // }
+  $("#category05-01").on("init", function(event, slick) {
+    $(".category05-01-count").text(1);
+    $(".category05-01-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-01").on("reInit", function(event, slick) {
+    $(".category05-01-count").text(1);
+    $(".category05-01-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-01").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-01-count").text(currentSlide + 1);
+    $(".category05-01-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-01").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
+  $("#category05-02").on("init", function(event, slick) {
+    $(".category05-02-count").text(1);
+    $(".category05-02-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-02").on("reInit", function(event, slick) {
+    $(".category05-02-count").text(1);
+    $(".category05-02-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-02").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-02-count").text(currentSlide + 1);
+    $(".category05-02-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-02").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
+  $("#category05-03").on("init", function(event, slick) {
+    $(".category05-03-count").text(1);
+    $(".category05-03-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-03").on("reInit", function(event, slick) {
+    $(".category05-03-count").text(1);
+    $(".category05-03-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-03").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-03-count").text(currentSlide + 1);
+    $(".category05-03-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-03").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
+  $("#category05-04").on("init", function(event, slick) {
+    $(".category05-04-count").text(1);
+    $(".category05-04-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-04").on("reInit", function(event, slick) {
+    $(".category05-04-count").text(1);
+    $(".category05-04-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-04").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-04-count").text(currentSlide + 1);
+    $(".category05-04-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-04").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
+  $("#category05-05").on("init", function(event, slick) {
+    $(".category05-05-count").text(1);
+    $(".category05-05-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-05").on("reInit", function(event, slick) {
+    $(".category05-05-count").text(1);
+    $(".category05-05-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-05").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-05-count").text(currentSlide + 1);
+    $(".category05-05-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-05").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
+  $("#category05-06").on("init", function(event, slick) {
+    $(".category05-06-count").text(1);
+    $(".category05-06-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-06").on("reInit", function(event, slick) {
+    $(".category05-06-count").text(1);
+    $(".category05-06-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-06").on("afterChange", function(
+    event,
+    slick,
+    currentSlide,
+    nextSlide
+  ) {
+    $(".category05-06-count").text(currentSlide + 1);
+    $(".category05-06-counts").text(" / " + slick.slideCount);
+  });
+  $("#category05-06").slick({
+    infinite: true,
+    arrows: true,
+    dots: false,
+    speed: 300,
+    autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          infinite: true,
+          slidesToScroll: 1,
+          focusOnSelect: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          focusOnSelect: true,
+          autoplay: true,
+          autoplaySpeed: 3000
+        }
+      }
+    ]
+  });
 
-  //Execute the function to apply the visibility on dom ready.
-  // $(setSlideVisibility());
-
-  //Re-apply the visibility in the beforeChange event.
-  // $(".seti__lenta").on("beforeChange", function() {
-  //   $(".slick-slide").each(function() {
-  //     $(this).css("opacity", 1);
-  //   });
-  // });
-
-  //After the slide change has completed, call the setSlideVisibility to hide the partial slides.
-  // $(".seti__lenta").on("afterChange", function() {
-  //   setSlideVisibility();
-  // });
-
-  // reviews
-  // $(".reviews-slider").on("init", function(event, slick) {
-  //   $(".reviews__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $(".reviews-slider").on("reInit", function(event, slick) {
-  //   $(".reviews__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $(".reviews-slider").on("afterChange", function(
-  //   event,
-  //   slick,
-  //   currentSlide,
-  //   nextSlide
-  // ) {
-  //   $(".reviews__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  // });
-  // $(".reviews-slider").slick({
-  //   infinite: true,
-  //   dots: false,
-  //   arrows: true,
-  //   speed: 300,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   slidesToShow: 1
-  // });
-
-  // $(".insructors__sliders").slick({
-  //   arrows: false,
-  //   speed: 300,
-  //   slidesToShow: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   dots: true
-  // });
-
-  // $(".insructors__sliders #slick-slide-control00").text("Алексей Птушкин");
-  // $(".insructors__sliders #slick-slide-control01").text("Илья Алёхин");
-  // $(".insructors__sliders #slick-slide-control02").text("Вячеслав Красный");
-  // $(".insructors__sliders #slick-slide-control03").text("Сергей Панченков");
-  // $(".insructors__sliders #slick-slide-control04").text("Алексей Смирнов");
-
-  //book flight
-  // $(".lang__btn").on("click", function(event) {
-  //   event.preventDefault();
-  //   $(".lang__subList").toggleClass("is-active");
-  // });
-
-  // $("#order-list01").on("init", function(event, slick) {
-  //   $(".order__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list01").on("reInit", function(event, slick) {
-  //   $(".order__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list01").on("afterChange", function(
-  //   event,
-  //   slick,
-  //   currentSlide,
-  //   nextSlide
-  // ) {
-  //   $(".order__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list01").slick({
-  //   infinite: true,
-  //   dots: false,
-  //   arrows: true,
-  //   speed: 300,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1300,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 640,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     }
-  //   ]
-  // });
-
-  // $("#order-list02").on("init", function(event, slick) {
-  //   $(".order__counter02").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list02").on("reInit", function(event, slick) {
-  //   $(".order__counter02").text(1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list02").on("afterChange", function(
-  //   event,
-  //   slick,
-  //   currentSlide,
-  //   nextSlide
-  // ) {
-  //   $(".order__counter02").text(currentSlide + 1 + " / " + slick.slideCount);
-  // });
-  // $("#order-list02").slick({
-  //   infinite: true,
-  //   dots: false,
-  //   arrows: true,
-  //   speed: 300,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   variableWidth: true,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1300,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 640,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     }
-  //   ]
-  // });
   //newpost
   // $(".newpost-slider").on("init", function(event, slick) {
   //   $(".newpost__counter").text(1 + " / " + slick.slideCount);
@@ -317,84 +431,6 @@ $(document).ready(function() {
   //   ]
   // });
 
-  //newpost bottom
-  // $(".new__bottom").on("init", function(event, slick) {
-  //   $(".new__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $(".new__bottom").on("reInit", function(event, slick) {
-  //   $(".new__counter").text(1 + " / " + slick.slideCount);
-  // });
-  // $(".new__bottom").on("afterChange", function(
-  //   event,
-  //   slick,
-  //   currentSlide,
-  //   nextSlide
-  // ) {
-  //   $(".new__counter").text(currentSlide + 1 + " / " + slick.slideCount);
-  // });
-  // $(".new__bottom").slick({
-  //   dots: false,
-  //   arrows: true,
-  //   speed: 300,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   autoplay: true,
-  //   autoplaySpeed: 3000,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1300,
-  //       settings: {
-  //         slidesToShow: 2,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 640,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         arrows: true,
-  //         infinite: true
-  //       }
-  //     }
-  //   ]
-  // });
-
-  // $(".history-slide").slick({
-  //   dots: true,
-  //   arrows: false,
-  //   speed: 300,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // });
-
-  // $(".history-slide #slick-slide-control00").text("1998 - 2001");
-  // $(".history-slide #slick-slide-control01").text("2002 - 2007");
-  // $(".history-slide #slick-slide-control02").text("2008 - 2013");
-  // $(".history-slide #slick-slide-control03").text("2014 - 2019");
-
-  //athlete
-  // $(".athlete__slider").slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: false,
-  //   asNavFor: ".athlete__sliderNav"
-  // });
-  // $(".athlete__sliderNav").slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   asNavFor: ".athlete__slider",
-  //   arrows: false,
-  //   dots: false,
-  //   variableWidth: true,
-  //   centerMode: false,
-  //   focusOnSelect: true
-  // });
   //vacancies
   // $(".vacancies__btn").on("click", function(event) {
   //   event.preventDefault();
@@ -412,38 +448,6 @@ $(document).ready(function() {
   //   }
   // });
 
-  //news
-  // $(".news__btn").on("click", function(event) {
-  //   event.preventDefault();
-  //   if ($(this).hasClass("is-active")) {
-  //     $(".news__btn").removeClass("is-active");
-  //     $(this).removeClass("is-active");
-  //   } else {
-  //     $(".news__btn").removeClass("is-active");
-  //     $(this).addClass("is-active");
-  //   }
-  // });
-
-  // $(".news__selectValue").on("click", function(event) {
-  //   event.preventDefault();
-  //   $(".news__nav").toggleClass("is-active");
-  // });
-  //gallery
-  // $(".gallery__btn").on("click", function(event) {
-  //   event.preventDefault();
-  //   if ($(this).hasClass("is-active")) {
-  //     $(".gallery__btn").removeClass("is-active");
-  //     $(this).removeClass("is-active");
-  //   } else {
-  //     $(".gallery__btn").removeClass("is-active");
-  //     $(this).addClass("is-active");
-  //   }
-  // });
-
-  // $(".gallery__selectValue").on("click", function(event) {
-  //   event.preventDefault();
-  //   $(".gallery__nav").toggleClass("is-active");
-  // });
 
   //show - hide text in slider
   // $(".show").on("click", function(event) {
@@ -459,9 +463,6 @@ $(document).ready(function() {
   //     });
   // });
   
-  // Lightbox
-  // $('.gallery .gallery__link').lightbox();
-
   // recomendation popup
   $("#recomendation-product-btn").on("click", function(event) {
     event.preventDefault();
@@ -539,20 +540,6 @@ $(document).ready(function() {
     });
   });
 
-  // $("#comment").bind("input", function() {
-  //   if ($("#comment").html($(this).val().length)) {
-  //     $(this).addClass("change");
-  //   } else {
-  //     $(this).removeClass("change");
-  //   }
-  // });
-  // $("#comment02").bind("input", function() {
-  //   if ($("#comment02").html($(this).val().length)) {
-  //     $(this).addClass("change");
-  //   } else {
-  //     $(this).removeClass("change");
-  //   }
-  // });
   $(document).on("keypress", ".validate-numeric", function(event) {
     return isNumber(event);
   });
@@ -617,35 +604,4 @@ $(document).ready(function() {
     });
   });
 
-  // $(".header__link").hover(function(event) {
-  //   event.preventDefault();
-  //   $(this)
-  //     .siblings(".header__subList")
-  //     .toggleClass("is-active");
-  //   $(".header__subList").on("mouseenter", function() {
-  //     $(this).addClass("is-active");
-  //   });
-  //   $(".header__subList").on("mouseleave", function() {
-  //     $(this).removeClass("is-active");
-  //   });
-  // });
-
-  // accordion FAQ page
-//   $(".faq__btn").on("click", function() {
-//     if (
-//       $(this)
-//         .parents(".panel")
-//         .hasClass("is-active")
-//     ) {
-//       $(".panel").removeClass("is-active");
-//       $(this)
-//         .parents(".panel")
-//         .removeClass("is-active");
-//     } else {
-//       $(".panel").removeClass("is-active");
-//       $(this)
-//         .parents(".panel")
-//         .addClass("is-active");
-//     }
-//   });
 });

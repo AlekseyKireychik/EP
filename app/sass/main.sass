@@ -472,53 +472,46 @@ main
 	display: none
 	&.is-active
 		display: block
-// .reviews__form
-// 	padding: 108px 148px
-// 	.title
-// 		font-weight: 600
-// 		font-size: 20px
-// 		line-height: 24px
-// 		margin-bottom: 30px
-// 		.formWrap
-// 			.mainform__group
-// 				.mainform__control
-// 					border: 2px solid $accent
-// 					border-radius: 5px
-// 					color: $accent
-// 					padding: 17px
-// 					width: 100%
-// 					background-color: transparent
-// 					margin-bottom: 15px
-// 					&:last-child
-// 						margin-bottom: 20px	
-// 						&::placeholder
-// 							font-weight: normal
-// 							font-size: 14px
-// 							line-height: 14px
-// 							color: $accent
+
 .slider__counter
 	position: absolute
-	left: 64px
-	font-size: 16px
+	left: 50%
+	color: $accent
+	padding: 0
+	top: auto
+	bottom: 50px
+	font-weight: bold
+	font-size: 28px
 	line-height: 34px
-	color: #99A4AF
-	padding: 15px 18px
-	top: 113%
+	text-align: center
+	text-transform: uppercase
+	transform: translateX(-50%)
+	.slider__counts
+		font-weight: 400
+		font-size: 20px
+		line-height: 34px
+
 .slider
 	.slick-arrow
-		top: 120%
-		width: 64px
-		height: 64px
-		border: 1px solid #E5E7E8
-		&.slick-prev
-			left: 0px
+		bottom: -105px
+		top: auto
+		width: 45px
+		height: 45px
+		border: none
+		border-radius: 50%
+		background: rgba(255, 255, 255, 0.5)
+		&.slick-prev			
+			right: 50%
+			left: auto
+			margin-right: 60px
 			&::before
-				content: url(../img/_src/arrowSliderLeft.png)
+				content: url(../img/@2x/left-arrow-slider.svg)
 		&.slick-next
+			margin-left: 60px
+			left: 50%
 			right: auto
-			left: 128px
 			&::before
-				content: url(../img/_src/arrowSliderRight.png)
+				content: url(../img/@2x/right-arrow-slider.svg)
 .overlay
 	position: absolute
 	top: 0
@@ -605,7 +598,7 @@ header
 					align-items: center
 					.header__timer
 						color: $accent
-						margin-right: 35px
+						margin-right: 45px
 						padding-left: 35px
 						font-weight: bold
 						font-size: 24px
@@ -620,7 +613,7 @@ header
 							transform: translate(0px, 0%)
 					.header__phone
 						color: $accent
-						margin-right: 30px
+						margin-right: 45px
 						padding-left: 35px
 						font-weight: bold
 						font-size: 24px
@@ -638,7 +631,7 @@ header
 						line-height: 34px
 						font-weight: 600
 						color: $accent
-						margin-right: 35px
+						margin-right: 45px
 						padding-left: 35px
 						position: relative
 						&::after
@@ -667,7 +660,7 @@ header
 					cursor: pointer
 					z-index: 991
 					margin-bottom: 0
-					margin-left: 50px
+					margin-left: 60px
 					font-family: 'Montserrat', sans-serif
 					font-weight: bold
 					font-size: 30px
@@ -687,19 +680,23 @@ header
 			.nav
 				position: absolute
 				top: 0px
-				left: 0px
+				left: -100vw
 				z-index: 1000
 				display: none
 				align-items: flex-start
 				justify-content: flex-start
 				min-width: 100vw
 				height: 100vh
-				width: 100%
+				width: 0
 				padding: 0
 				background-color: #fff
 				flex-wrap: nowrap
+				transition: all .5s linear
 				&.is-active
 					display: flex
+					left: 0px
+					width: 100%
+					transition: all .5s linear
 				.menu__left
 					background-color: $accentTwo
 					padding: 30px 40px 40px 50px
@@ -980,33 +977,47 @@ header
 			width: 532px
 			&:last-child
 				margin-right: 0
-			.category__imgWrap
-				margin-bottom: 20px
-				.category__img
-					width: 100%
-			.category__info
-				display: flex
-				align-items: center
-				justify-content: center
-				flex-direction: column
-				p
+			a 
+				&:hover
+					.category__info
+						p
+							transition: all .3s linear
+							font-size: 36px
+							line-height: 44px
+							max-width: 380px
+				.category__imgWrap
+					display: flex
+					align-items: flex-start
+					justify-content: center
 					margin-bottom: 20px
-					font-family: 'Montserrat', sans-serif
-					font-weight: bold
-					font-size: 24px
-					line-height: 29px
-					text-align: center
-					text-transform: uppercase
-					color: $accent
-					max-width: 290px
-				span
-					font-family: 'Montserrat', sans-serif
-					font-weight: bold
-					font-size: 36px
-					line-height: 44px
-					text-align: center
-					text-transform: uppercase
-					color: $accent
+					.category__img
+				.category__info
+					display: flex
+					align-items: center
+					justify-content: center
+					flex-direction: column
+					min-height: 152px
+					p
+						margin-bottom: 20px
+						font-family: 'Montserrat', sans-serif
+						font-weight: bold
+						font-size: 24px
+						line-height: 29px
+						text-align: center
+						text-transform: uppercase
+						color: $accent
+						max-width: 290px
+						transition: all .3s linear						
+					.cost
+						font-family: 'Montserrat', sans-serif
+						font-weight: bold
+						font-size: 36px
+						line-height: 44px
+						text-align: center
+						color: $accent
+						span
+							font-size: 20px
+							line-height: 22px
 .category__01
 	background: #962783
 .category__02
@@ -3069,4 +3080,4 @@ header
 											color: $accent
 											padding: 5px 25px	
 
-	@import media
+@import media
