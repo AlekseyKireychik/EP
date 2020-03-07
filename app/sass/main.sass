@@ -1075,6 +1075,7 @@ header
 //Akcii-page Page
 .akcii__page
 	padding-top: 260px
+	padding-bottom: 25px
 	min-height: 100vh
 	background-color: $accentThree
 	.custom__container
@@ -1082,18 +1083,36 @@ header
 			display: flex
 			align-items: flex-start
 			justify-content: space-between
-			.akcii__item
-				&:first-child
-					margin-right: 122px
+			.akcii__item	
+				&.image									
+					max-width: 50%
+					width: 100%	
+					.title
+						margin-top: 0
+						margin-bottom: 30px	
+						display: none		
 				.akcii__image
+					width: 100%
+					max-width: 818px
 			.akcii__item
-				.title
-					margin-top: 0
-					margin-bottom: 30px
-				.text
-					margin-bottom: 30px
-				.btnWrap
-					.btn
+				&.description
+					margin-left: 122px
+					max-width: 50%
+					width: 100%
+					text-align: center
+					.title
+						margin-top: 0
+						margin-bottom: 30px
+					.text
+						p
+							font-weight: 500
+							font-size: 20px
+							line-height: 24px
+							text-align: left
+							margin-bottom: 30px
+					.btnWrap
+						.btn
+							width: 540px
 
 //delivery Page
 .delivery
