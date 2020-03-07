@@ -462,6 +462,24 @@ $(document).ready(function() {
   // Lightbox
   // $('.gallery .gallery__link').lightbox();
 
+  // recomendation popup
+  $("#recomendation-product-btn").on("click", function(event) {
+    event.preventDefault();
+    $(".recomendation").addClass("is-active");
+    $(".recomendation__close").addClass("is-active");
+    $(".recomendation__overlay").addClass("is-active");
+    $(".recomendation__overlay").on("click", function(event) {
+      $(this).removeClass("is-active");
+      $(".recomendation").removeClass("is-active");
+      $(".recomendation__close").removeClass("is-active");
+    });
+    $(".recomendation__close").on("click", function(event) {
+      $(this).removeClass("is-active");
+      $(".recomendation__overlay").removeClass("is-active");
+      $(".recomendation").removeClass("is-active");
+    });
+  });
+
    //form account change email
    $("#change-btn").on("click", function(event) {
     event.preventDefault();
