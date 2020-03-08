@@ -1587,6 +1587,26 @@ header .container-fluid.container__header .nav .menu__left {
   background-color: #481120;
   padding: 30px 40px 40px 50px;
   height: 100%;
+  position: relative;
+}
+
+header .container-fluid.container__header .nav .menu__left .close {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  display: none;
+}
+
+header .container-fluid.container__header .nav .menu__left .close a {
+  cursor: pointer;
+  position: relative;
+}
+
+header .container-fluid.container__header .nav .menu__left .close a::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: url(../img/@2x/close.svg);
 }
 
 header .container-fluid.container__header .nav .menu__left .wrap__logo {
@@ -6141,21 +6161,41 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   header .container-fluid.container__header .header .header__function .header__timer {
     font-size: 20px;
     line-height: 24px;
+    margin-right: 25px;
+  }
+  header .container-fluid.container__header .header .header__function .header__timer::after {
+    content: url(../img/@2x/timer-icon-ipad.svg);
+    -webkit-transform: translate(0px, 5%);
+        -ms-transform: translate(0px, 5%);
+            transform: translate(0px, 5%);
   }
   header .container-fluid.container__header .header .header__function .header__phone {
     font-size: 20px;
     line-height: 24px;
+    margin-right: 25px;
+  }
+  header .container-fluid.container__header .header .header__function .header__phone::after {
+    content: url(../img/@2x/phone-icon-ipad.svg);
+    -webkit-transform: translate(0px, 5%);
+        -ms-transform: translate(0px, 5%);
+            transform: translate(0px, 5%);
   }
   header .container-fluid.container__header .header .header__function .header__exit {
     font-size: 20px;
     line-height: 24px;
+    margin-right: 25px;
+  }
+  header .container-fluid.container__header .header .header__function .header__exit::after {
+    content: url(../img/@2x/login-icon-ipad.svg);
   }
   header .container-fluid.container__header .header .header__function .header__basket {
     font-size: 20px;
     line-height: 24px;
   }
+  header .container-fluid.container__header .header .header__function .header__basket::after {
+    content: url(../img/@2x/basket-icon-ipad.svg);
+  }
   header .container-fluid.container__header .nav {
-    top: 80px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -6164,14 +6204,31 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   header .container-fluid.container__header .nav .menu__left {
     width: 100%;
-    padding: 20px 15px 18px;
+    padding: 10px 50px 18px;
     background-color: #691D35;
   }
+  header .container-fluid.container__header .nav .menu__left .close {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .container-fluid.container__header .nav .menu__left .wrap__logo {
-    display: none;
+    max-width: 120px;
   }
   header .container-fluid.container__header .nav .menu__left nav {
     background: transparent;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list {
+    min-width: auto;
+    width: 100%;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item {
+    margin-bottom: 45px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item .menu__link {
+    max-width: 220px;
+    line-height: 22px;
   }
   header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item.litle__menu {
     display: -webkit-box;
@@ -6182,9 +6239,22 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   header .container-fluid.container__header .nav .menu__right {
     display: none;
   }
+  header .container-fluid.container__header .burger-menu {
+    padding-right: 30px;
+  }
   header .container-fluid.container__header .burger-menu .burger-menu__button {
     font-size: 20px;
     line-height: 24px;
+    margin-left: 40px;
+  }
+  header .container-fluid.container__header .burger-menu .burger-menu__button span {
+    display: none;
+  }
+  header .container-fluid.container__header .burger-menu .burger-menu__button::after {
+    -webkit-transform: translate(0px, -40%);
+        -ms-transform: translate(0px, -40%);
+            transform: translate(0px, -40%);
+    content: url(../img/@2x/burger-menu-defauld-ipad.svg);
   }
   .akcii__page {
     padding: 90px 15px 0;
@@ -6232,6 +6302,12 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .btn:hover {
     background: #fff;
     color: #691D35;
+  }
+  header .container-fluid.container__header .header .header__logo {
+    padding: 0px 15px 0 30px;
+  }
+  header .container-fluid.container__header .header .header__logo a img {
+    max-width: 100px;
   }
   .akcii__page .custom__container .akcii__list .akcii__item.description .text p {
     font-size: 14px;
@@ -6297,10 +6373,38 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
             transform: translate(0px, -40%);
     content: url(../img/@2x/burger-menu-defauld-mobile.svg);
   }
-  header .container-fluid.container__header .burger-menu .burger-menu__button span {
-    display: none;
-  }
   header .container-fluid.container__header .nav {
     top: 60px;
+  }
+  header .container-fluid.container__header .nav .menu__left {
+    padding: 0;
+  }
+  header .container-fluid.container__header .nav .menu__left .close {
+    display: none;
+  }
+  header .container-fluid.container__header .nav .menu__left .wrap__logo {
+    display: none;
+  }
+  header .container-fluid.container__header .nav .menu__left nav {
+    padding: 0;
+    margin: 20px 15px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list {
+    padding-bottom: 20px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list__info {
+    padding-top: 25px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list__info .menu__info:first-child {
+    margin-bottom: 20px;
+  }
+  header .container-fluid.container__header .nav .menu__left .wrap__logos {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item {
+    margin-bottom: 30px;
   }
 }

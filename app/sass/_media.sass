@@ -316,36 +316,63 @@
                         .header__timer
                             font-size: 20px
                             line-height: 24px
+                            margin-right: 25px
+                            &::after
+                                content: url(../img/@2x/timer-icon-ipad.svg)
+                                transform: translate(0px, 5%)
                         .header__phone
                             font-size: 20px
                             line-height: 24px
+                            margin-right: 25px
+                            &::after
+                                content: url(../img/@2x/phone-icon-ipad.svg)
+                                transform: translate(0px, 5%)
                         .header__exit
                             font-size: 20px
-                            line-height: 24px                     
+                            line-height: 24px   
+                            margin-right: 25px  
+                            &::after   
+                                content: url(../img/@2x/login-icon-ipad.svg)             
                         .header__basket
                             font-size: 20px
-                            line-height: 24px   
-                .nav
-                    top: 80px                    
+                            line-height: 24px  
+                            &::after   
+                                content: url(../img/@2x/basket-icon-ipad.svg)     
+                .nav                   
                     flex-direction: column
                     .menu__left
                         width: 100%
-                        padding: 20px 15px 18px
+                        padding: 10px 50px 18px
                         background-color: #691D35
+                        .close
+                            display: flex
                         .wrap__logo
-                            display: none
+                            max-width: 120px
                         nav
                             background: transparent
                             .menu__list
+                                min-width: auto
+                                width: 100%
                                 .menu__item
+                                    margin-bottom: 45px
+                                    .menu__link
+                                        max-width: 220px
+                                        line-height: 22px
                                     &.litle__menu
                                         display: flex
                     .menu__right
                         display: none
                 .burger-menu
+                    padding-right: 30px
                     .burger-menu__button
                         font-size: 20px
                         line-height: 24px
+                        margin-left: 40px
+                        span
+                            display: none
+                        &::after   
+                            transform: translate(0px, -40%)
+                            content: url(../img/@2x/burger-menu-defauld-ipad.svg)     
                             
     .akcii__page
         padding: 90px 15px 0  
@@ -387,6 +414,15 @@
         &:hover
             background: $accent
             color: #691D35
+    header
+        .container-fluid
+            &.container__header                
+                .header
+                    .header__logo
+                        padding: 0px 15px 0 30px
+                        a 
+                            img
+                                max-width: 100px
     .akcii__page
         .custom__container
             .akcii__list
@@ -441,8 +477,38 @@
                         margin-left: 0px
                         &::after
                             transform: translate(0px, -40%)  
-                            content: url(../img/@2x/burger-menu-defauld-mobile.svg)
-                        span
-                            display: none
+                            content: url(../img/@2x/burger-menu-defauld-mobile.svg)                        
                 .nav
-                    top: 60px                 
+                    top: 60px            
+                    .menu__left
+                        padding: 0
+                        .close
+                            display: none
+                        .wrap__logo      
+                            display: none 
+                        nav   
+                            padding: 0
+                            margin: 20px 15px 
+                            .menu__list
+                                padding-bottom: 20px
+                            .menu__list__info
+                                padding-top: 25px
+                                .menu__info
+                                    &:first-child
+                                        margin-bottom: 20px
+                        .wrap__logos
+                            display: none
+
+@media screen and (max-width: 321px)
+    header
+        .container-fluid
+            &.container__header                   
+                .nav       
+                    .menu__left
+                        nav   
+                            .menu__list
+                                .menu__item
+                                    margin-bottom: 30px
+
+
+                              

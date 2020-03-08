@@ -555,12 +555,21 @@ $(document).ready(function() {
   }
 
   //nav-menu
-
-  $(".burger-menu").on("click", function(event) {
-    event.preventDefault();
-    $("#nav-menu").addClass("is-active");
-    $(".burger-menu").addClass("is-active");
-  });
+  if ($(window).width() > 576) {
+    $(".burger-menu").on("click", function(event) {
+      event.preventDefault();
+      $("#nav-menu").addClass("is-active");
+      $(".burger-menu").addClass("is-active");
+    });
+  }
+  else{
+    $(".burger-menu").on("click", function(event) {
+      event.preventDefault();
+      $("#nav-menu").toggleClass("is-active");
+      $(".burger-menu").toggleClass("is-active");
+    });
+  }
+  
 
   $(".close").on("click", function(event) {
     event.preventDefault();

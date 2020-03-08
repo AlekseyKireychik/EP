@@ -705,6 +705,20 @@ header
 					background-color: $accentTwo
 					padding: 30px 40px 40px 50px
 					height: 100%
+					position: relative
+					.close
+						position: absolute
+						right: 60px
+						top: 30px
+						display: none
+						a
+							cursor: pointer
+							position: relative
+							&::before
+								position: absolute
+								left: 0
+								top: 0
+								content: url(../img/@2x/close.svg)
 					.wrap__logo
 						max-width: 150px
 						margin-bottom: 40px
