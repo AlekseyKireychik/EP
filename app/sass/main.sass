@@ -980,6 +980,14 @@ header
 .category
 	padding: 165px 0 0
 	height: 100vh
+	&.category__05
+		.category__list
+			.category__item
+				a 
+					.category__imgWrap
+						.category__img
+							max-width: 188px
+							width: auto
 	.category__title
 		font-family: 'Montserrat', sans-serif
 		font-weight: bold
@@ -993,10 +1001,9 @@ header
 	.category__list
 		display: flex
 		align-items: center
-		justify-content: center
-		.category__item
-			margin-right: 40px
-			width: 532px
+		justify-content: space-between
+		.category__item			
+			width: calc((100vw - (100vw - (1676px - 80px))) / 3)
 			&:last-child
 				margin-right: 0
 			a 
@@ -1013,6 +1020,7 @@ header
 					justify-content: center
 					margin-bottom: 20px
 					.category__img
+						width: 100%
 				.category__info
 					display: flex
 					align-items: center
