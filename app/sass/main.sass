@@ -654,7 +654,7 @@ header
 							top: -25%
 							transform: translate(0px, -40%)
 			.burger-menu
-				padding-right: 50px
+				padding-right: 50px				
 				.burger-menu__button
 					display: flex
 					cursor: pointer
@@ -669,13 +669,17 @@ header
 					color: $accent
 					position: relative
 					padding-left: 35px
-					text-transform: uppercase
+					text-transform: uppercase					
 					&::after
 						position: absolute
 						content: url(../img/@2x/burger-menu-defauld.svg)
 						left: -10px
 						top: -8%
 						transform: translate(0px, 0%)
+				&.is-active
+					.burger-menu__button
+						&::after
+							content: url(../img/@2x/burger-menu-close.svg)
 
 			.nav
 				position: absolute
@@ -724,6 +728,8 @@ header
 								display: flex
 								align-items: flex-start
 								justify-content: center
+								&.litle__menu
+									display: none
 								.menu__link
 									font-family: 'Montserrat', sans-serif
 									font-weight: 600

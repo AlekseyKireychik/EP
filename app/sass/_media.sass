@@ -305,8 +305,7 @@
 	    max-width: 720px
     header
         .container-fluid
-            &.container__header
-                background: #481120
+            &.container__header                
                 .header
                     padding: 10px 0 10px 0
                     .header__logo
@@ -315,20 +314,17 @@
                                 max-width: 120px
                     .header__function
                         .header__timer
-                            display: none
+                            font-size: 20px
+                            line-height: 24px
                         .header__phone
-                            font-size: 16px
-                            line-height: 34px
-                            &::after
-                                transform: translate(0px, -40%)                            
-                            span
-                                display: none
+                            font-size: 20px
+                            line-height: 24px
                         .header__exit
-                            display: none
+                            font-size: 20px
+                            line-height: 24px                     
                         .header__basket
-                            &.is-active
-                                &::after
-                                    content: url(../img/@2x/burger-menu-close.svg)
+                            font-size: 20px
+                            line-height: 24px   
                 .nav
                     top: 80px                    
                     flex-direction: column
@@ -340,10 +336,17 @@
                             display: none
                         nav
                             background: transparent
+                            .menu__list
+                                .menu__item
+                                    &.litle__menu
+                                        display: flex
                     .menu__right
                         display: none
                 .burger-menu
                     .burger-menu__button
+                        font-size: 20px
+                        line-height: 24px
+                            
     .akcii__page
         padding: 90px 15px 0  
         .custom__container
@@ -402,6 +405,7 @@
     header
         .container-fluid
             &.container__header
+                background: #481120
                 .header
                     .header__logo
                         padding: 0px 50px 0 20px
@@ -409,16 +413,36 @@
                             img
                                 max-width: 80px
                     .header__function
+                        .header__timer
+                            display: none
                         .header__phone
+                            font-size: 16px
+                            line-height: 24px
                             margin-right: 15px
+                            &::after
+                                transform: translate(0px, -40%)     
+                                content: url(../img/@2x/phone-icon-mobile.svg)                       
+                            span
+                                display: none
+                        .header__exit
+                            display: none 
                         .header__basket
+                            font-size: 16px
+                            line-height: 24px
                             margin-right: 15px
+                            &::after
+                                content: url(../img/@2x/basket-icon-mobile.svg)
 
                 .burger-menu
                     padding-right: 20px
-                    .burger-menu__button       
+                    .burger-menu__button   
+                        font-size: 16px
+                        line-height: 24px    
                         margin-left: 0px
                         &::after
                             transform: translate(0px, -40%)  
+                            content: url(../img/@2x/burger-menu-defauld-mobile.svg)
                         span
-                            display: none                 
+                            display: none
+                .nav
+                    top: 60px                 
