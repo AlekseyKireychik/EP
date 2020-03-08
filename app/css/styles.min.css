@@ -1871,7 +1871,11 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .home .carousel .carousel-inner .carousel-indicators {
-  bottom: 45%;
+  bottom: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: auto;
   margin-left: 50px;
   -webkit-box-orient: vertical;
@@ -5829,6 +5833,108 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
+@media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 240px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 800px) and (max-height: 899px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 700px) and (max-height: 799px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 205px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 500px) and (max-height: 599px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 140px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) and (min-height: 700px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 215px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) and (min-height: 650px) and (max-height: 699px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 195px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 800px) and (max-width: 1100px) and (min-height: 700px) and (max-height: 1400px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc( 100vh / 3);
+    width: calc( 100vw / 2);
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 270px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 992px) and (max-width: 1199px) and (min-height: 600px) and (max-height: 649px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 165px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 600px) and (max-width: 991px) and (min-height: 600px) and (max-height: 1024px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc( 100vh / 3);
+    width: calc( 100vw / 2);
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 165px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 760px) and (max-width: 1024px) and (min-height: 760px) and (max-height: 1400px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc( 100vh / 3);
+    width: calc( 100vw / 2);
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list {
+    margin-top: 60px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc((100vh - 60px) / 6);
+    width: 100vw;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 165px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .custom__container {
     max-width: 1400px;
@@ -5912,14 +6018,8 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-size: 18px;
     line-height: 22px;
   }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
-    max-width: 270px;
-  }
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    width: 100%;
-  }
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
-    min-height: 85px;
+    min-height: 95px;
   }
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
@@ -6105,6 +6205,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   header .container-fluid.container__header .burger-menu .burger-menu__button {
     font-size: 24px;
     line-height: 37px;
+  }
+  .home .carousel .carousel-inner .carousel-indicators {
+    margin-left: 20px;
   }
   .akcii__page {
     padding-top: 165px;
@@ -6309,12 +6412,160 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   header .container-fluid.container__header .header .header__logo a img {
     max-width: 100px;
   }
+  .home .carousel .carousel-inner .carousel-indicators {
+    display: none;
+  }
   .akcii__page .custom__container .akcii__list .akcii__item.description .text p {
     font-size: 14px;
     line-height: 17px;
   }
   .akcii__page .custom__container .akcii__list .akcii__item.description .btnWrap .btn {
     width: 280px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list {
+    margin-top: 60px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc((100vh - 60px) / 6);
+    width: 100vw;
+    overflow: hidden;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
+    max-width: 184px;
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 140px;
+    margin-bottom: -55px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+    margin-right: 10px;
+    width: 160px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 560px) and (max-width: 900px) and (min-height: 320px) and (max-height: 500px) {
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content {
+    height: calc(100vh / 2);
+    width: calc(100vw / 3);
+    overflow: hidden;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item01 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item02 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item03 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item04 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item05 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item06 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item07 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item08 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item09 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item10 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item11 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content.item12 {
+    padding-top: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap {
+    max-width: 184px;
+    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
+    max-width: 110px;
+    margin-bottom: 0px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
+    margin-right: 0px;
+    width: 160px;
+    min-height: 50px;
+  }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
