@@ -229,6 +229,27 @@
                 width: calc((100vw - (100vw - (1400px - 80px))) / 3)
     .akcii__page
         padding-top: 135px
+    .mixbox
+        padding-top: 135px
+        .plaska
+            top: 35%
+            max-width: 220px
+            img
+                width: 100%
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item				
+                            .mixbox__product
+                                max-width: 45%
+                                width: 100%
+                                .mixbox__img
+                                    width: 100%
+                            .mixbox__info
+                                margin-right: 80px						
+                                .mixbox__top	
+                                    max-height: 400px				
     .contacts
         padding-top: 135px
         .custom__container
@@ -402,7 +423,14 @@
                 .about__logo
                     img
                         max-width: 120px
-
+    .mixbox
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item		
+                            .mixbox__info
+                                margin-right: 40px		
 @media screen and (max-width: 1450px)
     .custom__container
         max-width: 1140px
@@ -568,14 +596,156 @@
                                     max-width: 160px
                                     width: 100%
                                 .description
+    .mixbox
+        padding-top: 100px
+        .custom__container
+            .title
+                margin-bottom: 30px
+        .plaska
+            max-width: 155px
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills
+                        margin-bottom: 40px
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item		
+                            .mixbox__info
+                                margin-right: 0px	
+                                .mixbox__top
+                                    max-height: 370px							
+                                    .mixbox__title
+                                        font-size: 42px
+                                        line-height: 53px
+                                    .mixbox__person
+                                        font-size: 32px
+                                        line-height: 42px    
+                                    .mixbox__positions
+                                        width: 500px
+                                        .mixbox__elem	
+                                            .name
+                                                max-width: 450px
+                                .mixbox__storage
+                                    .mixbox__total							
+                                        .mixbox__add
+                                            font-size: 18px
+                                            line-height: 30px	
+                                        .description
+                                            height: 50px
+                                            a
+                                                font-size: 16px
+                                                line-height: 20px
+                                                margin-top: 0px
+                                            span 
+                                                font-size: 16px
+                                                line-height: 20px
+                                    .mixbox__btnGroup                                        
+                                        .value
+                                            font-size: 30px
+                                            line-height: 36px
+                                            margin-right: 30px
+                                            padding: 7px 0
+                                            span
+                                                font-size: 16px
+                                                line-height: 20px
+                                        .mixbox__counter
+                                            display: flex
+                                            align-items: center
+                                            justify-content: center
+                                            margin-right: 30px
+                                            button
+                                                font-size: 36px
+                                                line-height: 42px
+                                                padding: 4px 0
 @media screen and (max-width: 1370px)
+    .about
+        padding-top: 110px
+        .custom__container
+            .about__list
+                margin-bottom: 10px
+                .about__item
+                    img
+                        max-width: 450px
+                    p
+                        margin-bottom: 10px
     .delivery
         padding-top: 110px
         .custom__container
             .title
                 font-size: 28px
                 line-height: 30px
-
+    .mixbox
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
+                margin-bottom: 30px
+        .plaska
+            max-width: 115px
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills
+                        margin-bottom: 30px
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item		
+                            .mixbox__info
+                                .mixbox__top						
+                                    .mixbox__title
+                                        font-size: 36px
+                                        line-height: 44px
+                                    .mixbox__person
+                                        font-size: 24px
+                                        line-height: 36px    
+                                        .icon
+                                            width: 35px
+                                            height: 35px
+                                            &:after
+                                                top: 60%
+                                    .mixbox__positions
+                                        .mixbox__elem
+                                            .name
+                                                font-size: 18px
+                                                line-height: 22px  
+                                            .description
+                                                font-size: 18px
+                                                line-height: 22px  
+                                .mixbox__storage
+                                    .mixbox__total
+                                        .value
+                                            font-size: 30px
+                                            line-height: 36px
+                                            margin-right: 30px
+                                            padding: 7px 0
+                                            span
+                                                font-size: 16px
+                                                line-height: 20px
+                                        .description
+                                            a
+                                                font-size: 16px
+                                                line-height: 20px
+                                            span 
+                                                font-size: 16px
+                                                line-height: 20px
+                                    .mixbox__btnGroup
+                                        .mixbox__counter
+                                            display: flex
+                                            align-items: center
+                                            justify-content: center
+                                            margin-right: 30px
+                                            button
+                                                font-size: 36px
+                                                line-height: 42px
+                                                padding: 4px 0							
+                                        .mixbox__add
+                                            font-size: 18px
+                                            line-height: 30px	
 @media screen and (max-width: 1300px)
     header
         .container-fluid
@@ -647,7 +817,7 @@
                     img
                         max-width: 120px
     .akcii__page
-        padding-top: 165px
+        padding-top: 110px
         .custom__container
             .akcii__list
                 flex-direction: column
@@ -729,6 +899,78 @@
                         width: 100%
                     .header__overlay
                         display: none
+    .mixbox
+        .plaska
+            max-width: 130px
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item	
+                            flex-direction: column	
+                            .mixbox__product
+                                max-width: 100%
+                                margin-bottom: 20px
+                                .mixbox__img
+                                    width: 80%
+                            .mixbox__info
+                                width: 100%
+                                display: flex
+                                flex-direction: column
+                                .mixbox__top__mobile
+                                    display: block
+                                    order: 1
+                                .mixbox__top	
+                                    order: 3					
+                                    .mixbox__title
+                                        display: none	
+                                    .mixbox__person
+                                        display: none	
+                                    .mixbox__positions
+                                        width: 100%
+                                        .mixbox__elem
+                                            .name
+                                                max-width: 100%
+                                            .description
+                                                max-width: 100%
+                                .mixbox__storage
+                                    order: 2
+                                    flex-direction: column
+                                    padding-top: 0px
+                                    &:before
+                                        display: none
+                                    .mixbox__total
+                                        align-items: center
+                                        flex-direction: column-reverse
+                                        .description
+                                            height: auto
+                                            text-align: center
+                                            display: flex
+                                            margin-bottom: 20px
+                                            span
+                                                margin-left: 5px
+                                        .mixbox__add
+                                            font-size: 18px
+                                            line-height: 30px
+                                            margin-bottom: 20px
+                                    .mixbox__btnGroup
+                                        flex-direction: row
+                                        align-items: center
+                                        justify-content: center
+                                        margin-bottom: 20px
+                                        .mixbox__counter
+                                            display: flex
+                                            align-items: center
+                                            justify-content: center
+                                            margin-right: 30px
+                                            button
+                                                font-size: 36px
+                                                line-height: 42px
+                                                padding: 4px 0	
+                                        .value
+                                            margin-bottom: 0px
+                                            margin-right: 20px						
+                                        
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
@@ -914,6 +1156,69 @@
                         .btnWrap
                             .btn
                                 width: 280px
+    .mixbox
+        .plaska
+            display: none
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+        .custom__container
+            .tab-content
+                .tab-pane
+                    .mixbox__list
+                        .mixbox__item	
+                            padding-bottom: 50px
+                            &:last-child
+                                padding-bottom: 0px
+                            .mixbox__product
+                                .mixbox__img
+                                    width: 80%
+                            .mixbox__info
+                                .mixbox__top__mobile
+                                    .mixbox__title
+                                        font-size: 32px
+                                        line-height: 39px
+                                    .mixbox__person
+                                        font-size: 22px
+                                        line-height: 27px
+                                .mixbox__top		
+                                    .mixbox__positions
+                                        .mixbox__elem
+                                            margin-bottom: 20px
+                                            .name
+                                                font-size: 16px
+                                                line-height: 20px
+                                            .description
+                                                font-size: 16px
+                                                line-height: 20px
+                                .mixbox__storage
+                                    .mixbox__total
+                                        .description
+                                            font-size: 12px
+                                            line-height: 15px
+                                        .mixbox__add
+                                            font-size: 12px
+                                            line-height: 15px
+                                            margin-bottom: 20px
+                                    .mixbox__btnGroup
+                                        .mixbox__counter
+                                            display: flex
+                                            align-items: center
+                                            justify-content: center
+                                            margin-right: 0px
+                                            .mixbox__count
+                                                padding: 5px 20px
+                                            button
+                                                width: 40px
+                                                font-size: 48px
+                                                line-height: 58px
+                                                padding: 0	
+                                        .value
+                                            width: 160px
+                                            font-size: 30px
+                                            line-height: 36px		
+                                            padding: 11px 0		
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
@@ -1149,7 +1454,8 @@
                 p
                     font-size: 14px
                     line-height: 17px
-
+    .mixbox
+        padding: 90px 15px 25px
 @media screen and (max-width: 321px)
     header
         .container-fluid
