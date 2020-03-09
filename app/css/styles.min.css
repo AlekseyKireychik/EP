@@ -6019,6 +6019,19 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-size: 18px;
     line-height: 22px;
   }
+  .delivery {
+    padding-top: 135px;
+  }
+  .delivery .custom__container .title {
+    margin-bottom: 30px;
+  }
+  .delivery .custom__container .delivery__text {
+    padding: 30px 40px;
+  }
+  .delivery .custom__container .delivery__text p {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .category .custom__container .category__title {
     padding-bottom: 80px;
   }
@@ -6281,6 +6294,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
+@media screen and (max-width: 1370px) {
+  .delivery {
+    padding-top: 110px;
+  }
+  .delivery .custom__container .title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   header .container-fluid.container__header .nav .menu__left nav {
     margin-bottom: 15px;
@@ -6384,6 +6407,14 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .akcii__page .custom__container .akcii__list .akcii__item.description .title {
     display: none;
+  }
+  .delivery {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+  .delivery .custom__container .title {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 
@@ -6898,6 +6929,22 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     max-width: 150px;
   }
   .category.category__05 .custom__container .tab-content .tab-pane .category__list .category__item a .category__info p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .delivery {
+    padding: 90px 15px 25px;
+  }
+  .delivery .custom__container .title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .delivery .custom__container .delivery__text {
+    background-color: transparent;
+    padding: 0px;
+  }
+  .delivery .custom__container .delivery__text p {
     font-size: 14px;
     line-height: 17px;
   }
