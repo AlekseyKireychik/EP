@@ -323,7 +323,11 @@ $(document).ready(function() {
   //       );
   //     });
   // });
-  
+
+  //contacts page tabs
+  if ($(window).width() < 1199) {
+      $(".contacts__content").addClass("tab-content");    
+  }
   // recomendation popup
   $("#recomendation-product-btn").on("click", function(event) {
     event.preventDefault();

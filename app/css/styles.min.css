@@ -3240,7 +3240,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   right: 0;
   top: 0;
   width: 50vw;
-  height: 135px;
+  height: 105px;
   background: rgba(255, 255, 255, 0.2);
   z-index: 55;
 }
@@ -6039,7 +6039,41 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     width: calc((100vw - (100vw - (1400px - 80px))) / 3);
   }
   .akcii__page {
-    padding-top: 165px;
+    padding-top: 135px;
+  }
+  .contacts {
+    padding-top: 135px;
+  }
+  .contacts .custom__container .title {
+    margin-left: 13%;
+    margin-bottom: 30px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane {
+    margin-right: 70px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list {
+    padding: 35px 30px;
+    margin-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item {
+    margin-bottom: 15px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item .text {
+    font-size: 18px;
+    line-height: 22px;
+    width: 200px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item .description {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -6164,7 +6198,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
   .custom__container {
     max-width: 1140px;
   }
@@ -6292,6 +6326,42 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .akcii__page .custom__container .akcii__list .akcii__item.description .text p {
     margin-bottom: 10px;
   }
+  .contacts {
+    padding-top: 100px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane {
+    margin-right: 70px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list {
+    padding: 35px 30px;
+    margin-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item {
+    margin-bottom: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item .text {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 160px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1370px) {
@@ -6415,6 +6485,68 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .delivery .custom__container .title {
     font-size: 28px;
     line-height: 30px;
+  }
+  .contacts {
+    padding-top: 100px;
+  }
+  .contacts .custom__container .title {
+    font-size: 28px;
+    line-height: 30px;
+    margin-left: auto;
+    text-align: center;
+  }
+  .contacts .custom__container .solutions-tab-content {
+    display: block;
+  }
+  .contacts .custom__container .solutions-tab-content .solutions-tab .nav-pills {
+    margin-bottom: 25px;
+  }
+  .contacts .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-weight: normal;
+  }
+  .contacts .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-weight: bold;
+  }
+  .contacts .custom__container .contacts__content .tab-pane {
+    margin-right: 0px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list {
+    padding: 0;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item {
+    margin-bottom: 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item .item .text {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 160px;
+    width: 100%;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
+    position: relative;
+    width: 100%;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .header__overlay {
+    display: none;
   }
 }
 
