@@ -12,6 +12,124 @@
                 .about__item
                     img
                         max-width: 700px
+@media screen and (max-width: 1800px) and (min-height: 800px) and (max-height: 980px)
+    .personal
+        .custom__container
+            .title
+                margin-bottom: 30px
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills
+                        .nav-item
+                            &:last-child
+            .tab-content
+                .tab-pane
+                    .personal__list
+                        padding: 70px 80px
+                        min-height: 605px
+                        max-height: 605px
+                        .profile__wrapinfo
+                            margin-bottom: 30px
+                            .profile__title
+                            .profile__info
+                                p
+                                .btn__group
+                                    button
+                                        &:last-child
+                        .profile__wrapform
+                            .profile__container
+                                .profile__wrapinfo
+                                    &:first-child
+                                    .profile__title
+                                    .profile__info
+                                        p
+                                        button
+                                            &:last-child
+                            form
+                                p
+                                .wrap
+                                    .form__group
+                                        input
+                                            &:last-child
+                                            &::placeholder
+                                    button
+                        &.address
+                            .profile__title
+                            .profile__info
+                                p
+                                button
+                                    &:last-child
+                            .profile__wrapinfo
+                                .profile__item
+                                    &:last-child
+                                        .profile__info
+                .tab-pane
+                    .orders__wrap
+                        min-height: 605px
+                        max-height: 605px
+                        &::-webkit-scrollbar
+                            width: 6px	
+                            max-height: 300px
+                        &::-webkit-scrollbar-thumb
+                            background: $accent	
+                        h2
+                        .order__contentWrap
+                            &::-webkit-scrollbar
+                                width: 6px	
+                                max-height: 300px
+                            &::-webkit-scrollbar-thumb
+                                background: $accent	
+                            .order__content
+                                .panel-group
+                                    .panel
+                                        &:last-child
+                                        .panel-heading
+                                            .order__top
+                                                .panel-title
+                                                .wrap__btn
+                                                    button
+                                                    a
+                                                        .wrap
+                                                            .value
+
+                                                                .disabled
+                                                                .active
+                                                            .btn__icon
+                                                                .btn__line
+                                                        &.collapsed
+                                                            .wrap
+                                                                .value
+                                                                .btn__icon
+                                                                    .btn__line
+                                            .order__body
+                                                .order__list
+                                                    .order__item
+                                                        .order__title
+                                                        .order__description
+                                                        .order__cost
+                                                .order__delivery
+                                                    .order__title
+                                                    .order__address
+                                            .order__container
+                                                .order__value
+                    .personal__list
+                        &.reviews__formWrap
+                            .reviews__form
+                                .title
+                                .formWrap
+                                    .mainform__group
+                                        .mainform__control
+                                            &:last-child
+                                            &::placeholder
+                                        &.comment
+                                            textarea
+                                                &:last-child
+                                                &::placeholder
+                                        .bottom__wrap
+                                            .file
+                                            .form__box
+                                                .btn
 @media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px)
     .home
         .carousel
@@ -22,7 +140,123 @@
                             .carousel__link
                                 .carousel-img__wrap
                                     .carousel-img
-                                        max-width: 240px
+    //                                     max-width: 240px
+    // .personal
+    //     .custom__container
+    //         .title
+    //             margin-bottom: 30px
+    //     .custom__container
+    //         .solutions-tab-content
+    //             .solutions-tab
+    //                 .nav-pills
+    //                     .nav-item
+    //                         &:last-child
+    //         .tab-content
+    //             .tab-pane
+    //                 .personal__list
+    //                     padding: 70px 80px
+    //                     min-height: 605px
+    //                     max-height: 605px
+    //                     .profile__wrapinfo
+    //                         .profile__title
+    //                         .profile__info
+    //                             p
+    //                             .btn__group
+    //                                 button
+    //                                     &:last-child
+    //                     .profile__wrapform
+    //                         .profile__container
+    //                             .profile__wrapinfo
+    //                                 &:first-child
+    //                                 .profile__title
+    //                                 .profile__info
+    //                                     p
+    //                                     button
+    //                                         &:last-child
+    //                         form
+    //                             p
+    //                             .wrap
+    //                                 .form__group
+    //                                     input
+    //                                         &:last-child
+    //                                         &::placeholder
+    //                                 button
+    //                     &.address
+    //                         .profile__title
+    //                         .profile__info
+    //                             p
+    //                             button
+    //                                 &:last-child
+    //                         .profile__wrapinfo
+    //                             .profile__item
+    //                                 &:last-child
+    //                                     .profile__info
+    //             .tab-pane
+    //                 .orders__wrap
+    //                     min-height: 605px
+    //                     max-height: 605px
+    //                     &::-webkit-scrollbar
+    //                         width: 6px	
+    //                         max-height: 300px
+    //                     &::-webkit-scrollbar-thumb
+    //                         background: $accent	
+    //                     h2
+    //                     .order__contentWrap
+    //                         &::-webkit-scrollbar
+    //                             width: 6px	
+    //                             max-height: 300px
+    //                         &::-webkit-scrollbar-thumb
+    //                             background: $accent	
+    //                         .order__content
+    //                             .panel-group
+    //                                 .panel
+    //                                     &:last-child
+    //                                     .panel-heading
+    //                                         .order__top
+    //                                             .panel-title
+    //                                             .wrap__btn
+    //                                                 button
+    //                                                 a
+    //                                                     .wrap
+    //                                                         .value
+
+    //                                                             .disabled
+    //                                                             .active
+    //                                                         .btn__icon
+    //                                                             .btn__line
+    //                                                     &.collapsed
+    //                                                         .wrap
+    //                                                             .value
+    //                                                             .btn__icon
+    //                                                                 .btn__line
+    //                                         .order__body
+    //                                             .order__list
+    //                                                 .order__item
+    //                                                     .order__title
+    //                                                     .order__description
+    //                                                     .order__cost
+    //                                             .order__delivery
+    //                                                 .order__title
+    //                                                 .order__address
+    //                                         .order__container
+    //                                             .order__value
+    //                 .personal__list
+    //                     &.reviews__formWrap
+    //                         .reviews__form
+    //                             .title
+    //                             .formWrap
+    //                                 .mainform__group
+    //                                     .mainform__control
+    //                                         &:last-child
+    //                                         &::placeholder
+    //                                     &.comment
+    //                                         textarea
+    //                                             &:last-child
+    //                                             &::placeholder
+    //                                     .bottom__wrap
+    //                                         .file
+    //                                         .form__box
+    //                                             .btn
 @media screen and (min-width: 1200px) and (min-height: 800px) and (max-height: 899px)
     .home
         .carousel

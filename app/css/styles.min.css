@@ -6010,9 +6010,35 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px) {
-  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 240px;
+@media screen and (max-width: 1800px) and (min-height: 800px) and (max-height: 980px) {
+  .personal .custom__container .title {
+    margin-bottom: 30px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list {
+    padding: 70px 80px;
+    min-height: 605px;
+    max-height: 605px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
+    margin-bottom: 30px;
+  }
+  .personal .custom__container .tab-content .tab-pane .orders__wrap {
+    min-height: 605px;
+    max-height: 605px;
+  }
+  .personal .custom__container .tab-content .tab-pane .orders__wrap::-webkit-scrollbar {
+    width: 6px;
+    max-height: 300px;
+  }
+  .personal .custom__container .tab-content .tab-pane .orders__wrap::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  .personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap::-webkit-scrollbar {
+    width: 6px;
+    max-height: 300px;
+  }
+  .personal .custom__container .tab-content .tab-pane .orders__wrap .order__contentWrap::-webkit-scrollbar-thumb {
+    background: #fff;
   }
 }
 
