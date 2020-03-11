@@ -47,6 +47,7 @@
                         .orders__wrap
                             .order__contentWrap
                                 margin-bottom: 120px
+                                padding-bottom: 200px
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
@@ -381,6 +382,14 @@
                     .order__box
                         min-height: 445px
                         max-height: 445px  
+                        .orders__wrap
+                            .order__contentWrap
+                                .order__content
+                                    .panel-group
+                                        .panel
+                                            .panel-heading
+                                                .order__top
+                                                    margin-bottom: 20px
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
@@ -396,6 +405,8 @@
                                                 padding: 10px
                                                 &:last-child
                                                     margin-bottom: 10px
+
+                                                
 
     .profile__btn
         font-size: 14px
@@ -556,7 +567,7 @@
             .solutions-tab-content
                 .solutions-tab
                     .nav-pills
-                        padding: 20px 25px
+                        padding: 29px 25px
                         max-width: 350px
                         min-width: 350px
                         .nav-item
@@ -568,8 +579,8 @@
                 .tab-pane
                     .personal__list
                         padding: 15px 30px
-                        min-height: 415px
-                        max-height: 415px
+                        min-height: 430px
+                        max-height: 430px
                         p
                             margin-bottom: 5px
                         .profile__wrapinfo
@@ -606,8 +617,8 @@
                                             margin-bottom: 20px
                 .tab-pane
                     .order__box
-                        min-height: 415px
-                        max-height: 415px  
+                        min-height: 430px
+                        max-height: 430px  
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
@@ -1162,7 +1173,136 @@
                                         .value
                                             margin-bottom: 0px
                                             margin-right: 20px						
-                                        
+    .personal
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills
+                        .nav-item
+                            &:last-child
+            .tab-content
+                .tab-pane
+                    .personal__list
+                        &.profile
+                            .profile__wrapinfo
+                                .profile__title
+                                .profile__info
+                                    p
+                                    .btn__group
+                                        button
+                            .profile__wrapform
+                                .profile__container
+                                    .profile__wrapinfo
+                                        margin-bottom: 10px
+                                        &:first-child
+                                            margin-bottom: 10px
+                                        .profile__title
+                                        .profile__info
+                                            p
+                                            button
+                                form
+                                    display: none
+                                    p
+                                    .wrap
+                                        .form__group
+                                            input
+                                        button
+                        .change__password
+                            display: block
+                            margin: 20px auto 0
+                            font-weight: 600
+                            font-size: 14px
+                            line-height: 17px
+                            text-align: center
+                            color: #FFFFFF
+                            border: 1px solid #FFF
+                            background: transparent
+                            border-radius: 10px
+                            width: 280px
+                            padding: 10px 0
+                        &.address
+                            .profile__wrapinfo                            
+                                flex-direction: column
+                                align-items: center
+                                .profile__title                                
+                                    text-align: center
+                                    min-width: 100%
+                                    max-width: 100%
+                                    text-transform: none
+                                .profile__info
+                                    p
+                                        font-size: 18px
+                                        line-height: 22px
+                                        text-align: center
+                                        max-width: 300px
+                                        margin-top: 5px
+                                    button
+                                        margin: 0 auto
+                                        width: 100%
+                                        &:last-child
+                                            margin: 0 auto
+                            .profile__wrapinfo
+                                .profile__item
+                                    button
+                                        margin: 0 auto
+                                        width: 100%
+                                        &:last-child
+                                            margin: 0 auto
+                                    &:last-child
+                                        .profile__info
+                                            p
+                                                font-size: 18px
+                                                line-height: 22px
+                                                text-align: center
+                                                max-width: 300px
+                                                margin-top: 5px
+                                    
+                .tab-pane
+                    .order__box
+                        .orders__wrap	
+                            h2
+                            .order__contentWrap
+                                .order__content
+                                    .panel-group	
+                                        .panel
+                                            .panel-heading
+                                                .order__top
+                                                    .panel-title
+                                                    .wrap__btn
+                                                        button
+                                                        a
+                                                .order__body
+                                                    .order__list
+                                                        .order__item
+                                                            .order__title
+                                                            .order__description
+                                                            .order__cost
+                                                    .order__delivery
+                                                        .order__title
+                                                        .order__address
+                                                .order__container								
+                                                    .order__value	
+                    .personal__list
+                        &.reviews__formWrap
+                            .reviews__form
+                                .title
+                                .formWrap
+                                    .mainform__group
+                                        .mainform__control
+                                        &.comment
+                                            textarea
+                                    .bottom__wrap
+                                        .file		
+                                            &:before
+                                            label
+                                            input
+                                            span 
+                                        #file-name
+                                            .del__container
+                                                span
+                                                    .del-file-btn  
+                                        .form__box
+                                            .btn                                
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px

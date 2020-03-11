@@ -1560,7 +1560,7 @@ header .container-fluid.container__header .nav {
       -ms-flex-pack: start;
           justify-content: flex-start;
   min-width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   width: 0;
   padding: 0;
   background-color: #fff;
@@ -2474,9 +2474,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .personal {
   padding-top: 165px;
+  padding-bottom: 50px;
   background-color: #691D35;
   min-height: 100vh;
-  max-height: 100vh;
 }
 
 .personal .custom__container .title {
@@ -2621,7 +2621,6 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #fff;
 }
 
@@ -2784,6 +2783,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin: 0 auto;
 }
 
+.personal .custom__container .tab-content .tab-pane .personal__list .change__password {
+  display: none;
+}
+
 .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__title {
   min-width: 230px;
   max-width: 230px;
@@ -2891,6 +2894,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 40px;
 }
 
+.personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .panel-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn button {
   font-weight: 600;
   font-size: 16px;
@@ -2902,6 +2912,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap {
   padding-left: 35px;
+}
+
+.personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap .value {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
 }
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top .wrap__btn a .wrap .value .disabled {
@@ -2982,8 +2999,16 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 20px;
 }
 
+.personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__delivery .order__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__body .order__delivery .order__address {
   padding-left: 30px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__container {
@@ -2999,6 +3024,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__container .order__value {
@@ -3174,6 +3202,12 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   line-height: 20px;
 }
 
+.personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap #file-name .del__container span {
+  font-size: 12px;
+  line-height: 15px;
+  padding-left: 7px;
+}
+
 .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap #file-name .del__container span .del-file-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3184,6 +3218,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .form__box .btn {
   width: 240px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 20px;
 }
 
 .profile__btn {
@@ -6124,6 +6161,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap {
     margin-bottom: 120px;
+    padding-bottom: 200px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
     padding: 50px 110px;
@@ -6446,6 +6484,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     min-height: 445px;
     max-height: 445px;
   }
+  .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top {
+    margin-bottom: 20px;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
     padding: 20px 100px;
   }
@@ -6589,7 +6630,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     margin-right: 40px;
   }
   .personal .custom__container .solutions-tab-content .solutions-tab .nav-pills {
-    padding: 20px 25px;
+    padding: 29px 25px;
     max-width: 350px;
     min-width: 350px;
   }
@@ -6600,8 +6641,8 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list {
     padding: 15px 30px;
-    min-height: 415px;
-    max-height: 415px;
+    min-height: 430px;
+    max-height: 430px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list p {
     margin-bottom: 5px;
@@ -6644,8 +6685,8 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     margin-bottom: 20px;
   }
   .personal .custom__container .tab-content .tab-pane .order__box {
-    min-height: 415px;
-    max-height: 415px;
+    min-height: 430px;
+    max-height: 430px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
     padding: 20px 100px;
@@ -7319,6 +7360,74 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .value {
     margin-bottom: 0px;
     margin-right: 20px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo {
+    margin-bottom: 10px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:first-child {
+    margin-bottom: 10px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform form {
+    display: none;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list .change__password {
+    display: block;
+    margin: 20px auto 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 1px solid #FFF;
+    background: transparent;
+    border-radius: 10px;
+    width: 280px;
+    padding: 10px 0;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__title {
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    text-transform: none;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__info p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__info button {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__info button:last-child {
+    margin: 0 auto;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item button {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item button:last-child {
+    margin: 0 auto;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:last-child .profile__info p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    max-width: 300px;
+    margin-top: 5px;
   }
 }
 

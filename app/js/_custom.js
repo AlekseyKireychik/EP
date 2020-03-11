@@ -419,6 +419,12 @@ $(document).ready(function() {
     }
   }
 
+   //form change password profile 
+   $(".change__password").on("click", function(event) {
+    event.preventDefault();
+    $(".profile__wrapinfo").addClass("is-active");
+    $("#change-password-form").addClass("is-active");
+  });
   //nav-menu
   if ($(window).width() > 576) {
     $(".burger-menu").on("click", function(event) {

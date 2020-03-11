@@ -691,7 +691,7 @@ header
 				align-items: flex-start
 				justify-content: flex-start
 				min-width: 100vw
-				height: 100vh
+				min-height: 100vh
 				width: 0
 				padding: 0
 				background-color: #fff
@@ -1202,9 +1202,9 @@ header
 //Personal Page
 .personal
 	padding-top: 165px
+	padding-bottom: 50px
 	background-color: $accentThree
 	min-height: 100vh
-	max-height: 100vh
 	.custom__container
 		.title
 			text-align: center
@@ -1301,7 +1301,6 @@ header
 								line-height: 24px
 								align-items: center
 								letter-spacing: 0.03em
-								text-transform: uppercase
 								color: $accent
 							.btn__group
 								display: flex
@@ -1377,6 +1376,8 @@ header
 									opacity: 0.5
 									border: none
 									margin: 0 auto
+					.change__password
+						display: none
 					&.address
 						.profile__title
 							min-width: 230px
@@ -1447,6 +1448,10 @@ header
 												justify-content: space-between
 												margin-bottom: 40px
 												.panel-title
+													font-size: 20px
+													line-height: 24px
+													margin-bottom: 0
+													text-transform: uppercase
 												.wrap__btn
 													button
 														font-weight: 600
@@ -1459,7 +1464,10 @@ header
 														.wrap
 															padding-left: 35px
 															.value
-
+																font-weight: normal
+																font-size: 16px
+																line-height: 20px
+																letter-spacing: 0.03em
 																.disabled
 																	width: 122px
 																	display: none
@@ -1509,14 +1517,22 @@ header
 													justify-content: flex-start
 													margin-bottom: 20px
 													.order__title
+														font-weight: bold
+														font-size: 18px
+														line-height: 22px
 													.order__address
 														padding-left: 30px
+														font-size: 18px
+														line-height: 22px	
 											.order__container
 												display: flex
 												align-items: center
-												justify-content: flex-start
-												.order__value
-													padding-left: 30px
+												justify-content: flex-start																							
+												font-weight: bold
+												font-size: 18px
+												line-height: 22px												
+												.order__value	
+													padding-left: 30px	
 				.personal__list
 					&.reviews__formWrap
 						padding: 0
@@ -1595,6 +1611,9 @@ header
 										line-height: 20px
 										.del__container
 											span
+												font-size: 12px
+												line-height: 15px
+												padding-left: 7px
 												.del-file-btn
 													display: flex
 													cursor: pointer
@@ -1603,6 +1622,9 @@ header
 									.form__box
 										.btn
 											width: 240px
+											font-size: 14px
+											line-height: 17px
+											padding: 14px 20px
 .profile__btn
 	font-weight: normal
 	padding: 0
