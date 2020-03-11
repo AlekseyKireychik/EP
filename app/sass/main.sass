@@ -1228,6 +1228,27 @@ header
 						margin-bottom: 60px
 						&:last-child
 							margin-bottom: 0px
+						&:nth-child(1)
+							a
+								&:after
+									content: url(../img/@2x/icon-profile.svg)
+						&:nth-child(2)
+							a
+								&:after
+									content: url(../img/@2x/icon-address.svg)
+						&:nth-child(3)
+							a
+								&:after
+									content: url(../img/@2x/icon-orders.svg)
+						&:nth-child(4)
+							a
+								&:after
+									content: url(../img/@2x/icon-reviews.svg)
+						&:nth-child(5)
+							a
+								&:after
+									content: url(../img/@2x/иконка-01.svg)
+
 						a
 							text-align: left
 							font-weight: 600
@@ -1237,13 +1258,11 @@ header
 							text-transform: uppercase
 							color: $accent
 							padding-left: 85px
-							position: relative
+							position: relative		
 							&:after
 								position: absolute
 								left: 0
-								top: 0px
-								content: url(../img/@2x/иконка-01.svg)
-
+								top: 0px					
 							&.active
 								background: none
 								color: #481120
@@ -1379,118 +1398,125 @@ header
 									.profile__info
 										margin-bottom: 40px
 			.tab-pane
-				.orders__wrap
-					padding: 40px 80px
+				.order__box
+					padding: 40px 60px 40px 80px
 					background: rgba(255, 255, 255, 0.1)
-					border-radius: 10px
+					border-radius: 10px	
+					overflow: hidden	
 					min-height: 700px
-					max-height: 700px
-					overflow: auto
-					&::-webkit-scrollbar
-						width: 6px	
-						max-height: 300px
-					&::-webkit-scrollbar-thumb
-						background: $accent	
-					h2
-						font-weight: 600
-						font-size: 20px
-						line-height: 24px
-						letter-spacing: 0.03em
-						text-transform: uppercase
-						color: $accent
-						margin-bottom: 30px
-					.order__contentWrap
+					max-height: 700px		
+					.orders__wrap		
+						max-height: 750px	
 						overflow: auto
+						padding-right: 20px					
 						&::-webkit-scrollbar
 							width: 6px	
 							max-height: 300px
 						&::-webkit-scrollbar-thumb
 							background: $accent	
-						.order__content
-							.panel-group
-								.panel
-									padding: 20px
-									background: rgba(255, 255, 255, 0.2)
-									border-radius: 10px
-									margin-bottom: 25px
-									&:last-child
-										margin-bottom: 0px
-									.panel-heading
-										.order__top
-											display: flex
-											align-items: center
-											justify-content: space-between
-											margin-bottom: 40px
-											.panel-title
-											.wrap__btn
-												button
-													font-weight: 600
-													font-size: 16px
-													line-height: 20px
-													color: $accent
-													background-color: transparent
-													border: none
-												a
-													.wrap
-														padding-left: 35px
-														.value
-
-															.disabled
-																width: 122px
-																display: none
-															.active
-																width: 122px
-																display: inline
-														.btn__icon
-															.btn__line
-													&.collapsed
+						h2
+							font-weight: 600
+							font-size: 20px
+							line-height: 24px
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							margin-bottom: 30px
+						.order__contentWrap
+							overflow: auto
+							margin-bottom: 40px
+							&::-webkit-scrollbar
+								width: 6px	
+								max-height: 300px
+							&::-webkit-scrollbar-thumb
+								background: $accent	
+							.order__content
+								margin-bottom: 80px
+								.panel-group	
+									.panel
+										padding: 20px
+										background: rgba(255, 255, 255, 0.2)
+										border-radius: 10px
+										margin-bottom: 25px
+										&:last-child
+											margin-bottom: 0px
+										.panel-heading
+											.order__top
+												display: flex
+												align-items: center
+												justify-content: space-between
+												margin-bottom: 40px
+												.panel-title
+												.wrap__btn
+													button
+														font-weight: 600
+														font-size: 16px
+														line-height: 20px
+														color: $accent
+														background-color: transparent
+														border: none
+													a
 														.wrap
+															padding-left: 35px
 															.value
+
 																.disabled
-																	display: inline
-																.active
+																	width: 122px
 																	display: none
+																.active
+																	width: 122px
+																	display: inline
 															.btn__icon
 																.btn__line
-										.order__body
-											.order__list
-												border-bottom: 2px solid $accent
-												.order__item
+														&.collapsed
+															.wrap
+																.value
+																	.disabled
+																		display: inline
+																	.active
+																		display: none
+																.btn__icon
+																	.btn__line
+											.order__body
+												.order__list
+													border-bottom: 2px solid $accent
+													margin-bottom: 20px
+													.order__item
+														display: flex
+														align-items: center
+														justify-content: space-between
+														margin-bottom: 20px
+														.order__title
+															font-weight: bold
+															font-size: 18px
+															line-height: 22px
+															color: $accent
+															max-width: 190px
+															width: 100%
+														.order__description
+															font-weight: bold
+															font-size: 18px
+															line-height: 22px
+															color: $accent
+														.order__cost
+															font-weight: bold
+															font-size: 18px
+															line-height: 22px
+															color: $accent
+												.order__delivery
 													display: flex
 													align-items: center
-													justify-content: space-between
+													justify-content: flex-start
 													margin-bottom: 20px
 													.order__title
-														font-weight: bold
-														font-size: 18px
-														line-height: 22px
-														color: $accent
-														max-width: 190px
-														width: 100%
-													.order__description
-														font-weight: bold
-														font-size: 18px
-														line-height: 22px
-														color: $accent
-													.order__cost
-														font-weight: bold
-														font-size: 18px
-														line-height: 22px
-														color: $accent
-											.order__delivery
+													.order__address
+														padding-left: 30px
+											.order__container
 												display: flex
 												align-items: center
 												justify-content: flex-start
-												margin-bottom: 20px
-												.order__title
-												.order__address
+												.order__value
 													padding-left: 30px
-										.order__container
-											display: flex
-											align-items: center
-											justify-content: flex-start
-											.order__value
-												padding-left: 30px
 				.personal__list
 					&.reviews__formWrap
 						padding: 0
@@ -1534,14 +1560,49 @@ header
 												font-size: 14px
 												line-height: 14px
 												color: $accent
-									.bottom__wrap
-										display: flex
-										align-items: flex-start
-										justify-content: flex-start
-										.file
-											input
-										.form__box
-											.btn
+								.bottom__wrap
+									display: flex
+									align-items: flex-start
+									justify-content: space-between
+									.file											
+										position: relative
+										z-index: 10
+										&:before
+											position: absolute
+											content: "+"
+											top: -2px
+											padding: 3px
+										label
+											padding-left: 25px
+											cursor: pointer
+											font-size: 16px
+											font-weight: normal
+											line-height: 20px
+										input
+											width: 0.1px
+											height: 0.1px
+											opacity: 0
+											position: absolute
+											z-index: -10
+										span 
+											font-weight: 600
+											font-size: 14px
+											line-height: 16px
+											display: none
+									#file-name
+										font-weight: normal
+										font-size: 16px
+										line-height: 20px
+										.del__container
+											span
+												.del-file-btn
+													display: flex
+													cursor: pointer
+													
+													
+									.form__box
+										.btn
+											width: 240px
 .profile__btn
 	font-weight: normal
 	padding: 0
@@ -1632,10 +1693,6 @@ header
 					right: 0
 					top: 0
 					width: 50vw
-					height: 100vh
-					background-repeat: no-repeat
-					background-size: cover
-					background-position: center
 				.header__overlay
 					position: absolute
 					right: 0
