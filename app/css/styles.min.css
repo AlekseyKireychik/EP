@@ -3455,6 +3455,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   display: block;
   padding: 26px 0;
   position: relative;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .product .custom__container .product__left .product__recomendation .product__link:after {
@@ -4479,7 +4480,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   border-radius: 5px;
   font-size: 14px;
   line-height: 16px;
-  color: #fff;
+  color: #000;
   padding: 15px;
   margin-right: 20px;
   max-width: 370px;
@@ -5263,6 +5264,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -6194,6 +6198,25 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     height: 85px;
     margin-right: 20px;
   }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap {
+    padding-left: 30px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .right {
+    padding-right: 30px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check {
+    padding-left: 81px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .product {
+    max-height: 100%;
+  }
+  .product .custom__container .product__left .product__wrapImg {
+    max-width: 600px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px) {
@@ -6594,10 +6617,72 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .basket {
     padding-top: 135px;
   }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__imgWrap {
+    max-width: 110px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__imgWrap .product__img {
+    width: 100%;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup {
+    margin-left: 10px;
+  }
   .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup button {
     font-size: 42px;
     line-height: 47px;
     width: 50px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .counter {
+    width: 45px;
+  }
+  .basket .custom__container .basket__left .basket__value .text {
+    font-size: 30px;
+  }
+  .basket .custom__container .basket__left .basket__value .valueWrap .value {
+    font-size: 32px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
+    top: -10px;
+    width: 100%;
+    text-align: left;
+    left: 10px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
+    margin-bottom: 20px;
+    padding-left: 51px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
+    padding-left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight .form__group .form__control {
+    max-width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo.registered .solutions-tab-content .solutions-tab .nav-pills {
+    margin-bottom: 40px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
+    padding-left: 10px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
+    width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
+    padding-left: 60px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
+    padding-left: 10px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap {
+    padding-left: 10px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check {
+    padding-left: 61px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
+    padding-left: 10px;
   }
 }
 
@@ -6703,38 +6788,13 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
-@media screen and (max-width: 1600px) {
-  .basket {
-    padding-top: 135px;
-  }
-  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup {
-    margin-left: 10px;
-  }
-  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup button {
-    font-size: 42px;
-    line-height: 47px;
-    width: 50px;
-  }
-  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .counter {
-    width: 45px;
-  }
-  .basket .custom__container .basket__left .basket__value .text {
-    font-size: 30px;
-  }
-  .basket .custom__container .basket__left .basket__value .valueWrap .value {
-    font-size: 32px;
-  }
-  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
-    padding-left: 0px;
-  }
-  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
-    top: -10px;
-  }
-}
-
 @media screen and (max-width: 1500px) {
   .custom__container {
     max-width: 1250px;
+  }
+  .category {
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
   .category .category__list .category__item {
     width: calc((100vw - (100vw - (1250px - 80px))) / 3);
@@ -6825,6 +6885,83 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment textarea:last-child {
     margin-bottom: 10px;
+  }
+  .basket .custom__container .basket__left .basket__promocode {
+    padding: 0 30px;
+  }
+  .basket .custom__container .basket__left .basket__value {
+    padding: 0 30px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon {
+    width: 65px;
+    height: 65px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon.badge svg {
+    width: 46px;
+    height: 46px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon.prof svg {
+    width: 38px;
+    height: 38px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon.car svg {
+    width: 46px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon.pin svg {
+    width: 46px;
+    height: 46px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .solutions-tab-content .solutions-tab .nav-pills .nav-item a .wrapIcon.org svg {
+    width: 46px;
+    height: 46px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control {
+    padding: 15px 10px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight {
+    margin-left: 20px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap {
+    padding-left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .right {
+    padding: 0;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check {
+    padding-left: 50px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
+    padding-left: 0px;
+  }
+  .product .custom__container .product__left {
+    margin-left: 122px;
+  }
+  .product .custom__container .product__left .product__recomendation .product__link {
+    max-width: 180px;
+    font-size: 18px;
+  }
+  .product .custom__container .product__left .product__wrapImg {
+    max-width: 500px;
+  }
+  .product .custom__container .product__right form .product__cost {
+    margin-bottom: 30px;
+  }
+  .product .custom__container .product__right form .product__btnGroup .product__counter .product__btnReduction {
+    padding: 2px 0;
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .product .custom__container .product__right form .product__btnGroup .product__counter .product__btnIncrement {
+    padding: 2px 0;
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .product .custom__container .product__right form .product__dopinfo .form-check {
+    padding-bottom: 30px;
   }
 }
 
@@ -7070,6 +7207,76 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     line-height: 42px;
     padding: 4px 0;
   }
+  .basket {
+    padding-top: 100px;
+  }
+  .basket .custom__container .title {
+    margin-bottom: 30px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info .form-check .form__check-label {
+    text-align: left;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup button {
+    font-size: 36px;
+    line-height: 36px;
+    width: 35px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell {
+    margin-left: 15px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__btnGroup .dell svg {
+    width: 35px;
+    height: 35px;
+  }
+  .basket .custom__container .basket__left .basket__value .text {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .basket .custom__container .basket__left .basket__value .valueWrap .value {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .basket .custom__container .basket__right .basket__progress {
+    margin-bottom: 25px;
+  }
+  .basket .custom__container .basket__right .basket__progress .basket__item {
+    min-width: 120px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .basket .custom__container .basket__right .basket__progress .basket__item.active-step::after {
+    content: url(../img/@2x/active-arr-litl.svg);
+    right: -22px;
+  }
+  .basket .custom__container .basket__right .basket__progress .basket__item.delivery-step::after {
+    border: 25px solid transparent;
+    border-left: 20px solid rgba(255, 255, 255, 0.35);
+    right: -45px;
+  }
+  .basket .custom__container .basket__right .basket__progress .basket__item.order-step {
+    padding-left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__progress .basket__item.order-step::after {
+    border: 25px solid transparent;
+    border-left: 20px solid rgba(255, 255, 255, 0.4);
+    right: -45px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box.pickup {
+    padding-left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap {
+    margin-bottom: 10px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .left .pay__group label {
+    width: 185px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
+    padding-right: 0px;
+  }
 }
 
 @media screen and (max-width: 1370px) {
@@ -7167,6 +7374,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__storage .mixbox__btnGroup .mixbox__add {
     font-size: 18px;
     line-height: 30px;
+  }
+  .account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
+    padding: 10px 5px;
   }
 }
 
@@ -7635,6 +7845,52 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .account__formWrap .account__formRecovery .account__formContent .form__top {
     margin-bottom: 0px;
   }
+  .basket .custom__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket .custom__container .basket__left {
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+  .basket .custom__container .basket__left .basket__products {
+    max-height: 100%;
+    width: 100%;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list {
+    margin-right: 0px;
+  }
+  .basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__info {
+    max-width: 100%;
+  }
+  .basket .custom__container .basket__right {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control {
+    max-width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
+    left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft {
+    width: 48%;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formLeft .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formLeft .form__group .form__control {
+    max-width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
+    padding-left: 0px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
+    padding-left: 50px;
+  }
+  .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -7916,6 +8172,12 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .account__formWrap {
     width: 100vw;
+  }
+  .basket .custom__container .basket__left {
+    width: 100%;
+  }
+  .basket .custom__container .basket__right {
+    width: 100%;
   }
 }
 
