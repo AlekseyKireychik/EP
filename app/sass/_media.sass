@@ -1684,24 +1684,28 @@
                         padding: 0
                         max-width: 100%
                         flex-direction: row
-                        border-bottom: 1px solid #fff
+                        border-bottom: 1px solid $accent
                         margin-bottom: 20px
                         border-radius: 0
                         .nav-item
                             margin-bottom: 0px
                             a 
+                                padding-left: 3px
+                                padding-right: 3px
                                 font-size: 12px
                                 line-height: 15px
                                 padding-left: 0px
                                 text-align: center
                                 white-space: nowrap
+                                min-width: 130px
                                 &::after
                                     content: " "
                                     display: none
                                 &.active
-
+                                    padding: 8px 5px
                                     background: rgba(255, 255, 255, 0.3)
                                     border-radius: 5px 5px 0px 0px
+                                    color: $accent
 
             .tab-content
                 padding-left: 0px
@@ -1720,18 +1724,18 @@
                         &.profile
                             .profile__wrapinfo
                                 margin-bottom: 25px
-                                &:last-child                                    
+                                &:first-child                                    
                                     .profile__info
                                         p
-                                            font-size: 12px
-                                            line-height: 15px
+                                            font-size: 18px
+                                            line-height: 19px
                                 .profile__title
                                     font-size: 14px
                                     line-height: 17px
                                 .profile__info
                                     p
-                                        font-size: 18px
-                                        line-height: 22px
+                                        font-size: 12px
+                                        line-height: 15px
                                     .btn__group
                                         button
                                             font-size: 10px
@@ -1769,8 +1773,14 @@
                         &.address
                             .profile__wrapinfo     
                                 .profile__title 
+                                    font-size: 14px
+                                    line-height: 17px
+                                    margin-bottom: 20px
                                 .profile__info
+                                    margin-left: 0px
                                     p
+                                        font-size: 12px
+                                        line-height: 15px
                                     button
                                         &:last-child
                             .profile__wrapinfo
@@ -1778,20 +1788,33 @@
                                     button
                                         &:last-child
                                             margin: 0 auto
+                                    .profile__btn
+                                        font-size: 10px
+                                        line-height: 12px
                                     &:last-child
                                         .profile__info
+                                            margin-left: 0px
                                             p
+                                                font-size: 12px
+                                                line-height: 15px
                                     
                 .tab-pane
                     .order__box
                         min-height: 100%
                         max-height: 100%
-                        padding: 0 25px
+                        padding: 0 0px
                         background: transparent
                         .orders__wrap	
+                            max-height: 100%
+                            overflow: inherit
+                            padding-right: 0px
                             h2
+                                display: none
                             .order__contentWrap
+                                margin-bottom: 0px
+                                padding-bottom: 0px
                                 .order__content
+                                    margin-bottom: 0px
                                     .panel-group	
                                         .panel
                                             .panel-heading
@@ -1800,6 +1823,28 @@
                                                     .wrap__btn
                                                         button
                                                         a
+                                                            .wrap
+                                                                .value
+                                                                    .disabled
+                                                                        position: relative                                                                        
+                                                                        &:after
+                                                                            position: absolute
+                                                                            top: 0
+                                                                            left: -20px
+                                                                            content: url(../img/@2x/arrbottom.svg)
+                                                                        span
+                                                                            display: none
+                                                                            
+                                                                    .active
+                                                                        position: relative
+                                                                        &:after
+                                                                            position: absolute
+                                                                            top: 0
+                                                                            left: -20px
+                                                                            content: url(../img/@2x/arrtop.svg)
+                                                                        span
+                                                                            display: none
+                                                                            
                                                 .order__body
                                                     .order__list
                                                         .order__item                                                       
@@ -1814,14 +1859,35 @@
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
+                                padding: 10px 25px
                                 .title
+                                    display: none
                                 .formWrap
                                     .mainform__group
                                         .mainform__control
+                                            border: 1px solid #A1A4B1
+                                            background-color: $accent
+                                            border-radius: 4px
+                                            &::placeholder
+                                                font-weight: 500
+                                                font-size: 14px
+                                                line-height: 24px
+                                                color: #8B90A0
                                         &.comment
                                             textarea
+                                                border: 1px solid #A1A4B1
+                                                background-color: $accent
+                                                border-radius: 4px
+                                                &::placeholder
+                                                    font-weight: 500
+                                                    font-size: 14px
+                                                    line-height: 24px
+                                                    color: #8B90A0
+
                                     .bottom__wrap
+                                        flex-direction: column
                                         .file		
+                                            margin-bottom: 15px
                                             &:before
                                             label
                                             input
@@ -1830,8 +1896,14 @@
                                             .del__container
                                                 span
                                                     .del-file-btn  
+                                        .capca
+                                            width: 100%
+                                            display: flex
+                                            margin-bottom: 35px
                                         .form__box
-                                            .btn          
+                                            width: 100%   
+                                            .btn    
+                                                width: 100%      
     .account__change__email
         .title
             .form__group
@@ -2075,6 +2147,28 @@
                     line-height: 17px
     .mixbox
         padding: 90px 15px 25px
+    .personal
+        padding-top: 90px
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills    
+                        overflow: auto
+                        padding: 0 15px     
+            .tab-content   
+                padding: 0 15px   
+                .tab-pane 
+                    .personal__list
+                        &.reviews__formWrap 
+                            .reviews__form 
+                                .formWrap 
+                                    .bottom__wrap 
+                                        .file 
+                                            span
+                                                display: flex
+                                                font-weight: 400
+                                                font-size: 14px
+                                                line-height: 16px
 @media screen and (max-width: 321px)
     header
         .container-fluid
