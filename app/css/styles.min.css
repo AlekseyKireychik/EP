@@ -8470,6 +8470,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content {
     padding: 0 15px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .file label {
+    padding-left: 55px;
+    margin-bottom: 0px;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .file span {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8478,6 +8482,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+    padding-left: 55px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .file:before {
+    content: url(../img/@2x/addicon.svg);
   }
 }
 
