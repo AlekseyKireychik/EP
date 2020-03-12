@@ -911,6 +911,15 @@ main {
           flex-direction: column;
 }
 
+.account__formWrap .account__form .account__formContent .form__bottom p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
   border: 1px solid #fff;
   -webkit-box-shadow: 0px 4px 20px rgba(56, 0, 15, 0.5);
@@ -6176,11 +6185,23 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     max-width: 240px;
   }
+  .account__formWrap .account__form .account__formContent .form__top {
+    margin-bottom: 160px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-height: 800px) and (max-height: 899px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     max-width: 230px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top {
+    margin-bottom: 80px;
   }
 }
 
@@ -6188,11 +6209,47 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     max-width: 205px;
   }
+  .account__formWrap .account__form .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top {
+    margin-bottom: 50px;
+  }
+  .account__formWrap .account__formRegistration .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRecovery .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
     max-width: 150px;
+  }
+  .account__formWrap .account__form .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top {
+    margin-bottom: 50px;
+  }
+  .account__formWrap .account__formRegistration .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRecovery .title {
+    margin: 90px auto 60px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top {
+    margin-bottom: 0px;
   }
 }
 
@@ -7479,6 +7536,43 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     padding: 10px;
     margin-bottom: 10px;
   }
+  .account__formWrap .form__btnClose svg {
+    width: 35px;
+    height: 35px;
+  }
+  .account__formWrap .account__form .title {
+    margin: 70px auto 40px;
+  }
+  .account__formWrap .account__form .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top {
+    margin-bottom: 40px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .form__box .btn {
+    width: 180px;
+  }
+  .account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
+    padding: 10px 5px;
+  }
+  .account__formWrap .account__formRegistration .title {
+    margin: 70px auto 40px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRecovery .title {
+    margin: 70px auto 40px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -7757,6 +7851,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
     padding: 20px 40px;
+  }
+  .account__formWrap {
+    width: 100vw;
   }
 }
 
@@ -8156,6 +8253,216 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .form__box .btn {
     width: 100%;
   }
+  .account__formWrap .form__btnClose {
+    top: 25px;
+    right: 25px;
+  }
+  .account__formWrap .form__btnClose svg {
+    width: 25px;
+    height: 25px;
+  }
+  .account__formWrap .account__form .title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 70px auto 30px;
+  }
+  .account__formWrap .account__form .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top {
+    padding-left: 0px;
+    margin-bottom: 40px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control {
+    background: #fff;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+    color: #000;
+    padding: 7px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__label {
+    display: none;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .form__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0;
+    margin-top: 30px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .form__box .simple__btn {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: initial;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .form__box .btn {
+    margin-bottom: 20px;
+    max-width: 280px;
+    width: 100%;
+    text-transform: initial;
+  }
+  .account__formWrap .account__form .account__formContent .form__bottom p {
+    display: none;
+  }
+  .account__formWrap .account__form .account__formContent .form__bottom .form__box {
+    position: fixed;
+    bottom: 25px;
+  }
+  .account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
+    max-width: 280px;
+    text-transform: initial;
+    padding: 10px 5px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .account__formWrap .account__formRegistration .title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 70px auto 30px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control {
+    background: #fff;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+    color: #000;
+    padding: 7px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__label {
+    display: none;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .form__box {
+    margin-left: 0;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .form__box .btn {
+    text-transform: initial;
+  }
+  .account__formWrap .account__formRecovery .title {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 70px auto 30px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent {
+    padding: 0 50px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top {
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control {
+    background: #fff;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+    color: #000;
+    padding: 7px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #8B90A0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__label {
+    display: none;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .form__box {
+    margin-left: 0;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .form__box .btn {
+    text-transform: initial;
+  }
 }
 
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px) {
@@ -8486,6 +8793,22 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .file:before {
     content: url(../img/@2x/addicon.svg);
+  }
+  .account__formWrap {
+    padding: 0 15px;
+  }
+  .account__formWrap .account__form .account__formContent {
+    padding: 0px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent {
+    padding: 0px;
+  }
+  .account__formWrap .account__formRecovery .account__description {
+    max-width: 280px;
+    margin: 0 auto 20px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent {
+    padding: 0px;
   }
 }
 
