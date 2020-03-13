@@ -209,12 +209,10 @@
                                         .form__box
                                             padding-left: 30px
                                             padding-right: 30px
-            &.success
-                .success__body
-                    p
-                .success__info
-                    p                        
-                .btn
+        &.success
+            .custom__container
+                &:last-child
+                    margin-top: 30px
 
     //Product Page 1
     .product
@@ -831,12 +829,6 @@
                                             padding-left: 61px
                                         .form__box
                                             padding-left: 10px
-            &.success
-                .success__body
-                    p
-                .success__info
-                    p                        
-                .btn
     //Product Page 1
     .product
         .custom__container
@@ -845,6 +837,24 @@
                     .product__btnGroup
                         .product__order
                             padding: 22px 20px
+    //Product 2 Page
+    .product-two
+        padding-top: 125px
+        .custom__container
+            .product__left
+                .recomendation__wrap
+                    top: 230px
+                    left: 90px
+                    .product__recomendation
+                        margin-bottom: 50px
+                        &:after
+                    .product__wrapImg
+                        .product__img
+                            max-width: 120px
+            .product__center
+                .product__wrapImg			
+                    .product__img
+                        max-width: 200px
 @media screen and (max-width: 1600px) and (max-height: 800px)
     header
         .container-fluid
@@ -1246,12 +1256,6 @@
                                             padding-left: 50px
                                         .form__box
                                             padding-left: 0px
-            &.success
-                .success__body
-                    p
-                .success__info
-                    p                        
-                .btn
     //Product Page 1
     .product
         .custom__container
@@ -1719,12 +1723,6 @@
                                         .basket__check
                                         .form__box
                                             padding-right: 0px
-            &.success
-                .success__body
-                    p
-                .success__info
-                    p                        
-                .btn 
 @media screen and (max-width: 1370px)
     .about
         padding-top: 110px
@@ -2415,12 +2413,15 @@
                                                     &:hover
                                         .form__box
                                             padding-left: 0px
-            &.success
+        &.success
+            .custom__container
                 .success__body
+                    margin-bottom: 30px
                     p
+                        font-size: 32px
                 .success__info
-                    p                        
-                .btn 
+                    p       
+                        font-size: 32px  
     //Product Page 1
     .product
         padding-top: 120px
@@ -2432,6 +2433,21 @@
                 .product__wrapImg
                     max-width: 80%
                     margin: 0 auto
+    //Product 2 Page
+    .product-two
+        padding-top: 120px
+        .custom__container
+            .product__left
+                .recomendation__wrap
+                    left: 20px
+                    .product__recomendation
+                        max-width: 215px
+                        padding: 10px 5px
+                        &:after
+                            left: 90px
+            .product__center
+                .product__wrapImg	
+                    margin-left: 20px
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
@@ -2667,6 +2683,47 @@
                 width: 100%
             .basket__right                
                 width: 100%
+    //Product 2 Page
+    .product-two
+        padding-bottom: 25px
+        .custom__container
+            flex-direction: column
+            .product__left
+                .recomendation__wrap                    
+                    right: -117px
+                    left: auto
+                    top: 35%
+                    transform: translate(0, -50%) rotate(-90deg)
+                    .product__recomendation
+                        width: 225px
+                        padding: 5px 5px
+                        border-radius: 5px 5px 0px 0px
+                        font-size: 16px
+                        line-height: 20px
+                        &:after
+                            display: none
+                        span
+                            display: none
+                    .product__wrapImg
+                        display: none
+            .product__center
+                width: 100%
+                .product__wrapImg	
+                    margin-left: 0px	
+                    .product__img
+            .product__right
+                form
+                    .product__btnGroup
+                        .product__counter
+                            .product__btnReduction
+                                padding: 2px 0
+                                font-size: 46px
+                                line-height: 46px
+                            .product__count
+                            .product__btnIncrement
+                                padding: 2px 0
+                                font-size: 46px
+                                line-height: 46px
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
@@ -3226,6 +3283,67 @@
                                         .product__name
                                             font-size: 12px
                                             line-height: 15px
+    //Product 2 Page
+    .product-two
+        padding-top: 90px
+        padding-bottom: 25px
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+                margin-bottom: 30px
+        .custom__container
+            .product__left
+                .recomendation__wrap  
+                    .product__recomendation
+                        &:after
+                    .product__wrapImg
+                        .product__img
+            .product__center
+                width: 100%
+                .product__wrapImg		
+                    .product__img
+            .product__right
+                margin-right: 0px
+                width: 80%
+                form
+                    .product__row
+                        .form-check
+                            .form__check-input
+                            input[type="checkbox"]
+                            .form__check-input + label::before
+                                top: -2px
+                                height: 30px
+                                width: 30px
+                            .form__check-label
+                                .product__title
+                                    font-size: 22px
+                                    line-height: 27px
+                                .value
+                                    font-size: 22px
+                                    line-height: 27px
+                                &::after
+                                    left: -42px
+                                    top: -10px
+                                    content: url(../img/@2x/check-phone.svg)
+                    .product__btnGroup
+                        .product__counter
+                            .product__btnReduction
+                                width: 48px
+                                padding: 6px 0
+                            .product__count
+                                padding: 0 18px
+                            .product__btnIncrement
+                                width: 48px
+                                padding: 6px 0
+                        .product__order
+                            background: linear-gradient(91.12deg, #E40007 0.36%, #C70006 99.67%)
+                            border-radius: 5px
+                            border: none
+                            font-size: 18px
+                            line-height: 22px
+                            padding: 18px 20px
+                            color: #fff
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
@@ -3673,12 +3791,20 @@
                                                         .form__control
                                         .basket__check
                                         .form__box
-            &.success
+        &.success
+            padding:  90px 15px 25px
+            .custom__container
+                .title
+                    font-size: 24px
+            .custom__container
                 .success__body
                     p
+                        font-size: 24px
+                        line-height: 32px
                 .success__info
-                    p                        
-                .btn 
+                    p  
+                        font-size: 24px
+                        line-height: 32px  
     //Product Page 1
     .product
         .custom__container
@@ -3740,6 +3866,44 @@
                                         .product__nameInfo
                                             .product__nameValue
                                             .quantity
+    //Product 2 Page
+    .product-two
+        .custom__container
+            .title
+                padding: 0 15px 
+        .custom__container
+            .product__left
+                padding: 0 15px 
+                .recomendation__wrap  
+                    .product__recomendation
+                        &:after
+                    .product__wrapImg
+                        .product__img
+            .product__center
+                padding: 0 15px 
+                .product__wrapImg		
+                    .product__img
+            .product__right
+                padding: 0 15px 
+                width: 100%
+                form
+                    .product__btnGroup
+                        justify-content: space-between
+                        width: 100%
+                        .product__counter
+                            margin-right: 20px
+                            .product__btnReduction
+                            .product__count
+                            .product__btnIncrement
+                    .product__tabinfo
+                        .product__tabtitle
+                        .product__list
+                            .product__item
+                                .product__name
+                                    max-width: 180px
+                                    .product__nameInfo
+                                        .product__nameValue
+                                        .quantity
 @media screen and (max-width: 321px)
     header
         .container-fluid
@@ -3766,6 +3930,47 @@
         .custom__container
             .product__right
                 form
+                    .product__btnGroup
+                        .product__counter                            
+                            margin-right: 0px
+                            .product__count
+                                padding: 0 10px
+                        .product__order
+                            padding: 18px 10px
+    //Product 2 Page
+    .product-two
+        .custom__container
+            .title
+                padding: 0 15px 
+        .custom__container
+            .product__left
+                padding: 0 15px 
+                .recomendation__wrap  
+                    .product__recomendation
+                        &:after
+                    .product__wrapImg
+                        .product__img
+            .product__center
+                padding: 0 15px 
+                .product__wrapImg		
+                    .product__img
+            .product__right
+                padding: 0 15px 
+                width: 100%
+                form
+                    .product__row
+                        .form-check
+                            .form__check-input
+                            input[type="checkbox"]
+                            .form__check-input + label::before
+                            .form__check-label
+                                .product__title
+                                    font-size: 18px
+                                    line-height: 22px
+                                .value
+                                    font-size: 18px
+                                    line-height: 22px
+                                &::after
                     .product__btnGroup
                         .product__counter                            
                             margin-right: 0px

@@ -1964,9 +1964,9 @@ header
 .product-two
 	padding-top: 165px
 	min-height: 100vh
-	max-height: 100vh
 	background: #E67300
 	text-align: center
+	position: relative
 	.custom__container
 		.title
 			margin: 0 auto 60px
@@ -1980,39 +1980,43 @@ header
 			align-items: center
 			justify-content: space-between
 			flex-direction: column
-			.product__recomendation
-				margin-bottom: 80px
-				font-weight: bold
-				font-size: 20px
-				line-height: 24px
-				text-align: center
-				letter-spacing: 0.03em
-				text-transform: uppercase
-				color: #C88C1C
-				max-width: 240px
-				width: 100%
-				background-color: $accent
-				border-radius: 10px
-				display: block
-				padding: 26px 32px
-				position: relative
-				cursor: pointer
-				&:after
-					position: absolute
-					left: 100px
-					bottom: -70px
-					transform: rotate(-90deg)
-					content: url(../img/@2x/polygon.svg)
-			.product__wrapImg
-				max-width: 823px
-				.product__img
+			.recomendation__wrap
+				position: absolute
+				left: 162px
+				top: 328px
+				.product__recomendation
+					margin-bottom: 80px
+					font-weight: bold
+					font-size: 20px
+					line-height: 24px
+					text-align: center
+					letter-spacing: 0.03em
+					text-transform: uppercase
+					color: #E67300
+					max-width: 240px
 					width: 100%
+					background-color: $accent
+					border-radius: 10px
+					display: block
+					padding: 26px 32px
+					position: relative
+					cursor: pointer
+					&:after
+						position: absolute
+						left: 100px
+						bottom: -70px
+						transform: rotate(-90deg)
+						content: url(../img/@2x/polygon.svg)
+				.product__wrapImg
+					.product__img
+						width: 100%
+						max-width: 150px
 		.product__center
 			.product__wrapImg
-				max-width: 500px
-				min-width: 280px
+				margin-left: 170px				
 				.product__img
 					width: 100%
+					max-width: 300px
 		.product__right
 			margin-right: 40px
 			form
@@ -2066,7 +2070,7 @@ header
 							&::after
 								display: none
 								position: absolute
-								content: url(../img/_src/check.svg)
+								content: url(../img/@2x/check.svg)
 								left: -44px
 								top: 0px
 								cursor: pointer
@@ -2095,7 +2099,7 @@ header
 							text-align: center
 							letter-spacing: 0.03em
 							text-transform: uppercase
-							color: #C88C1C
+							color: #E67300
 						.product__count
 							font-weight: bold
 							font-size: 30px
@@ -2117,7 +2121,7 @@ header
 							text-align: center
 							letter-spacing: 0.03em
 							text-transform: uppercase
-							color: #C88C1C
+							color: #E67300
 				.product__tabinfo
 					width: 100%
 					.product__tabtitle
@@ -2848,12 +2852,14 @@ header
 									.form__box
 										padding-left: 80px
 										padding-right: 70px
-		&.success
+	&.success
+		.custom__container	
 			display: flex
 			align-items: center
 			justify-content: center
 			flex-direction: column
-			margin-top: 180px
+			&:last-child						
+				margin-top: 180px
 			.success__body
 				margin-bottom: 60px
 				p
@@ -2871,8 +2877,6 @@ header
 					text-align: center
 					color: $accent
 					margin-bottom: 0
-					
-			.btn
 .mixbox
 	background: #C44403
 	padding-top: 165px
