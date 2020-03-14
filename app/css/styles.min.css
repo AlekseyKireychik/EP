@@ -2111,6 +2111,14 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   height: 100vh;
 }
 
+.category .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+  font-weight: normal;
+}
+
+.category .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+  font-weight: bold;
+}
+
 .category.category__05 .category__list .category__item a .category__imgWrap .category__img {
   max-width: 188px;
   width: auto;
@@ -2151,6 +2159,14 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-right: 0;
 }
 
+.category .category__list .category__item:focus, .category .category__list .category__item:active {
+  outline: transparent;
+}
+
+.category .category__list .category__item a:focus, .category .category__list .category__item a:active {
+  outline: transparent;
+}
+
 .category .category__list .category__item a:hover .category__info p {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -2176,6 +2192,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   margin-bottom: 20px;
 }
 
+.category .category__list .category__item a .category__imgWrap:focus, .category .category__list .category__item a .category__imgWrap:active {
+  outline: transparent;
+}
+
 .category .category__list .category__item a .category__imgWrap .category__img {
   width: 100%;
 }
@@ -2199,6 +2219,10 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 152px;
+}
+
+.category .category__list .category__item a .category__info:focus, .category .category__list .category__item a .category__info:active {
+  outline: transparent;
 }
 
 .category .category__list .category__item a .category__info p {
@@ -6714,7 +6738,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
 }
 
-@media screen and (max-width: 1600px) and (max-height: 800px) {
+@media screen and (max-width: 1600px) and (max-height: 850px) {
   header .container-fluid.container__header .nav .menu__left {
     padding: 10px 40px 25px 50px;
   }
@@ -6759,6 +6783,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .category .custom__container .category__title {
     padding-top: 40px;
     padding-bottom: 60px;
+    margin-bottom: 0px;
   }
   .category .custom__container .category__list {
     -webkit-box-pack: justify;
@@ -6774,12 +6799,19 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     line-height: 36px;
     max-width: 350px;
   }
+  .category .custom__container .category__list .category__item a .category__info {
+    min-height: 130px;
+  }
   .category .custom__container .category__list .category__item a .category__info p {
     margin-bottom: 5px;
   }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 700px) and (max-height: 740px) {
+  .category.category__02 .custom__container .category__title, .category.category__05 .custom__container .category__title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills, .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
+    margin-bottom: 15px;
+  }
   .slider__counter {
     bottom: 20px;
   }
@@ -6790,23 +6822,38 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     padding-top: 20px;
     padding-bottom: 40px;
   }
-  .category.category__02 .custom__container .category__title, .category.category__05 .custom__container .category__title {
+  .category.category__02 .custom__container .category__title {
     padding-top: 10px;
     padding-bottom: 25px;
   }
-  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills, .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
+  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
     margin-bottom: 15px;
   }
-  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a, .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
     font-weight: normal;
-    font-size: 18px;
-    height: 64px;
+    font-size: 16px;
+    line-height: 19px;
   }
-  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active, .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+  .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
     font-weight: bold;
   }
-  .category.category__02 .custom__container .tab-content .tab-pane .category__list .category__item a .category__info, .category.category__05 .custom__container .tab-content .tab-pane .category__list .category__item a .category__info {
+  .category.category__02 .custom__container .tab-content .tab-pane .category__list .category__item a .category__info {
     min-height: 130px;
+  }
+  .category.category__05 .custom__container .category__title {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
+    margin-bottom: 15px;
+  }
+  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-weight: bold;
   }
   .category.category__05 .custom__container .tab-content .tab-pane .category__list .category__item a .category__imgWrap .category__img {
     max-width: 90px;
@@ -7094,9 +7141,6 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .category .custom__container .category__list .category__item a .category__info p {
     margin-bottom: 5px;
-  }
-  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
-    height: 64px;
   }
   .category.category__05 .custom__container .tab-content .tab-pane .category__list .category__item a .category__imgWrap .category__img {
     max-width: 100px;

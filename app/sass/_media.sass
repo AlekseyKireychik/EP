@@ -855,7 +855,7 @@
                 .product__wrapImg			
                     .product__img
                         max-width: 200px
-@media screen and (max-width: 1600px) and (max-height: 800px)
+@media screen and (max-width: 1600px) and (max-height: 850px)
     header
         .container-fluid
             &.container__header
@@ -910,6 +910,7 @@
             .category__title
                 padding-top: 40px
                 padding-bottom: 60px
+                margin-bottom: 0px  
         .custom__container
             .category__list
                 justify-content: space-between
@@ -924,10 +925,19 @@
                                     line-height: 36px
                                     max-width: 350px
                         .category__info
+                            min-height: 130px
                             p
                                 margin-bottom: 5px
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 700px) and (max-height: 740px)
+        &.category__02,&.category__05
+            .custom__container
+                .category__title
+                    padding-top: 30px
+                    padding-bottom: 20px
+            .custom__container
+                .solutions-tab-content
+                    .solutions-tab
+                        .nav-pills
+                            margin-bottom: 15px
     .slider__counter
         bottom: 20px
     .slider
@@ -938,7 +948,7 @@
             .category__title
                 padding-top: 20px
                 padding-bottom: 40px
-        &.category__02, &.category__05
+        &.category__02
             .custom__container
                 .category__title
                     padding-top: 10px
@@ -951,8 +961,8 @@
                             .nav-item
                                 a
                                     font-weight: normal
-                                    font-size: 18px
-                                    height: 64px
+                                    font-size: 16px
+                                    line-height: 19px
                                     &.active
                                         font-weight: bold
                 .tab-content
@@ -964,11 +974,21 @@
                                         min-height: 130px
         &.category__05
             .custom__container
+                .category__title
+                    padding-top: 10px
+                    padding-bottom: 25px
+            .custom__container
                 .solutions-tab-content
                     .solutions-tab
                         .nav-pills
+                            margin-bottom: 15px
                             .nav-item
                                 a
+                                    font-weight: normal
+                                    font-size: 16px
+                                    line-height: 19px
+                                    &.active
+                                        font-weight: bold
                 .tab-content
                     .tab-pane
                         .category__list
@@ -979,6 +999,58 @@
                                             max-width: 90px
                                     .category__info
                                         min-height: 130px
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 700px) and (max-height: 740px)
+    // .slider__counter
+    //     bottom: 20px
+    // .slider
+    //     .slick-arrow
+    //         bottom: -65px
+    // .category
+    //     .custom__container
+    //         .category__title
+    //             padding-top: 20px
+    //             padding-bottom: 40px
+    //     &.category__02, &.category__05
+    //         .custom__container
+    //             .category__title
+    //                 padding-top: 10px
+    //                 padding-bottom: 25px
+    //         .custom__container
+    //             .solutions-tab-content
+    //                 .solutions-tab
+    //                     .nav-pills
+    //                         margin-bottom: 15px
+    //                         .nav-item
+    //                             a
+    //                                 font-weight: normal
+    //                                 font-size: 18px
+    //                                 &.active
+    //                                     font-weight: bold
+    //             .tab-content
+    //                 .tab-pane
+    //                     .category__list
+    //                         .category__item
+    //                             a
+    //                                 .category__info
+    //                                     min-height: 130px
+    //     &.category__05
+    //         .custom__container
+    //             .solutions-tab-content
+    //                 .solutions-tab
+    //                     .nav-pills
+    //                         .nav-item
+    //                             a
+    //             .tab-content
+    //                 .tab-pane
+    //                     .category__list
+    //                         .category__item
+    //                             a
+    //                                 .category__imgWrap
+    //                                     .category__img
+    //                                         max-width: 90px
+    //                                 .category__info
+    //                                     min-height: 130px
 
 @media screen and (max-width: 1500px)
     .custom__container
@@ -1425,7 +1497,6 @@
                         .nav-pills
                             .nav-item
                                 a
-                                    height: 64px
                 .tab-content
                     .tab-pane
                         .category__list
