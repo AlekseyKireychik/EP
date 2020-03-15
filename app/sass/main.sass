@@ -33,7 +33,9 @@ input, textarea
 		border-color: red
 	&:required:valid
 		border-color: green
-
+button
+	&:active, &:focus
+		outline: transparent
 body
 	font-size: 16px
 	min-width: 320px
@@ -69,6 +71,8 @@ main
 	padding: 22px 20px
 	color: $accent
 	transition: all .3s linear
+	&:active, &:focus
+		outline: transparent
 	&:hover
 		color: $accent
 		text-decoration: none
@@ -309,10 +313,11 @@ main
 						line-height: 17px
 						text-align: right
 						letter-spacing: 0.03em
-						text-transform: uppercase
 						color: $accent
 						background-color: transparent
 						border: none
+						&:focus, &:active
+							outline: transparent
 					.btn
 						width: 240px
 			.form__bottom
@@ -715,6 +720,7 @@ header
 					background-color: $accentTwo
 					padding: 30px 40px 40px 50px
 					height: 100%
+					min-height: 100vh
 					position: relative
 					.close
 						position: absolute
@@ -803,6 +809,7 @@ header
 					background-color: $accentThree
 					padding: 60px 144px 55px 154px
 					height: 100%
+					min-height: 100vh
 					position: relative
 					.close
 						position: absolute
@@ -868,6 +875,25 @@ header
 							max-width: 453px
 .home
 	.carousel
+		&.vert 
+			.carousel-item-next
+				&.carousel-item-left
+					transform: translate3d(0, 0, 0)
+			.carousel-item-prev
+				&.carousel-item-right 
+					transform: translate3d(0, 0, 0)
+			.carousel-item-next
+				transform: translate3d(0, 100% 0)
+			.active
+				&.carousel-item-right 
+					transform: translate3d(0, 100% 0)
+			.carousel-item-prev
+				transform: translate3d(0,-100%, 0)
+			.active
+				&.carousel-item-left 
+			 		transform: translate3d(0,-100%, 0)
+		
+
 		.carousel-inner
 			.carousel-indicators
 				bottom: auto
@@ -1766,6 +1792,7 @@ header
 		&:first-child
 			justify-content: center
 		.product__left
+
 			margin-left: 210px
 			.product__recomendation
 				position: absolute
@@ -3237,7 +3264,7 @@ header
 												border-radius: 5px
 												transition: all .3s linear
 											.wrap__img
-												max-width: 185px
+												max-width: 180px
 												width: 100%
 												margin-right: 20px
 												img 
@@ -3246,7 +3273,7 @@ header
 												.name
 													max-width: 180px
 													font-weight: 600
-													font-size: 16px
+													font-size: 18px
 													line-height: 22px
 													color: $accent
 													margin-bottom: 10px

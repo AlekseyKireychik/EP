@@ -411,6 +411,10 @@ input:required:valid, textarea:required:valid {
   border-color: green;
 }
 
+button:active, button:focus {
+  outline: transparent;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -456,6 +460,10 @@ main {
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
+}
+
+.btn:active, .btn:focus {
+  outline: transparent;
 }
 
 .btn:hover {
@@ -881,10 +889,13 @@ main {
   line-height: 17px;
   text-align: right;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #fff;
   background-color: transparent;
   border: none;
+}
+
+.account__formWrap .account__form .account__formContent .form__top .form__box .simple__btn:focus, .account__formWrap .account__form .account__formContent .form__top .form__box .simple__btn:active {
+  outline: transparent;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .form__box .btn {
@@ -1597,6 +1608,7 @@ header .container-fluid.container__header .nav .menu__left {
   background-color: #481120;
   padding: 30px 40px 40px 50px;
   height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -1762,6 +1774,7 @@ header .container-fluid.container__header .nav .menu__right {
   background-color: #691D35;
   padding: 60px 144px 55px 154px;
   height: 100%;
+  min-height: 100vh;
   position: relative;
 }
 
@@ -1878,6 +1891,36 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   letter-spacing: 0.02em;
   color: #fff;
   max-width: 453px;
+}
+
+.home .carousel.vert .carousel-item-next.carousel-item-left {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.home .carousel.vert .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.home .carousel.vert .carousel-item-next {
+  -webkit-transform: translate3d(0, 100% 0);
+          transform: translate3d(0, 100% 0);
+}
+
+.home .carousel.vert .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100% 0);
+          transform: translate3d(0, 100% 0);
+}
+
+.home .carousel.vert .carousel-item-prev {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+}
+
+.home .carousel.vert .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
 }
 
 .home .carousel .carousel-inner .carousel-indicators {
@@ -5988,7 +6031,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
-  max-width: 185px;
+  max-width: 180px;
   width: 100%;
   margin-right: 20px;
 }
@@ -6000,7 +6043,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
   max-width: 180px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 22px;
   color: #fff;
   margin-bottom: 10px;
