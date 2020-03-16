@@ -2296,6 +2296,7 @@
                     .contacts__mapContainer
                         position: relative
                         width: 100%
+                        min-height: 63.5vh
                     .header__overlay
                         display: none
     .mixbox
@@ -3178,8 +3179,9 @@
                             a
                                 padding-left: 3px
                                 padding-right: 3px
-                                font-size: 12px
-                                line-height: 15px
+                                font-size: 10px
+                                line-height: 12px
+                                font-weight: normal
                                 padding-left: 0px
                                 text-align: center
                                 white-space: nowrap
@@ -3188,6 +3190,9 @@
                                     content: " "
                                     display: none
                                 &.active
+                                    font-weight: bold
+                                    font-size: 12px
+                                    line-height: 15px
                                     padding: 8px 5px
                                     background: rgba(255, 255, 255, 0.3)
                                     border-radius: 5px 5px 0px 0px
@@ -3660,6 +3665,284 @@
                             line-height: 22px
                             padding: 18px 20px
                             color: #fff
+    .basket
+        padding-top: 90px
+        padding-bottom: 25px
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+        .custom__container
+            .basket__left
+                background: transparent
+                box-shadow: none
+                border-radius: 0px
+                padding: 0px
+                .basket__products
+                    .product__list
+                        margin-bottom: 30px
+                        .product__item
+                            background: rgba(255, 255, 255, 0.4)
+                            flex-direction: column
+                            position: relative
+                            margin-bottom: 20px
+                            &:last-child
+                                margin-bottom: 0px
+                            .product__itemWrap
+                                flex-direction: column
+                                .product__imgWrap
+                                    margin-right: 0px
+                                    margin-bottom: 10px
+                                    max-width: 205px
+
+                                    .product__img
+                                .product__info
+                                    .product__title	
+                                        font-size: 16px
+                                        line-height: 20px		
+                                        margin-bottom: 5px				
+                                    .form-check
+                                        .form__check-input
+                                        .form__check-input + label::before
+                                        .form__check-label
+                                            &::after
+                                    .product__cost
+                            &.box
+                            .product__btnGroup
+                                position: absolute
+                                right: 10px
+                                bottom: 10px
+                                button
+                                .counter
+                                .dell
+                                    display: none
+                .basket__trash
+                    display: none
+                .basket__promocode
+                    padding: 0 5px
+                    order: -1
+                    position: relative
+                    margin-bottom: 20px
+                    .form__promocode-input
+                        background: transparent
+                        box-shadow: none
+                        border: 1px solid $accent
+                        border-radius: 5px
+                        color: $accent
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 15px
+                        padding: 7px 15px 
+                        margin-right: 0px
+                        max-width: 100%
+                        &::placeholder
+                            color: rgba(255, 255, 255, 0.3)
+                    button
+                        position: absolute
+                        right: 5px
+                        border: 1px solid $accent                        
+                        background: transparent
+                        box-shadow: none
+                        border-radius: 5px
+                        color: $accent
+                        font-weight: 600
+                        font-size: 12px
+                        line-height: 16px
+                        padding: 6px 23px
+                        width: 130px
+                        text-transform: none
+                .basket__value
+                    padding: 15px
+                    background: #481120
+                    .text
+                        font-size: 18px
+                        line-height: 27px
+                    .valueWrap
+                        text-align: right
+                        font-size: 18px
+                        line-height: 22px				
+                        .value
+                .btn__list__mobile
+                    background: #481120
+                    width: 100%
+                    padding: 0 15px 25px
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+                    li
+                        .btn
+                            padding: 11.5px 20px
+                            width: 150px
+            .basket__right                
+                width: 100%
+                margin: 0 auto
+                .basket__progress
+                    display: none
+                    .basket__item
+                        &.active-step	
+                            &::after
+                        &.delivery-step
+                            &::after
+                        &.order-step
+                            &::after
+                        &.performed-step                        
+                .basket__content
+                    .basket__tabinfo
+                        .solutions-tab-content
+                            .solutions-tab
+                                .nav-pills
+                                    margin-bottom: 20px
+                                    .nav-item
+                                        margin-right: 10px
+                                        &:last-child
+                                          margin-right: 0px  
+                                        a 	
+                                            font-weight: 600
+                                            font-size: 14px
+                                            line-height: 24px                                            
+                                            border-radius: 5px                                            
+                                            text-align: center
+                                            border: 2px solid $accent
+                                            background: transparent
+                                            color: $accent
+                                            text-transform: none
+                                            padding: 3px 10px
+                                            .wrapIcon
+                                                display: none
+                                                .icon
+                                            &.active
+                                                color: #691D35
+                                                background: $accent
+                                                .wrapIcon
+                        .tab-content
+                            .tab-pane
+                                .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization                                    
+                                    .form__group
+                                        .form__control
+                                            max-width: 100%
+                                            background: $accent
+                                            border: 1px solid #A1A4B1
+                                            border-radius: 4px
+                                            color: #8B90A0
+                                            font-weight: 500
+                                            font-size: 12px
+                                            line-height: 24px
+                                            padding: 4.5px 15px
+                                            &:placeholder
+                                                color: #8B90A0
+                                                font-weight: 500
+                                                font-size: 12px
+                                                line-height: 24px
+                                        .form__label	
+                                            left: 0px
+                                        .select
+                                            option
+                                    .basket__check
+                                        padding-left: 31px
+                                        padding-bottom: 0px
+                                        margin-top: 0px
+                                        .form__check-input
+                                        input[type="checkbox"]
+                                        .form__check-input + label::before
+                                            height: 18px
+                                            width: 18px
+                                            left: -31px
+                                            top: 0px
+                                        .form__check-label
+                                            font-size: 14px
+                                            line-height: 17px
+                                            text-transform: none
+                                            &::after
+                                                content: url(../img/@2x/check-litl.svg)
+                                                left: -28px
+                                                top: -1px
+                                    .basket__info
+                                        .basket__address
+                                            li
+                                                margin-bottom: 30px
+                                                &:last-child
+                                                .address_title
+                                                    font-size: 12px
+                                                    line-height: 15px									
+                                                .address_text	
+                                                    font-size: 12px
+                                                    line-height: 15px
+                                        .basket__preorder
+                                            .basket__check
+                                                .form__check-input
+                                                input[type="checkbox"]
+                                                .form__check-input + label::before
+                                                .form__check-label
+                                                    &::after
+                                            .group__input
+                                                .form__control
+                                                    &:first-child
+
+                                    .form__box								
+                                        button
+                                            width: 100%
+                                            margin-bottom: 10px
+                                            &:last-child
+                                                margin-bottom: 0px
+                                        &.pickup
+                                            flex-direction: column
+                                    .basket__formTop
+                                    .basket__formCenter	
+                                        .basket__formLeft								
+                                            .form__group
+                                                .form__control
+                                            .basket__check
+                                                .form__check-label
+                                                    &::after
+                                                .form__check-input + label::before
+                                                    
+                                        .basket__formRight
+                                            .form__group
+                                                .form__control
+                                            .group__input
+                                                .form__control
+                                                    &:first-child
+                                .basket__formNew, .basket__formProfile
+                                    .form__group
+                                        .form__control
+                                            color: #8B90A0
+                                            margin-bottom: 0px
+                                            &:placeholder
+                                        .form__label
+                                            display: none	
+                                .basket__pickup
+                                    .basket__info
+                                        flex-direction: column
+                                        .basket__preorder
+                                            max-width: 100%
+                                            .group__input
+                                                flex-direction: row
+                                                .form__control
+                        &.registered
+                            .solutions-tab-content
+                                .solutions-tab
+                                    .nav-pills
+                            .tab-content
+                                .tab-pane
+                                    .basket__formNew, .basket__formProfile
+                                        .basket__check				
+                    &.payment__method
+                        .basket__tabinfo
+                            .solutions-tab-content
+                                .solutions-tab
+                                    .nav-pills
+                                        .nav-item
+                                            a 	
+                            .tab-content
+                                .tab-pane
+                                    .basket__formIndividual,.basket__formOrganization
+                                        .form__group
+                                            .form__label
+                                        .basket__check
+                                            .form__check-label
+                                                a 
+                                                    &:hover
+                                        .form__box
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
@@ -3972,6 +4255,7 @@
         .custom__container
             .basket__left
                 .basket__products
+                    padding: 0 15px
                     .product__list
                         .product__item
                             .product__itemWrap
@@ -3992,13 +4276,16 @@
                                 .dell
                 .basket__trash
                 .basket__promocode
+                    padding: 0 20px
                     .form__promocode-input
                     button
+                        right: 20px
                 .basket__value
                     .text
                     .valueWrap				
                         .value
             .basket__right
+                padding: 0 15px
                 .basket__progress
                     .basket__item
                         &.active-step	
@@ -4223,6 +4510,49 @@
                                     .product__nameInfo
                                         .product__nameValue
                                         .quantity
+    .contacts
+        padding: 90px 15px 25px
+        .custom__container 
+            .title
+                font-size: 24px
+                line-height: 29px
+        .custom__container 
+            .solutions-tab-content 
+                .solutions-tab 
+                    .nav-pills 
+                        .nav-item 
+                            a
+                                font-weight: normal
+                                font-size: 10px
+                                line-height: 12px
+                                &.active
+                                    font-weight: bold
+                                    font-size: 12px
+                                    line-height: 15px
+            .contacts__content 
+                .tab-pane 
+                    .contacts__list 
+                        .contacts__item 
+                            &:first-child 
+                            margin-bottom: 30px
+                            padding-bottom: 30px
+                            h2
+                                font-size: 14px
+                                line-height: 17px
+                            .item 
+                                .text
+                                    font-size: 14px
+                                    line-height: 17px
+                                .description
+                                    font-size: 14px
+                                    line-height: 17px
+                                .phone__list
+                                    li
+                                        a
+                                            font-size: 14px
+                                            line-height: 17px 
+                    .contacts__mapContainer
+                        min-height: 65.5vh
 @media screen and (max-width: 321px)
     header
         .container-fluid

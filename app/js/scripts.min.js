@@ -8,6 +8,16 @@ window.onload = function() {
       separator: '+375 (   )-'
     });
   });
+  //mask input time
+  let timeAll = document.querySelectorAll(".time");
+  timeAll.forEach(element => {
+    MaskedInput({
+      elm: element,
+      format: '__:__',
+      separator: ':'
+    });
+  });
+
   
   //BackForm input-file
   function getFileName() {
@@ -338,6 +348,41 @@ $(document).ready(function() {
   //     });
   // });
 
+  // basket page orders chek
+  if($("#check-preorder-order").is(":checked")) {  
+    $("#date-preorder").attr('disabled', false).removeClass("disabled");
+    $("#time-preorder").attr('disabled', false).removeClass("disabled");
+  } else {
+      $("#date-preorder").attr('disabled', true).addClass("disabled");
+      $("#time-preorder").attr('disabled', true).addClass("disabled");
+  }
+  $("#check-preorder-order").on("click", function(event) {
+    if($("#check-preorder-order").is(":checked")) {  
+      $("#date-preorder").attr('disabled', false).removeClass("disabled");
+      $("#time-preorder").attr('disabled', false).removeClass("disabled");
+    } else {
+        $("#date-preorder").attr('disabled', true).addClass("disabled");
+        $("#time-preorder").attr('disabled', true).addClass("disabled");
+    }
+  });
+  if($("#check-preorder-order-2").is(":checked")) {  
+    $("#date-preorder-2").attr('disabled', false).removeClass("disabled");
+    $("#time-preorder-2").attr('disabled', false).removeClass("disabled");
+  } else {
+      $("#date-preorder-2").attr('disabled', true).addClass("disabled");
+      $("#time-preorder-2").attr('disabled', true).addClass("disabled");
+  }
+  $("#check-preorder-order-2").on("click", function(event) {
+    if($("#check-preorder-order-2").is(":checked")) {  
+      $("#date-preorder-2").attr('disabled', false).removeClass("disabled");
+      $("#time-preorder-2").attr('disabled', false).removeClass("disabled");
+    } else {
+        $("#date-preorder-2").attr('disabled', true).addClass("disabled");
+        $("#time-preorder-2").attr('disabled', true).addClass("disabled");
+    }
+  });
+
+  
   //contacts page tabs
   if ($(window).width() < 1199) {
       $(".contacts__content").addClass("tab-content");    

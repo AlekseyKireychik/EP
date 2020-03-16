@@ -220,7 +220,7 @@
                 <input
                   type="tel"
                   value="+375 (__) ___-__-__" 
-                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
                   class="mainform__control validate-numeric required"
                   name="tel_log_in_form"
                   id="tel_log_in_form"
@@ -277,7 +277,7 @@
                 <input
                   type="tel"
                   value="+375 (__) ___-__-__" 
-                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
                   class="mainform__control validate-numeric required"
                   name="tel"
                   id="tel_registration_form"
@@ -832,8 +832,10 @@
                             />
                             <input
                               type="text"
-                              placeholder="__ : __"
-                              class="form__control"
+                              value="__:__" 
+                              min="00:00" max="23:59"
+                              pattern="^\(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                              class="form__control time"
                               name="time"
                               id="time"
                             />
@@ -897,8 +899,10 @@
                             />
                             <input
                               type="text"
-                              placeholder="__ : __"
-                              class="form__control"
+                              value="__:__" 
+                              min="00:00" max="23:59"
+                              pattern="^\(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                              class="form__control time"
                               name="time"
                               id="time-preorder"
                             />

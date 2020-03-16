@@ -845,8 +845,10 @@
                             />
                             <input
                               type="text"
-                              placeholder="__ : __"
-                              class="form__control"
+                              value="__:__" 
+                              min="00:00" max="23:59"
+                              pattern="^\(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                              class="form__control time"
                               name="time"
                               id="time"
                             />
@@ -910,8 +912,10 @@
                             />
                             <input
                               type="text"
-                              placeholder="__ : __"
-                              class="form__control"
+                              value="__:__" 
+                              min="00:00" max="23:59"
+                              pattern="^\(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                              class="form__control time"
                               name="time"
                               id="time-preorder-2"
                             />

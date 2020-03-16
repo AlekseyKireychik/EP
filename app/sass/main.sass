@@ -1023,8 +1023,10 @@ header
 					.nav-item
 						a
 							font-weight: normal
+							font-size: 18px
 							&.active
 								font-weight: bold
+								font-size: 20px
 	&.category__05
 		.category__list
 			.category__item
@@ -1467,6 +1469,7 @@ header
 							max-height: 300px
 						&::-webkit-scrollbar-thumb
 							background: $accent	
+							border-radius: 10px	
 						h2
 							font-weight: 600
 							font-size: 20px
@@ -1483,6 +1486,7 @@ header
 								max-height: 300px
 							&::-webkit-scrollbar-thumb
 								background: $accent	
+								border-radius: 10px	
 							.order__content
 								margin-bottom: 80px
 								.panel-group	
@@ -1692,9 +1696,9 @@ header
 //Contacts Page
 .contacts
 	padding-top: 165px
+	padding-bottom: 25px
 	background-color: $accentThree
 	min-height: 100vh
-	max-height: 100vh
 	.custom__container
 		.title
 			text-align: left
@@ -1766,6 +1770,7 @@ header
 					position: absolute
 					right: 0
 					top: 0
+					bottom: 0
 					width: 50vw
 				.header__overlay
 					position: absolute
@@ -2235,6 +2240,7 @@ header
 					max-height: 300px
 				&::-webkit-scrollbar-thumb
 					background: $accent	
+					border-radius: 10px	
 				.product__list
 					display: flex
 					align-items: flex-start
@@ -2246,6 +2252,7 @@ header
 						max-height: 300px
 					&::-webkit-scrollbar-thumb
 						background: $accent	
+						border-radius: 10px	
 					height: 100%
 					margin-right: 20px
 					.product__item
@@ -2439,6 +2446,8 @@ header
 						font-weight: bold
 						font-size: 36px
 						line-height: 44px
+			.btn__list__mobile
+				display: none
 		.basket__right
 			margin-left: 60px
 			.basket__progress
@@ -2661,7 +2670,7 @@ header
 												color: $accent
 												margin-right: 20px
 												text-align: left
-  												white-space: nowrap												
+												white-space: nowrap												
 											.address_text	
 												width: 100%											
 												font-weight: normal
@@ -2736,10 +2745,15 @@ header
 											justify-content: flex-start
 											flex-direction: column
 											padding-left: 0px
+											input
+												&.disabled
+													opacity: 0.5
 											.form__control
 												width: 175px
+												position: relative
 												&:first-child
-													background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg)
+													background: 90% 50% no-repeat url(../img/@2x/calendar-icon.svg)												
+													
 
 								.form__box
 									padding-left: 120px
@@ -3237,6 +3251,7 @@ header
 									max-height: 300px
 								&::-webkit-scrollbar-thumb
 									background: $accent	
+									border-radius: 10px	
 								max-height: 540px	
 								padding-right: 30px
 								&::-webkit-scrollbar
