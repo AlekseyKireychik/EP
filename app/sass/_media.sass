@@ -49,8 +49,6 @@
                         max-height: 605px
                         .orders__wrap
                             .order__contentWrap
-                                margin-bottom: 120px
-                                padding-bottom: 200px
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
@@ -309,9 +307,6 @@
                                 padding-top: 50px
                                 .menu__info
                                     &:first-child
-                        .wrap__logos
-                            img
-                                max-width: 300px
                     .menu__right
                         padding: 35px 104px 50px 104px
                         .close
@@ -374,9 +369,6 @@
                                 padding-top: 50px
                                 .menu__info
                                     &:first-child
-                        .wrap__logos
-                            img
-                                max-width: 300px
                     .menu__right
                         padding: 35px 104px 50px 104px
                         .close
@@ -428,9 +420,6 @@
                                 padding-top: 50px
                                 .menu__info
                                     &:first-child
-                        .wrap__logos
-                            img
-                                max-width: 300px
                     .menu__right
                         padding: 35px 104px 50px 104px
                         .close
@@ -486,19 +475,16 @@
                         .wrap__logo
                             margin-bottom: 15px
                         nav
-                            margin-bottom: 30px
+                            margin-bottom: 20px
                             .menu__list
-                                padding-bottom: 50px
+                                padding-bottom: 30px
                                 .menu__item
                                     margin-bottom: 45px
                                     .menu__link
                             .menu__list__info
-                                padding-top: 50px
+                                padding-top: 30px
                                 .menu__info
                                     &:first-child
-                        .wrap__logos
-                            img
-                                max-width: 300px
                     .menu__right
                         padding: 35px 104px 50px 104px
                         .close
@@ -1124,7 +1110,7 @@
                                         font-size: 24px
                                         line-height: 29px
     .category
-        padding: 100px 0 0
+        padding: 100px 0 50px
         .custom__container
             .category__title
                 padding-top: 40px
@@ -1134,7 +1120,6 @@
             .category__list
                 justify-content: space-between
                 .category__item
-                    width: 400px
                     a
                         .category__imgWrap
                         &:hover
@@ -1157,11 +1142,6 @@
                     .solutions-tab
                         .nav-pills
                             margin-bottom: 15px
-    .slider__counter
-        bottom: 20px
-    .slider
-        .slick-arrow
-            bottom: -65px
     .category
         .custom__container
             .category__title
@@ -1170,8 +1150,8 @@
         &.category__02
             .custom__container
                 .category__title
-                    padding-top: 10px
-                    padding-bottom: 25px
+                    padding-top: 20px
+                    padding-bottom: 40px
             .custom__container
                 .solutions-tab-content
                     .solutions-tab
@@ -1215,7 +1195,7 @@
                                 a
                                     .category__imgWrap
                                         .category__img
-                                            max-width: 90px
+                                            max-width: 120px
                                     .category__info
                                         min-height: 130px
 
@@ -1278,7 +1258,7 @@
         .custom__container 
             margin-left: calc((100vw - 1250px) / 2)
     .category        
-        padding-top: 50px
+        padding-top: 100px
         padding-bottom: 30px  
         .category__list
             .category__item
@@ -1618,11 +1598,6 @@
             margin-left: calc((100vw - 1140px) / 2)
     .btn
         padding: 10px 20px
-    .slider__counter
-        bottom: 35px
-    .slider
-        .slick-arrow
-            bottom: -75px
     header
         .container-fluid
             &.container__header
@@ -2761,6 +2736,29 @@
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
+    .account__new__address
+        width: 95%
+        .title
+            margin-bottom: 30px
+        .form__group
+            align-items: flex-start
+            flex-direction: column
+            margin-bottom: 0
+            .form__control
+                max-width: 100%
+                padding: 10px
+            .form__label
+                margin-bottom: 10px
+        .bottom
+            .left
+                .form__group
+                    .form__control
+                        max-width: 100%
+            .right
+                .form__group
+                    .form__control
+                        max-width: 100%
+
     .recomendation 
         .custom__container 
             margin-left: calc((100vw - 720px) / 2)
@@ -3053,6 +3051,12 @@
         &:hover
             background: $accent
             color: #691D35
+        &.back
+            padding: 10px 20px
+            color: $accent
+            border-radius: 10px
+            font-size: 14px
+            line-height: 17px
     header
         .container-fluid
             &.container__header
@@ -3426,7 +3430,10 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 7px                            
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 24px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
@@ -3476,7 +3483,10 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 7px                            
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 24px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
@@ -3506,7 +3516,10 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 7px                            
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 24px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
@@ -3694,7 +3707,6 @@
                                     margin-right: 0px
                                     margin-bottom: 10px
                                     max-width: 205px
-
                                     .product__img
                                 .product__info
                                     .product__title	
@@ -3834,9 +3846,7 @@
                                                 font-size: 12px
                                                 line-height: 24px
                                         .form__label	
-                                            left: 0px
-                                        .select
-                                            option
+                                            left: 0px                                        
                                     .basket__check
                                         padding-left: 31px
                                         padding-bottom: 0px
@@ -3848,6 +3858,7 @@
                                             width: 18px
                                             left: -31px
                                             top: 0px
+                                            border-radius: 2px
                                         .form__check-label
                                             font-size: 14px
                                             line-height: 17px
@@ -3885,8 +3896,22 @@
                                             &:last-child
                                                 margin-bottom: 0px
                                         &.pickup
-                                            flex-direction: column
+                                            flex-direction: column     
                                     .basket__formTop
+                                        .form__group
+                                            &.select__group
+                                                select
+                                                    background: transparent
+                                                    border: 1px solid $accent
+                                                    border-radius: 5px
+                                                    font-weight: 500
+                                                    font-size: 12px
+                                                    line-height: 15px
+                                                    color: $accent
+                                                    height: 30px
+                                                .form__label
+                                                    display: none
+                                                    option                               
                                     .basket__formCenter	
                                         .basket__formLeft								
                                             .form__group
@@ -3902,6 +3927,7 @@
                                             .group__input
                                                 .form__control
                                                     &:first-child
+                                    
                                 .basket__formNew, .basket__formProfile
                                     .form__group
                                         .form__control
@@ -3910,14 +3936,105 @@
                                             &:placeholder
                                         .form__label
                                             display: none	
+                                    &.deliveryform
+                                        padding-top: 20px
+                                        .form__group
+                                            margin-bottom: 40px
+                                            .form__control
+                                                color: #8B90A0
+                                                margin-bottom: 0px
+                                                padding: 4.5px 5px
+                                                &:placeholder
+                                            .form__label
+                                                font-size: 12px
+                                                line-height: 16px
+                                                text-transform: none
+                                                display: flex	
+                                        .basket__formCenter
+                                            .basket__formLeft
+                                                width: 50%
+                                                margin-right: 10px
+                                                .basket__check
+                                                    padding-left: 35px
+                                                    .form__check-label
+                                                        font-size: 14px
+                                                        line-height: 17px
+                                                        text-transform: none
+                                                    .form__check-label::after
+                                                        content: url(../img/@2x/check-litl.svg)
+                                                        left: -31px
+                                                        top: 5px
+                                                    .form__check-input + label::before
+                                                        left: -35px
+                                                        top: 6px
+                                                        height: 18px
+                                                        width: 18px
+                                                        border-radius: 2px
+                                            .basket__formRight
+                                                width: 50%
+                                                margin-left: 10px
+                                                .group__input
+                                                    flex-direction: column
+                                                    margin-bottom: 0px
+                                                    .form__control
+                                                        color: $accent
+                                                        font-size: 14px
+                                                        line-height: 17px
+                                                        padding: 15px 10px
+                                                        height: 50px
+                                                        max-width: 150px   
+                                                        width: 100%                                                   
+                                                        border: 2px solid $accent
+                                                        margin-bottom: 20px
+                                                        &.time
+                                                            margin-left: 0px
+                                                            text-align: center
+                                                            border: 2px solid $accent
+                                                            background: transparent
+                                        .form__box
+                                            flex-direction: column
+                                            padding-top: 25px
                                 .basket__pickup
+                                    padding-top: 0px
                                     .basket__info
                                         flex-direction: column
+                                        .basket__address
+                                            margin-bottom: 30px
                                         .basket__preorder
                                             max-width: 100%
                                             .group__input
                                                 flex-direction: row
+                                                margin-bottom: 0px
                                                 .form__control
+                                                    color: $accent
+                                                    font-size: 14px
+                                                    line-height: 17px
+                                                    padding: 15px 10px
+                                                    height: 50px
+                                                    max-width: 150px   
+                                                    width: 100%                                                   
+                                                    border: 2px solid $accent
+                                                    &.time
+                                                        margin-left: 20px
+                                                        text-align: center
+                                                        border: 2px solid $accent
+                                                        background: transparent
+                                            .basket__check
+                                                padding-left: 35px
+                                                .form__check-label
+                                                    font-size: 14px
+                                                    line-height: 17px
+                                                    text-transform: none
+                                                .form__check-label::after
+                                                    content: url(../img/@2x/check-litl.svg)
+                                                    left: -31px
+                                                    top: 5px
+                                                .form__check-input + label::before
+                                                    left: -35px
+                                                    top: 6px
+                                                    height: 18px
+                                                    width: 18px
+                                                    border-radius: 2px
                         &.registered
                             .solutions-tab-content
                                 .solutions-tab
@@ -4050,6 +4167,54 @@
 @media screen and (max-width: 575px)
     .custom__container
         max-width: 100%
+    .account__new__address
+        .change__close
+            right: 35px
+            top: 15px
+        .title
+            font-size: 24px
+            line-height: 29px
+        .form__group
+            .form__control
+                padding: 6px
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 10px
+            .form__label
+                font-size: 14px
+                line-height: 16px
+        .bottom
+            .left
+                .form__group
+                    .form__control
+                        padding: 6px
+                        margin-bottom: 10px
+                    .form__label
+                        font-size: 14px
+                        line-height: 16px
+            .right
+                .form__group
+                    .form__control
+                        padding: 6px
+                        margin-bottom: 10px
+                    .form__label
+                        font-size: 14px
+                        line-height: 16px
+        .form__box 
+            .btn
+                width: 100%
+    .account__change__email 
+        width: 95%
+        padding: 25px 20px 25px
+        .change__close
+            right: 35px
+            top: 15px
+        .form__box 
+            .btn
+                width: 100%
+        .form__group 
+            .form__control
+                padding: 6px
     .recomendation 
         .custom__container 
             margin-left: 15px
@@ -4136,14 +4301,14 @@
                 padding-left: 15px
                 overflow: auto
     .category
-        padding: 90px 15px 0
+        padding: 90px 15px 25px
         .category__title
             font-size: 24px
             line-height: 29px
             padding-top: 0px
             padding-bottom: 30px
         &.category__05
-            padding: 90px 0px 0
+            padding: 90px 0px 25px
             .custom__container
                 .solutions-tab-content
                     .solutions-tab
@@ -4151,9 +4316,14 @@
                             overflow: auto
                             .nav-item
                                 a
+                                    font-size: 10px
+                                    line-height: 12px
                                     height: auto
                                     white-space: nowrap
                                     padding: 8px 5px
+                                    &.active
+                                        font-size: 12px
+                                        line-height: 15px
                 .tab-content
                     .tab-pane
                         .category__list

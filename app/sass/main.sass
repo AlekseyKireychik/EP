@@ -282,6 +282,8 @@ main
 						width: 100%
 						background-color: transparent
 						margin-bottom: 15px
+						font-size: 14px
+						line-height: 14px
 						&:last-child
 							margin-bottom: 20px
 						&::placeholder
@@ -374,6 +376,8 @@ main
 						width: 100%
 						background-color: transparent
 						margin-bottom: 15px
+						font-size: 14px
+						line-height: 14px
 						&:last-child
 							margin-bottom: 20px
 						&::placeholder
@@ -433,7 +437,9 @@ main
 						padding: 17px
 						width: 100%
 						background-color: transparent
-						margin-bottom: 15px
+						margin-bottom: 15px						
+						font-size: 14px
+						line-height: 14px
 						&:last-child
 							margin-bottom: 20px
 						&::placeholder
@@ -494,7 +500,7 @@ main
 	color: $accent
 	padding: 0
 	top: auto
-	bottom: 50px
+	bottom: 0px
 	font-weight: bold
 	font-size: 28px
 	line-height: 34px
@@ -508,7 +514,7 @@ main
 
 .slider
 	.slick-arrow
-		bottom: -105px
+		bottom: -75px
 		top: auto
 		width: 45px
 		height: 45px
@@ -1002,20 +1008,24 @@ header
 					width: 100%
 					display: block
 					font-family: Montserrat
-					font-weight: bold
-					font-size: 20px
-					line-height: 24px
+					font-weight: normal
+					font-size: 18px
+					line-height: 22px
 					text-align: center
 					text-transform: uppercase
 					color: $accent
 					padding: 8px 0
 					&.active
+						font-weight: bold
+						font-size: 20px
+						line-height: 24px
 						background: rgba(255, 255, 255, 0.3)
 						border-radius: 5px 5px 0px 0px
 //Category Page
 .category
-	padding: 165px 0 0
-	height: 100vh
+	padding: 165px 0 50px
+
+	min-height: 100vh
 	.custom__container
 		.solutions-tab-content
 			.solutions-tab
@@ -1028,13 +1038,16 @@ header
 								font-weight: bold
 								font-size: 20px
 	&.category__05
-		.category__list
-			.category__item
-				a 
-					.category__imgWrap
-						.category__img
-							max-width: 188px
-							width: auto
+		.wrap__slider
+			position: relative
+			padding-bottom: 50px
+			.category__list
+				.category__item
+					a 
+						.category__imgWrap
+							.category__img
+								max-width: 188px
+								width: auto
 	.category__title
 		font-family: 'Montserrat', sans-serif
 		font-weight: bold
@@ -1454,22 +1467,20 @@ header
 										margin-bottom: 40px
 			.tab-pane
 				.order__box
-					padding: 40px 60px 40px 80px
+					padding: 40px 40px 40px 80px
 					background: rgba(255, 255, 255, 0.1)
 					border-radius: 10px	
-					overflow: hidden	
+					overflow-y: auto	
 					min-height: 700px
-					max-height: 700px		
+					max-height: 700px				
+					&::-webkit-scrollbar
+						width: 6px	
+						max-height: 300px
+					&::-webkit-scrollbar-thumb
+						background: $accent	
+						border-radius: 10px			
 					.orders__wrap		
-						max-height: 750px	
-						overflow-y: auto
-						padding-right: 20px					
-						&::-webkit-scrollbar
-							width: 6px	
-							max-height: 300px
-						&::-webkit-scrollbar-thumb
-							background: $accent	
-							border-radius: 10px	
+						padding-right: 20px	
 						h2
 							font-weight: 600
 							font-size: 20px
@@ -1479,16 +1490,7 @@ header
 							color: $accent
 							margin-bottom: 30px
 						.order__contentWrap
-							overflow-y: auto
-							margin-bottom: 40px
-							&::-webkit-scrollbar
-								width: 6px	
-								max-height: 300px
-							&::-webkit-scrollbar-thumb
-								background: $accent	
-								border-radius: 10px	
 							.order__content
-								margin-bottom: 80px
 								.panel-group	
 									.panel
 										padding: 20px
@@ -2009,6 +2011,15 @@ header
 											margin-right: 4px
 										.quantity
 											margin-left: 5px
+	&.popup-active
+		margin-right: -50vw
+		.custom__container
+			.product__left
+				margin: 0 auto
+				.product__wrapImg
+					margin: 0 auto
+			.product__right
+				display: none
 //Product 2 Page
 .product-two
 	padding-top: 165px
