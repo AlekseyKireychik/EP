@@ -1774,6 +1774,14 @@ header .container-fluid.container__header .nav .menu__left .wrap__logos {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+header .container-fluid.container__header .nav .menu__left .wrap__logos li {
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 header .container-fluid.container__header .nav .menu__right {
