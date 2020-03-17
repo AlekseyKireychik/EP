@@ -62,6 +62,12 @@
                         &.reviews__formWrap
                             .reviews__form
                                 padding: 50px 110px
+    .order
+        .order__container
+            .order__left
+                margin-right: 15px
+            .order__right
+                margin-left: 15px
     .basket
         .custom__container
             .title
@@ -1597,6 +1603,18 @@
                                         .product__nameInfo
                                             .product__nameValue
                                             .quantity
+    .order
+        padding-bottom: 50px
+        .order__container
+            flex-direction: column
+            .order__left
+                width: 100%
+                margin-right: 0px
+                margin-bottom: 30px
+            .order__right
+                width: 100%
+                margin-left: 0px
+
 @media screen and (max-width: 1450px)
     .custom__container
         max-width: 1140px
@@ -2740,6 +2758,12 @@
             .product__center
                 .product__wrapImg	
                     margin-left: 20px
+    .order
+        padding-top: 120px
+        .order__container
+            padding: 30px 50px
+            .title
+                margin-bottom: 30px
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
@@ -4590,6 +4614,40 @@
                     p  
                         font-size: 24px
                         line-height: 32px  
+    .order
+        padding-top: 90px
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+        .order__container
+            padding: 0px 15px
+            background: none            
+            .order__left
+                ul
+                    li
+                        font-size: 14px
+                        line-height: 17px
+                p
+                    font-size: 14px
+                    line-height: 17px
+            .order__right
+                h2
+                    font-size: 20px
+                    line-height: 24px
+                p
+                    font-size: 14px
+                    line-height: 17px
+                .img__list
+                    flex-direction: column
+                    align-items: center
+                    img
+                        margin-bottom: 15px
+                        &:first-child
+                            margin-right: 0px
+                        &:last-child
+                            margin-left: 0px
+            
     //Product Page 1
     .product
         .custom__container

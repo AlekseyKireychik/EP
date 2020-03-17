@@ -81,7 +81,7 @@
                   <a class="menu__link" href="./delivery.html"
                     >условия оплаты и доставки</a
                   >
-                </li>               
+                </li>
               </ul>
               <ul class="menu__list__info">
                 <li class="menu__info">
@@ -186,7 +186,7 @@
             <div class="menu__info">
               <p>
                 Интернет-магазин “Елки-палки” зарегистрирован в Торговом реестре
-                Республики 14.01.2016 года. Регистрационный номер № 0000000
+                Республики 14.01.2016 года. ООО "ЕГА". УНП 100781126
               </p>
               <p>2000-2018 “Ёлки-палки” барбекю-драйв.</p>
             </div>
@@ -217,15 +217,13 @@
           <div class="account__formContent">
             <div class="form__top">
               <div class="mainform__group group-01">
-                <input
-                  type="tel"
-                  value="+375 (__) ___-__-__" 
-                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
-                  class="mainform__control validate-numeric required"
-                  name="tel_log_in_form"
-                  id="tel_log_in_form"
-                  required/>
-                <label for="tel_log_in_form" class="mainform__label">Телефон<span class="required-star">*</span></label>
+                <input type="tel" value="+375 (__) ___-__-__"
+                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                // phones at Belarus class="mainform__control validate-numeric
+                required" name="tel_log_in_form" id="tel_log_in_form" required/>
+                <label for="tel_log_in_form" class="mainform__label"
+                  >Телефон<span class="required-star">*</span></label
+                >
               </div>
               <div class="mainform__group group-01">
                 <input
@@ -234,8 +232,11 @@
                   class="mainform__control required"
                   name="name_log_in_form"
                   id="name_log_in_form"
-                  required/>
-                <label for="name_log_in_form" class="mainform__label">Пароль<span class="required-star">*</span></label>
+                  required
+                />
+                <label for="name_log_in_form" class="mainform__label"
+                  >Пароль<span class="required-star">*</span></label
+                >
               </div>
               <div class="form__box">
                 <button type="button" class="simple__btn">
@@ -249,7 +250,11 @@
             <div class="form__bottom">
               <p>В первый раз здесь?</p>
               <div class="form__box">
-                <button type="button" id="log_in_form_registration_btn" class="registration">
+                <button
+                  type="button"
+                  id="log_in_form_registration_btn"
+                  class="registration"
+                >
                   Зарегистрироваться
                 </button>
               </div>
@@ -274,15 +279,10 @@
                 >
               </div>
               <div class="mainform__group group-01">
-                <input
-                  type="tel"
-                  value="+375 (__) ___-__-__" 
-                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
-                  class="mainform__control validate-numeric required"
-                  name="tel"
-                  id="tel_registration_form"
-                  required
-                />
+                <input type="tel" value="+375 (__) ___-__-__"
+                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                // phones at Belarus class="mainform__control validate-numeric
+                required" name="tel" id="tel_registration_form" required />
                 <label for="tel_registration_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -314,7 +314,11 @@
                 >
               </div>
               <div class="form__box">
-                <button type="submit" id="account_registration_form_btn" class="btn">
+                <button
+                  type="submit"
+                  id="account_registration_form_btn"
+                  class="btn"
+                >
                   Создать аккаунт
                 </button>
               </div>
@@ -335,11 +339,18 @@
                   class="mainform__control required"
                   name="email_recovery_form"
                   id="email_recovery_form"
-                  required/>
-                <label for="email_recovery_form" class="mainform__label">E-mail<span class="required-star">*</span></label>
+                  required
+                />
+                <label for="email_recovery_form" class="mainform__label"
+                  >E-mail<span class="required-star">*</span></label
+                >
               </div>
               <div class="form__box">
-                <button type="submit" id="account_recovery_form_btn" class="btn">
+                <button
+                  type="submit"
+                  id="account_recovery_form_btn"
+                  class="btn"
+                >
                   отправить
                 </button>
               </div>
@@ -701,28 +712,53 @@
                           class="active"
                           data-toggle="tab"
                           ><div class="wrapIcon prof">
-                            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M22 0.333496C24.8732 0.333496 27.6287 1.47486 29.6604 3.50651C31.692 5.53815 32.8334 8.29365 32.8334 11.1668C32.8334 14.04 31.692 16.7955 29.6604 18.8272C27.6287 20.8588 24.8732 22.0002 22 22.0002C19.1269 22.0002 16.3714 20.8588 14.3397 18.8272C12.3081 16.7955 11.1667 14.04 11.1667 11.1668C11.1667 8.29365 12.3081 5.53815 14.3397 3.50651C16.3714 1.47486 19.1269 0.333496 22 0.333496ZM22 27.4168C33.9709 27.4168 43.6667 32.2647 43.6667 38.2502V43.6668H0.333374V38.2502C0.333374 32.2647 10.0292 27.4168 22 27.4168Z" fill="#691D35"/>
-                              </svg>
-                              
+                            <svg
+                              width="44"
+                              height="44"
+                              viewBox="0 0 44 44"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M22 0.333496C24.8732 0.333496 27.6287 1.47486 29.6604 3.50651C31.692 5.53815 32.8334 8.29365 32.8334 11.1668C32.8334 14.04 31.692 16.7955 29.6604 18.8272C27.6287 20.8588 24.8732 22.0002 22 22.0002C19.1269 22.0002 16.3714 20.8588 14.3397 18.8272C12.3081 16.7955 11.1667 14.04 11.1667 11.1668C11.1667 8.29365 12.3081 5.53815 14.3397 3.50651C16.3714 1.47486 19.1269 0.333496 22 0.333496ZM22 27.4168C33.9709 27.4168 43.6667 32.2647 43.6667 38.2502V43.6668H0.333374V38.2502C0.333374 32.2647 10.0292 27.4168 22 27.4168Z"
+                                fill="#691D35"
+                              />
+                            </svg>
                           </div>
-                          Новый клиент</a>
+                          Новый клиент</a
+                        >
                       </li>
                       <li class="nav-item">
                         <a href="#tab-02" role="tab" data-toggle="tab"
                           ><div class="wrapIcon badge">
-                            <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg
+                              width="66"
+                              height="66"
+                              viewBox="0 0 66 66"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
                               <g clip-path="url(#clip0)">
-                              <path d="M60.0833 11.3332H38.4167V19.4582H27.5833V11.3332H5.91667C4.48008 11.3332 3.10233 11.9039 2.0865 12.9197C1.07068 13.9355 0.5 15.3132 0.5 16.7498L0.5 54.6665C0.5 56.1031 1.07068 57.4808 2.0865 58.4967C3.10233 59.5125 4.48008 60.0832 5.91667 60.0832H60.0833C61.5199 60.0832 62.8977 59.5125 63.9135 58.4967C64.9293 57.4808 65.5 56.1031 65.5 54.6665V16.7498C65.5 15.3132 64.9293 13.9355 63.9135 12.9197C62.8977 11.9039 61.5199 11.3332 60.0833 11.3332ZM22.1667 24.8748C23.6033 24.8748 24.981 25.4455 25.9968 26.4613C27.0126 27.4772 27.5833 28.8549 27.5833 30.2915C27.5833 31.7281 27.0126 33.1058 25.9968 34.1217C24.981 35.1375 23.6033 35.7082 22.1667 35.7082C20.7301 35.7082 19.3523 35.1375 18.3365 34.1217C17.3207 33.1058 16.75 31.7281 16.75 30.2915C16.75 28.8549 17.3207 27.4772 18.3365 26.4613C19.3523 25.4455 20.7301 24.8748 22.1667 24.8748ZM33 46.5415H11.3333V43.8332C11.3333 40.2311 18.5646 38.4165 22.1667 38.4165C25.7687 38.4165 33 40.2311 33 43.8332V46.5415ZM54.6667 49.2498H38.4167V43.8332H54.6667V49.2498ZM54.6667 38.4165H38.4167V32.9998H54.6667V38.4165ZM54.6667 27.5832H38.4167V22.1665H54.6667V27.5832ZM35.7083 16.7498H30.2917V5.9165H35.7083V16.7498Z" fill="#691D35"/>
+                                <path
+                                  d="M60.0833 11.3332H38.4167V19.4582H27.5833V11.3332H5.91667C4.48008 11.3332 3.10233 11.9039 2.0865 12.9197C1.07068 13.9355 0.5 15.3132 0.5 16.7498L0.5 54.6665C0.5 56.1031 1.07068 57.4808 2.0865 58.4967C3.10233 59.5125 4.48008 60.0832 5.91667 60.0832H60.0833C61.5199 60.0832 62.8977 59.5125 63.9135 58.4967C64.9293 57.4808 65.5 56.1031 65.5 54.6665V16.7498C65.5 15.3132 64.9293 13.9355 63.9135 12.9197C62.8977 11.9039 61.5199 11.3332 60.0833 11.3332ZM22.1667 24.8748C23.6033 24.8748 24.981 25.4455 25.9968 26.4613C27.0126 27.4772 27.5833 28.8549 27.5833 30.2915C27.5833 31.7281 27.0126 33.1058 25.9968 34.1217C24.981 35.1375 23.6033 35.7082 22.1667 35.7082C20.7301 35.7082 19.3523 35.1375 18.3365 34.1217C17.3207 33.1058 16.75 31.7281 16.75 30.2915C16.75 28.8549 17.3207 27.4772 18.3365 26.4613C19.3523 25.4455 20.7301 24.8748 22.1667 24.8748ZM33 46.5415H11.3333V43.8332C11.3333 40.2311 18.5646 38.4165 22.1667 38.4165C25.7687 38.4165 33 40.2311 33 43.8332V46.5415ZM54.6667 49.2498H38.4167V43.8332H54.6667V49.2498ZM54.6667 38.4165H38.4167V32.9998H54.6667V38.4165ZM54.6667 27.5832H38.4167V22.1665H54.6667V27.5832ZM35.7083 16.7498H30.2917V5.9165H35.7083V16.7498Z"
+                                  fill="#691D35"
+                                />
                               </g>
                               <defs>
-                              <clipPath id="clip0">
-                              <rect x="0.5" y="0.5" width="65" height="65" fill="white"/>
-                              </clipPath>
+                                <clipPath id="clip0">
+                                  <rect
+                                    x="0.5"
+                                    y="0.5"
+                                    width="65"
+                                    height="65"
+                                    fill="white"
+                                  />
+                                </clipPath>
                               </defs>
-                              </svg>
-                              
-                          </div>Есть аккаунт</a>
+                            </svg>
+                          </div>
+                          Есть аккаунт</a
+                        >
                       </li>
                     </ul>
                   </div>
@@ -731,46 +767,58 @@
                   <div class="tab-pane active" id="tab-01">
                     <form id="new_user_form" action="" class="basket__formNew">
                       <div class="form__group">
-                        <label for="text_new_user_form" class="form__label">ФИО<span class="required-star">*</span></label>
+                        <label for="text_new_user_form" class="form__label"
+                          >ФИО<span class="required-star">*</span></label
+                        >
                         <input
                           type="text"
                           placeholder="Введите Ваше Имя"
                           class="form__control required"
                           name="text_new_user_form"
                           id="text_new_user_form"
-                          required/>
+                          required
+                        />
                       </div>
                       <div class="form__group group-01">
-                        <label for="tel_new_user_form" class="form__label">Телефон<span class="required-star">*</span></label>
-                        <input
-                          type="tel"
-                          value="+375 (__) ___-__-__" 
-                          pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
-                          class="form__control validate-numeric required"
-                          name="tel_new_user_form"
-                          id="tel_new_user_form"
-                          required/>
+                        <label for="tel_new_user_form" class="form__label"
+                          >Телефон<span class="required-star">*</span></label
+                        >
+                        <input type="tel" value="+375 (__) ___-__-__"
+                        pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                        // phones at Belarus class="form__control
+                        validate-numeric required" name="tel_new_user_form"
+                        id="tel_new_user_form" required/>
                       </div>
                       <div class="form__group group-01">
-                        <label for="email_new_user_form" class="form__label">E-mail<span class="required-star">*</span></label>
+                        <label for="email_new_user_form" class="form__label"
+                          >E-mail<span class="required-star">*</span></label
+                        >
                         <input
                           type="email"
                           placeholder="Введите Ваш E-mail"
                           class="form__control required"
                           name="email_new_user_form"
                           id="email_new_user_form"
-                          required/>
+                          required
+                        />
                       </div>
                       <div class="basket__check form-check">
                         <input
                           class="form__check-input"
                           placeholder=""
                           type="checkbox"
-                          id="check-create"/>
-                        <label class="form__check-label" for="check-create">Cоздать аккаунт</label>
+                          id="check-create"
+                        />
+                        <label class="form__check-label" for="check-create"
+                          >Cоздать аккаунт</label
+                        >
                       </div>
                       <div class="form__box">
-                        <button type="submit" id="new_user_form_btn" class="btn">
+                        <button
+                          type="submit"
+                          id="new_user_form_btn"
+                          class="btn"
+                        >
                           далее
                         </button>
                       </div>
@@ -779,25 +827,27 @@
                   <div class="tab-pane" id="tab-02">
                     <form action="" id="user_form" class="basket__formProfile">
                       <div class="form__group group-01">
-                        <label for="tel_user_form" class="form__label">Телефон<span class="required-star">*</span></label>
-                        <input
-                          type="tel"
-                          value="+375 (__) ___-__-__" 
-                          pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" // phones at Belarus
-                          class="form__control validate-numeric required"
-                          name="tel_user_form"
-                          id="tel_user_form"
-                          required/>
+                        <label for="tel_user_form" class="form__label"
+                          >Телефон<span class="required-star">*</span></label
+                        >
+                        <input type="tel" value="+375 (__) ___-__-__"
+                        pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                        // phones at Belarus class="form__control
+                        validate-numeric required" name="tel_user_form"
+                        id="tel_user_form" required/>
                       </div>
                       <div class="form__group group-01">
-                        <label for="email_user_form" class="form__label">E-mail<span class="required-star">*</span></label>
+                        <label for="email_user_form" class="form__label"
+                          >E-mail<span class="required-star">*</span></label
+                        >
                         <input
                           type="email"
                           placeholder="Введите Ваш E-mail"
                           class="form__control required"
                           name="email_user_form"
                           id="email_user_form"
-                          required/>
+                          required
+                        />
                       </div>
                       <div class="form__box">
                         <button type="submit" id="user_form_btn" class="btn">
