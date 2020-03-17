@@ -3841,6 +3841,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .product.popup-active {
   margin-right: -50vw;
+  height: 1080px;
 }
 
 .product.popup-active .custom__container .product__left {
@@ -6019,7 +6020,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
-  padding: 0;
+  padding: 0 10px 0 0;
   position: relative;
   width: 400px;
 }
@@ -6321,17 +6322,14 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .product {
     max-height: 100%;
   }
+  .product.popup-active {
+    height: 900px;
+  }
   .product .custom__container .product__left .product__wrapImg {
     max-width: 600px;
   }
   .mixbox .plaska {
     max-width: 150px;
-  }
-  .recomendation__close.is-active {
-    left: 60vw;
-  }
-  .recomendation.is-active {
-    width: 60vw;
   }
   .recomendation .custom__container .solutions-tab-content {
     margin: 0 auto;
