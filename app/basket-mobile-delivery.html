@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>корзина</title>
+  <meta name="catalog__description" content="" />
+
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="./images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./images/favicon-16x16.png"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+  />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+  />
+  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="css/basket-mobile.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid container__header ">
+      <div class="header row">
+        <div class="header__logo">
+          <a href="/">
+            <img class="" src="img/@2x/logo.svg" alt="Елки Палки" />
+          </a>
+        </div>
+        <div class="header__function">
+          <div class="header__timer">24/7</div>
+          <a class="header__phone" href="tel:+37544333-44-44"
+            ><span>333-44-44</span></a
+          >
+          <a class="header__exit" href="#"></a>
+          <a class="header__basket" href="./basket.html"></a>
+          <div class="burger-menu">
+            <a href="#" class="burger-menu__button"><span>Меню</span></a>
+          </div>
+        </div>
+      </div>
+      <ul id="nav-menu" class="nav">
+        <li class="menu__left">
+          <div class="wrap__logo">
+            <img class="logo" src="img/@2x/logo.svg" alt="Елки Палки" />
+          </div>
+          <nav>
+            <div class="close"><a href="#"></a></div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./akcii.html">акции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./contacts.html">контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./aboutus.html">о нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./kabinet.html">личный кабинет</a>
+              </li>
+              <li class="menu__item litle__menu">
+                <a class="menu__link" href="/">Наше меню</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./delivery.html"
+                  >условия оплаты и доставки</a
+                >
+              </li>               
+            </ul>
+            <ul class="menu__list__info">
+              <li class="menu__info">
+                <a href="tel:333-44-44">333-44-44</a>
+              </li>
+              <li class="menu__info">24/7</li>
+            </ul>
+          </nav>
+          <div class="wrap__logos">
+            <img src="./img/@2x/logos.svg" alt="партнеры" />
+          </div>
+        </li>
+        <li class="menu__right">
+          <div class="close"><a href="#"></a></div>
+          <h2 class="menu__title">Наше меню</h2>
+          <ul class="menu__catalog">
+            <li class="menu__item">
+              <a class="menu__link" href="./category07.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>мясо и мясо</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category01.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>Сочные кебабы</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category08.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>рыба и креветки</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category02.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span
+                  >Оригинальные<br />
+                  соусы</span
+                >
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category09.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>жар-птица</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category03.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>Полуфабрикаты</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category10.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span
+                  >легкие и сытные<br />
+                  салаты</span
+                >
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category04.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span
+                  >Никогда<br />
+                  не помешает</span
+                >
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./mixbox.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>миксы и боксы</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category05.html">
+                <img src="./img/@2x/image-menu.png" alt="Хочешь Петь? Пей!" />
+                <span
+                  >Хочешь Петь?<br />
+                  Пей!</span
+                >
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category12.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>ни рыба ни мясо</span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./category06.html">
+                <img src="./img/@2x/image-menu.png" alt="" />
+                <span>Спецпредложение</span>
+              </a>
+            </li>
+          </ul>
+          <div class="menu__info">
+            <p>
+              Интернет-магазин “Елки-палки” зарегистрирован в Торговом реестре
+              Республики 14.01.2016 года. Регистрационный номер № 0000000
+            </p>
+            <p>2000-2018 “Ёлки-палки” барбекю-драйв.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <main id="main" class="basket__delivery">
+      <div class="container">
+        <div class="row">
+          <h1 class="title">Адрес доставки</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form id="delivery-form" class="delivery__form">
+            <div class="formWrap">
+              <div class="form__row">
+                <div class="delivery__group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="street"
+                    id="street"
+                    required
+                  />
+                  <label for="street" class="delivery__label">Улица</label>
+                </div>     
+                <div class="delivery__group house">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="house"
+                    id="house"
+                    required
+                  />
+                  <label for="house" class="delivery__label">Дом</label>
+                </div>  
+              </div> 
+              <div class="form__row">
+                <div class="delivery__group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="porch"
+                    id="porch"
+                    required
+                  />
+                  <label for="porch" class="delivery__label">Подъезд</label>
+                </div>     
+                <div class="delivery__group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="number"
+                    id="number"
+                    required
+                  />
+                  <label for="number" class="delivery__label">Квартира</label>
+                </div>  
+              </div>
+              <div class="form__row">
+                <div class="delivery__group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="door-code"
+                    id="door-code"
+                    required
+                  />
+                  <label for="door-code" class="delivery__label">Код двери</label>
+                </div>     
+                <div class="delivery__group">
+                  <input
+                    type="text"
+                    placeholder=" "
+                    class="delivery__control"
+                    name="storey"
+                    id="storey"
+                    required
+                  />
+                  <label for="storey" class="delivery__label">Этаж</label>
+                </div>              
+              </div>
+              <div class="delivery__group comment">
+                <textarea
+                  data-autoresize
+                  name="comment"
+                  id="comment"
+                  coll="5"
+                  rows="4"
+                  class="delivery__control"
+                  placeholder="Оставьте Ваше сообщение"
+                ></textarea>
+                <label for="comment" class="delivery__label">Комментарий</label>
+              </div>
+              <div class="form__bottom">
+                <div class="form__box">
+                  <button type="button" id="delivery-btn" class="btn">
+                    Предварительный заказ 
+                  </button>
+                  <button type="submit" id="delivery-btn" class="btn">
+                    Далее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

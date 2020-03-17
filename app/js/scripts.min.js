@@ -1,5 +1,36 @@
 window.onload = function() {
-  //mask input tel
+  // Start custom select
+  let select = function() {
+    let selectHeader = document.querySelectorAll(".select__header");
+    let selectItem = document.querySelectorAll(".select__item");
+    let selectItemActive = document.querySelectorAll(".address__select");
+
+    selectHeader.forEach(item => {
+      item.addEventListener("click", selectToggle);
+    });
+
+    selectItem.forEach(item => {
+      item.addEventListener("click", selectChoose);
+    });
+
+    function selectToggle() {
+      this.parentElement.classList.toggle("is-active");
+    }
+    function selectChoose() {
+      let text = this.innerText,
+        select = this.closest(".address__select"),
+        currentText = select.querySelector(".select__current");
+      currentText.innerText = text;
+      select.classList.remove("is-active");
+      select.classList.add("selected");
+    }
+  };
+
+  select();
+
+// End custom select
+
+// Mask input tel
   let phoneAll = document.querySelectorAll(".validate-numeric");
   phoneAll.forEach(element => {
     MaskedInput({
@@ -8,7 +39,8 @@ window.onload = function() {
       separator: '+375 (   )-'
     });
   });
-  //mask input time
+
+// Mask input time
   let timeAll = document.querySelectorAll(".time");
   timeAll.forEach(element => {
     MaskedInput({
@@ -19,7 +51,7 @@ window.onload = function() {
   });
 
   
-  //BackForm input-file
+//BackForm input-file
   function getFileName() {
     let file = document.getElementById("uploaded-file").value;
 
