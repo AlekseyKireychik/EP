@@ -1907,36 +1907,6 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   max-width: 453px;
 }
 
-.home .carousel.vert .carousel-item-next.carousel-item-left {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.home .carousel.vert .carousel-item-prev.carousel-item-right {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.home .carousel.vert .carousel-item-next {
-  -webkit-transform: translate3d(0, 100% 0);
-          transform: translate3d(0, 100% 0);
-}
-
-.home .carousel.vert .active.carousel-item-right {
-  -webkit-transform: translate3d(0, 100% 0);
-          transform: translate3d(0, 100% 0);
-}
-
-.home .carousel.vert .carousel-item-prev {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-
-.home .carousel.vert .active.carousel-item-left {
-  -webkit-transform: translate3d(0, -100%, 0);
-          transform: translate3d(0, -100%, 0);
-}
-
 .home .carousel .carousel-inner .carousel-indicators {
   bottom: auto;
   top: 50%;
@@ -6032,29 +6002,27 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 }
 
 .recomendation__close {
-  display: none;
   top: 50%;
   position: absolute;
-  left: 0vw;
+  left: -50vw;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
   z-index: 99;
 }
 
 .recomendation__close.is-active {
   display: block;
   left: 50vw;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .recomendation {
-  display: none;
   background: #D19E39;
   width: 0vw;
   padding-top: 165px;
@@ -6063,17 +6031,17 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   top: 0;
   bottom: 0;
   left: -50vw;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
   z-index: 99;
 }
 
 .recomendation.is-active {
   display: inline;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
   width: 50vw;
   left: 0;
 }
@@ -6084,6 +6052,18 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
 
 .recomendation .custom__container .recomendation__title {
   margin: 0 auto 80px;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.recomendation .custom__container .recomendation__title::before {
+  position: absolute;
+  left: -45px;
+  top: 0;
+  content: url(../img/@2x/back.svg);
+  content-transform: translate(0px, 0%);
 }
 
 .recomendation .custom__container .solutions-tab-content {
@@ -6383,7 +6363,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     max-width: 1500px;
   }
   .recomendation .custom__container {
-    margin-left: calc((100vw - 1500px) / 2);
+    margin-left: calc((100vw - 1600px) / 2);
   }
   .category .category__list .category__item {
     width: calc((100vw - (100vw - (1500px - 80px))) / 3);
@@ -6787,6 +6767,55 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .recomendation .custom__container {
     margin-left: calc((100vw - 1400px) / 2);
   }
+  .recomendation .custom__container .solutions-tab-content {
+    max-width: 675px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab {
+    margin-bottom: 30px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .tab-content {
+    max-width: 675px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
+    width: 325px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
+    max-width: 150px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
+    min-height: auto;
+    max-width: 150px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .description {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right {
+    max-width: 345px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img {
+    max-width: 310px;
+  }
   .btn {
     padding: 10px 20px;
     font-size: 24px;
@@ -7097,6 +7126,9 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
     padding-left: 10px;
   }
+  .product .custom__container .product__left .product__wrapImg {
+    max-width: 735px;
+  }
   .product .custom__container .product__right form .product__btnGroup .product__order {
     padding: 22px 20px;
   }
@@ -7115,12 +7147,6 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   }
   .product-two .custom__container .product__center .product__wrapImg .product__img {
     max-width: 200px;
-  }
-  .recomendation {
-    padding-top: 50px;
-  }
-  .recomendation .custom__container .recomendation__title {
-    margin: 0 auto 40px;
   }
 }
 
@@ -7245,7 +7271,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     max-width: 1250px;
   }
   .recomendation .custom__container {
-    margin-left: calc((100vw - 1250px) / 2);
+    margin-left: calc((100vw - 1400px) / 2);
   }
   .category {
     padding-top: 100px;
@@ -7400,7 +7426,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-size: 18px;
   }
   .product .custom__container .product__left .product__wrapImg {
-    max-width: 500px;
+    max-width: 575px;
   }
   .product .custom__container .product__right form .product__cost {
     margin-bottom: 30px;
@@ -7446,8 +7472,63 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .custom__container {
     max-width: 1140px;
   }
+  .product .custom__container .product__left .product__wrapImg {
+    max-width: 500px;
+  }
   .recomendation .custom__container {
-    margin-left: calc((100vw - 1140px) / 2);
+    margin-left: calc((100vw - 1350px) / 2);
+  }
+  .recomendation .custom__container .solutions-tab-content {
+    max-width: 625px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab {
+    margin-bottom: 30px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .tab-content {
+    max-width: 625px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
+    width: 305px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
+    max-width: 110px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
+    min-height: auto;
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .description {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right {
+    max-width: 265px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img {
+    max-width: 250px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img img {
+    max-width: 250px;
   }
   .btn {
     padding: 10px 20px;
@@ -7881,6 +7962,64 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-size: 12px;
     line-height: 14px;
   }
+  .recomendation {
+    padding-bottom: 40px;
+  }
+  .recomendation .custom__container {
+    margin-left: calc((100vw - 1200px) / 2);
+  }
+  .recomendation .custom__container .solutions-tab-content {
+    max-width: 555px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab {
+    margin-bottom: 30px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .tab-content {
+    max-width: 555px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
+    width: 275px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
+    max-width: 110px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
+    min-height: auto;
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .description {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right {
+    max-width: 265px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img {
+    max-width: 250px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img img {
+    max-width: 250px;
+  }
   .product .custom__container .product__left {
     margin-left: 0px;
   }
@@ -7912,8 +8051,72 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .custom__container {
     max-width: 960px;
   }
+  .recomendation__close.is-active {
+    display: none;
+  }
+  .recomendation {
+    padding-top: 120px;
+  }
+  .recomendation.is-active {
+    width: 100vw;
+  }
   .recomendation .custom__container {
-    margin-left: calc((100vw - 960px) / 2);
+    margin-left: calc((100vw - 1000px) / 2);
+  }
+  .recomendation .custom__container .solutions-tab-content {
+    max-width: 100%;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab {
+    margin-bottom: 30px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .recomendation .custom__container .tab-content {
+    max-width: 100%;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left {
+    max-height: 400px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
+    width: 400px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
+    max-width: 110px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
+    min-height: auto;
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .description {
+    font-size: 34px;
+    line-height: 41px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right {
+    max-width: 265px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img {
+    max-width: 350px;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__product .wrap__img img {
+    max-width: 350px;
   }
   header .container-fluid.container__header .burger-menu .burger-menu__button {
     font-size: 24px;
@@ -10282,13 +10485,30 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     margin: 20px 15px;
   }
   header .container-fluid.container__header .nav .menu__left nav .menu__list {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item {
+    margin-bottom: 30px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list .menu__item .menu__link {
+    font-size: 16px;
+    line-height: 20px;
   }
   header .container-fluid.container__header .nav .menu__left nav .menu__list__info {
     padding-top: 25px;
   }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list__info .menu__info {
+    font-size: 24px;
+    line-height: 29px;
+  }
   header .container-fluid.container__header .nav .menu__left nav .menu__list__info .menu__info:first-child {
     margin-bottom: 20px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list__info .menu__info:first-child::before {
+    top: -7px;
+  }
+  header .container-fluid.container__header .nav .menu__left nav .menu__list__info .menu__info:last-child::before {
+    top: -7px;
   }
   header .container-fluid.container__header .nav .menu__left .wrap__logos {
     display: none;
@@ -10575,7 +10795,7 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
     font-size: 12px;
     line-height: 15px;
   }
-  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item {
+  .contacts .custom__container .contacts__content .tab-pane .contacts__list .contacts__item:first-child {
     margin-bottom: 30px;
     padding-bottom: 30px;
   }

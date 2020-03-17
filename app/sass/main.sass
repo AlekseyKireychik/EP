@@ -885,25 +885,6 @@ header
 							max-width: 453px
 .home
 	.carousel
-		&.vert 
-			.carousel-item-next
-				&.carousel-item-left
-					transform: translate3d(0, 0, 0)
-			.carousel-item-prev
-				&.carousel-item-right 
-					transform: translate3d(0, 0, 0)
-			.carousel-item-next
-				transform: translate3d(0, 100% 0)
-			.active
-				&.carousel-item-right 
-					transform: translate3d(0, 100% 0)
-			.carousel-item-prev
-				transform: translate3d(0,-100%, 0)
-			.active
-				&.carousel-item-left 
-			 		transform: translate3d(0,-100%, 0)
-		
-
 		.carousel-inner
 			.carousel-indicators
 				bottom: auto
@@ -1874,7 +1855,6 @@ header
 		&:first-child
 			justify-content: center
 		.product__left
-
 			margin-left: 210px
 			.product__recomendation
 				position: absolute
@@ -3280,19 +3260,17 @@ header
 											color: $accent
 											padding: 5px 25px
 .recomendation__close
-	display: none
 	top: 50%
 	position: absolute
-	left: 0vw	
+	left: -50vw	
 	transform: translateY(-50%)
-	transition: all .3s linear
+	transition: all .2s linear
 	z-index: 99
 	&.is-active
 		display: block
 		left: 50vw	
-		transition: all .3s linear									
+		transition: all .2s linear									
 .recomendation
-	display: none
 	background: #D19E39
 	width: 0vw
 	padding-top: 165px
@@ -3301,17 +3279,25 @@ header
 	top: 0
 	bottom: 0
 	left: -50vw	
-	transition: all .3s linear
+	transition: all .2s linear
 	z-index: 99
 	&.is-active
 		display: inline
-		transition: all .3s linear
+		transition: all .2s linear
 		width: 50vw
 		left: 0
 	.custom__container
 		margin-left: calc((100vw - 1676px) / 2)
 		.recomendation__title
-			margin: 0 auto 80px
+			margin: 0 auto 80px			
+			position: relative
+			width: max-content
+			&::before				
+				position: absolute
+				left: -45px
+				top: 0
+				content: url(../img/@2x/back.svg)
+    			transform: translate(0px, 0%)
 		.solutions-tab-content
 			max-width: 795px
 			.solutions-tab

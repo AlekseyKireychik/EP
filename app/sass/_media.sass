@@ -10,9 +10,9 @@
 @media screen and (max-width: 1700px)
     .custom__container
         max-width: 1500px
-    .recomendation 
-        .custom__container 
-            margin-left: calc((100vw - 1500px) / 2)
+    .recomendation
+        .custom__container
+            margin-left: calc((100vw - 1600px) / 2)
     .category
         .category__list
             .category__item
@@ -81,7 +81,7 @@
                                 .product__imgWrap
                                     .product__img
                                 .product__info
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -90,7 +90,7 @@
                                     .product__cost
                             &.box
                             .product__btnGroup
-                                
+
                                 button
                                 .counter
                                 .dell
@@ -100,20 +100,20 @@
                     button
                 .basket__value
                     .text
-                    .valueWrap				
+                    .valueWrap
                         .value
             .basket__right
                 width: 50%
                 .basket__progress
                     .basket__item
                         min-width: 180px
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
@@ -121,7 +121,7 @@
                                 .nav-pills
                                     .nav-item
                                         a
-                                            text-align: left 		
+                                            text-align: left
                                             .wrapIcon
                                                 width: 85px
                                                 height: 85px
@@ -132,10 +132,10 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         .form__control
-                                        .form__label	
+                                        .form__label
                                         .select
                                             option
                                     .basket__check
@@ -148,8 +148,8 @@
                                         .basket__address
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -161,12 +161,12 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                         &.pickup
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft										
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
@@ -188,36 +188,36 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
                                         .form__group
                                             .form__label
-                                        .basket__check    
+                                        .basket__check
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                     .basket__formIndividual
                                         .wrap
                                             padding-left: 30px
-                                            .left	
+                                            .left
                                                 .pay__group
                                                     &:last-child
                                                     .control
-                                                        &:checked 
+                                                        &:checked
                                                     label
-                                            .right	
+                                            .right
                                                 padding-right: 30px
-                                                .form__group	
+                                                .form__group
                                                     &.comment
                                                         .form__control
                                         .basket__check
@@ -248,18 +248,18 @@
     .recomendation
         &.is-active
             // width: 60vw
-        .custom__container 
+        .custom__container
             .solutions-tab-content
                 margin: 0 auto
             .tab-content
                 margin: 0 auto
-                .tab-pane 
-                    .recomendation__list 
-                        .recomendation__item 
-                            .recomendation__info 
-                                .recomendation__right 
-                                    .recomendation__btnGroup 
-                                        .recomendation__counter 
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                .recomendation__right
+                                    .recomendation__btnGroup
+                                        .recomendation__counter
                                             button
                                                 padding: 2px 0
                                                 font-size: 46px
@@ -649,9 +649,62 @@
 @media screen and (max-width: 1600px)
     .custom__container
         max-width: 1400px
-    .recomendation 
-        .custom__container 
+    .recomendation
+        .custom__container
             margin-left: calc((100vw - 1400px) / 2)
+        .custom__container
+            .recomendation__title
+            .solutions-tab-content
+                max-width: 675px
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 675px
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                .recomendation__left
+                                    .recomendation__positions
+                                        width: 325px
+                                        .recomendation__elem
+                                            .recomendation__link
+                                                align-items: center
+                                                .wrap__img
+                                                    max-width: 150px
+                                                    img
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 150px
+                                                        font-size: 15px
+                                                        line-height: 18px
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                .recomendation__right
+                                    max-width: 345px
+                                    .tab-pane
+                                        .recomendation__product
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 310px
+                                                img
+                                            .total
+                                        .recomendation__btnGroup
+                                            .recomendation__counter
+                                                .btn
+
     .btn
         padding: 10px 20px
         font-size: 24px
@@ -883,7 +936,7 @@
                                     .product__img
                                         width: 100%
                                 .product__info
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -907,26 +960,26 @@
                 .basket__value
                     .text
                         font-size: 30px
-                    .valueWrap				
+                    .valueWrap
                         .value
                             font-size: 32px
             .basket__right
                 .basket__progress
                     .basket__item
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
                             .solutions-tab
                                 .nav-pills
                                     .nav-item
-                                        a	
+                                        a
                                             .wrapIcon
                                                 .icon
                                             &.active
@@ -934,7 +987,7 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         padding-left: 0px
                                         margin-bottom: 20px
@@ -943,10 +996,10 @@
                                             top: -10px
                                             width: 100%
                                             text-align: left
-                                            left: 10px	
+                                            left: 10px
                                         .select
                                             option
-                                    .basket__check                                        
+                                    .basket__check
                                         margin-bottom: 20px
                                         padding-left: 51px
                                         .form__check-input
@@ -958,8 +1011,8 @@
                                         .basket__address
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -971,13 +1024,13 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box	
-                                        padding-left: 0px							
+                                    .form__box
+                                        padding-left: 0px
                                         button
                                         &.pickup
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft										
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
@@ -1001,14 +1054,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -1019,21 +1072,21 @@
                                         .basket__check
                                             padding-left: 60px
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                             padding-left: 10px
                                     .basket__formIndividual
                                         .wrap
                                             padding-left: 10px
-                                            .left	
+                                            .left
                                                 .pay__group
                                                     &:last-child
                                                     .control
-                                                        &:checked 
+                                                        &:checked
                                                     label
-                                            .right	
-                                                .form__group	
+                                            .right
+                                                .form__group
                                                     &.comment
                                                         .form__control
                                         .basket__check
@@ -1043,6 +1096,9 @@
     //Product Page 1
     .product
         .custom__container
+            .product__left
+                .product__wrapImg
+                    max-width: 735px
             .product__right
                 form
                     .product__btnGroup
@@ -1063,16 +1119,10 @@
                         .product__img
                             max-width: 120px
             .product__center
-                .product__wrapImg			
+                .product__wrapImg
                     .product__img
                         max-width: 200px
-    .recomendation
-        padding-top: 50px
-        .custom__container 
-            .recomendation__title
-                margin: 0 auto 40px
-            .solutions-tab-content
-            .tab-content
+
 @media screen and (max-width: 1600px) and (max-height: 850px)
     header
         .container-fluid
@@ -1128,7 +1178,7 @@
             .category__title
                 padding-top: 40px
                 padding-bottom: 60px
-                margin-bottom: 0px  
+                margin-bottom: 0px
         .custom__container
             .category__list
                 justify-content: space-between
@@ -1267,12 +1317,12 @@
 @media screen and (max-width: 1500px)
     .custom__container
         max-width: 1250px
-    .recomendation 
-        .custom__container 
-            margin-left: calc((100vw - 1250px) / 2)
-    .category        
+    .recomendation
+        .custom__container
+            margin-left: calc((100vw - 1400px) / 2)
+    .category
         padding-top: 100px
-        padding-bottom: 30px  
+        padding-bottom: 30px
         .category__list
             .category__item
                 width: calc((100vw - (100vw - (1250px - 80px))) / 3)
@@ -1380,7 +1430,7 @@
                                 .product__imgWrap
                                     .product__img
                                 .product__info
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -1400,25 +1450,25 @@
                 .basket__value
                     padding: 0 30px
                     .text
-                    .valueWrap			
+                    .valueWrap
                         .value
             .basket__right
                 .basket__progress
                     .basket__item
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
                             .solutions-tab
                                 .nav-pills
                                     .nav-item
-                                        a	
+                                        a
                                             font-size: 16px
                                             line-height: 18px
                                             .wrapIcon
@@ -1448,11 +1498,11 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         .form__control
                                             padding: 15px 10px
-                                        .form__label   
+                                        .form__label
                                         .select
                                             option
                                     .basket__check
@@ -1465,8 +1515,8 @@
                                         .basket__address
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -1478,12 +1528,12 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                         &.pickup
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft										
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
@@ -1506,14 +1556,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -1521,21 +1571,21 @@
                                             .form__label
                                         .basket__check
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                     .basket__formIndividual
                                         .wrap
                                             padding-left: 0px
-                                            .left	
+                                            .left
                                                 .pay__group
                                                     &:last-child
                                                     .control
-                                                        &:checked 
+                                                        &:checked
                                                     label
-                                            .right	
+                                            .right
                                                 padding: 0
-                                                .form__group	
+                                                .form__group
                                                     &.comment
                                                         .form__control
                                         .basket__check
@@ -1553,7 +1603,7 @@
                         font-size: 18px
                         &:after
                 .product__wrapImg
-                    max-width: 500px
+                    max-width: 575px
                     .product__img
             .product__right
                 form
@@ -1573,7 +1623,7 @@
                                 padding: 2px 0
                                 font-size: 46px
                                 line-height: 46px
-                        .product__order 
+                        .product__order
                             padding: 10px 20px
                     .product__dopinfo
                         .description
@@ -1618,9 +1668,64 @@
 @media screen and (max-width: 1450px)
     .custom__container
         max-width: 1140px
-    .recomendation 
+    .product 
         .custom__container 
-            margin-left: calc((100vw - 1140px) / 2)
+            .product__left 
+                .product__wrapImg
+                    max-width: 500px
+    .recomendation
+        .custom__container
+            margin-left: calc((100vw - 1350px) / 2)
+        .custom__container
+            .recomendation__title
+            .solutions-tab-content
+                max-width: 625px
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 625px
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                .recomendation__left
+                                    .recomendation__positions
+                                        width: 305px
+                                        .recomendation__elem
+                                            .recomendation__link
+                                                align-items: center
+                                                .wrap__img
+                                                    max-width: 110px
+                                                    img
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 130px
+                                                        font-size: 15px
+                                                        line-height: 18px
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 250px
+                                                img
+                                                    max-width: 250px
+                                           
     .btn
         padding: 10px 20px
     header
@@ -1841,7 +1946,7 @@
                                                 font-size: 36px
                                                 line-height: 42px
                                                 padding: 4px 0
-    .basket        
+    .basket
         padding-top: 100px
         .custom__container
             .title
@@ -1855,7 +1960,7 @@
                                 .product__imgWrap
                                     .product__img
                                 .product__info
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -1883,7 +1988,7 @@
                     .text
                         font-size: 22px
                         line-height: 27px
-                    .valueWrap				
+                    .valueWrap
                         .value
                             font-size: 22px
                             line-height: 27px
@@ -1894,7 +1999,7 @@
                         min-width: 120px
                         font-size: 16px
                         line-height: 19px
-                        &.active-step	
+                        &.active-step
                             &::after
                                 content: url(../img/@2x/active-arr-litl.svg)
                                 right: -22px
@@ -1909,14 +2014,14 @@
                                 border: 25px solid transparent
                                 border-left: 20px solid rgba(255, 255, 255, 0.4)
                                 right: -45px
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
                             .solutions-tab
                                 .nav-pills
                                     .nav-item
-                                        a 		
+                                        a
                                             .wrapIcon
                                                 .icon
                                             &.active
@@ -1924,10 +2029,10 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         .form__control
-                                        .form__label	
+                                        .form__label
                                         .select
                                             option
                                     .basket__check
@@ -1942,8 +2047,8 @@
                                             width: 100%
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -1955,13 +2060,13 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                         &.pickup
                                             padding-left: 0px
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft										
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
@@ -1983,14 +2088,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -1998,21 +2103,21 @@
                                             .form__label
                                         .basket__check
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                     .basket__formIndividual
                                         .wrap
                                             margin-bottom: 10px
-                                            .left	
+                                            .left
                                                 .pay__group
                                                     &:last-child
                                                     .control
-                                                        &:checked 
+                                                        &:checked
                                                     label
                                                         width: 185px
-                                            .right	
-                                                .form__group	
+                                            .right
+                                                .form__group
                                                     &.comment
                                                         .form__control
                                         .basket__check
@@ -2105,16 +2210,16 @@
                                         .mixbox__add
                                             font-size: 18px
                                             line-height: 30px
-    .account__formWrap   
+    .account__formWrap
         .account__form
             .account__formContent
                 .form__bottom
                     p
                     .form__box
-                        .registration 
+                        .registration
                             padding: 10px 5px
 @media screen and (max-width: 1300px)
-                                
+
     header
         .container-fluid
             &.container__header
@@ -2127,14 +2232,14 @@
                     .menu__right
                         .close
                         .menu__title
-                        .menu__catalog 
+                        .menu__catalog
                             height: 540px
                             overflow-y: auto
                             &::-webkit-scrollbar
                                 width: 6px
                                 max-height: 300px
                             &::-webkit-scrollbar-thumb
-                                background: $accent	
+                                background: $accent
                             .menu__item
                                 flex-basis: 100%
                                 .menu__link
@@ -2145,6 +2250,63 @@
                             p
                                 font-size: 12px
                                 line-height: 14px
+    .recomendation
+        padding-bottom: 40px
+        .custom__container
+            margin-left: calc((100vw - 1200px) / 2)
+        .custom__container
+            .recomendation__title
+            .solutions-tab-content
+                max-width: 555px
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 555px
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                .recomendation__left
+                                    .recomendation__positions
+                                        width: 275px
+                                        .recomendation__elem
+                                            .recomendation__link
+                                                align-items: center
+                                                .wrap__img
+                                                    max-width: 110px
+                                                    img
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 130px
+                                                        font-size: 15px
+                                                        line-height: 18px
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 250px
+                                                img
+                                                    max-width: 250px
+                                            .total
+                                        .recomendation__btnGroup
+                                            .recomendation__counter
+                                                .btn
     //Product Page 1
     .product
         .custom__container
@@ -2168,9 +2330,69 @@
 @media screen and (max-width: 1199px)
     .custom__container
         max-width: 960px
-    .recomendation 
-        .custom__container 
-            margin-left: calc((100vw - 960px) / 2)
+    .recomendation__close
+        &.is-active
+            display: none
+    .recomendation
+        &.is-active
+            width: 100vw
+        padding-top: 120px
+        .custom__container
+            margin-left: calc((100vw - 1000px) / 2)
+        .custom__container
+            .recomendation__title
+            .solutions-tab-content
+                max-width: 100%
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 100%
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                .recomendation__left
+                                    max-height: 400px
+                                    .recomendation__positions
+                                        width: 400px
+                                        .recomendation__elem
+                                            .recomendation__link
+                                                align-items: center
+                                                .wrap__img
+                                                    max-width: 110px
+                                                    img
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 130px
+                                                        font-size: 15px
+                                                        line-height: 18px
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 350px
+                                                img
+                                                    max-width: 350px
+                                            .total
+                                        .recomendation__btnGroup
+                                            .recomendation__counter
+                                                .btn
     header
         .container-fluid
             &.container__header
@@ -2596,7 +2818,7 @@
                                     .product__img
                                 .product__info
                                     max-width: 100%
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -2614,27 +2836,27 @@
                     button
                 .basket__value
                     .text
-                    .valueWrap				
+                    .valueWrap
                         .value
-            .basket__right                
+            .basket__right
                 width: 80%
                 margin: 0 auto
                 .basket__progress
                     .basket__item
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
                             .solutions-tab
                                 .nav-pills
                                     .nav-item
-                                        a 		
+                                        a
                                             .wrapIcon
                                                 .icon
                                             &.active
@@ -2642,11 +2864,11 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         .form__control
                                             max-width: 100%
-                                        .form__label	
+                                        .form__label
                                             left: 0px
                                         .select
                                             option
@@ -2660,8 +2882,8 @@
                                         .basket__address
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -2673,13 +2895,13 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                         &.pickup
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft	
-                                            width: 48%									
+                                    .basket__formCenter
+                                        .basket__formLeft
+                                            width: 48%
                                             .form__group
                                                 .form__control
                                                     max-width: 100%
@@ -2702,14 +2924,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -2719,7 +2941,7 @@
                                         .basket__check
                                             padding-left: 50px
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                             padding-left: 0px
@@ -2730,8 +2952,8 @@
                     p
                         font-size: 32px
                 .success__info
-                    p       
-                        font-size: 32px  
+                    p
+                        font-size: 32px
     //Product Page 1
     .product
         padding-top: 120px
@@ -2756,7 +2978,7 @@
                         &:after
                             left: 90px
             .product__center
-                .product__wrapImg	
+                .product__wrapImg
                     margin-left: 20px
     .order
         padding-top: 120px
@@ -2790,8 +3012,8 @@
                     .form__control
                         max-width: 100%
 
-    .recomendation 
-        .custom__container 
+    .recomendation
+        .custom__container
             margin-left: calc((100vw - 720px) / 2)
     .slider__counter
         display: none
@@ -3023,7 +3245,7 @@
         .custom__container
             .basket__left
                 width: 100%
-            .basket__right                
+            .basket__right
                 width: 100%
     //Product 2 Page
     .product-two
@@ -3031,7 +3253,7 @@
         .custom__container
             flex-direction: column
             .product__left
-                .recomendation__wrap                    
+                .recomendation__wrap
                     right: -117px
                     left: auto
                     top: 35%
@@ -3050,8 +3272,8 @@
                         display: none
             .product__center
                 width: 100%
-                .product__wrapImg	
-                    margin-left: 0px	
+                .product__wrapImg
+                    margin-left: 0px
                     .product__img
             .product__right
                 form
@@ -3070,8 +3292,8 @@
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
-    .recomendation 
-        .custom__container 
+    .recomendation
+        .custom__container
             margin-left: calc((100vw - 540px) / 2)
     .btn
         color: #691D35
@@ -3427,7 +3649,7 @@
                                             display: flex
                                             margin-bottom: 35px
                                             img
-                                               width: 100% 
+                                                width: 100%
                                         .form__box
                                             width: 100%
                                             .btn
@@ -3461,7 +3683,7 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px                            
+                            padding: 7px
                             font-weight: 500
                             font-size: 12px
                             line-height: 24px
@@ -3479,12 +3701,12 @@
                         margin-top: 30px
                         .simple__btn
                             font-size: 14px
-                            line-height: 17px                                                 
+                            line-height: 17px
                             text-transform: initial
                         .btn
                             margin-bottom: 20px
                             max-width: 280px
-                            width: 100%                            
+                            width: 100%
                             text-transform: initial
                 .form__bottom
                     p
@@ -3492,12 +3714,12 @@
                     .form__box
                         position: fixed
                         bottom: 25px
-                        .registration       
-                            max-width: 280px                                           
+                        .registration
+                            max-width: 280px
                             text-transform: initial
                             padding: 10px 5px
                             font-size: 14px
-                            line-height: 17px 
+                            line-height: 17px
         .account__formRegistration
             .title
                 font-size: 24px
@@ -3514,7 +3736,7 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px                            
+                            padding: 7px
                             font-weight: 500
                             font-size: 12px
                             line-height: 24px
@@ -3526,9 +3748,9 @@
                             &:last-child
                         .mainform__label
                             display: none
-                    .form__box                        
+                    .form__box
                         margin-left: 0
-                        .btn                                          
+                        .btn
                             text-transform: initial
         .account__formRecovery
             .title
@@ -3547,7 +3769,7 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px                            
+                            padding: 7px
                             font-weight: 500
                             font-size: 12px
                             line-height: 24px
@@ -3561,7 +3783,7 @@
                             display: none
                     .form__box
                         margin-left: 0
-                        .btn                                          
+                        .btn
                             text-transform: initial
     //Product Page 1
     .product
@@ -3659,14 +3881,14 @@
                 margin-bottom: 30px
         .custom__container
             .product__left
-                .recomendation__wrap  
+                .recomendation__wrap
                     .product__recomendation
                         &:after
                     .product__wrapImg
                         .product__img
             .product__center
                 width: 100%
-                .product__wrapImg		
+                .product__wrapImg
                     .product__img
             .product__right
                 margin-right: 0px
@@ -3740,10 +3962,10 @@
                                     max-width: 205px
                                     .product__img
                                 .product__info
-                                    .product__title	
+                                    .product__title
                                         font-size: 16px
-                                        line-height: 20px		
-                                        margin-bottom: 5px				
+                                        line-height: 20px
+                                        margin-bottom: 5px
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -3775,7 +3997,7 @@
                         font-weight: 500
                         font-size: 12px
                         line-height: 15px
-                        padding: 7px 15px 
+                        padding: 7px 15px
                         margin-right: 0px
                         max-width: 100%
                         &::placeholder
@@ -3783,7 +4005,7 @@
                     button
                         position: absolute
                         right: 5px
-                        border: 1px solid $accent                        
+                        border: 1px solid $accent
                         background: transparent
                         box-shadow: none
                         border-radius: 5px
@@ -3803,7 +4025,7 @@
                     .valueWrap
                         text-align: right
                         font-size: 18px
-                        line-height: 22px				
+                        line-height: 22px
                         .value
                 .btn__list__mobile
                     background: #481120
@@ -3816,19 +4038,19 @@
                         .btn
                             padding: 11.5px 20px
                             width: 150px
-            .basket__right                
+            .basket__right
                 width: 100%
                 margin: 0 auto
                 .basket__progress
                     display: none
                     .basket__item
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
@@ -3838,12 +4060,12 @@
                                     .nav-item
                                         margin-right: 10px
                                         &:last-child
-                                          margin-right: 0px  
-                                        a 	
+                                            margin-right: 0px
+                                        a
                                             font-weight: 600
                                             font-size: 14px
-                                            line-height: 24px                                            
-                                            border-radius: 5px                                            
+                                            line-height: 24px
+                                            border-radius: 5px
                                             text-align: center
                                             border: 2px solid $accent
                                             background: transparent
@@ -3859,7 +4081,7 @@
                                                 .wrapIcon
                         .tab-content
                             .tab-pane
-                                .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization                                    
+                                .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
                                     .form__group
                                         .form__control
                                             max-width: 100%
@@ -3876,8 +4098,8 @@
                                                 font-weight: 500
                                                 font-size: 12px
                                                 line-height: 24px
-                                        .form__label	
-                                            left: 0px                                        
+                                        .form__label
+                                            left: 0px
                                     .basket__check
                                         padding-left: 31px
                                         padding-bottom: 0px
@@ -3905,8 +4127,8 @@
                                                 &:last-child
                                                 .address_title
                                                     font-size: 12px
-                                                    line-height: 15px									
-                                                .address_text	
+                                                    line-height: 15px
+                                                .address_text
                                                     font-size: 12px
                                                     line-height: 15px
                                         .basket__preorder
@@ -3920,14 +4142,14 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                             width: 100%
                                             margin-bottom: 10px
                                             &:last-child
                                                 margin-bottom: 0px
                                         &.pickup
-                                            flex-direction: column     
+                                            flex-direction: column
                                     .basket__formTop
                                         .form__group
                                             &.select__group
@@ -3942,23 +4164,23 @@
                                                     height: 30px
                                                 .form__label
                                                     display: none
-                                                    option                               
-                                    .basket__formCenter	
-                                        .basket__formLeft								
+                                                    option
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
                                                 .form__check-label
                                                     &::after
                                                 .form__check-input + label::before
-                                                    
+
                                         .basket__formRight
                                             .form__group
                                                 .form__control
                                             .group__input
                                                 .form__control
                                                     &:first-child
-                                    
+
                                 .basket__formNew, .basket__formProfile
                                     .form__group
                                         .form__control
@@ -3966,7 +4188,7 @@
                                             margin-bottom: 0px
                                             &:placeholder
                                         .form__label
-                                            display: none	
+                                            display: none
                                     &.deliveryform
                                         padding-top: 20px
                                         .form__group
@@ -3980,7 +4202,7 @@
                                                 font-size: 12px
                                                 line-height: 16px
                                                 text-transform: none
-                                                display: flex	
+                                                display: flex
                                         .basket__formCenter
                                             .basket__formLeft
                                                 width: 50%
@@ -4013,8 +4235,8 @@
                                                         line-height: 17px
                                                         padding: 15px 10px
                                                         height: 50px
-                                                        max-width: 150px   
-                                                        width: 100%                                                   
+                                                        max-width: 150px
+                                                        width: 100%
                                                         border: 2px solid $accent
                                                         margin-bottom: 20px
                                                         &.time
@@ -4042,8 +4264,8 @@
                                                     line-height: 17px
                                                     padding: 15px 10px
                                                     height: 50px
-                                                    max-width: 150px   
-                                                    width: 100%                                                   
+                                                    max-width: 150px
+                                                    width: 100%
                                                     border: 2px solid $accent
                                                     &.time
                                                         margin-left: 20px
@@ -4073,14 +4295,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -4088,7 +4310,7 @@
                                             .form__label
                                         .basket__check
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
@@ -4231,23 +4453,23 @@
                     .form__label
                         font-size: 14px
                         line-height: 16px
-        .form__box 
+        .form__box
             .btn
                 width: 100%
-    .account__change__email 
+    .account__change__email
         width: 95%
         padding: 25px 20px 25px
         .change__close
             right: 35px
             top: 15px
-        .form__box 
+        .form__box
             .btn
                 width: 100%
-        .form__group 
+        .form__group
             .form__control
                 padding: 6px
-    .recomendation 
-        .custom__container 
+    .recomendation
+        .custom__container
             margin-left: 15px
     header
         .container-fluid
@@ -4301,12 +4523,24 @@
                             padding: 0
                             margin: 20px 15px
                             .menu__list
-                                padding-bottom: 20px
+                                padding-bottom: 30px
+                                .menu__item
+                                    margin-bottom: 30px
+                                    .menu__link
+                                        font-size: 16px
+                                        line-height: 20px
                             .menu__list__info
                                 padding-top: 25px
                                 .menu__info
+                                    font-size: 24px
+                                    line-height: 29px
                                     &:first-child
                                         margin-bottom: 20px
+                                        &::before
+                                            top: -7px
+                                    &:last-child
+                                        &::before
+                                            top: -7px
                         .wrap__logos
                             display: none
     .about
@@ -4396,7 +4630,7 @@
                 padding: 0 15px
                 .tab-pane
                     .personal__list
-                        
+
                         &.reviews__formWrap
                             .reviews__form
                                 .formWrap
@@ -4413,7 +4647,7 @@
                                                 padding-left: 55px
                                             &:before
                                                 content: url(../img/@2x/addicon.svg)
-    .account__formWrap        
+    .account__formWrap
         padding: 0 15px
         .account__form
             .account__formContent
@@ -4425,7 +4659,7 @@
                 .form__bottom
                     p
                     .form__box
-                        .registration    
+                        .registration
         .account__formRegistration
             .title
             .account__formContent
@@ -4435,8 +4669,8 @@
                         .mainform__control
                             &:last-child
                         .mainform__label
-                    .form__box           
-                        .btn             
+                    .form__box
+                        .btn
         .account__formRecovery
             .title
             .account__description
@@ -4448,7 +4682,7 @@
                     .mainform__group
                         .mainform__control
                     .form__box
-                        .btn         
+                        .btn
 
     .basket
         padding-bottom: 0px
@@ -4465,7 +4699,7 @@
                                 .product__imgWrap
                                     .product__img
                                 .product__info
-                                    .product__title							
+                                    .product__title
                                     .form-check
                                         .form__check-input
                                         .form__check-input + label::before
@@ -4485,26 +4719,26 @@
                         right: 20px
                 .basket__value
                     .text
-                    .valueWrap				
+                    .valueWrap
                         .value
             .basket__right
                 padding: 0 15px
                 .basket__progress
                     .basket__item
-                        &.active-step	
+                        &.active-step
                             &::after
                         &.delivery-step
                             &::after
                         &.order-step
                             &::after
-                        &.performed-step                        
+                        &.performed-step
                 .basket__content
                     .basket__tabinfo
                         .solutions-tab-content
                             .solutions-tab
                                 .nav-pills
                                     .nav-item
-                                        a 		
+                                        a
                                             .wrapIcon
                                                 .icon
                                             &.active
@@ -4512,10 +4746,10 @@
                         .tab-content
                             .tab-pane
                                 .basket__formNew, .basket__formProfile,.basket__pickup,.basket__formIndividual,.basket__formOrganization
-                                    
+
                                     .form__group
                                         .form__control
-                                        .form__label	
+                                        .form__label
                                         .select
                                             option
                                     .basket__check
@@ -4528,8 +4762,8 @@
                                         .basket__address
                                             li
                                                 &:last-child
-                                                .address_title									
-                                                .address_text	
+                                                .address_title
+                                                .address_text
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -4541,12 +4775,12 @@
                                                 .form__control
                                                     &:first-child
 
-                                    .form__box								
+                                    .form__box
                                         button
                                         &.pickup
                                     .basket__formTop
-                                    .basket__formCenter	
-                                        .basket__formLeft										
+                                    .basket__formCenter
+                                        .basket__formLeft
                                             .form__group
                                                 .form__control
                                             .basket__check
@@ -4568,14 +4802,14 @@
                             .tab-content
                                 .tab-pane
                                     .basket__formNew, .basket__formProfile
-                                        .basket__check				
+                                        .basket__check
                     &.payment__method
                         .basket__tabinfo
                             .solutions-tab-content
                                 .solutions-tab
                                     .nav-pills
                                         .nav-item
-                                            a 	
+                                            a
                             .tab-content
                                 .tab-pane
                                     .basket__formIndividual,.basket__formOrganization
@@ -4583,25 +4817,25 @@
                                             .form__label
                                         .basket__check
                                             .form__check-label
-                                                a 
+                                                a
                                                     &:hover
                                         .form__box
                                     .basket__formIndividual
                                         .wrap
-                                            .left	
+                                            .left
                                                 .pay__group
                                                     &:last-child
                                                     .control
-                                                        &:checked 
+                                                        &:checked
                                                     label
-                                            .right	
-                                                .form__group	
+                                            .right
+                                                .form__group
                                                     &.comment
                                                         .form__control
                                         .basket__check
                                         .form__box
         &.success
-            padding:  90px 15px 25px
+            padding: 90px 15px 25px
             .custom__container
                 .title
                     font-size: 24px
@@ -4611,9 +4845,9 @@
                         font-size: 24px
                         line-height: 32px
                 .success__info
-                    p  
+                    p
                         font-size: 24px
-                        line-height: 32px  
+                        line-height: 32px
     .order
         padding-top: 90px
         .custom__container
@@ -4622,7 +4856,7 @@
                 line-height: 29px
         .order__container
             padding: 0px 15px
-            background: none            
+            background: none
             .order__left
                 ul
                     li
@@ -4647,15 +4881,15 @@
                             margin-right: 0px
                         &:last-child
                             margin-left: 0px
-            
+
     //Product Page 1
     .product
         .custom__container
             .title
-                padding: 0 15px 
+                padding: 0 15px
         .custom__container
             .product__left
-                padding: 0 15px 
+                padding: 0 15px
                 .product__recomendation
                     right: -90px
                     .product__link
@@ -4664,7 +4898,7 @@
                 .product__wrapImg
                     .product__img
             .product__right
-                padding: 0 15px 
+                padding: 0 15px
                 form
                     .product__cost
                         .product__title
@@ -4713,21 +4947,21 @@
     .product-two
         .custom__container
             .title
-                padding: 0 15px 
+                padding: 0 15px
         .custom__container
             .product__left
-                padding: 0 15px 
-                .recomendation__wrap  
+                padding: 0 15px
+                .recomendation__wrap
                     .product__recomendation
                         &:after
                     .product__wrapImg
                         .product__img
             .product__center
-                padding: 0 15px 
-                .product__wrapImg		
+                padding: 0 15px
+                .product__wrapImg
                     .product__img
             .product__right
-                padding: 0 15px 
+                padding: 0 15px
                 width: 100%
                 form
                     .product__btnGroup
@@ -4749,15 +4983,15 @@
                                         .quantity
     .contacts
         padding: 90px 15px 25px
-        .custom__container 
+        .custom__container
             .title
                 font-size: 24px
                 line-height: 29px
-        .custom__container 
-            .solutions-tab-content 
-                .solutions-tab 
-                    .nav-pills 
-                        .nav-item 
+        .custom__container
+            .solutions-tab-content
+                .solutions-tab
+                    .nav-pills
+                        .nav-item
                             a
                                 font-weight: normal
                                 font-size: 10px
@@ -4766,17 +5000,17 @@
                                     font-weight: bold
                                     font-size: 12px
                                     line-height: 15px
-            .contacts__content 
-                .tab-pane 
-                    .contacts__list 
-                        .contacts__item 
-                            &:first-child 
-                            margin-bottom: 30px
-                            padding-bottom: 30px
+            .contacts__content
+                .tab-pane
+                    .contacts__list
+                        .contacts__item
+                            &:first-child
+                                margin-bottom: 30px
+                                padding-bottom: 30px
                             h2
                                 font-size: 14px
                                 line-height: 17px
-                            .item 
+                            .item
                                 .text
                                     font-size: 14px
                                     line-height: 17px
@@ -4787,7 +5021,7 @@
                                     li
                                         a
                                             font-size: 14px
-                                            line-height: 17px 
+                                            line-height: 17px
                     .contacts__mapContainer
                         min-height: 65.5vh
 @media screen and (max-width: 321px)
@@ -4817,7 +5051,7 @@
             .product__right
                 form
                     .product__btnGroup
-                        .product__counter                            
+                        .product__counter
                             margin-right: 0px
                             .product__count
                                 padding: 0 10px
@@ -4827,21 +5061,21 @@
     .product-two
         .custom__container
             .title
-                padding: 0 15px 
+                padding: 0 15px
         .custom__container
             .product__left
-                padding: 0 15px 
-                .recomendation__wrap  
+                padding: 0 15px
+                .recomendation__wrap
                     .product__recomendation
                         &:after
                     .product__wrapImg
                         .product__img
             .product__center
-                padding: 0 15px 
-                .product__wrapImg		
+                padding: 0 15px
+                .product__wrapImg
                     .product__img
             .product__right
-                padding: 0 15px 
+                padding: 0 15px
                 width: 100%
                 form
                     .product__row
@@ -4858,7 +5092,7 @@
                                     line-height: 22px
                                 &::after
                     .product__btnGroup
-                        .product__counter                            
+                        .product__counter
                             margin-right: 0px
                             .product__count
                                 padding: 0 10px
