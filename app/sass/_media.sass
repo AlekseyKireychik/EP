@@ -673,6 +673,7 @@
                         .recomendation__item
                             .recomendation__info
                                 .recomendation__left
+                                    max-height: 510px
                                     .recomendation__positions
                                         width: 325px
                                         .recomendation__elem
@@ -1098,7 +1099,7 @@
         .custom__container
             .product__left
                 .product__wrapImg
-                    max-width: 735px
+                    max-width: 705px
             .product__right
                 form
                     .product__btnGroup
@@ -2334,6 +2335,7 @@
         &.is-active
             display: none
     .recomendation
+        left: -100vw
         &.is-active
             width: 100vw
         padding-top: 120px
@@ -2341,6 +2343,8 @@
             margin-left: calc((100vw - 1000px) / 2)
         .custom__container
             .recomendation__title
+                &::before	
+                    display: block		
             .solutions-tab-content
                 max-width: 100%
                 .solutions-tab
@@ -3015,6 +3019,67 @@
     .recomendation
         .custom__container
             margin-left: calc((100vw - 720px) / 2)
+    .recomendation
+        padding-top: 90px
+        .custom__container
+            .recomendation__title
+                margin: 0 auto 30px	
+                font-size: 24px
+                line-height: 29px
+            .solutions-tab-content
+                max-width: 100%
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 100%
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            .recomendation__info
+                                flex-direction: column
+                                .recomendation__left                                    
+                                    margin-bottom: 30px
+                                    max-height: 400px
+                                    .recomendation__positions
+                                        width: 100%
+                                        .recomendation__elem
+                                            .recomendation__link
+                                                align-items: center
+                                                .wrap__img
+                                                    max-width: 110px
+                                                    img
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 100%
+                                                        font-size: 15px
+                                                        line-height: 18px
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 350px
+                                                img
+                                                    max-width: 350px
+                                            .total
+                                        .recomendation__btnGroup
+                                            .recomendation__counter
+                                                .btn
     .slider__counter
         display: none
     header
@@ -3295,6 +3360,81 @@
     .recomendation
         .custom__container
             margin-left: calc((100vw - 540px) / 2)
+        background: #C88C1C
+        padding-top: 60px
+        padding-bottom: 0px
+        bottom: auto
+        .custom__container
+            .recomendation__title
+            .solutions-tab-content
+                max-width: 100%
+                .solutions-tab
+                    margin-bottom: 30px
+                    .nav-pills
+                        .nav-item
+                            a
+                                font-size: 16px
+                                line-height: 22px
+                                &.active
+                                    font-size: 16px
+                                    line-height: 22px
+            .tab-content
+                max-width: 100%
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            padding-bottom: 0px
+                            .recomendation__info
+                                overflow-x: auto
+                                flex-direction: column
+                                &::-webkit-scrollbar 
+                                    width: 0
+                                .recomendation__left                                    
+                                    margin-bottom: 30px
+                                    max-height: 233px
+                                    overflow-y: hidden
+                                    .recomendation__positions
+                                        width: 100%
+                                        flex-wrap: nowrap
+                                        .recomendation__elem
+                                            width: 300px
+                                            margin-bottom: 25px
+                                            .recomendation__link                                                
+                                                min-height: 220px
+                                                align-items: center
+                                                flex-direction: column
+                                                .wrap__img
+                                                    max-width: 205px
+                                                    img8
+                                                .text
+                                                    order: -1
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 205px
+                                                        font-size: 18px
+                                                        line-height: 22px
+                                                        text-align: center
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                                        display: none
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            display: none
+                                            .name
+                                                font-size: 22px
+                                                line-height: 27px
+                                            .wrap__img
+                                                max-width: 350px
+                                                img
+                                                    max-width: 350px
+                                            .total
+                                        .recomendation__btnGroup
+                                            display: none
+                                            .recomendation__counter
+                                                .btn
     .btn
         color: #691D35
         font-size: 14px
@@ -4470,7 +4610,72 @@
                 padding: 6px
     .recomendation
         .custom__container
-            margin-left: 15px
+            margin-left: 0px
+    .recomendation
+        background: #C88C1C
+        padding-top: 30px
+        padding-bottom: 0px
+        bottom: auto
+        top: 60px
+        &.two
+            background: #E67300
+        .custom__container
+            .recomendation__title
+                max-width: 242px
+                padding: 0 15px
+                &::before
+                    top: 50%
+                    transform: translate(0px, -50%)
+            .solutions-tab-content
+                padding: 0 15px
+                max-width: 100%
+                .solutions-tab
+                    margin-bottom: 0px
+                    .nav-pills
+                        margin-bottom: 15px
+                        .nav-item
+                            a
+                                font-size: 10px
+                                line-height: 12px
+                                &.active
+                                    font-size: 10px
+                                    line-height: 12px
+            .tab-content
+                max-width: 100%
+                .tab-pane
+                    .recomendation__list
+                        .recomendation__item
+                            padding-bottom: 0px
+                            .recomendation__info
+                                padding-left: 15px
+                                .recomendation__left                                    
+                                    margin-bottom: 0px
+                                    max-height: 233px
+                                    .recomendation__positions
+                                        width: 100%
+                                        .recomendation__elem
+                                            width: 300px
+                                            margin-bottom: 25px
+                                            .recomendation__link                                                
+                                                min-height: 220px
+                                                .wrap__img
+                                                    max-width: 205px
+                                                .text
+                                                    .name
+                                                        min-height: auto
+                                                        max-width: 205px
+                                                        font-size: 18px
+                                                        line-height: 22px
+                                                        text-align: center
+                                                    .description
+                                                        font-size: 34px
+                                                        line-height: 41px
+                                                        display: none
+                                .recomendation__right
+                                    max-width: 265px
+                                    .tab-pane
+                                        .recomendation__product
+                                            display: none
     header
         .container-fluid
             &.container__header
