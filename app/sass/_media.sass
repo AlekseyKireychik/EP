@@ -2636,12 +2636,14 @@
                 .tab-pane
                     .personal__list
                         &.profile
-                            .profile__wrapinfo
-                                .profile__title
-                                .profile__info
-                                    p
-                                    .btn__group
-                                        button
+                            &.is-active
+                                .profile__wrapinfo
+                                    display: none
+                                .profile__wrapform
+                                    .profile__container
+                                        display: none
+                                .change__password
+                                    display: none
                             .profile__wrapform
                                 .profile__container
                                     .profile__wrapinfo
@@ -2652,8 +2654,11 @@
                                         .profile__info
                                             p
                                             button
-                                form
+                                #change-password-form
                                     display: none
+                                    &.is-active
+                                        display: inline-block
+                                        margin: 66px auto
                                     p
                                     .wrap
                                         .form__group
@@ -2766,7 +2771,7 @@
                                             .btn
                                                 width: 120px
                                                 padding: 14px 0px
-    .account__change__email
+    .account__change__popup
         width: 500px
         .title
             font-size: 22px
@@ -3585,6 +3590,7 @@
                                             padding: 11px 0
     .personal
         padding-top: 100px
+        min-height: 100vh
         .custom__container
             .title
                 font-size: 24px
@@ -3641,6 +3647,7 @@
                                 .profile__btn
                                     font-size: 10px
                                     line-height: 12px
+                                    text-transform: initial
                         &.profile
                             .profile__wrapinfo
                                 margin-bottom: 25px
@@ -3652,6 +3659,8 @@
                                 .profile__title
                                     font-size: 14px
                                     line-height: 17px
+                                    min-width: 90px
+                                    max-width: 90px
                                 .profile__info
                                     p
                                         font-size: 12px
@@ -3690,8 +3699,17 @@
                                             input
                                         button
                         .change__password
-                        &.address
+                        &.address                                
                             .profile__wrapinfo
+                                &:first-child
+                                    margin-bottom: 30px
+                                    .btn__group
+                                        .dell
+                                            display: flex
+                                &:last-child
+                                    .btn__group
+                                        .change
+                                            display: flex
                                 .profile__title
                                     font-size: 14px
                                     line-height: 17px
@@ -3703,8 +3721,29 @@
                                         line-height: 15px
                                     button
                                         &:last-child
+                                .btn__group
+                                    margin-top: 5px
+                                    .change
+                                    .dell
+                                        color: rgba(255, 255, 255, 0.5)
                             .profile__wrapinfo
                                 .profile__item
+                                    &:first-child
+                                        button
+                                            font-weight: 600
+                                            font-size: 14px
+                                            line-height: 16px
+                                            text-align: center
+                                            color: #FFFFFF
+                                            border: 1px solid #FFFFFF
+                                            border-radius: 10px
+                                            text-transform: initial
+                                            padding: 11px
+                                            width: 280px
+                                            position: absolute
+                                            bottom: 25px
+                                            left: 50%
+                                            transform: translate(-50%, 0)
                                     button
                                         &:last-child
                                             margin: 0 auto
@@ -3826,12 +3865,33 @@
                                             width: 100%
                                             .btn
                                                 width: 100%
-    .account__change__email
+    .account__change__popup
+        padding: 30px 15px 30px
+        .change__close
+            right: 35px
+            top: 30.5px
         .title
-            .form__group
-                .form__label
-                .form__control
-                    &:last-child
+            margin-bottom: 45px
+        .form__group
+            .form__label
+                display: none
+            .form__control
+                background: #FFFFFF
+                border: 1px solid #A1A4B1
+                border-radius: 4px
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #8B90A0
+                padding: 10px 15px
+                &::placeholder                    
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 14px
+                    color: #8B90A0
+        .form__box
+            .btn
+                width: 100%
     .account__formWrap
         .form__btnClose
             top: 25px
@@ -4630,18 +4690,8 @@
         .form__box
             .btn
                 width: 100%
-    .account__change__email
+    .account__change__popup
         width: 95%
-        padding: 25px 20px 25px
-        .change__close
-            right: 35px
-            top: 15px
-        .form__box
-            .btn
-                width: 100%
-        .form__group
-            .form__control
-                padding: 6px
     .recomendation__overlay
         &.is-active
             display: none
@@ -4883,7 +4933,14 @@
                 padding: 0 15px
                 .tab-pane
                     .personal__list
-
+                        &.address
+                            .profile__wrapinfo
+                                .profile__info
+                                    max-width: 200px
+                                    .btn__group
+                                        button
+                                            margin: 0
+                                            width: max-content
                         &.reviews__formWrap
                             .reviews__form
                                 .formWrap

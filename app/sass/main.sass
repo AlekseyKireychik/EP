@@ -102,7 +102,7 @@ input.error
 	border-bottom: 1px solid $accent
 main
 	position: relative
-.account__change__email
+.account__change__popup
 	display: none
 	width: 840px
 	position: absolute
@@ -149,6 +149,8 @@ main
 			width: 100%
 			background-color: transparent
 			margin-bottom: 15px
+			&::placeholder
+				color: transparent
 			&:last-child
 				margin-bottom: 20px
 		.form__label
@@ -1525,6 +1527,14 @@ header
 								&:last-child
 									margin-right: 0px
 						.profile__wrapinfo
+							&:first-child
+								.btn__group
+									.dell
+										display: none
+							&:last-child
+								.btn__group
+									.change
+										display: none
 							.profile__item
 								&:last-child
 									.profile__info

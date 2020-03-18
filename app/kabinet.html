@@ -389,19 +389,18 @@
           </div>
         </form>
       </div>
-      <form id="change-email" class="account__change__email">
+      <form id="change-email-form" class="account__change__popup">
         <div class="change__close"><a href="#"></a></div>
         <h2 class="title">Сменить E-mail</h2>
         <div class="form__group">
-          <label for="email" class="form__label">Ведите новый E-MAil</label>
+          <label for="input-change-email" class="form__label">Введите Ваш новый E-MAil</label>
           <input
             type="email"
-            placeholder=""
+            placeholder="Введите Ваш новый E-MAil"
             class="form__control required"
             name="email"
             id="input-change-email"
-            required
-          />
+            required/>
         </div>
         <div class="form__box">
           <button type="submit" id="" class="btn">
@@ -409,22 +408,97 @@
           </button>
         </div>
       </form>
-      <form id="change-name" class="account__change__name">
+      <form id="change-name-form" class="account__change__popup">
         <div class="change__close"><a href="#"></a></div>
         <h2 class="title">Сменить ФИО</h2>
         <div class="form__group">
-          <label for="email" class="form__label">Ведите ФИО</label>
+          <label for="input-change-name" class="form__label">Введите Ваши ФИО</label>
           <input
             type="text"
-            placeholder=""
+            placeholder="Введите Ваши ФИО"
             class="form__control required"
             name="name"
             id="input-change-name"
-            required
-          />
+            required/>
         </div>
         <div class="form__box">
           <button type="submit" id="change-name-btn" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
+      <form id="change-phone-form" class="account__change__popup">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Сменить телефон</h2>
+        <div class="form__group">
+          <label for="input-change-phon" class="form__label">Введите Ваш новый телефон</label>
+          <input
+            type="text"
+            placeholder="Введите Ваш новый телефон"
+            class="form__control required"
+            name="phone"
+            id="input-change-phone"
+            required/>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="change-phone-btn" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
+      <form id="add-phone-form" class="account__change__popup">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Добавить телефон</h2>
+        <div class="form__group">
+          <label for="input-add-phone" class="form__label">Введите Ваш новый телефон</label>
+          <input
+            type="text"
+            placeholder="Введите Ваш новый телефон"
+            class="form__control required"
+            name="phone"
+            id="input-add-phone"
+            required/>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="add-phone-btn" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
+      <form id="change-date-form" class="account__change__popup">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Сменить дату рождения</h2>
+        <div class="form__group">
+          <label for="input-change-date" class="form__label">Введите Вашу дату рождения</label>
+          <input
+            type="text"
+            placeholder="Введите Вашу дату рождения"
+            class="form__control required"
+            name="phone"
+            id="input-change-date"
+            required/>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="change-date-btn" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
+      <form id="change-gender-form" class="account__change__popup">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Сменить пол</h2>
+        <div class="form__group">
+          <label for="input-change-gender" class="form__label">Укажите Ваш пол</label>
+          <input
+            type="text"
+            placeholder="Укажите Ваш пол"
+            class="form__control required"
+            name="phone"
+            id="input-change-gender"
+            required/>
+        </div>
+        <div class="form__box">
+          <button type="submit" id="change-gender-btn" class="btn">
             Сменить
           </button>
         </div>
@@ -436,49 +510,41 @@
           <label for="input-new-title" class="form__label">Название</label>
           <input
             type="text"
-            placeholder=""
+            placeholder="Название"
             class="form__control"
             name="title"
-            id="input-new-title"
-          />
+            id="input-new-title"/>
         </div>
         <div class="form__group">
-          <label for="input-new-street" class="form__label"
-            >Улица<span class="required-star">*</span></label
-          >
+          <label for="input-new-street" class="form__label">Улица<span class="required-star">*</span></label>
           <input
             type="text"
-            placeholder=""
+            placeholder="Улица"
             class="form__control required"
             name="street"
             id="input-new-street"
-            required
-          />
+            required/>
         </div>
         <label class="bottom">
           <div class="left">
             <div class="form__group">
-              <label for="input-new-home" class="form__label"
-                >Дом<span class="required-star">*</span></label
-              >
+              <label for="input-new-home" class="form__label">Дом<span class="required-star">*</span></label>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Дом"
                 class="form__control required"
                 name="home"
                 id="input-new-home"
-                required
-              />
+                required/>
             </div>
             <div class="form__group">
               <label for="input-new-floor" class="form__label">Этаж</label>
               <input
                 type="text"
-                placeholder=""
+                placeholder="Этаж"
                 class="form__control"
                 name="floor"
-                id="input-new-floor"
-              />
+                id="input-new-floor"/>
             </div>
           </div>
           <label class="right">
@@ -486,29 +552,97 @@
               <label for="input-new-porch" class="form__label">Подъезд</label>
               <input
                 type="text"
+                placeholder="Подъезд"
+                class="form__control"
+                name="porch"
+                id="input-new-porch"/>
+            </label>
+            <div class="form__group">
+              <label for="input-new-apartment" class="form__label">Квартира<span class="required-star">*</span></label>
+              <input
+                type="text"
+                placeholder="Квартира"
+                class="form__control required"
+                name="apartment"
+                id="input-new-apartment"
+                required/>
+            </div>
+          </label>
+        </label>
+        <div class="form__box">
+          <button type="submit" id="new-address-btn" class="btn">
+            Добавить
+          </button>
+        </div>
+      </form>
+      <form id="change-address-form" class="account__new__address">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Изменить адрес</h2>
+        <div class="form__group">
+          <label for="input-change-title" class="form__label">Название</label>
+          <input
+            type="text"
+            placeholder=""
+            class="form__control"
+            name="title"
+            id="input-change-title"/>
+        </div>
+        <div class="form__group">
+          <label for="input-change-street" class="form__label">Улица<span class="required-star">*</span></label>
+          <input
+            type="text"
+            placeholder=""
+            class="form__control required"
+            name="street"
+            id="input-change-street"
+            required/>
+        </div>
+        <label class="bottom">
+          <div class="left">
+            <div class="form__group">
+              <label for="input-change-home" class="form__label">Дом<span class="required-star">*</span></label>
+              <input
+                type="text"
+                placeholder=""
+                class="form__control required"
+                name="home"
+                id="input-change-home"
+                required/>
+            </div>
+            <div class="form__group">
+              <label for="input-change-floor" class="form__label">Этаж</label>
+              <input
+                type="text"
+                placeholder=""
+                class="form__control"
+                name="floor"
+                id="input-change-floor"/>
+            </div>
+          </div>
+          <label class="right">
+            <label class="form__group">
+              <label for="input-change-porch" class="form__label">Подъезд</label>
+              <input
+                type="text"
                 placeholder=""
                 class="form__control"
                 name="porch"
-                id="input-new-porch"
-              />
+                id="input-change-porch"/>
             </label>
             <div class="form__group">
-              <label for="input-new-apartment" class="form__label"
-                >Квартира<span class="required-star">*</span></label
-              >
+              <label for="input-change-apartment" class="form__label">Квартира<span class="required-star">*</span></label>
               <input
                 type="text"
                 placeholder=""
                 class="form__control required"
                 name="apartment"
-                id="input-new-apartment"
-                required
-              />
+                id="input-change-apartment"
+                required/>
             </div>
           </label>
         </label>
         <div class="form__box">
-          <button type="submit" id="" class="btn">
+          <button type="submit" id="change-address-btn-form" class="btn">
             Добавить
           </button>
         </div>
@@ -522,9 +656,7 @@
             <div class="solutions-tab">
               <ul class="nav nav-pills" role="tablist">
                 <li class="nav-item">
-                  <a href="#tab-01" role="tab" class="active" data-toggle="tab"
-                    >Профиль</a
-                  >
+                  <a href="#tab-01" role="tab" class="active" data-toggle="tab">Профиль</a>
                 </li>
                 <li class="nav-item">
                   <a href="#tab-02" role="tab" data-toggle="tab">Мои Адреса</a>
@@ -533,9 +665,7 @@
                   <a href="#tab-03" role="tab" data-toggle="tab">Мои заказы</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#tab-04" role="tab" data-toggle="tab"
-                    >Оставить отзыв</a
-                  >
+                  <a href="#tab-04" role="tab" data-toggle="tab">Оставить отзыв</a>
                 </li>
                 <li class="nav-item">
                   <a href="/">Выйти</a>
@@ -550,7 +680,7 @@
                   <p class="profile__title">ФИО</p>
                   <div class="profile__info">
                     <p>Баркун Пётр Дмитриевич</p>
-                    <button class="profile__btn">Изменить</button>
+                    <button id="profile-change-name-btn" class="profile__btn">Изменить</button>
                   </div>
                 </div>
                 <div class="profile__wrapform">
@@ -562,8 +692,8 @@
                           <a href="tel:+375441111111">+375 (44) 111-11-11</a>
                         </p>
                         <div class="btn__group">
-                          <button class="profile__btn">Добавить</button>
-                          <button class="profile__btn">Изменить</button>
+                          <button id="profile-add-phone-btn" class="profile__btn">Добавить</button>
+                          <button id="profile-change-phone-btn" class="profile__btn">Изменить</button>
                         </div>
                       </div>
                     </div>
@@ -571,30 +701,27 @@
                       <p class="profile__title">Дата Рождения</p>
                       <div class="profile__info">
                         <p>07.08.1998</p>
-                        <button class="profile__btn">Изменить</button>
+                        <button id="profile-change-date-btn" class="profile__btn">Изменить</button>
                       </div>
                     </div>
                     <div class="profile__wrapinfo">
                       <p class="profile__title">Пол</p>
                       <div class="profile__info">
                         <p>Мужской</p>
-                        <button class="profile__btn">Изменить</button>
+                        <button id="profile-change-gender-btn" class="profile__btn">Изменить</button>
                       </div>
                     </div>
                   </div>
-                  <form id="change-password-form" action="">
-                    <p>сменить пароль</p>
+                  <form id="change-password-form" class="" action="">
+                    <p>Изменить пароль</p>
                     <div class="wrap">
                       <div class="form__group">
                         <input placeholder="Введите новый пароль" type="text" />
                       </div>
                       <div class="form__group">
-                        <input
-                          placeholder="Повторите новый пароль"
-                          type="text"
-                        />
+                        <input placeholder="Повторите новый пароль" type="text"/>
                       </div>
-                      <button>Сохранить изменения</button>
+                      <button id="save-password-btn">Сохранить изменения</button>
                     </div>
                   </form>
                 </div>
@@ -602,7 +729,7 @@
                   <p class="profile__title">E-MAIL</p>
                   <div class="profile__info">
                     <p>Peterbarkun@gmail.com</p>
-                    <button id="change-btn" class="profile__btn">
+                    <button id="profile-change-email-btn" class="profile__btn">
                       Изменить
                     </button>
                   </div>
@@ -616,7 +743,10 @@
                   <p class="profile__title">Главный адрес</p>
                   <div class="profile__info">
                     <p>(Офис) Минск, улица Пушкина, 111, эт. 1, кв. 1</p>
-                    <button class="profile__btn">Изменить</button>
+                    <div class="btn__group">
+                      <button id="change-address-btn" class="profile__btn change">Изменить</button>
+                      <button id="dell-address-btn" class="profile__btn dell">Удалить</button>
+                    </div>
                   </div>
                 </div>
                 <div class="profile__wrapinfo">
@@ -629,15 +759,24 @@
                   <div class="profile__item">
                     <div class="profile__info">
                       <p>(Дом) Минск, улица Тимерязева, 72, эт. 5, кв. 54</p>
-                      <button class="profile__btn">Удалить</button>
+                      <div class="btn__group">
+                        <button id="change-address-btn-01" class="profile__btn change">Изменить</button>
+                        <button id="dell-address-btn-01" class="profile__btn dell">Удалить</button>
+                      </div>                      
                     </div>
                     <div class="profile__info">
                       <p>(Дом) Минск, улица Тимерязева, 72, эт. 5, кв. 54</p>
-                      <button class="profile__btn">Удалить</button>
+                      <div class="btn__group">
+                        <button id="change-address-btn-02" class="profile__btn change">Изменить</button>
+                        <button id="dell-address-btn-02" class="profile__btn dell">Удалить</button>
+                      </div> 
                     </div>
                     <div class="profile__info">
                       <p>(Минск, проспект Рокоссовского 67, эт. 1, кв. 1</p>
-                      <button class="profile__btn">Удалить</button>
+                      <div class="btn__group">
+                        <button id="change-address-btn-03" class="profile__btn change">Изменить</button>
+                        <button id="dell-address-btn-03" class="profile__btn dell">Удалить</button>
+                      </div> 
                     </div>
                   </div>
                 </div>
@@ -1068,8 +1207,7 @@
                         placeholder="Введите Ваше Имя"
                         class="mainform__control"
                         name="name"
-                        id="name"
-                      />
+                        id="name"/>
                     </div>
                     <div class="mainform__group">
                       <input
@@ -1077,8 +1215,7 @@
                         placeholder="Введите Ваш e-mail"
                         class="mainform__control"
                         name="email"
-                        id="email"
-                      />
+                        id="email"/>
                     </div>
                     <div class="mainform__group comment">
                       <textarea
@@ -1088,34 +1225,29 @@
                         coll="5"
                         rows="5"
                         class="mainform__control"
-                        placeholder="Сообщение"
-                      ></textarea>
+                        placeholder="Сообщение"></textarea>
                     </div>
                     <input type="hidden" name="culturecode" />
                     <input type="hidden" name="url" />
                     <div class="bottom__wrap">
                       <div class="mainform__group file">
-                        <label for="uploaded-file" class="mainform__label"
-                          >Прикрепить файл</label
-                        >
+                        <label for="uploaded-file" class="mainform__label">Прикрепить файл</label>
                         <input
                           id="uploaded-file"
-                          onchange="getFileName ();"
+                          onchange="getFileName();"
                           placeholder=""
                           accept="image/jpeg,image/png,image/gif"
                           class=""
                           type="file"
                           name="file"
-                          multiple
-                        />
+                          multiple/>
                         <span>(не более 10Мб, jpeg, png, gif)</span>
                       </div>
                       <div id="file-name"></div>
                       <div class="capca">
                         <img
                           src="./img/@2x/newCaptchaAnchor.png"
-                          alt="Captcha Anchor"
-                        />
+                          alt="Captcha Anchor"/>
                       </div>
                       <div class="form__box">
                         <button type="submit" id="btn" class="btn submit">
