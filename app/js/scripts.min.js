@@ -1,34 +1,5 @@
 window.onload = function() {
-  // Start custom select
-  let select = function() {
-    let selectHeader = document.querySelectorAll(".select__header");
-    let selectItem = document.querySelectorAll(".select__item");
-    let selectItemActive = document.querySelectorAll(".address__select");
 
-    selectHeader.forEach(item => {
-      item.addEventListener("click", selectToggle);
-    });
-
-    selectItem.forEach(item => {
-      item.addEventListener("click", selectChoose);
-    });
-
-    function selectToggle() {
-      this.parentElement.classList.toggle("is-active");
-    }
-    function selectChoose() {
-      let text = this.innerText,
-        select = this.closest(".address__select"),
-        currentText = select.querySelector(".select__current");
-      currentText.innerText = text;
-      select.classList.remove("is-active");
-      select.classList.add("selected");
-    }
-  };
-
-  select();
-
-// End custom select
 
 // Mask input tel
   let phoneAll = document.querySelectorAll(".validate-numeric");
@@ -52,26 +23,57 @@ window.onload = function() {
 
   
 //BackForm input-file
-  function getFileName() {
-    let file = document.getElementById("uploaded-file").value;
+    function getFileName() {
+      let file = document.getElementById("uploaded-file").value;
 
-    file = file
-      .replace(/\\/g, "/")
-      .split("/")
-      .pop();
+      file = file
+        .replace(/\\/g, "/")
+        .split("/")
+        .pop();
 
-    document.getElementById("file-name").innerHTML =
-      '<div id="del__container" class="del__container">' +
-      file +
-      '<span id="del-file"><span onclick="RemoveFunc()" class="name del-file-btn">Удалить файл</span></span>' +
-      "</div>";
-  }
-  function RemoveFunc() {
-    document.getElementById("uploaded-file").value = null;
+      document.getElementById("file-name").innerHTML =
+        '<div id="del__container" class="del__container">' +
+        file +
+        '<span id="del-file"><span onclick="RemoveFunc()" class="name del-file-btn">Удалить файл</span></span>' +
+        "</div>";
+    }
+    function RemoveFunc() {
+      document.getElementById("uploaded-file").value = null;
 
-    let remove = document.getElementById("del__container").remove();
-    return false;
-  }
+      let remove = document.getElementById("del__container").remove();
+      return false;
+    }
+
+    // Start custom select
+    let select = function() {
+      let selectHeader = document.querySelectorAll(".select__header");
+      let selectItem = document.querySelectorAll(".select__item");
+      let selectItemActive = document.querySelectorAll(".address__select");
+  
+      selectHeader.forEach(item => {
+        item.addEventListener("click", selectToggle);
+      });
+  
+      selectItem.forEach(item => {
+        item.addEventListener("click", selectChoose);
+      });
+  
+      function selectToggle() {
+        this.parentElement.classList.toggle("is-active");
+      }
+      function selectChoose() {
+        let text = this.innerText,
+          select = this.closest(".address__select"),
+          currentText = select.querySelector(".select__current");
+        currentText.innerText = text;
+        select.classList.remove("is-active");
+        select.classList.add("selected");
+      }
+    };
+  
+    select();
+  
+  // End custom select
 };
 
 // masked_input_1.4-min.js
@@ -507,5 +509,44 @@ $(document).ready(function() {
       $(".account__formRegistration").addClass("is-active");      
     });
   });
+
+  if ($(window).width() < 576){
+    $(".entrance").on("click", function(event) {
+      event.preventDefault();
+      $("main").addClass("is-active");
+      $(".account__formWrap").addClass("is-active");
+      $(".form__overlay").addClass("is-active");
+      $(".form__btnClose").on("click", function(event) {
+        event.preventDefault();
+        $(".account__formWrap").removeClass("is-active");      
+        $(".form__overlay").removeClass("is-active");  
+        $(".account__form").addClass("is-active");
+        $(".account__formRecovery").removeClass("is-active"); 
+        $(".account__formRegistration").removeClass("is-active");
+        $("main").removeClass("is-active");   
+      });
+      $(".form__overlay").on("click", function(event) {
+        event.preventDefault();
+        $(".account__formWrap").removeClass("is-active");
+        $(".form__overlay").removeClass("is-active");    
+        $(".account__form").addClass("is-active");
+        $(".account__formRecovery").removeClass("is-active"); 
+        $(".account__formRegistration").removeClass("is-active");   
+        $("main").removeClass("is-active"); 
+      });
+      //profile Recovery Password
+      $(".simple__btn").on("click", function(event) {
+        event.preventDefault();
+        $(".account__form").removeClass("is-active");
+        $(".account__formRecovery").addClass("is-active");      
+      });
+      //profile Recovery Password
+      $(".registration").on("click", function(event) {
+        event.preventDefault();
+        $(".account__form").removeClass("is-active");
+        $(".account__formRegistration").addClass("is-active");      
+      });
+    });
+  }
 
 });

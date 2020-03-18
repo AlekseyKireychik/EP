@@ -4852,9 +4852,20 @@
                                                 padding-left: 55px
                                             &:before
                                                 content: url(../img/@2x/addicon.svg)
+    main
+        &.is-active
+            height: 100vh
+    .form__overlay
+        background: rgba(105, 29, 53, 0)
     .account__formWrap
+        top: 60px
         padding: 0 15px
+        height: calc(100vh - 60px)
+        .form__btnClose
+            display: none
         .account__form
+            .title
+                margin: 30px auto 30px
             .account__formContent
                 padding: 0px
                 .form__top

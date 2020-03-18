@@ -10884,8 +10884,22 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .file:before {
     content: url(../img/@2x/addicon.svg);
   }
+  main.is-active {
+    height: 100vh;
+  }
+  .form__overlay {
+    background: rgba(105, 29, 53, 0);
+  }
   .account__formWrap {
+    top: 60px;
     padding: 0 15px;
+    height: calc(100vh - 60px);
+  }
+  .account__formWrap .form__btnClose {
+    display: none;
+  }
+  .account__formWrap .account__form .title {
+    margin: 30px auto 30px;
   }
   .account__formWrap .account__form .account__formContent {
     padding: 0px;
