@@ -57,7 +57,9 @@
         <ul id="nav-menu" class="nav">
           <li class="menu__left">
             <div class="wrap__logo">
-              <img class="logo" src="img/@2x/logo.svg" alt="Елки Палки" />
+              <a href="/">
+                <img class="logo" src="img/@2x/logo.svg" alt="Елки Палки" />
+              </a>
             </div>
             <nav>
               <div class="close"><a href="#"></a></div>
@@ -407,6 +409,26 @@
           </button>
         </div>
       </form>
+      <form id="change-name" class="account__change__name">
+        <div class="change__close"><a href="#"></a></div>
+        <h2 class="title">Сменить ФИО</h2>
+        <div class="form__group">
+          <label for="email" class="form__label">Ведите ФИО</label>
+          <input
+            type="text"
+            placeholder=""
+            class="form__control required"
+            name="name"
+            id="input-change-name"
+            required
+          />
+        </div>
+        <div class="form__box">
+          <button type="submit" id="change-name-btn" class="btn">
+            Сменить
+          </button>
+        </div>
+      </form>
       <form id="new-address" class="account__new__address">
         <div class="change__close"><a href="#"></a></div>
         <h2 class="title">Новый адрес</h2>
@@ -536,7 +558,9 @@
                     <div class="profile__wrapinfo">
                       <p class="profile__title">Телефон</p>
                       <div class="profile__info">
-                        <p>+375 (44) 111-11-11</p>
+                        <p>
+                          <a href="tel:+375441111111">+375 (44) 111-11-11</a>
+                        </p>
                         <div class="btn__group">
                           <button class="profile__btn">Добавить</button>
                           <button class="profile__btn">Изменить</button>
@@ -641,7 +665,6 @@
                               <div class="wrap__btn">
                                 <button>Повторить заказ</button>
                                 <a
-                                  class="collapsed"
                                   role="button"
                                   data-toggle="collapse"
                                   href="#collapse1"
@@ -1072,7 +1095,9 @@
                     <input type="hidden" name="url" />
                     <div class="bottom__wrap">
                       <div class="mainform__group file">
-                        <label for="uploaded-file" class="mainform__label">Прикрепить файл</label>
+                        <label for="uploaded-file" class="mainform__label"
+                          >Прикрепить файл</label
+                        >
                         <input
                           id="uploaded-file"
                           onchange="getFileName ();"
@@ -1081,14 +1106,16 @@
                           class=""
                           type="file"
                           name="file"
-                          multiple/>
+                          multiple
+                        />
                         <span>(не более 10Мб, jpeg, png, gif)</span>
                       </div>
                       <div id="file-name"></div>
                       <div class="capca">
                         <img
                           src="./img/@2x/newCaptchaAnchor.png"
-                          alt="Captcha Anchor"/>
+                          alt="Captcha Anchor"
+                        />
                       </div>
                       <div class="form__box">
                         <button type="submit" id="btn" class="btn submit">
