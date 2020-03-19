@@ -30,6 +30,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
+    <link href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
@@ -792,7 +793,7 @@
                     <form action="" class="basket__formNew deliveryform">
                       <div class="basket__formTop">
                         <div class="form__group">
-                          <label for="text" class="form__label"
+                          <label for="text-01" class="form__label"
                             >Улица<span class="required-star">*</span></label
                           >
                           <input
@@ -800,7 +801,7 @@
                             placeholder=""
                             class="form__control required"
                             name="text"
-                            id="text"
+                            id="text-01"
                             required
                           />
                         </div>
@@ -808,7 +809,7 @@
                       <div class="basket__formCenter">
                         <div class="basket__formLeft">
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-02" class="form__label"
                               >Дом<span class="required-star">*</span></label
                             >
                             <input
@@ -816,12 +817,12 @@
                               placeholder=""
                               class="form__control required"
                               name="text"
-                              id="text"
+                              id="text-02"
                               required
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-03" class="form__label"
                               >Подъезд</label
                             >
                             <input
@@ -829,17 +830,17 @@
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-03"
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label">Этаж</label>
+                            <label for="text-04" class="form__label">Этаж</label>
                             <input
                               type="text"
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-04"
                             />
                           </div>
                           <div class="basket__check form-check">
@@ -856,17 +857,17 @@
                         </div>
                         <div class="basket__formRight">
                           <div class="form__group">
-                            <label for="text" class="form__label">Корпус</label>
+                            <label for="texttext-05" class="form__label">Корпус</label>
                             <input
                               type="text"
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="texttext-05"
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="texttext-06" class="form__label"
                               >Код двери</label
                             >
                             <input
@@ -874,7 +875,7 @@
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="texttext-06"
                             />
                           </div>
                           <div class="form__group">
@@ -894,12 +895,12 @@
                           </div>
                           <div class="form__group group__input">
                             <input
-                              type="date"
-                              placeholder=""
-                              class="form__control"
+                              type="text"
+                              placeholder="ДД/ММ/ГГГГ"
+                              class="form__control calendar"
                               name="date"
-                              id="datepicker"
-                            />
+                              value=""
+                              id=""/>
                             <input
                               type="text"
                               value="__ : __"
@@ -912,10 +913,10 @@
                         </div>
                       </div>
                       <div class="form__box">
-                        <button type="submit" id="back" class="btn back">
+                        <button type="submit" id="back-delivery-btn" class="btn back">
                           назад
                         </button>
-                        <button type="submit" id="next" class="btn">
+                        <button type="submit" id="next-delivery-btn" class="btn">
                           далее
                         </button>
                       </div>
@@ -960,12 +961,12 @@
                           </div>
                           <div class="form__group group__input">
                             <input
-                              type="date"
-                              placeholder=""
-                              class="form__control"
+                              type="text"
+                              placeholder="ДД/ММ/ГГГГ"
+                              class="form__control calendar"
                               name="date"
-                              id="date-preorder"
-                            />
+                              value=""
+                              id=""/>
                             <input
                               type="text"
                               value="__ : __"
@@ -978,10 +979,10 @@
                         </div>
                       </div>
                       <div class="form__box pickup">
-                        <button type="submit" id="back" class="btn back">
+                        <button type="submit" id="back-pickup-btn" class="btn back">
                           назад
                         </button>
-                        <button type="submit" id="next" class="btn">
+                        <button type="submit" id="next-pickup-btn" class="btn">
                           далее
                         </button>
                       </div>
@@ -1009,6 +1010,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

@@ -28,8 +28,8 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
-    />
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+      <link href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
@@ -250,7 +250,7 @@
               <div class="mainform__group group-01">
                 <input type="tel" value="+375 (__) ___-__-__"
                 pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                // phones at Belarus class="mainform__control validate-numeric
+                class="mainform__control validate-numeric
                 required" name="tel_log_in_form" id="tel_log_in_form" required/>
                 <label for="tel_log_in_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
@@ -312,7 +312,7 @@
               <div class="mainform__group group-01">
                 <input type="tel" value="+375 (__) ___-__-__"
                 pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                // phones at Belarus class="mainform__control validate-numeric
+                class="mainform__control validate-numeric
                 required" name="tel" id="tel_registration_form" required />
                 <label for="tel_registration_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
@@ -781,22 +781,11 @@
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
                     <form action="" class="basket__formNew deliveryform">
-                      <div class="basket__formTop">
-                        <div class="form__group select__group">
-                          <label for="text" class="form__label"
-                            >мои адреса</label
-                          >
-                          <select class="form__control select" name="" id="">
-                            <option value="placeholder"
-                              >Выбрать введеный адрес</option
-                            >
-                            <option value="адрес 1">адрес 1</option>
-                            <option value="адрес 2">адрес 2</option>
-                          </select>
-                        </div>
-                        <!-- <div class="form__group address__select">
+                      <div class="basket__formTop">                        
+                        <div class="form__group address__select">
+                          <label for="text" class="form__label">мои адреса</label>
                           <div class="select__header">
-                            <span class="select__current">Выбрать введеный адрес</span>
+                            <span class="select__current"></span>
                             <span class="tests__selectIcon">
                               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6.85749 8.57084C6.46909 9.21818 5.53091 9.21818 5.14251 8.57084L0.908699 1.5145C0.508784 0.847971 0.988897 -9.62621e-07 1.76619 -8.94668e-07L10.2338 -1.54405e-07C11.0111 -8.6452e-08 11.4912 0.847971 11.0913 1.51449L6.85749 8.57084Z" fill="white"/>
@@ -804,12 +793,12 @@
                             </span>
                           </div> 
                           <div class="select__body">
-                            <div class="select__item">адрес 1</div>
-                            <div class="select__item">адрес 2</div>
+                            <div class="select__item">Адрес 1</div>
+                            <div class="select__item">Адрес 2</div>
                           </div>
-                        </div> -->
+                        </div>
                         <div class="form__group">
-                          <label for="text" class="form__label"
+                          <label for="text-01" class="form__label"
                             >Улица<span class="required-star">*</span></label
                           >
                           <input
@@ -817,7 +806,7 @@
                             placeholder=""
                             class="form__control required"
                             name="text"
-                            id="text"
+                            id="text-01"
                             required
                           />
                         </div>
@@ -825,7 +814,7 @@
                       <div class="basket__formCenter">
                         <div class="basket__formLeft">
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-02" class="form__label"
                               >Дом<span class="required-star">*</span></label
                             >
                             <input
@@ -833,12 +822,12 @@
                               placeholder=""
                               class="form__control required"
                               name="text"
-                              id="text"
+                              id="text-02"
                               required
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-03" class="form__label"
                               >Подъезд</label
                             >
                             <input
@@ -846,17 +835,17 @@
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-03"
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label">Этаж</label>
+                            <label for="text-04" class="form__label">Этаж</label>
                             <input
                               type="text"
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-04"
                             />
                           </div>
                           <div class="basket__check form-check">
@@ -873,17 +862,17 @@
                         </div>
                         <div class="basket__formRight">
                           <div class="form__group">
-                            <label for="text" class="form__label">Корпус</label>
+                            <label for="text-05" class="form__label">Корпус</label>
                             <input
                               type="text"
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-05"
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-06" class="form__label"
                               >Код двери</label
                             >
                             <input
@@ -891,11 +880,11 @@
                               placeholder=""
                               class="form__control"
                               name="text"
-                              id="text"
+                              id="text-06"
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text" class="form__label"
+                            <label for="text-07" class="form__label"
                               >Квартира<span class="required-star"
                                 >*</span
                               ></label
@@ -905,18 +894,18 @@
                               placeholder=""
                               class="form__control required"
                               name="text"
-                              id="text"
+                              id="text-07"
                               required
                             />
                           </div>
                           <div class="form__group group__input">
                             <input
-                              type="date"
-                              placeholder=""
-                              class="form__control"
+                              type="text"
+                              placeholder="ДД/ММ/ГГГГ"
+                              class="form__control calendar"
                               name="date"
-                              id="date"
-                            />
+                              value=""
+                              id=""/>
                             <input
                               type="text"
                               value="__ : __"
@@ -929,10 +918,10 @@
                         </div>
                       </div>
                       <div class="form__box">
-                        <button type="submit" id="back" class="btn back">
+                        <button type="submit" id="back-delivery-btn" class="btn back">
                           назад
                         </button>
-                        <button type="submit" id="next" class="btn">
+                        <button type="submit" id="next-delivery-btn" class="btn">
                           далее
                         </button>
                       </div>
@@ -977,12 +966,12 @@
                           </div>
                           <div class="form__group group__input">
                             <input
-                              type="date"
-                              placeholder=""
-                              class="form__control"
+                              type="text"
+                              placeholder="ДД/ММ/ГГГГ"
+                              class="form__control calendar"
                               name="date"
-                              id="date-preorder-2"
-                            />
+                              value=""
+                              id="date-preorder-2"/>
                             <input
                               type="text"
                               value="__ : __"
@@ -995,10 +984,10 @@
                         </div>
                       </div>
                       <div class="form__box pickup">
-                        <button type="submit" id="back" class="btn back">
+                        <button type="submit" id="back-pickup-btn" class="btn back">
                           назад
                         </button>
-                        <button type="submit" id="next" class="btn">
+                        <button type="submit" id="next-pickup-btn" class="btn">
                           далее
                         </button>
                       </div>
@@ -1012,20 +1001,15 @@
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
-    ></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
