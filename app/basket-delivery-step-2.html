@@ -28,8 +28,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-      <link href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css'>
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
@@ -48,7 +53,8 @@
               ><span>333-44-44</span></a
             >
             <a class="header__exit" href="#"></a>
-            <a class="header__basket" href="./basket.html"></a>
+            <a class="header__basket pc" href="./basket.html"></a>
+            <a class="header__basket mobile" href="./basket-mobile.html"></a>
             <div class="burger-menu">
               <a href="#" class="burger-menu__button"><span>Меню</span></a>
             </div>
@@ -248,10 +254,16 @@
           <div class="account__formContent">
             <div class="form__top">
               <div class="mainform__group group-01">
-                <input type="tel" value="+375 (__) ___-__-__"
-                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                class="mainform__control validate-numeric
-                required" name="tel_log_in_form" id="tel_log_in_form" required/>
+                <input
+                  type="tel"
+                  value="+375 (__) ___-__-__"
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                  class="mainform__control validate-numeric
+                required"
+                  name="tel_log_in_form"
+                  id="tel_log_in_form"
+                  required
+                />
                 <label for="tel_log_in_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -310,10 +322,16 @@
                 >
               </div>
               <div class="mainform__group group-01">
-                <input type="tel" value="+375 (__) ___-__-__"
-                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                class="mainform__control validate-numeric
-                required" name="tel" id="tel_registration_form" required />
+                <input
+                  type="tel"
+                  value="+375 (__) ___-__-__"
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                  class="mainform__control validate-numeric
+                required"
+                  name="tel"
+                  id="tel_registration_form"
+                  required
+                />
                 <label for="tel_registration_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -382,7 +400,7 @@
                   id="account_recovery_form_btn"
                   class="btn"
                 >
-                  отправить
+                  Отправить
                 </button>
               </div>
             </div>
@@ -781,17 +799,28 @@
                 <div class="tab-content">
                   <div class="tab-pane active" id="tab-01">
                     <form action="" class="basket__formNew deliveryform">
-                      <div class="basket__formTop">                        
+                      <div class="basket__formTop">
                         <div class="form__group address__select">
-                          <label for="text" class="form__label">мои адреса</label>
+                          <label for="text" class="form__label"
+                            >мои адреса</label
+                          >
                           <div class="select__header">
                             <span class="select__current"></span>
                             <span class="tests__selectIcon">
-                              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.85749 8.57084C6.46909 9.21818 5.53091 9.21818 5.14251 8.57084L0.908699 1.5145C0.508784 0.847971 0.988897 -9.62621e-07 1.76619 -8.94668e-07L10.2338 -1.54405e-07C11.0111 -8.6452e-08 11.4912 0.847971 11.0913 1.51449L6.85749 8.57084Z" fill="white"/>
-                              </svg>                      
+                              <svg
+                                width="12"
+                                height="10"
+                                viewBox="0 0 12 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M6.85749 8.57084C6.46909 9.21818 5.53091 9.21818 5.14251 8.57084L0.908699 1.5145C0.508784 0.847971 0.988897 -9.62621e-07 1.76619 -8.94668e-07L10.2338 -1.54405e-07C11.0111 -8.6452e-08 11.4912 0.847971 11.0913 1.51449L6.85749 8.57084Z"
+                                  fill="white"
+                                />
+                              </svg>
                             </span>
-                          </div> 
+                          </div>
                           <div class="select__body">
                             <div class="select__item">Адрес 1</div>
                             <div class="select__item">Адрес 2</div>
@@ -839,7 +868,9 @@
                             />
                           </div>
                           <div class="form__group">
-                            <label for="text-04" class="form__label">Этаж</label>
+                            <label for="text-04" class="form__label"
+                              >Этаж</label
+                            >
                             <input
                               type="text"
                               placeholder=""
@@ -862,7 +893,9 @@
                         </div>
                         <div class="basket__formRight">
                           <div class="form__group">
-                            <label for="text-05" class="form__label">Корпус</label>
+                            <label for="text-05" class="form__label"
+                              >Корпус</label
+                            >
                             <input
                               type="text"
                               placeholder=""
@@ -905,7 +938,8 @@
                               class="form__control calendar"
                               name="date"
                               value=""
-                              id=""/>
+                              id=""
+                            />
                             <input
                               type="text"
                               value="__ : __"
@@ -918,10 +952,18 @@
                         </div>
                       </div>
                       <div class="form__box">
-                        <button type="submit" id="back-delivery-btn" class="btn back">
+                        <button
+                          type="submit"
+                          id="back-delivery-btn"
+                          class="btn back"
+                        >
                           назад
                         </button>
-                        <button type="submit" id="next-delivery-btn" class="btn">
+                        <button
+                          type="submit"
+                          id="next-delivery-btn"
+                          class="btn"
+                        >
                           далее
                         </button>
                       </div>
@@ -971,7 +1013,8 @@
                               class="form__control calendar"
                               name="date"
                               value=""
-                              id="date-preorder-2"/>
+                              id="date-preorder-2"
+                            />
                             <input
                               type="text"
                               value="__ : __"
@@ -984,7 +1027,11 @@
                         </div>
                       </div>
                       <div class="form__box pickup">
-                        <button type="submit" id="back-pickup-btn" class="btn back">
+                        <button
+                          type="submit"
+                          id="back-pickup-btn"
+                          class="btn back"
+                        >
                           назад
                         </button>
                         <button type="submit" id="next-pickup-btn" class="btn">
@@ -1001,15 +1048,23 @@
       </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"></script>
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+    ></script>
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
