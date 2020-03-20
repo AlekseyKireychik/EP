@@ -11763,6 +11763,18 @@ header .container-fluid.container__header .nav .menu__right .menu__info p {
   .product .custom__container .product__right form .product__tabinfo .tab-content .tab-pane .product__list .product__item .product__name {
     max-width: 185px;
   }
+  .product-two.is-active .custom__container .product__center .product__wrapImg .product__img {
+    max-width: 0;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+  }
+  .product-two.is-active .custom__container .product__right {
+    margin-top: 190px;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+  }
   .product-two .custom__container .title {
     padding: 0 15px;
   }

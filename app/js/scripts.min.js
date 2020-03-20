@@ -358,6 +358,7 @@ $(document).ready(function() {
       let title = $(".product__page .title").text();
       $(".recomendation__title").text(title);
     }
+    $(".product-two").addClass("is-active");
     $(".recomendation").addClass("is-active");
     if ($(window).width() > 1199) { 
       $(".product").addClass("popup-active");
@@ -378,6 +379,7 @@ $(document).ready(function() {
     }
     $(".recomendation__close").on("click", function(event) {
       $(this).removeClass("is-active");
+      $(".product-two").removeClass("is-active");
       $(".recomendation__overlay").removeClass("is-active");
       if ($(window).width() > 1199) { 
         $(".product").removeClass("popup-active");
@@ -391,6 +393,7 @@ $(document).ready(function() {
         $(".product").removeClass("popup-active");
         $(".product-two").removeClass("popup-active");
         $(".recomendation").removeClass("is-active");
+        $(".product-two").removeClass("is-active");
       });
     }
     
