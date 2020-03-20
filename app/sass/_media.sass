@@ -7,6 +7,30 @@
                     display: none
                 &:last-child
                     display: inline-block
+    header
+        .container-fluid
+        .nav
+            &.is-active
+            .menu__left
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 114px 50px 124px
+                .close
+                .menu__title
+                .menu__catalog
+                    .menu__item
+                        .menu__link
+                            img
+                            span
+                .menu__info
+                       p
 @media screen and (max-width: 1700px)
     .custom__container
         max-width: 1500px
@@ -281,21 +305,32 @@
                                                 padding: 2px 0
                                                 font-size: 46px
                                                 line-height: 46px
-@media screen and (min-width: 1200px) and (min-height: 999px) and (max-height: 1050px)
     header
         .container-fluid
-            &.container__header
-                .nav
-                    .menu__left
-                        .wrap__logo
-                        nav
-                            .menu__list
-                                .menu__item
-                                    margin-bottom: 50px
-                    .menu__right
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
+        .nav
+            &.is-active
+            .menu__left
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 84px 50px 94px
+                .close
+                .menu__title
+                .menu__catalog
+                    .menu__item
+                        .menu__link
+                            img
+                            span
+                .menu__info
+                       p
+@media screen and (min-width: 1200px) and (min-height: 999px) and (max-height: 1050px)
+
     .home
         .carousel
             .carousel-inner
@@ -307,27 +342,7 @@
                                     .carousel-img
                                         max-width: 275px
 @media screen and (min-width: 1200px) and (min-height: 951px) and (max-height: 999px)
-    header
-        .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                        nav
-                            .menu__list
-                                padding-bottom: 50px
-                                .menu__item
-                                    margin-bottom: 45px
-                            .menu__list__info
-                                padding-top: 50px
-                    .menu__right
-                        padding: 50px 134px 55px 144px
-                        .menu__title
-                            margin-bottom: 25px
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
+
     .home
         .carousel
             .carousel-inner
@@ -339,39 +354,7 @@
                                     .carousel-img
                                         max-width: 255px
 @media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px)
-    header
-        .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                            margin-bottom: 15px
-                        nav
-                            margin-bottom: 30px
-                            .menu__list
-                                padding-bottom: 50px
-                                .menu__item
-                                    margin-bottom: 45px
-                                    .menu__link
-                            .menu__list__info
-                                padding-top: 50px
-                                .menu__info
-                                    &:first-child
-                    .menu__right
-                        padding: 35px 104px 50px 104px
-                        .close
-                        .menu__title
-                            margin-bottom: 25px
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
-                                .menu__link
-                                    img
-                                        max-width: 140px
-                                    span
-                        .menu__info
-                            p
+ 
     .home
         .carousel
             .carousel-inner
@@ -401,39 +384,7 @@
                 .form__top
                     margin-bottom: 0px
 @media screen and (min-width: 1200px) and (min-height: 800px) and (max-height: 899px)
-    header
-        .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                            margin-bottom: 15px
-                        nav
-                            margin-bottom: 30px
-                            .menu__list
-                                padding-bottom: 50px
-                                .menu__item
-                                    margin-bottom: 45px
-                                    .menu__link
-                            .menu__list__info
-                                padding-top: 50px
-                                .menu__info
-                                    &:first-child
-                    .menu__right
-                        padding: 35px 104px 50px 104px
-                        .close
-                        .menu__title
-                            margin-bottom: 25px
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
-                                .menu__link
-                                    img
-                                        max-width: 120px
-                                    span
-                        .menu__info
-                            p
+ 
     .home
         .carousel
             .carousel-inner
@@ -452,39 +403,7 @@
                 .form__top
                     margin-bottom: 80px
 @media screen and (min-width: 1200px) and (min-height: 700px) and (max-height: 799px)
-    header
-        .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                            margin-bottom: 15px
-                        nav
-                            margin-bottom: 30px
-                            .menu__list
-                                padding-bottom: 50px
-                                .menu__item
-                                    margin-bottom: 45px
-                                    .menu__link
-                            .menu__list__info
-                                padding-top: 50px
-                                .menu__info
-                                    &:first-child
-                    .menu__right
-                        padding: 35px 104px 50px 104px
-                        .close
-                        .menu__title
-                            margin-bottom: 25px
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
-                                .menu__link
-                                    img
-                                        max-width: 120px
-                                    span
-                        .menu__info
-                            p
+ 
     .home
         .carousel
             .carousel-inner
@@ -516,40 +435,7 @@
             .account__formContent
                 .form__top
                     margin-bottom: 0px
-@media screen and (min-width: 1200px) and (min-height: 600px) and (max-height: 699px)
-    header
-        .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                            margin-bottom: 15px
-                        nav
-                            margin-bottom: 20px
-                            .menu__list
-                                padding-bottom: 30px
-                                .menu__item
-                                    margin-bottom: 45px
-                                    .menu__link
-                            .menu__list__info
-                                padding-top: 30px
-                                .menu__info
-                                    &:first-child
-                    .menu__right
-                        padding: 35px 104px 50px 104px
-                        .close
-                        .menu__title
-                            margin-bottom: 25px
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 15px
-                                .menu__link
-                                    img
-                                        max-width: 95px
-                                    span
-                        .menu__info
-                            p
+@media screen and (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) 
     .home
         .carousel
             .carousel-inner
@@ -971,7 +857,6 @@
                                                 padding: 10px
                                                 &:last-child
                                                     margin-bottom: 10px
-
     .profile__btn
         font-size: 14px
 
@@ -1192,44 +1077,38 @@
                 .product__wrapImg
                     .product__img
                         max-width: 200px
-
-@media screen and (max-width: 1600px) and (max-height: 850px)
     header
         .container-fluid
-            &.container__header
-                .nav
-                    &.is-active
-                    .menu__left
-                        padding: 10px 40px 25px 50px
-                        .wrap__logo
-                        nav
-                            padding: 40px 20px 30px
-                            .menu__list
-                                padding-bottom: 30px
-                                .menu__item
-                                    margin-bottom: 20px
-                                    .menu__link
-                            .menu__list__info
-                                padding-top: 30px
-                                .menu__info
-                                    &:first-child
-                                        margin-bottom: 20px
-                        .wrap__logos
-                    .menu__right
-                        padding: 50px 60px 50px 60px
-                        .close
-                        .menu__title
-                        .menu__catalog
-                            .menu__item
-                                margin-bottom: 5px
-                                .menu__link
-                                    img
-                                        max-width: 100px
-                                    span
-                                        font-size: 18px
-                                        line-height: 22px
-                        .menu__info
-                            p
+        .nav
+            &.is-active
+            .menu__left
+                padding: 30px 40px 30px 50px
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            margin-bottom: 40px
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 64px 50px 74px
+                .close
+                .menu__title
+                .menu__catalog
+                    .menu__item
+                        .menu__link
+                            img
+                                max-width: 140px 
+                            span
+                                font-size: 18px
+                                line-height: 22px
+                .menu__info
+                       p
+
+@media screen and (max-width: 1600px) and (max-height: 850px)
+ 
     .home
         .carousel
             .carousel-inner
@@ -1331,59 +1210,6 @@
                                             max-width: 120px
                                     .category__info
                                         min-height: 130px
-
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-height: 700px) and (max-height: 740px)
-    // .slider__counter
-    //     bottom: 20px
-    // .slider
-    //     .slick-arrow
-    //         bottom: -65px
-    // .category
-    //     .custom__container
-    //         .category__title
-    //             padding-top: 20px
-    //             padding-bottom: 40px
-    //     &.category__02, &.category__05
-    //         .custom__container
-    //             .category__title
-    //                 padding-top: 10px
-    //                 padding-bottom: 25px
-    //         .custom__container
-    //             .solutions-tab-content
-    //                 .solutions-tab
-    //                     .nav-pills
-    //                         margin-bottom: 15px
-    //                         .nav-item
-    //                             a
-    //                                 font-weight: normal
-    //                                 font-size: 18px
-    //                                 &.active
-    //                                     font-weight: bold
-    //             .tab-content
-    //                 .tab-pane
-    //                     .category__list
-    //                         .category__item
-    //                             a
-    //                                 .category__info
-    //                                     min-height: 130px
-    //     &.category__05
-    //         .custom__container
-    //             .solutions-tab-content
-    //                 .solutions-tab
-    //                     .nav-pills
-    //                         .nav-item
-    //                             a
-    //             .tab-content
-    //                 .tab-pane
-    //                     .category__list
-    //                         .category__item
-    //                             a
-    //                                 .category__imgWrap
-    //                                     .category__img
-    //                                         max-width: 90px
-    //                                 .category__info
-    //                                     min-height: 130px
-
 @media screen and (max-width: 1500px)
     .custom__container
         max-width: 1250px
@@ -1742,6 +1568,37 @@
             .order__right
                 width: 100%
                 margin-left: 0px
+    header
+        .container-fluid
+        .nav
+            &.is-active
+            .menu__left
+                padding: 30px 40px 30px 50px
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 64px 50px 74px
+                .close
+                .menu__title
+                .menu__catalog
+                    justify-content: space-between
+                    .menu__item
+                        flex-basis: 48%
+                        .menu__link
+                            img
+                                max-width: 130px 
+                            span
+                                font-size: 18px
+                                line-height: 22px
+                .menu__info
+                    flex-direction: column
+                    p
 
 @media screen and (max-width: 1450px)
     .custom__container
@@ -1811,39 +1668,35 @@
             &.container__header
                 .header
                     padding: 10px 0 0 0
-                .nav
-                    margin-bottom: 35px
-                    &.is-active
-                    .menu__left
-                        .wrap__logo
-                            margin-bottom: 20px
-                        nav
-                            .menu__list
-                                .menu__item
-                                    .menu__link
-                                        font-size: 20px
-                                        line-height: 20px
-                            .menu__list__info
-                                .menu__info
-                                    &:first-child
-                        .wrap__logos
-                    .menu__right
-                        padding: 40px 40px 50px 40px
-                        .close
-                            top: 50px
-                        .menu__title
-                            margin-bottom: 15px
-                        .menu__catalog
-                            padding-right: 20px
-                            .menu__item
-                                .menu__link
-                                    img
-                                        max-width: 95px
-                                    span
-                                        font-size: 16px
-                                        line-height: 22px
-                        .menu__info
-                            p
+        .nav
+            &.is-active
+            .menu__left
+                padding: 30px 40px 30px 50px
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 64px 50px 74px
+                .close
+                .menu__title
+                .menu__catalog
+                    justify-content: space-between
+                    .menu__item
+                        margin-bottom: 10px
+                        .menu__link
+                            img
+                                max-width: 120px 
+                            span
+                                font-size: 16px
+                                line-height: 20px
+
+                .menu__info                    
+                    p
     .home
         .carousel
             .carousel-inner
@@ -2210,6 +2063,39 @@
                                         .form__box
                                             padding-right: 0px
 @media screen and (max-width: 1370px)
+    header
+        .container-fluid
+            &.container__header
+                .header
+        .nav
+            &.is-active
+            .menu__left
+                padding: 30px 30px 30px 40px
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 54px 50px 64px
+                .close
+                .menu__title
+                .menu__catalog
+                    .menu__item
+                        .menu__link
+                            flex-direction: column                            
+                            img
+                                max-width: 110px 
+                            span
+                                text-align: center
+                                font-size: 14px
+                                line-height: 18px
+
+                .menu__info                    
+                    p
     .about
         padding-top: 110px
         .custom__container
@@ -2493,6 +2379,37 @@
                     .burger-menu__button
                         font-size: 24px
                         line-height: 37px
+        .nav
+            &.is-active
+            .menu__left
+                padding: 30px 30px 30px 40px
+                .wrap__logo
+                nav
+                    .menu__list
+                        .menu__item
+                            margin-bottom: 30px
+                            .menu__link
+                        .menu__list__info
+                            .menu__info
+                                &:first-child
+            .menu__right
+                padding: 35px 54px 50px 64px
+                .close
+                    right: 60px
+                    top: 50px
+                .menu__title
+                    margin-bottom: 40px
+                .menu__catalog
+                    .menu__item
+                        .menu__link                        
+                            img
+                                max-width: 110px 
+                            span
+                                font-size: 14px
+                                line-height: 18px
+
+                .menu__info                    
+                    p
     .home
         .carousel
             .carousel-inner
@@ -3102,6 +3019,71 @@
             padding: 30px 50px
             .title
                 margin-bottom: 30px
+@media screen and (max-width: 1100px)
+    header
+        .header
+            &.is-active
+                background: #691D35
+        .nav
+            background-color: #691D35
+            &.is-active
+                margin-top: 0px
+                flex-direction: column
+            .menu__left
+                background-color: #691D35
+                width: 100%
+                padding: 0 15px
+                min-height: auto
+                .wrap__logo
+                    display: none
+                nav
+                    padding: 40px 0 0
+                    background: transparent
+                    .menu__list
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.2 )
+                        width: 100%
+                        .menu__item
+                            margin-bottom: 30px
+                            .menu__link
+                    .menu__list__info
+                        padding-bottom: 30px
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.2 )
+                        width: 100%
+                        .menu__info
+                            font-size: 24px
+                            line-height: 29px
+                            &:first-child
+                                &::before
+                                    top: -7px
+                            &:last-child
+                                &::before
+                                    top: -7px
+                            p
+                                font-size: 24px
+                                line-height: 29px
+                .wrap__logos
+                    opacity: 0.5
+            .menu__right
+                width: 100%
+                padding: 0 15px
+                .close
+                    display: none
+                .menu__title
+                    display: none
+                .menu__catalog
+                    display: none
+                    .menu__item
+                        .menu__link                        
+                            img
+                                max-width: 110px 
+                            span
+                                font-size: 14px
+                                line-height: 18px
+
+                .menu__info     
+                    opacity: 0.4
+                    align-items: center               
+                    p
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
@@ -3229,47 +3211,6 @@
                             line-height: 24px
                             &::after
                                 content: url(../img/@2x/basket-icon-ipad.svg)
-                .nav
-                    flex-direction: column
-                    .menu__left
-                        width: 100%
-                        padding: 10px 50px 18px
-                        background-color: #691D35
-                        overflow: auto
-                        .close
-                            display: flex
-                        .wrap__logo
-                            max-width: 120px
-                        nav
-                            background: transparent
-                            .menu__list
-                                min-width: auto
-                                width: 100%                                
-                                border-bottom: 2px solid rgba(255, 255, 255, 0.2)
-                                .menu__item
-                                    margin-bottom: 45px
-                                    .menu__link
-                                        max-width: 220px
-                                        line-height: 22px
-                                    &.litle__menu
-                                        display: flex
-                            .menu__list__info
-                                width: 100%  
-                                padding-bottom: 25px
-                                border-bottom: 2px solid rgba(255, 255, 255, 0.2)
-                    .menu__right
-                        width: 100%
-                        .close
-                            display: none
-                        .menu__title                            
-                            display: none
-                        .menu__catalog                            
-                            display: none
-                        .menu__info
-                            flex-direction: column
-                            text-align: center
-                            align-items: center
-                            opacity: 0.4
                 .burger-menu
                     padding-right: 30px
                     .burger-menu__button
@@ -3593,6 +3534,11 @@
                                 display: none
                             &.mobile
                                 display: block
+                        .header__timer
+                            display: none
+                        .header__phone
+                        .header__exit
+                            display: none
     .home
         .carousel
             .carousel-inner
@@ -5002,12 +4948,20 @@
                                     .tab-pane
                                         .recomendation__product
                                             display: none
+    main
+        &.is-active-mobile
+            height: 0
+
     header
         position: fixed
+        &.is-active-mobile
+            position: relative
         .container-fluid
             &.container__header
                 background: #481120
                 .header
+                    &.is-active
+                        background: #481120
                     .header__logo
                         padding: 0px 50px 0 20px
                         a
@@ -5043,43 +4997,44 @@
                         &::after
                             transform: translate(0px, -40%)
                             content: url(../img/@2x/burger-menu-defauld-mobile.svg)
-                .nav
-                    top: 60px
-                    .menu__left
-                        padding: 0
-                        .close
-                            display: none
-                        .wrap__logo
-                            display: none
-                        nav
-                            padding: 0
-                            margin: 20px 15px
-                            .menu__list
-                                padding-bottom: 30px
-                                border-bottom: 2px solid rgba(255, 255, 255, 0.2 )
-                                .menu__item
-                                    margin-bottom: 30px
-                                    .menu__link
-                                        font-size: 16px
-                                        line-height: 20px
-                            .menu__list__info
-                                padding-top: 25px
-                                padding-bottom: 25px
-                                width: 100%
-                                border-bottom: 2px solid rgba(255, 255, 255, 0.2 )
-                                .menu__info
-                                    font-size: 24px
-                                    line-height: 29px
-                                    &:first-child
-                                        margin-bottom: 20px
-                                        &::before
-                                            top: -7px
-                                    &:last-child
-                                        &::before
-                                            top: -7px
-                        .wrap__logos
-                            opacity: 0.2
-
+        .nav
+            top: 60px
+            .menu__left
+                padding: 0 15px
+                margin: 20px 0 0
+                nav
+                    padding: 0
+                    margin: 0 0 30px
+                    .menu__list
+                        min-width: 100%
+                        padding-bottom: 30px
+                        .menu__item
+                            margin-bottom: 30px
+                            .menu__link
+                                font-size: 16px
+                                line-height: 20px
+                    .menu__list__info
+                        padding-top: 25px
+                        padding-bottom: 25px
+                        width: 100%
+                        .menu__info
+                            font-size: 24px
+                            line-height: 29px
+                            &:first-child
+                                margin-bottom: 20px
+                                &::before
+                                    top: -7px
+                            &:last-child
+                                &::before
+                                    top: -7px
+            .menu__right 
+                .menu__info 
+                    p    
+                        text-align: center
+                .wrap__logos
+                    justify-content: space-between
+                    li
+                        margin-right: 0px
     .about
         padding-top: 90px
         .custom__container

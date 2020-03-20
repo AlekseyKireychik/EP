@@ -596,12 +596,18 @@ $(document).ready(function() {
   
 
 //nav-menu
-  if ($(window).width() > 576) {
+  if ($(window).width() > 1099) {
     $(".burger-menu").on("click", function(event) {
       event.preventDefault();
       $("#nav-menu").addClass("is-active");
       $(".burger-menu").addClass("is-active");
       $("main").addClass("is-active");
+      $(".container-fluid").addClass("is-active");
+      if ($(window).width() > 1099) {  
+        var coutt = "25";
+        var leftNavHeight = $(".menu__left").height();  
+        $(".menu__right").height(leftNavHeight - coutt); 
+      };   
     });
   }
   else{
@@ -613,6 +619,12 @@ $(document).ready(function() {
       $(".product").removeClass("popup-active");
       $(".recomendation").removeClass("is-active");
       $("main").toggleClass("is-active");
+      $(".container-fluid").toggleClass("is-active");
+      $(".header").toggleClass("is-active");
+      if ($(window).width() < 576) { 
+        $("header").toggleClass("is-active-mobile");
+        $("main").toggleClass("is-active-mobile"); 
+      };  
     });
   }
   
@@ -621,6 +633,7 @@ $(document).ready(function() {
     $("#nav-menu").removeClass("is-active");
     $(".burger-menu").removeClass("is-active");
     $("main").removeClass("is-active");
+    $(".container-fluid").removeClass("is-active");
   });
 
 //select mixbox
@@ -699,6 +712,16 @@ $(document).ready(function() {
       $("main").addClass("is-active");
       $(".account__formWrap").addClass("is-active");
       $(".form__overlay").addClass("is-active");
+      $("#nav-menu").removeClass("is-active");
+      $(".burger-menu").removeClass("is-active");
+      $(".recomendation__overlay").removeClass("is-active");
+      $(".product").removeClass("popup-active");
+      $(".recomendation").removeClass("is-active");
+      $("main").removeClass("is-active");
+      $(".container-fluid").removeClass("is-active");
+      $(".header").removeClass("is-active");
+      $("header").removeClass("is-active-mobile");
+      $("main").removeClass("is-active-mobile");
       $(".form__btnClose").on("click", function(event) {
         event.preventDefault();
         $(".account__formWrap").removeClass("is-active");      
