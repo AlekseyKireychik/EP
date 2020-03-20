@@ -8980,6 +8980,12 @@ header .nav .menu__right .menu__info p {
   header .nav .menu__left nav .menu__list .menu__item {
     margin-bottom: 30px;
   }
+  header .nav .menu__left nav .menu__list .menu__item.litle__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
   header .nav .menu__left nav .menu__list__info {
     padding-bottom: 30px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -9696,8 +9702,9 @@ header .nav .menu__right .menu__info p {
   }
   .mixbox .custom__container .wrap__select .select__box .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
     font-size: 18px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.2);
     font-weight: normal;
+    border-radius: 0px;
   }
   .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item {
     padding-bottom: 50px;
@@ -9867,8 +9874,8 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo .profile__title {
     font-size: 14px;
     line-height: 17px;
-    min-width: 90px;
-    max-width: 90px;
+    min-width: 100px;
+    max-width: 100px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo .profile__info p {
     font-size: 12px;
@@ -11731,7 +11738,7 @@ header .nav .menu__right .menu__info p {
     transition: 0.2s all linear;
   }
   .product-two.is-active .custom__container .product__right {
-    margin-top: 190px;
+    margin-top: 180px;
     -webkit-transition: 0.2s all linear;
     -o-transition: 0.2s all linear;
     transition: 0.2s all linear;

@@ -3044,6 +3044,8 @@
                         width: 100%
                         .menu__item
                             margin-bottom: 30px
+                            &.litle__menu
+                                display: flex
                             .menu__link
                     .menu__list__info
                         padding-bottom: 30px
@@ -3641,8 +3643,9 @@
                                     a
                                         &.active
                                             font-size: 18px
-                                            background: transparent
+                                            background: rgba(255, 255, 255, 0.2)
                                             font-weight: normal
+                                            border-radius: 0px
             .tab-content
                 .tab-pane
                     .mixbox__list
@@ -3786,8 +3789,8 @@
                                 .profile__title
                                     font-size: 14px
                                     line-height: 17px
-                                    min-width: 90px
-                                    max-width: 90px
+                                    min-width: 100px
+                                    max-width: 100px
                                 .profile__info
                                     p
                                         font-size: 12px
@@ -5514,7 +5517,7 @@
                             max-width: 0
                             transition: 0.2s all linear
                 .product__right
-                    margin-top: 190px
+                    margin-top: 180px
                     transition: 0.2s all linear
         .custom__container
             .title
