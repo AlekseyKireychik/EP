@@ -548,7 +548,32 @@ main
 	display: none
 	&.is-active
 		display: block
-
+.bread__crumbs__container
+	position: absolute
+	left: 300px
+	top: 45px
+	z-index: 100
+	&.hidden
+		display: none
+	.bread__crumbs
+		font-weight: bold
+		font-size: 24px
+		line-height: 29px
+		letter-spacing: 0.03em
+		text-transform: uppercase
+		color: #FFFFFF
+		position: relative
+		cursor: pointer
+		&:hover
+			&::before
+				transition: 0.2s all linear
+				left: -30px
+		&::before
+			transition: 0.2s all linear
+			position: absolute
+			left: -20px
+			top: 2px
+			content: url(../img/@2x/arr_bread_crumbs.svg)		
 header
 	position: absolute
 	z-index: 99

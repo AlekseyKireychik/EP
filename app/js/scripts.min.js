@@ -1,6 +1,6 @@
 //BackForm input-file
 function getFileName() {
-  let file = document.getElementById("uploaded-file").value;
+  var file = document.getElementById("uploaded-file").value;
 
   file = file
     .replace(/\\/g, "/")
@@ -16,13 +16,13 @@ function getFileName() {
 function RemoveFunc() {
   document.getElementById("uploaded-file").value = null;
 
-  let remove = document.getElementById("del__container").remove();
+  var remove = document.getElementById("del__container").remove();
   return false;
 }
 window.onload = function() {
 
   // Mask input tel
-    let phoneAll = document.querySelectorAll(".validate-numeric");
+  var phoneAll = document.querySelectorAll(".validate-numeric");
     phoneAll.forEach(element => {
       MaskedInput({
         elm: element,
@@ -32,7 +32,7 @@ window.onload = function() {
     });
   
   // Mask input time
-    let timeAll = document.querySelectorAll(".time");
+  var timeAll = document.querySelectorAll(".time");
     timeAll.forEach(element => {
       MaskedInput({
         elm: element,
@@ -42,10 +42,10 @@ window.onload = function() {
     });  
   
     // Start custom select
-    let select = function() {
-      let selectHeader = document.querySelectorAll(".select__header");
-      let selectItem = document.querySelectorAll(".select__item");
-      let selectItemActive = document.querySelectorAll(".address__select");
+    var select = function() {
+      var selectHeader = document.querySelectorAll(".select__header");
+      var selectItem = document.querySelectorAll(".select__item");
+      var selectItemActive = document.querySelectorAll(".address__select");
     
       selectHeader.forEach(item => {
         item.addEventListener("click", selectToggle);
@@ -59,7 +59,7 @@ window.onload = function() {
         this.parentElement.classList.toggle("is-active");
       }
       function selectChoose() {
-        let text = this.innerText,
+        var text = this.innerText,
             select = this.closest(".address__select"),
             currentText = select.querySelector(".select__current");
         currentText.innerText = text;
@@ -355,7 +355,7 @@ $(document).ready(function() {
     event.preventDefault();
     
     if ($(window).width() < 1199) { 
-      let title = $(".product__page .title").text();
+      var title = $(".product__page .title").text();
       $(".recomendation__title").text(title);
     }
     $(".product-two").addClass("is-active");
@@ -599,6 +599,7 @@ $(document).ready(function() {
   if ($(window).width() > 1099) {
     $(".burger-menu").on("click", function(event) {
       event.preventDefault();
+      $(".bread__crumbs__container").addClass("hidden");
       $("#nav-menu").addClass("is-active");
       $(".burger-menu").addClass("is-active");
       $("main").addClass("is-active");
@@ -613,6 +614,7 @@ $(document).ready(function() {
   else{
     $(".burger-menu").on("click", function(event) {
       event.preventDefault();
+      $(".bread__crumbs__container").toggleClass("hidden");
       $("#nav-menu").toggleClass("is-active");
       $(".burger-menu").toggleClass("is-active");
       $(".recomendation__overlay").removeClass("is-active");
@@ -630,6 +632,7 @@ $(document).ready(function() {
   
   $(".close").on("click", function(event) {
     event.preventDefault();
+    $(".bread__crumbs__container").removeClass("hidden");
     $("#nav-menu").removeClass("is-active");
     $(".burger-menu").removeClass("is-active");
     $("main").removeClass("is-active");
@@ -642,10 +645,14 @@ $(document).ready(function() {
     $(".solutions-tab-content").toggleClass("is-active");
   });
   $(".mixbox .nav-item a").on("click", function(event) {
-    let titleSelect = $(this).text();
+    var titleSelect = $(this).text();
     $(".custom__select").text(titleSelect);
     $(".solutions-tab-content").removeClass("is-active");
   });
+//bread crumbs  
+  if ($(window).width() < 1299) {
+    $(".bread__crumbs").text("");
+  }  
 
 //select busket pc
   $(".select__header").on("click", function(event) {
@@ -653,7 +660,7 @@ $(document).ready(function() {
     $(".select__body").toggleClass("is-active");
   });
   $(".select__item").on("click", function(event) {
-    let valueSelect = $(this).text();
+    var valueSelect = $(this).text();
     $(".select__current").text(valueSelect);
     $(".select__body").removeClass("is-active");
   });
@@ -674,10 +681,12 @@ $(document).ready(function() {
 //profile exit popup
   $(".header__exit").on("click", function(event) {
     event.preventDefault();
+    $(".bread__crumbs__container").addClass("hidden");
     $(".account__formWrap").addClass("is-active");
     $(".form__overlay").addClass("is-active");
     $(".form__btnClose").on("click", function(event) {
       event.preventDefault();
+      $(".bread__crumbs__container").removeClass("hidden");
       $(".account__formWrap").removeClass("is-active");      
       $(".form__overlay").removeClass("is-active");  
       $(".account__form").addClass("is-active");
@@ -686,6 +695,7 @@ $(document).ready(function() {
     });
     $(".form__overlay").on("click", function(event) {
       event.preventDefault();
+      $(".bread__crumbs__container").removeClass("hidden");
       $(".account__formWrap").removeClass("is-active");
       $(".form__overlay").removeClass("is-active");    
       $(".account__form").addClass("is-active");

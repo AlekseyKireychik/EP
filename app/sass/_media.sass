@@ -1608,6 +1608,14 @@
             .product__left 
                 .product__wrapImg
                     max-width: 500px
+    .bread__crumbs__container
+        top: 22px
+        left: 250px
+        .bread__crumbs
+            font-size: 24px
+            line-height: 29px
+            &::before
+                top: 4px	
     .recomendation
         .custom__container
             margin-left: calc((100vw - 1350px) / 2)
@@ -2192,7 +2200,32 @@
                         .registration
                             padding: 10px 5px
 @media screen and (max-width: 1300px)
-
+    .bread__crumbs__container
+        position: absolute
+        left: 300px
+        top: auto
+        z-index: 100
+        &.hidden
+            display: none
+        .bread__crumbs
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            color: #FFFFFF
+            position: relative
+            cursor: pointer
+            &:hover
+                &::before
+                    transition: 0.2s all linear
+                    left: -30px
+            &::before
+                transition: 0.2s all linear
+                position: absolute
+                left: -20px
+                top: 2px
+                content: url(../img/@2x/arr_bread_crumbs.svg)		
     header
         .container-fluid
             &.container__header
