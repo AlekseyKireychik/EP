@@ -44,6 +44,11 @@
     type="text/css"
     href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
   />
+  <link
+      href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   <link rel="stylesheet" href="css/styles.min.css" />
   <link rel="stylesheet" href="css/basket-mobile.css" />
 </head>
@@ -266,11 +271,12 @@
                 </li>
               </ul>
               <div class="form__group group__input">
-                <input
-                  type="date"
-                  placeholder=""
-                  class="form__control"
+               <input
+                  type="text"
+                  placeholder="ДД/ММ/ГГГГ"
+                  class="form__control calendar"
                   name="date"
+                  value=""
                   id=""
                 />
                 <input
@@ -312,6 +318,10 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
     ></script>
     <script src="js/scripts.min.js"></script>
   </body>

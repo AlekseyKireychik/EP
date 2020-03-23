@@ -2200,32 +2200,26 @@
                         .registration
                             padding: 10px 5px
 @media screen and (max-width: 1300px)
+    .custom__container
+        h1
+            display: flex
+            align-items: center
+            justify-content: center
     .bread__crumbs__container
-        position: absolute
-        left: 300px
+        position: unset
+        left: auto
         top: auto
-        z-index: 100
+        z-index: 98
         &.hidden
             display: none
         .bread__crumbs
-            font-weight: bold
-            font-size: 24px
-            line-height: 29px
-            letter-spacing: 0.03em
-            text-transform: uppercase
-            color: #FFFFFF
-            position: relative
-            cursor: pointer
             &:hover
                 &::before
-                    transition: 0.2s all linear
-                    left: -30px
+                    left: -50px
             &::before
-                transition: 0.2s all linear
-                position: absolute
-                left: -20px
-                top: 2px
-                content: url(../img/@2x/arr_bread_crumbs.svg)		
+                left: -40px
+                top: -14px
+                content: url(../img/@2x/arr_bread_crumbs_mobile.svg)		
     header
         .container-fluid
             &.container__header
@@ -2262,6 +2256,9 @@
             margin-left: calc((100vw - 1200px) / 2)
         .custom__container
             .recomendation__title
+                &::before	
+                    top: 2px
+                    display: block	
             .solutions-tab-content
                 max-width: 555px
                 .solutions-tab
@@ -2333,9 +2330,18 @@
                             display: none
             .product__right
                 margin-right: 0px
-    .mixbox
+    .mixbox, .akcii, .akcii__page, .contacts, .about, .delivery, .order, .personal
+        .custom__container
+            .title
+                .bread__crumbs__container
+                    display: none 
         .plaska
             width: 4.5vw
+    .popup-active
+        .custom__container
+            .title
+                .bread__crumbs__container
+                    display: none 
 @media screen and (max-width: 1199px)
     .custom__container
         max-width: 960px
@@ -2467,7 +2473,9 @@
                         .title
                             display: none
                     .title__ipad
-                        display: block
+                        display: flex
+                        align-items: center
+                        justify-content: center
                     img
                         max-width: 100%
                     p
@@ -3263,7 +3271,6 @@
             .about__list
                 .about__item
                     .title__ipad
-                        display: block
                         font-size: 32px
         .custom__container
             .about__logos
@@ -4870,6 +4877,12 @@
 @media screen and (max-width: 575px)
     .custom__container
         max-width: 100%
+    .bread__crumbs__container 
+        position: absolute
+        left: 60px
+        .bread__crumbs
+            &::before
+                top: -16px
     .account__new__address
         .change__close
             right: 35px
@@ -5078,7 +5091,6 @@
                 .about__item
                     padding: 0 15px 0
                     .title__ipad
-                        display: block
                         font-size: 24px
                         line-height: 29px
                     img

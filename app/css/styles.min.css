@@ -2144,6 +2144,7 @@ header .nav .menu__right .menu__info p {
 .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap {
@@ -8199,39 +8200,36 @@ header .nav .menu__right .menu__info p {
 }
 
 @media screen and (max-width: 1300px) {
+  .custom__container h1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .bread__crumbs__container {
-    position: absolute;
-    left: 300px;
+    position: unset;
+    left: auto;
     top: auto;
-    z-index: 100;
+    z-index: 98;
   }
   .bread__crumbs__container.hidden {
     display: none;
   }
-  .bread__crumbs__container .bread__crumbs {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    position: relative;
-    cursor: pointer;
-  }
   .bread__crumbs__container .bread__crumbs:hover::before {
-    -webkit-transition: 0.2s all linear;
-    -o-transition: 0.2s all linear;
-    transition: 0.2s all linear;
-    left: -30px;
+    left: -50px;
   }
   .bread__crumbs__container .bread__crumbs::before {
-    -webkit-transition: 0.2s all linear;
-    -o-transition: 0.2s all linear;
-    transition: 0.2s all linear;
-    position: absolute;
-    left: -20px;
-    top: 2px;
-    content: url(../img/@2x/arr_bread_crumbs.svg);
+    left: -40px;
+    top: -14px;
+    content: url(../img/@2x/arr_bread_crumbs_mobile.svg);
   }
   header .container-fluid.container__header .nav .menu__left nav {
     margin-bottom: 15px;
@@ -8264,6 +8262,10 @@ header .nav .menu__right .menu__info p {
   }
   .recomendation .custom__container {
     margin-left: calc((100vw - 1200px) / 2);
+  }
+  .recomendation .custom__container .recomendation__title::before {
+    top: 2px;
+    display: block;
   }
   .recomendation .custom__container .solutions-tab-content {
     max-width: 555px;
@@ -8342,8 +8344,14 @@ header .nav .menu__right .menu__info p {
   .product .custom__container .product__right {
     margin-right: 0px;
   }
-  .mixbox .plaska {
+  .mixbox .custom__container .title .bread__crumbs__container, .akcii .custom__container .title .bread__crumbs__container, .akcii__page .custom__container .title .bread__crumbs__container, .contacts .custom__container .title .bread__crumbs__container, .about .custom__container .title .bread__crumbs__container, .delivery .custom__container .title .bread__crumbs__container, .order .custom__container .title .bread__crumbs__container, .personal .custom__container .title .bread__crumbs__container {
+    display: none;
+  }
+  .mixbox .plaska, .akcii .plaska, .akcii__page .plaska, .contacts .plaska, .about .plaska, .delivery .plaska, .order .plaska, .personal .plaska {
     width: 4.5vw;
+  }
+  .popup-active .custom__container .title .bread__crumbs__container {
+    display: none;
   }
 }
 
@@ -8476,7 +8484,18 @@ header .nav .menu__right .menu__info p {
     display: none;
   }
   .about .custom__container .about__list .about__item .title__ipad {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about .custom__container .about__list .about__item img {
     max-width: 100%;
@@ -9297,7 +9316,6 @@ header .nav .menu__right .menu__info p {
     padding-top: 100px;
   }
   .about .custom__container .about__list .about__item .title__ipad {
-    display: block;
     font-size: 32px;
   }
   .about .custom__container .about__logos .about__logo:last-child {
@@ -11245,6 +11263,13 @@ header .nav .menu__right .menu__info p {
   .custom__container {
     max-width: 100%;
   }
+  .bread__crumbs__container {
+    position: absolute;
+    left: 60px;
+  }
+  .bread__crumbs__container .bread__crumbs::before {
+    top: -16px;
+  }
   .account__new__address .change__close {
     right: 35px;
     top: 15px;
@@ -11503,7 +11528,6 @@ header .nav .menu__right .menu__info p {
     padding: 0 15px 0;
   }
   .about .custom__container .about__list .about__item .title__ipad {
-    display: block;
     font-size: 24px;
     line-height: 29px;
   }
