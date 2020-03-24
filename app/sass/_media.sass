@@ -192,6 +192,7 @@
                                     .form__box
                                         button
                                         &.pickup
+                                            max-width: 675px
                                     .basket__formTop
                                     .basket__formCenter
                                         .basket__formLeft
@@ -550,7 +551,7 @@
                                 .carousel-img__wrap
                                     .carousel-img
                                         max-width: 200px
-@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 576px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
             .carousel-inner                
@@ -968,6 +969,7 @@
                                         padding-left: 0px
                                         button
                                         &.pickup
+                                            max-width: 650px
                                     .basket__formTop
                                     .basket__formCenter
                                         .basket__formLeft
@@ -2206,19 +2208,18 @@
             align-items: center
             justify-content: center
     .bread__crumbs__container
-        position: unset
-        left: auto
-        top: auto
+        left: calc((100vw - 1140px) / 2)
+        top: 130px
         z-index: 98
         &.hidden
             display: none
         .bread__crumbs
             &:hover
                 &::before
-                    left: -50px
+                    left: 0px
             &::before
-                left: -40px
-                top: -14px
+                left: 0px
+                top: 0px
                 content: url(../img/@2x/arr_bread_crumbs_mobile.svg)		
     header
         .container-fluid
@@ -2330,7 +2331,7 @@
                             display: none
             .product__right
                 margin-right: 0px
-    .mixbox, .akcii, .akcii__page, .contacts, .about, .delivery, .order, .personal
+    .akcii, .akcii__page, .contacts, .about, .delivery, .order, .personal
         .custom__container
             .title
                 .bread__crumbs__container
@@ -2345,6 +2346,9 @@
 @media screen and (max-width: 1199px)
     .custom__container
         max-width: 960px
+    .bread__crumbs__container
+        left: calc((100vw - 960px) / 2)
+        top: 130px
     .recomendation__close
         &.is-active
             display: none
@@ -2954,6 +2958,7 @@
                                     .form__box
                                         button
                                         &.pickup
+                                            max-width: 100%
                                     .basket__formTop
                                         .address__select
                                             max-width: 100%
@@ -3130,6 +3135,9 @@
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
+    .bread__crumbs__container
+        left: calc((100vw - 720px) / 2)
+        top: 108px
     .account__new__address
         width: 95%
         .title
@@ -3468,6 +3476,9 @@
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
+    .bread__crumbs__container
+        left: calc((100vw - 540px) / 2)
+        top: 125px
     .recomendation
         .custom__container
             margin-left: calc((100vw - 540px) / 2)
@@ -4771,7 +4782,7 @@
                                                 a
                                                     &:hover
                                         .form__box
-@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 500px) and (min-height: 560px) and (max-height: 900px)
+@media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 576px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
             .carousel-inner
@@ -4877,12 +4888,9 @@
 @media screen and (max-width: 575px)
     .custom__container
         max-width: 100%
-    .bread__crumbs__container 
-        position: absolute
-        left: 60px
-        .bread__crumbs
-            &::before
-                top: -16px
+    .bread__crumbs__container
+        left: 20px
+        top: 90px
     .account__new__address
         .change__close
             right: 35px
@@ -5113,14 +5121,18 @@
                 
     .category
         padding: 90px 15px 25px
-        .category__title
-            font-size: 24px
-            line-height: 29px
-            padding-top: 0px
-            padding-bottom: 30px
+        .custom__container
+            .category__title
+                font-size: 24px
+                line-height: 29px
+                padding-top: 0px
+                padding-bottom: 30px
+                padding-left: 25px
         &.category__05
             padding: 90px 0px 25px
             .custom__container
+                .category__title
+                    padding-top: 0px
                 .solutions-tab-content
                     .solutions-tab
                         .nav-pills
@@ -5240,7 +5252,7 @@
                                                 content: url(../img/@2x/addicon.svg)
 
     .form__overlay
-        background: rgba(105, 29, 53, 0)
+        // background: rgba(105, 29, 53, 0)
     .account__formWrap
         top: 60px
         padding: 0 15px

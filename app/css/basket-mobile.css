@@ -1,5 +1,5 @@
 .bread__crumbs__container .bread__crumbs::before {
-  top: -14px;
+  top: 0px;
 }
 .basket__picup .bread__crumbs__container .bread__crumbs::before {
   top: 0px;
@@ -20,6 +20,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0;
+  height: 30.88px;
 }
 .input__promocode {
   font-family: "Montserrat";
@@ -34,6 +35,7 @@
   width: 100%;
   outline-color: transparent;
   text-transform: none;
+  height: 30.88px;
 }
 
 .input__promocode::placeholder {
@@ -58,6 +60,7 @@
   border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 7px 23px;
+  height: 30.88px;
 }
 .input__promocode:placeholder-shown + .btn__promocode {
   background: transparent;
@@ -94,6 +97,7 @@
 .basket .basket__list {
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 120px;
   margin-bottom: 0px;
   width: 100%;
 }
@@ -244,6 +248,10 @@
   display: block;
 }
 .basket .basket__order {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #481120;
   padding-top: 15px;
   padding-bottom: 25px;
@@ -395,6 +403,9 @@
   left: 0;
   right: 0;
 }
+.basket__delivery .form__group.group__input {
+  margin-bottom: 20px;
+}
 .form__bottom .form__box {
   width: 100%;
 }
@@ -501,6 +512,10 @@
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+  transition: 0.2s;
+}
+.address__select .select__item:hover {
+  background: #893550;
   transition: 0.2s;
 }
 
@@ -631,6 +646,7 @@
 .basket__contacts .form__box button {
   width: 100%;
   margin-top: 10px;
+  text-transform: initial;
 }
 
 .basket__payment {
@@ -895,12 +911,14 @@
 }
 .basket__payment .form__bottom .form-check input[type="checkbox"] {
   display: inline-block;
-  width: 25px;
+  width: 30px;
+  height: 30px;
   margin-top: 5px;
   opacity: 0;
   position: absolute;
   left: 0;
-  top: 0px; 
+  top: 7px; 
+  z-index: 100
 }
 .basket__payment .form__bottom .form-check {
   position: relative;
@@ -945,7 +963,7 @@
   position: absolute;
   content: url(../img/@2x/check-litl.svg);
   left: -32px;
-  top: -1px;
+  top: 7px;
   cursor: pointer;
 }
 .basket__payment
