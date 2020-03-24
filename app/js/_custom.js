@@ -627,7 +627,7 @@ $(document).ready(function() {
       event.preventDefault();
       $("main").addClass("is-active");
       $(".account__formWrap").addClass("is-active");
-      $(".form__overlay").addClass("is-active");
+      $(".form__overlay").addClass("is-active__mobile");
       $("#nav-menu").removeClass("is-active");
       $(".burger-menu").removeClass("is-active");
       $(".recomendation__overlay").removeClass("is-active");
@@ -641,7 +641,7 @@ $(document).ready(function() {
       $(".form__btnClose").on("click", function(event) {
         event.preventDefault();
         $(".account__formWrap").removeClass("is-active");      
-        $(".form__overlay").removeClass("is-active");  
+        $(".form__overlay").removeClass("is-active__mobile");  
         $(".account__form").addClass("is-active");
         $(".account__formRecovery").removeClass("is-active"); 
         $(".account__formRegistration").removeClass("is-active");
@@ -650,7 +650,7 @@ $(document).ready(function() {
       $(".form__overlay").on("click", function(event) {
         event.preventDefault();
         $(".account__formWrap").removeClass("is-active");
-        $(".form__overlay").removeClass("is-active");    
+        $(".form__overlay").removeClass("is-active__mobile");    
         $(".account__form").addClass("is-active");
         $(".account__formRecovery").removeClass("is-active"); 
         $(".account__formRegistration").removeClass("is-active");   

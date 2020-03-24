@@ -625,16 +625,10 @@
                                             .wrap__img
                                                 max-width: 310px
                                                 img
-                                            .total
-                                        .recomendation__btnGroup
-                                            .recomendation__counter
-                                                .btn
-
     .btn
         padding: 10px 20px
         font-size: 24px
         line-height: 30px
-    .btn
         &.back
             padding: 10px 20px
             font-size: 24px
@@ -2354,9 +2348,13 @@
             display: none
     .recomendation
         left: -100vw
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         &.is-active
             width: 100vw
-        padding-top: 120px
+        padding-top: 100px
         .custom__container
             margin-left: calc((100vw - 1000px) / 2)
         .custom__container
@@ -2460,11 +2458,28 @@
                     margin-left: 20px
     .category
         .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
+            .category__title
+                font-size: 28px
+                line-height: 30px
+        .custom__container
             .category__list
                 .category__item
                     width: calc((100vw - (100vw - (960px - 80px))) / 3)
     .about
         max-height: 100%
+        padding-top: 100px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
+            .about__list 
+                .about__item 
+                    .title__ipad
+                        font-size: 28px
+                        line-height: 30px
         .custom__container
             .about__list
                 flex-direction: column
@@ -2493,7 +2508,11 @@
                     img
                         max-width: 120px
     .akcii__page
-        padding-top: 110px
+        padding-top: 100px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         .custom__container
             .akcii__list
                 flex-direction: column
@@ -2519,7 +2538,7 @@
                         .title
                             display: none
     .delivery
-        padding-top: 110px
+        padding-top: 100px
         padding-bottom: 60px
         .custom__container
             .title
@@ -2577,6 +2596,11 @@
                     .header__overlay
                         display: none
     .mixbox
+        padding-top: 100px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         .plaska
             width: 10vw
         .custom__container
@@ -2649,6 +2673,11 @@
                                             margin-bottom: 0px
                                             margin-right: 20px
     .personal
+        padding-top: 100px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         .custom__container
             .solutions-tab-content
                 .solutions-tab
@@ -2860,8 +2889,11 @@
                     .form__box
                         .btn
     .basket
+        padding-top: 100px
         .custom__container
             .title
+                font-size: 28px
+                line-height: 30px
         .custom__container
             flex-direction: column
             .basket__left
@@ -3035,8 +3067,12 @@
                         font-size: 32px
     //Product Page 1
     .product
-        padding-top: 120px
+        padding-top: 100px
         padding-bottom: 25px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         .custom__container
             flex-direction: column
             align-items: center
@@ -3046,7 +3082,11 @@
                     margin: 0 auto
     //Product 2 Page
     .product-two
-        padding-top: 120px
+        padding-top: 100px
+        .custom__container
+            .title
+                font-size: 28px
+                line-height: 30px
         .custom__container
             .product__left
                 .recomendation__wrap
@@ -3060,11 +3100,17 @@
                 .product__wrapImg
                     margin-left: 20px
     .order
-        padding-top: 120px
+        padding-top: 100px
         .order__container
             padding: 30px 50px
             .title
+                font-size: 28px
+                line-height: 30px
                 margin-bottom: 30px
+        .custom__container 
+            .title
+                font-size: 28px
+                line-height: 30px
 @media screen and (max-width: 1100px)
     header
         .header
@@ -3137,7 +3183,7 @@
         max-width: 720px
     .bread__crumbs__container
         left: calc((100vw - 720px) / 2)
-        top: 108px
+        top: 90px
     .account__new__address
         width: 95%
         .title
@@ -3160,15 +3206,21 @@
                 .form__group
                     .form__control
                         max-width: 100%
-
+    .recomendation__overlay
+        &.is-active
+            display: none
     .recomendation
         .custom__container
             margin-left: calc((100vw - 720px) / 2)
     .recomendation
+        background: #C88C1C
         padding-top: 90px
+        padding-bottom: 0px
+        bottom: auto
+        &.two
+            background: #E67300
         .custom__container
             .recomendation__title
-                margin: 0 auto 30px	
                 font-size: 24px
                 line-height: 29px
             .solutions-tab-content
@@ -3188,32 +3240,45 @@
                 .tab-pane
                     .recomendation__list
                         .recomendation__item
+                            padding-bottom: 0px
                             .recomendation__info
+                                overflow-x: auto
                                 flex-direction: column
+                                &::-webkit-scrollbar 
+                                    width: 0
                                 .recomendation__left                                    
                                     margin-bottom: 30px
-                                    max-height: 400px
+                                    max-height: 233px
+                                    overflow-y: hidden
                                     .recomendation__positions
                                         width: 100%
+                                        flex-wrap: nowrap
                                         .recomendation__elem
-                                            .recomendation__link
+                                            width: 300px
+                                            margin-bottom: 25px
+                                            .recomendation__link                                                
+                                                min-height: 220px
                                                 align-items: center
+                                                flex-direction: column
                                                 .wrap__img
-                                                    max-width: 110px
-                                                    img
+                                                    max-width: 205px
                                                 .text
+                                                    order: -1
                                                     .name
                                                         min-height: auto
-                                                        max-width: 100%
-                                                        font-size: 15px
-                                                        line-height: 18px
+                                                        max-width: 205px
+                                                        font-size: 18px
+                                                        line-height: 22px
+                                                        text-align: center
                                                     .description
                                                         font-size: 34px
                                                         line-height: 41px
+                                                        display: none
                                 .recomendation__right
                                     max-width: 265px
                                     .tab-pane
                                         .recomendation__product
+                                            display: none
                                             .name
                                                 font-size: 22px
                                                 line-height: 27px
@@ -3223,8 +3288,10 @@
                                                     max-width: 350px
                                             .total
                                         .recomendation__btnGroup
+                                            display: none
                                             .recomendation__counter
                                                 .btn
+
     .slider__counter
         display: none
     header
@@ -3274,12 +3341,7 @@
                             transform: translate(0px, -40%)
                             content: url(../img/@2x/burger-menu-defauld-ipad.svg)
     .about
-        padding-top: 100px
-        .custom__container
-            .about__list
-                .about__item
-                    .title__ipad
-                        font-size: 32px
+        padding-top: 90px
         .custom__container
             .about__logos
                 .about__logo
@@ -3290,6 +3352,7 @@
     .category
         height: auto
         min-height: 100vh
+        padding-top: 90px
         .custom__container
             .category__list
                 flex-direction: column
@@ -3331,109 +3394,454 @@
                     .akcii__sublist
                         .akcii__item
                             margin-bottom: 20px
+    // .personal
+    //     padding-top: 90px
+    //     .custom__container
+    //         .solutions-tab-content
+    //             padding-right: 20px
+    //             .solutions-tab
+    //                 .nav-pills
+    //                     max-width: 250px
+    //                     min-width: 250px
+    //                     .nav-item
+    //                         margin-bottom: 35px
+    //                         a
+    //                             font-size: 18px
+    //         .tab-content
+    //             padding-left: 20px
+    //             .tab-pane
+    //                 .personal__list
+    //                     min-height: 438px
+    //                     max-height: 438px
+    //                     &.profile
+    //                         overflow: auto
+    //                         .profile__wrapinfo
+    //                             .profile__title
+    //                                 min-width: 115px
+    //                                 max-width: 115px
+    //                                 font-size: 16px
+    //                                 line-height: 19px
+    //                             .profile__info
+    //                                 p
+    //                                     font-size: 16px
+    //                                     line-height: 19px
+    //                                 .btn__group
+    //                                     button
+    //                         .profile__wrapform
+    //                             form
+    //                                 display: none
+    //                                 p
+    //                                 .wrap
+    //                                     .form__group
+    //                                         input
+    //                                     button
+    //             .tab-pane
+    //                 .order__box
+    //                     min-height: 438px
+    //                     max-height: 438px
+    //                     .orders__wrap
+    //                         h2
+    //                         .order__contentWrap
+    //                             .order__content
+    //                                 .panel-group
+    //                                     .panel
+    //                                         .panel-heading
+    //                                             .order__top
+    //                                                 .panel-title
+    //                                                     font-size: 18px
+    //                                                     line-height: 22px
+    //                                                     text-transform: none
+
+    //                                             .order__body
+    //                                                 .order__list
+    //                                                     .order__item
+    //                                                         flex-direction: column
+    //                                                         align-items: flex-start
+    //                                                         justify-content: flex-start
+    //                                                         position: relative
+    //                                                         .order__title
+    //                                                             font-size: 14px
+    //                                                             line-height: 17px
+    //                                                         .order__description
+    //                                                             font-size: 14px
+    //                                                             line-height: 17px
+    //                                                         .order__cost
+    //                                                             font-size: 16px
+    //                                                             line-height: 20px
+    //                                                             position: absolute
+    //                                                             right: 0
+    //                                                             top: 0
+    //                                                 .order__delivery
+    //                                                     .order__title
+    //                                                         display: none
+    //                                                     .order__address
+    //                                                         padding-left: 0px
+    //                                                         font-size: 14px
+    //                                                         line-height: 17px
+    //                                             .order__container
+    //                                                 font-size: 14px
+    //                                                 line-height: 17px
+    //                                                 .order__value
+    //                                                     margin-left: auto
+    //                 .personal__list
+    //                     &.reviews__formWrap
+    //                         .reviews__form
+    //                             padding: 20px 40px
     .personal
+        padding-top: 90px
+        min-height: 100vh
         .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+        .custom__container
+            flex-direction: column
             .solutions-tab-content
-                padding-right: 20px
+                padding-right: 0px
+                border-right: none
                 .solutions-tab
+                    margin-bottom: 20px
+                    border-bottom: 1px solid $accent
+                    overflow: hidden
                     .nav-pills
-                        max-width: 250px
-                        min-width: 250px
+                        background: transparent
+                        padding: 0 15px 20px
+                        max-width: 100%
+                        flex-direction: row                        
+                        margin-bottom: -20px
+                        border-radius: 0
                         .nav-item
-                            margin-bottom: 35px
+                            margin-bottom: 0px
                             a
-                                font-size: 18px
+                                padding-left: 3px
+                                padding-right: 3px
+                                font-size: 10px
+                                line-height: 12px
+                                font-weight: normal
+                                padding-left: 0px
+                                text-align: center
+                                white-space: nowrap
+                                min-width: 130px
+                                &::after
+                                    content: " "
+                                    display: none
+                                &.active
+                                    font-weight: bold
+                                    font-size: 12px
+                                    line-height: 15px
+                                    padding: 8px 5px
+                                    background: rgba(255, 255, 255, 0.3)
+                                    border-radius: 5px 5px 0px 0px
+                                    color: $accent
+
             .tab-content
-                padding-left: 20px
+                padding-left: 0px
                 .tab-pane
                     .personal__list
-                        min-height: 438px
-                        max-height: 438px
+                        min-height: 100%
+                        max-height: 100%
+                        padding: 0 25px
+                        background: transparent
+                        .profile__wrapinfo
+                            .profile__title
+                            .profile__info
+                                .profile__btn
+                                    font-size: 10px
+                                    line-height: 12px
+                                    text-transform: initial
+                                
                         &.profile
-                            overflow: auto
                             .profile__wrapinfo
+                                margin-bottom: 25px
+                                &:first-child
+                                    .profile__info
+                                        p
+                                            font-size: 18px
+                                            line-height: 19px                                  
                                 .profile__title
-                                    min-width: 115px
-                                    max-width: 115px
-                                    font-size: 16px
-                                    line-height: 19px
+                                    font-size: 14px
+                                    line-height: 17px
+                                    min-width: 100px
+                                    max-width: 100px
                                 .profile__info
                                     p
-                                        font-size: 16px
-                                        line-height: 19px
+                                        font-size: 12px
+                                        line-height: 15px
+                                        margin-bottom: -8px
                                     .btn__group
                                         button
+                                            font-size: 10px
+                                            line-height: 12px
                             .profile__wrapform
-                                form
-                                    display: none
+                                margin-bottom: 0px
+                                .profile__container
+                                    .profile__wrapinfo
+                                        margin-bottom: 25px
+                                        &:nth-child(1)
+                                            .profile__info
+                                                p
+                                                    margin-bottom: 0px  
+                                        &:nth-child(2)
+                                            .profile__info
+                                                p
+                                                    font-size: 12px
+                                                    line-height: 15px
+                                        &:nth-child(3)
+                                            .profile__info
+                                                p
+                                                    font-size: 12px
+                                                    line-height: 15px
+                                        &:first-child
+                                            margin-bottom: 25px
+                                        .profile__title
+                                        .profile__info
+                                            p
+                                            button
+                                                font-size: 10px
+                                                line-height: 12px
+                                
+                                #change-password-form
+                                    width: 100%
+                                    background: transparent
+                                    padding: 10px 0 
+                                    &.is-active
+                                        margin: 0px auto
+
                                     p
+                                        font-weight: 600
+                                        font-size: 18px
+                                        line-height: 22px
+                                        text-transform: initial
+                                        margin-bottom: 30px
                                     .wrap
                                         .form__group
+                                            width: 100%
+                                            label
+                                                display: block
+                                                font-weight: 600
+                                                font-size: 14px
+                                                line-height: 16px
                                             input
+                                                background: #FFFFFF
+                                                border: 1px solid #A1A4B1
+                                                border-radius: 4px
+                                                font-weight: 500
+                                                font-size: 12px
+                                                line-height: 14px
+                                                color: #000
+                                                padding: 10px 15px
                                         button
+                                            font-weight: 600
+                                            font-size: 14px
+                                            line-height: 16px
+                                            text-align: center
+                                            color: #FFFFFF
+                                            background: transparent
+                                            border: 1px solid #FFFFFF
+                                            border-radius: 10px
+                                            text-transform: initial
+                                            padding: 11px
+                                            width: 280px
+                                            position: absolute
+                                            bottom: 25px
+                                            left: 50%
+                                            transform: translate(-50%, 0)
+                                            opacity: 1
+                        .change__password
+                        &.address                                
+                            .profile__wrapinfo
+                                &:first-child
+                                    margin-bottom: 30px
+                                    .btn__group
+                                        .dell
+                                            display: flex
+                                &:last-child
+                                    .btn__group
+                                        .change
+                                            display: flex
+                                .profile__title
+                                    font-size: 14px
+                                    line-height: 17px
+                                    margin-bottom: 20px
+                                .profile__info
+                                    margin-left: 0px
+                                    p
+                                        font-size: 12px
+                                        line-height: 15px
+                                    button
+                                        &:last-child
+                                .btn__group
+                                    margin-top: 5px
+                                    .change
+                                    .dell
+                                        color: rgba(255, 255, 255, 0.5)
+                            .profile__wrapinfo
+                                .profile__item
+                                    &:first-child
+                                        button
+                                            font-weight: 600
+                                            font-size: 14px
+                                            line-height: 16px
+                                            text-align: center
+                                            color: #FFFFFF
+                                            border: 1px solid #FFFFFF
+                                            border-radius: 10px
+                                            text-transform: initial
+                                            padding: 11px
+                                            width: 280px
+                                            position: absolute
+                                            bottom: 25px
+                                            left: 50%
+                                            transform: translate(-50%, 0)
+                                    button
+                                        &:last-child
+                                            margin: 0 auto
+                                    .profile__btn
+                                        font-size: 10px
+                                        line-height: 12px
+                                    &:last-child
+                                        .profile__info
+                                            margin-left: 0px
+                                            p
+                                                font-size: 12px
+                                                line-height: 15px
+
                 .tab-pane
                     .order__box
-                        min-height: 438px
-                        max-height: 438px
+                        min-height: 100%
+                        max-height: 100%
+                        padding: 0 0px
+                        background: transparent
                         .orders__wrap
+                            max-height: 100%
+                            overflow: inherit
+                            padding-right: 0px
                             h2
+                                display: none
                             .order__contentWrap
+                                margin-bottom: 0px
+                                padding-bottom: 0px
                                 .order__content
+                                    margin-bottom: 0px
                                     .panel-group
                                         .panel
                                             .panel-heading
                                                 .order__top
                                                     .panel-title
-                                                        font-size: 18px
-                                                        line-height: 22px
-                                                        text-transform: none
+                                                    .wrap__btn
+                                                        button
+                                                        a
+                                                            .wrap
+                                                                .value
+                                                                    .disabled
+                                                                        position: relative
+                                                                        &:after
+                                                                            position: absolute
+                                                                            top: 0
+                                                                            left: -20px
+                                                                            content: url(../img/@2x/arrbottom.svg)
+                                                                        span
+                                                                            display: none
+
+                                                                    .active
+                                                                        position: relative
+                                                                        &:after
+                                                                            position: absolute
+                                                                            top: 0
+                                                                            left: -20px
+                                                                            content: url(../img/@2x/arrtop.svg)
+                                                                        span
+                                                                            display: none
 
                                                 .order__body
                                                     .order__list
                                                         .order__item
-                                                            flex-direction: column
-                                                            align-items: flex-start
-                                                            justify-content: flex-start
-                                                            position: relative
                                                             .order__title
-                                                                font-size: 14px
-                                                                line-height: 17px
                                                             .order__description
-                                                                font-size: 14px
-                                                                line-height: 17px
                                                             .order__cost
-                                                                font-size: 16px
-                                                                line-height: 20px
-                                                                position: absolute
-                                                                right: 0
-                                                                top: 0
                                                     .order__delivery
                                                         .order__title
-                                                            display: none
                                                         .order__address
-                                                            padding-left: 0px
-                                                            font-size: 14px
-                                                            line-height: 17px
                                                 .order__container
-                                                    font-size: 14px
-                                                    line-height: 17px
                                                     .order__value
-                                                        margin-left: auto
                     .personal__list
                         &.reviews__formWrap
                             .reviews__form
-                                padding: 20px 40px
+                                padding: 10px 25px
+                                .title
+                                    display: none
+                                .formWrap
+                                    .mainform__group
+                                        .mainform__control
+                                            border: 1px solid #A1A4B1
+                                            background-color: $accent
+                                            border-radius: 4px
+                                            &::placeholder
+                                                font-weight: 500
+                                                font-size: 14px
+                                                line-height: 24px
+                                                color: #8B90A0
+                                        &.comment
+                                            textarea
+                                                border: 1px solid #A1A4B1
+                                                background-color: $accent
+                                                border-radius: 4px
+                                                &::placeholder
+                                                    font-weight: 500
+                                                    font-size: 14px
+                                                    line-height: 24px
+                                                    color: #8B90A0
+
+                                    .bottom__wrap
+                                        flex-direction: column
+                                        .file
+                                            margin-bottom: 15px
+                                            &:before
+                                            label
+                                            input
+                                            span
+                                        #file-name
+                                            .del__container
+                                                span
+                                                    .del-file-btn
+                                        .capca
+                                            width: 100%
+                                            display: flex
+                                            margin-bottom: 35px
+                                            img
+                                                width: 100%
+                                        .form__box
+                                            width: 100%
+                                            .btn
+                                                width: 100%
     .account__formWrap
         width: 100vw
+    .about
+        padding-top: 90px
     .basket
+        padding-top: 90px
         .custom__container
             .basket__left
                 width: 100%
             .basket__right
                 width: 100%
-    //Product 2 Page
+    .delivery
+        padding-top: 90px
+    .contacts
+        padding-top: 90px
     .product-two
+        padding-top: 90px
         padding-bottom: 25px
+        &.is-active
+            .custom__container 
+                .product__center 
+                    .product__wrapImg 
+                        .product__img
+                            max-width: 0
+                            transition: 0.2s all linear
+                .product__right
+                    margin-top: 270px
+                    transition: 0.2s all linear
         .custom__container
             flex-direction: column
             .product__left
@@ -3472,7 +3880,185 @@
                                 padding: 2px 0
                                 font-size: 46px
                                 line-height: 46px
-
+    //Product Page 1
+    .product
+        padding-top: 90px
+        padding-bottom: 25px
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+                margin-bottom: 30px
+        .custom__container
+            .product__left
+                .product__recomendation
+                    top: 280px
+                    .product__link
+                        &:after
+                .product__wrapImg
+                    max-width: 70%
+                    margin-right: 40px
+                    margin-bottom: 20px
+                    .product__img
+            .product__right
+                form
+                    .product__cost
+                        .product__title
+                        .value
+                            span
+                    .product__btnGroup
+                        .product__counter
+                            .product__btnReduction
+                                width: 48px
+                                padding: 6px 0
+                            .product__count
+                                padding: 0 18px
+                            .product__btnIncrement
+                                width: 48px
+                                padding: 6px 0
+                        .product__order
+                            background: linear-gradient(91.12deg, #E40007 0.36%, #C70006 99.67%)
+                            border-radius: 5px
+                            border: none
+                            font-size: 18px
+                            line-height: 22px
+                            padding: 18px 20px
+                            color: #fff
+                    .product__dopinfo
+                        font-size: 20px
+                        line-height: 24px
+                        .description
+                        .form-check
+                            padding-bottom: 20px
+                            .form__check-input
+                            input[type="checkbox"]
+                            .form__check-input + label::before
+                                top: -3px
+                                height: 30px
+                                width: 30px
+                            .form__check-label
+                                font-size: 20px
+                                line-height: 24px
+                                &::after
+                            .form__check-input:checked + label::after
+                                content: url(../img/@2x/check-phone.svg)
+                                left: -42px
+                                top: -2px
+                        .description
+                            .product__title
+                            .weight
+                                span
+                    .product__tabinfo
+                        .solutions-tab-content
+                            .solutions-tab
+                                .nav-pills
+                                    margin-bottom: 20px
+                                    .nav-item
+                                        a
+                                            text-transform: inherit
+                                            font-size: 14px
+                                            line-height: 17px
+                        .tab-content
+                            .tab-pane
+                                .product__list
+                                    .product__item
+                                        margin-bottom: 15px
+                                        .product__name
+                                            font-size: 12px
+                                            line-height: 15px
+    //Product 2 Page
+    .product-two
+        padding-top: 90px
+        padding-bottom: 25px
+        .custom__container
+            .title
+                font-size: 24px
+                line-height: 29px
+                margin-bottom: 30px
+        .custom__container
+            .product__left
+                .recomendation__wrap
+                    .product__recomendation
+                        &:after
+                    .product__wrapImg
+                        .product__img
+            .product__center
+                width: 100%
+                .product__wrapImg
+                    .product__img
+            .product__right
+                margin-right: 0px
+                width: 80%
+                form
+                    .product__row
+                        .form-check
+                            .form__check-input
+                            input[type="checkbox"]
+                            .form__check-input + label::before
+                                top: -2px
+                                height: 30px
+                                width: 30px
+                            .form__check-label
+                                .product__title
+                                    font-size: 22px
+                                    line-height: 27px
+                                .value
+                                    font-size: 22px
+                                    line-height: 27px
+                                &::after
+                                    left: -42px
+                                    top: -10px
+                                    content: url(../img/@2x/check-phone.svg)
+                    .product__btnGroup
+                        .product__counter
+                            .product__btnReduction
+                                width: 48px
+                                padding: 6px 0
+                            .product__count
+                                padding: 0 18px
+                            .product__btnIncrement
+                                width: 48px
+                                padding: 6px 0
+                        .product__order
+                            background: linear-gradient(91.12deg, #E40007 0.36%, #C70006 99.67%)
+                            border-radius: 5px
+                            border: none
+                            font-size: 18px
+                            line-height: 22px
+                            padding: 18px 20px
+                            color: #fff
+    .mixbox
+        padding-top: 90px  
+    .personal
+        padding-top: 90px  
+    .order
+        padding-top: 90px
+    .btn
+        color: #691D35
+        font-size: 14px
+        line-height: 17px
+        background: $accent
+        border-radius: 10px
+        &:hover
+            background: $accent
+            color: #691D35
+        &.back
+            padding: 10px 20px
+            color: $accent
+            border-radius: 10px
+            font-size: 14px
+            line-height: 17px
+@media screen and (max-width: 769px)                                
+    header
+        .container-fluid
+            &.container__header
+                .header
+                    .header__function
+                        .header__basket
+                            &.pc
+                                display: none
+                            &.mobile
+                                display: block
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
@@ -3527,7 +4113,6 @@
                                                 flex-direction: column
                                                 .wrap__img
                                                     max-width: 205px
-                                                    img8
                                                 .text
                                                     order: -1
                                                     .name
@@ -3557,21 +4142,7 @@
                                             display: none
                                             .recomendation__counter
                                                 .btn
-    .btn
-        color: #691D35
-        font-size: 14px
-        line-height: 17px
-        background: $accent
-        border-radius: 10px
-        &:hover
-            background: $accent
-            color: #691D35
-        &.back
-            padding: 10px 20px
-            color: $accent
-            border-radius: 10px
-            font-size: 14px
-            line-height: 17px
+
     header
         .container-fluid
             &.container__header
@@ -3582,11 +4153,6 @@
                             img
                                 max-width: 100px
                     .header__function
-                        .header__basket
-                            &.pc
-                                display: none
-                            &.mobile
-                                display: block
                         .header__timer
                             display: none
                         .header__phone
@@ -4144,7 +4710,7 @@
                 padding: 0 50px
                 .form__top
                     padding-left: 0px
-                    margin-bottom: 40px
+                    margin-bottom: 30px
                     .mainform__group
                         .mainform__control
                             background: $accent
@@ -4180,7 +4746,6 @@
                     p
                         display: none
                     .form__box
-                        position: absolute
                         bottom: 25px
                         .registration
                             max-width: 280px
@@ -4936,9 +5501,6 @@
                 width: 100%
     .account__change__popup
         width: 95%
-    .recomendation__overlay
-        &.is-active
-            display: none
     .recomendation
         .custom__container
             margin-left: 0px
@@ -4952,8 +5514,11 @@
             background: #E67300
         .custom__container
             .recomendation__title
-                max-width: 242px
-                padding: 0 15px
+                max-width: 260px
+                margin: 0 auto 30px
+                padding: 0px
+                font-size: 24px
+                line-height: 29px
                 &::before
                     top: 50%
                     transform: translate(0px, -50%)
@@ -5270,25 +5835,12 @@
                 margin: 30px auto 30px
             .account__formContent
                 padding: 0px
-                .form__top
-                    .form__box
-                        .simple__btn
-                        .btn
                 .form__bottom
                     p
-                    .form__box
-                        .registration
         .account__formRegistration
             .title
             .account__formContent
                 padding: 0px
-                .form__top
-                    .mainform__group
-                        .mainform__control
-                            &:last-child
-                        .mainform__label
-                    .form__box
-                        .btn
         .account__formRecovery
             .title
             .account__description
@@ -5296,11 +5848,6 @@
                 margin: 0 auto 20px
             .account__formContent
                 padding: 0px
-                .form__top
-                    .mainform__group
-                        .mainform__control
-                    .form__box
-                        .btn
 
     .basket
         padding-bottom: 0px
@@ -5512,7 +6059,7 @@
     .product
         .custom__container
             .title
-                padding: 0 15px
+                padding: 0 15px 0 30px
         .custom__container
             .product__left
                 padding: 0 15px
@@ -5522,6 +6069,7 @@
                         padding: 7px 28px
                         &:after
                 .product__wrapImg
+                    max-width: 80%
                     .product__img
             .product__right
                 padding: 0 15px
@@ -5580,7 +6128,7 @@
                             max-width: 0
                             transition: 0.2s all linear
                 .product__right
-                    margin-top: 180px
+                    margin-top: 165px
                     transition: 0.2s all linear
         .custom__container
             .title

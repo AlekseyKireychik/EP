@@ -248,6 +248,8 @@
   display: block;
 }
 .basket .basket__order {
+  padding-right: 15px;
+  padding-left: 15px;
   position: fixed;
   bottom: 0;
   left: 0;

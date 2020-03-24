@@ -481,10 +481,13 @@ main
 	left: 0
 	right: 0
 	bottom: 0
-	background: rgba(105, 29, 53, 0.5)
+	background: rgba(0, 0, 0, 0.3)
 	z-index: 99
 	display: none
 	&.is-active
+		display: block
+	&.is-active__mobile
+		background: rgba(0, 0, 0, 0)
 		display: block
 .recomendation__overlay
 	position: absolute
