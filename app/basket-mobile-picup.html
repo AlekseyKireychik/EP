@@ -234,6 +234,169 @@
       </ul>
     </header>
     <main id="main" class="basket__picup">
+      <div class="form__overlay"></div>
+      <div class="account__formWrap">
+        <div class="form__btnClose">
+          <svg
+            width="45"
+            height="45"
+            viewBox="0 0 45 45"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M28.1134 22.5L43.8255 6.7879C44.5712 6.04352 44.9906 5.03341 44.9915 3.97977C44.9925 2.92613 44.5748 1.91527 43.8304 1.16958C43.086 0.423888 42.0759 0.00443965 41.0223 0.00350915C39.9686 0.00257865 38.9578 0.420242 38.2121 1.16462L22.5 16.8767L6.7879 1.16462C6.04221 0.418927 5.03083 0 3.97626 0C2.92169 0 1.91031 0.418927 1.16462 1.16462C0.418927 1.91031 0 2.92169 0 3.97626C0 5.03083 0.418927 6.04221 1.16462 6.7879L16.8767 22.5L1.16462 38.2121C0.418927 38.9578 0 39.9692 0 41.0237C0 42.0783 0.418927 43.0897 1.16462 43.8354C1.91031 44.5811 2.92169 45 3.97626 45C5.03083 45 6.04221 44.5811 6.7879 43.8354L22.5 28.1233L38.2121 43.8354C38.9578 44.5811 39.9692 45 41.0237 45C42.0783 45 43.0897 44.5811 43.8354 43.8354C44.5811 43.0897 45 42.0783 45 41.0237C45 39.9692 44.5811 38.9578 43.8354 38.2121L28.1134 22.5Z"
+              fill="white"
+              fill-opacity="0.5"
+            />
+          </svg>
+        </div>
+        <form id="log_in_form" class="account__form is-active">
+          <h2 class="title">Войти в личный кабинет</h2>
+          <div class="account__formContent">
+            <div class="form__top">
+              <div class="mainform__group group-01">
+                <input type="tel" placeholder="+375 (__) ___-__-__" value=""
+                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                // phones at Belarus class="mainform__control validate-numeric
+                required" name="tel_log_in_form" id="tel_log_in_form" required/>
+                <label for="tel_log_in_form" class="mainform__label"
+                  >Телефон<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="mainform__group group-01">
+                <input
+                  type="text"
+                  placeholder="Введите пароль"
+                  class="mainform__control required"
+                  name="name_log_in_form"
+                  id="name_log_in_form"
+                  required
+                />
+                <label for="name_log_in_form" class="mainform__label"
+                  >Пароль<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="form__box">
+                <button type="button" class="simple__btn">
+                  Забыли пароль?
+                </button>
+                <button type="submit" id="log_in_form_btn" class="btn">
+                  Войти
+                </button>
+              </div>
+            </div>
+            <div class="form__bottom">
+              <p>В первый раз здесь?</p>
+              <div class="form__box">
+                <button
+                  type="button"
+                  id="log_in_form_registration_btn"
+                  class="registration"
+                >
+                  Зарегистрироваться
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form id="account_registration_form" class="account__formRegistration">
+          <h2 class="title">Регистрация аккаунта</h2>
+          <div class="account__formContent">
+            <div class="form__top">
+              <div class="mainform__group group-01">
+                <input
+                  type="text"
+                  placeholder="Введите Ваше Имя"
+                  class="mainform__control required"
+                  name="text_registration_form"
+                  id="text_registration_form"
+                  required
+                />
+                <label for="text_registration_form" class="mainform__label"
+                  >ФИО<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="mainform__group group-01">
+                <input type="tel" value="+375 (__) ___-__-__"
+                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                // phones at Belarus class="mainform__control validate-numeric
+                required" name="tel" id="tel_registration_form" required />
+                <label for="tel_registration_form" class="mainform__label"
+                  >Телефон<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="mainform__group group-01">
+                <input
+                  type="email"
+                  placeholder="Введите Ваш E-mail"
+                  class="mainform__control required"
+                  name="email_registration_form"
+                  id="email_registration_form"
+                  required
+                />
+                <label for="email_registration_form" class="mainform__label"
+                  >E-mail<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="mainform__group group-01">
+                <input
+                  type="text"
+                  placeholder="Введите пароль"
+                  class="mainform__control required"
+                  name="name_registration_form"
+                  id="name_registration_form"
+                  required
+                />
+                <label for="name_registration_form" class="mainform__label"
+                  >Пароль<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="form__box">
+                <button
+                  type="submit"
+                  id="account_registration_form_btn"
+                  class="btn"
+                >
+                  Создать аккаунт
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form id="account_recovery_form" class="account__formRecovery">
+          <h2 class="title">Восстановление пароля</h2>
+          <p class="account__description">
+            На Ваш E-mail придет письмо с доступами к аккаунту
+          </p>
+          <div class="account__formContent">
+            <div class="form__top">
+              <div class="mainform__group group-01">
+                <input
+                  type="email"
+                  placeholder="Введите Ваш E-mail"
+                  class="mainform__control required"
+                  name="email_recovery_form"
+                  id="email_recovery_form"
+                  required
+                />
+                <label for="email_recovery_form" class="mainform__label"
+                  >E-mail<span class="required-star">*</span></label
+                >
+              </div>
+              <div class="form__box">
+                <button
+                  type="submit"
+                  id="account_recovery_form_btn"
+                  class="btn"
+                >
+                  Отправить
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
       <div class="container">
         <div class="row">
           <h1 class="title"><div class="bread__crumbs__container">

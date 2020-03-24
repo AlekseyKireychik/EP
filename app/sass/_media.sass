@@ -3781,13 +3781,15 @@
                 padding-right: 0px
                 border-right: none
                 .solutions-tab
+                    margin-bottom: 20px
+                    border-bottom: 1px solid $accent
+                    overflow: hidden
                     .nav-pills
                         background: transparent
-                        padding: 0
+                        padding: 0 15px 20px
                         max-width: 100%
-                        flex-direction: row
-                        border-bottom: 1px solid $accent
-                        margin-bottom: 20px
+                        flex-direction: row                        
+                        margin-bottom: -20px
                         border-radius: 0
                         .nav-item
                             margin-bottom: 0px
@@ -4782,6 +4784,11 @@
                                                 a
                                                     &:hover
                                         .form__box
+    .category
+        &.category__02 
+            .custom__container 
+                .category__title
+                    padding-top: 0px
 @media screen and (orientation: portrait) and (min-width: 320px) and (max-width: 576px) and (min-height: 560px) and (max-height: 900px)
     .home
         .carousel
@@ -5127,7 +5134,7 @@
                 line-height: 29px
                 padding-top: 0px
                 padding-bottom: 30px
-                padding-left: 25px
+                padding-left: 35px
         &.category__05
             padding: 90px 0px 25px
             .custom__container
@@ -5221,7 +5228,6 @@
                 .solutions-tab
                     .nav-pills
                         overflow: auto
-                        padding: 0 15px
             .tab-content
                 padding: 0 15px
                 .tab-pane
