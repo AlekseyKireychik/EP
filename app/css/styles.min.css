@@ -1308,7 +1308,7 @@ main {
 }
 
 .slider .slick-arrow.slick-prev::before {
-  content: url(../img/@2x/left-arrow-slider.svg);
+  content: url(../img/@2x/left-arrow-slider.png);
 }
 
 .slider .slick-arrow.slick-next {
@@ -1318,7 +1318,7 @@ main {
 }
 
 .slider .slick-arrow.slick-next::before {
-  content: url(../img/@2x/right-arrow-slider.svg);
+  content: url(../img/@2x/right-arrow-slider.png);
 }
 
 .overlay {
@@ -1865,6 +1865,7 @@ header .nav .menu__right {
   background-color: #691D35;
   padding: 60px 144px 55px 154px;
   height: 100%;
+  width: calc(100vw - 597px);
   position: relative;
   z-index: 1000;
 }
@@ -4478,6 +4479,10 @@ header .nav .menu__right .menu__info p {
 
 .product-two .custom__container .product__right form .product__tabinfo .product__list .product__item .product__name .product__nameInfo .quantity {
   margin-left: 5px;
+}
+
+.basket__body {
+  background: #691D35;
 }
 
 .basket {
@@ -11364,6 +11369,7 @@ header .nav .menu__right .menu__info p {
             order: -1;
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
   }
   .basket .custom__container .basket__left .basket__promocode .form__promocode-input {
     background: transparent;
@@ -11378,6 +11384,7 @@ header .nav .menu__right .menu__info p {
     padding: 7px 15px;
     margin-right: 0px;
     max-width: 100%;
+    width: 100%;
   }
   .basket .custom__container .basket__left .basket__promocode .form__promocode-input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.3);

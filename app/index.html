@@ -38,16 +38,19 @@
       .vert .carousel-item-next.carousel-item-left,
       .vert .carousel-item-prev.carousel-item-right {
         -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
       }
       .vert .carousel-item-next,
       .vert .active.carousel-item-right {
         -webkit-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100% 0);
       }
       .vert .carousel-item-prev,
       .vert .active.carousel-item-left {
         -webkit-transform: translate3d(0, -100%, 0);
+        -ms-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
       }
     </style>
@@ -61,7 +64,9 @@
           </div>
           <div class="header__function">
             <div class="header__timer">24/7</div>
-            <a class="header__phone" href="tel:+37544333-44-44"><span>333-44-44</span></a>
+            <a class="header__phone" href="tel:+37544333-44-44"
+              ><span>333-44-44</span></a
+            >
             <a class="header__exit" href="#"></a>
             <a class="header__basket pc" href="./basket.html"></a>
             <a class="header__basket mobile" href="./basket-mobile.html"></a>
@@ -69,7 +74,7 @@
               <a href="#" class="burger-menu__button"><span>Меню</span></a>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
       <ul id="nav-menu" class="nav">
         <li class="menu__left">
@@ -94,13 +99,17 @@
                 <a class="menu__link" href="./aboutus.html">о нас</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="./delivery.html">условия оплаты и доставки</a>
+                <a class="menu__link" href="./delivery.html"
+                  >условия оплаты и доставки</a
+                >
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="./order.html">как оформить заказ</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link entrance" href="./kabinet.html">личный кабинет</a>
+                <a class="menu__link entrance" href="./kabinet.html"
+                  >личный кабинет</a
+                >
               </li>
             </ul>
             <ul class="menu__list__info">
@@ -258,10 +267,17 @@
           <div class="account__formContent">
             <div class="form__top">
               <div class="mainform__group group-01">
-                <input type="tel" placeholder="+375 (__) ___-__-__" value=""
-                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                // phones at Belarus class="mainform__control validate-numeric
-                required" name="tel_log_in_form" id="tel_log_in_form" required/>
+                <input
+                  type="tel"
+                  placeholder="+375 (__) ___-__-__"
+                  value=""
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                  class="mainform__control validate-numeric
+                required"
+                  name="tel_log_in_form"
+                  id="tel_log_in_form"
+                  required
+                />
                 <label for="tel_log_in_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -320,10 +336,16 @@
                 >
               </div>
               <div class="mainform__group group-01">
-                <input type="tel" value="+375 (__) ___-__-__"
-                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                // phones at Belarus class="mainform__control validate-numeric
-                required" name="tel" id="tel_registration_form" required />
+                <input
+                  type="tel"
+                  value="+375 (__) ___-__-__"
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                  class="mainform__control validate-numeric
+                required"
+                  name="tel"
+                  id="tel_registration_form"
+                  required
+                />
                 <label for="tel_registration_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -612,6 +634,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/scripts.min.js"></script>
   </body>
 </html>

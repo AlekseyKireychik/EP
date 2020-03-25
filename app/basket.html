@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
 
-  <body>
+  <body class="basket__body">
     <header>
       <div class="container-fluid container__header ">
         <div class="header row">
@@ -818,11 +818,16 @@
                         <label for="tel_new_user_form" class="form__label"
                           >Телефон<span class="required-star">*</span></label
                         >
-                        <input type="tel" value="+375 (__) ___-__-__"
-                        pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                        // phones at Belarus class="form__control
-                        validate-numeric required" name="tel_new_user_form"
-                        id="tel_new_user_form" required/>
+                        <input
+                          type="text"
+                          value=""
+                          placeholder="+375 (__) ___-__-__"
+                          class="form__control
+                        validate-numeric required"
+                          name="tel_new_user_form"
+                          id="tel_new_user_form"
+                          required
+                        />
                       </div>
                       <div class="form__group group-01">
                         <label for="email_new_user_form" class="form__label"
@@ -865,11 +870,17 @@
                         <label for="tel_user_form" class="form__label"
                           >Телефон<span class="required-star">*</span></label
                         >
-                        <input type="tel" value="+375 (__) ___-__-__"
-                        pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                        // phones at Belarus class="form__control
-                        validate-numeric required" name="tel_user_form"
-                        id="tel_user_form" required/>
+                        <input
+                          type="text"
+                          value=""
+                          placeholder="+375 (__) ___-__-__"
+                          pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                          class="form__control
+                        validate-numeric required"
+                          name="tel_user_form"
+                          id="tel_user_form"
+                          required
+                        />
                       </div>
                       <div class="form__group group-01">
                         <label for="email_user_form" class="form__label"
@@ -913,6 +924,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
