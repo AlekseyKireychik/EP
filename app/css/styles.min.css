@@ -456,10 +456,10 @@ main.is-active {
   border: none;
   font-weight: bold;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 28px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 22px 20px;
+  padding: 23px 20px;
   color: #fff;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
@@ -966,12 +966,12 @@ main {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 28px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  padding: 22px 5px;
+  padding: 23px 5px;
   width: 400px;
 }
 
@@ -4961,7 +4961,7 @@ header .nav .menu__right .menu__info p {
 .basket .custom__container .basket__right .basket__progress .basket__item.active-step::after {
   position: absolute;
   content: url(../img/@2x/active-arr.svg);
-  right: -24px;
+  right: -23.5px;
   top: 0px;
 }
 
@@ -6915,7 +6915,7 @@ header .nav .menu__right .menu__info p {
     width: calc( 100vw / 2);
   }
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 200px;
+    max-width: 170px;
   }
 }
 
@@ -10004,7 +10004,6 @@ header .nav .menu__right .menu__info p {
   }
   .product .custom__container .product__left .product__wrapImg {
     max-width: 70%;
-    margin-right: 40px;
     margin-bottom: 20px;
   }
   .product .custom__container .product__right form .product__btnGroup .product__counter .product__btnReduction {

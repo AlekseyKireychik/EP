@@ -309,10 +309,17 @@
                 >
               </div>
               <div class="mainform__group group-01">
-                <input type="tel" value="+375 (__) ___-__-__"
-                pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
-                // phones at Belarus class="mainform__control validate-numeric
-                required" name="tel" id="tel_registration_form" required />
+                <input
+                  type="tel"
+                  value=""
+                  placeholder="+375 (__) ___-__-__"
+                  pattern="^\+375(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
+                  class="mainform__control validate-numeric
+                required"
+                  name="tel"
+                  id="tel_registration_form"
+                  required
+                />
                 <label for="tel_registration_form" class="mainform__label"
                   >Телефон<span class="required-star">*</span></label
                 >
@@ -390,10 +397,10 @@
       </div>
       <section class="category__09 category">
         <div class="custom__container">
+          <div class="bread__crumbs__container">
+            <a href="/" class="bread__crumbs">назад к категориям</a>
+          </div>
           <h1 class="category__title">
-            <div class="bread__crumbs__container">
-              <a href="/" class="bread__crumbs">назад к категориям</a>
-            </div>
             Жар-птица
           </h1>
         </div>
