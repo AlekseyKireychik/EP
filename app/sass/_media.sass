@@ -21,7 +21,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 114px 50px 124px
+                padding: 60px 114px 50px 124px
                 .close
                 .menu__title
                 .menu__catalog
@@ -320,7 +320,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 84px 50px 94px
+                padding: 60px 84px 50px 94px
                 .close
                 .menu__title
                 .menu__catalog
@@ -803,7 +803,6 @@
                                     &:last-child
                                         margin-bottom: 15px
                             form
-                                margin-left: 20px
                                 .wrap
                                     .form__group
                                         input
@@ -859,7 +858,9 @@
         .custom__container
             .title
         .custom__container
+            justify-content: space-between
             .basket__left
+                width: 48%
                 .basket__products
                     .product__list
                         .product__item
@@ -898,6 +899,8 @@
                         .value
                             font-size: 32px
             .basket__right
+                width: 48%
+                margin-left: 0px
                 .basket__progress
                     .basket__item
                         &.active-step
@@ -1090,7 +1093,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 64px 50px 74px
+                padding: 60px 64px 50px 74px
                 .close
                 .menu__title
                 .menu__catalog
@@ -1128,8 +1131,8 @@
         padding: 100px 0 50px
         .custom__container
             .category__title
-                padding-top: 40px
-                padding-bottom: 60px
+                padding-top: 0px
+                padding-bottom: 40px
                 margin-bottom: 0px
         .custom__container
             .category__list
@@ -1157,11 +1160,7 @@
                     .solutions-tab
                         .nav-pills
                             margin-bottom: 15px
-    .category
-        .custom__container
-            .category__title
-                padding-top: 20px
-                padding-bottom: 40px
+
         &.category__02
             .custom__container
                 .category__title
@@ -1189,7 +1188,7 @@
         &.category__05
             .custom__container
                 .category__title
-                    padding-top: 10px
+                    padding-top: 0px
                     padding-bottom: 25px
             .custom__container
                 .solutions-tab-content
@@ -1589,7 +1588,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 64px 50px 74px
+                padding: 60px 64px 50px 74px
                 .close
                 .menu__title
                 .menu__catalog
@@ -1605,6 +1604,14 @@
                 .menu__info
                     flex-direction: column
                     p
+    .contacts 
+        .custom__container 
+            .contacts__content 
+                .tab-pane 
+                    .contacts__mapContainer
+                        width: 52vw
+                    .header__overlay
+                        width: 52vw
 
 @media screen and (max-width: 1450px)
     .custom__container
@@ -1695,7 +1702,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 64px 50px 74px
+                padding: 50px 64px 50px 74px
                 .close
                 .menu__title
                 .menu__catalog
@@ -1827,6 +1834,10 @@
                                     max-width: 160px
                                     width: 100%
                                 .description
+                    .contacts__mapContainer
+                        width: 53.5vw
+                    .header__overlay
+                        width: 53.5vw
     .mixbox
         padding-top: 100px
         .custom__container
@@ -2076,6 +2087,14 @@
                                         .basket__check
                                         .form__box
                                             padding-right: 0px
+    .personal 
+        .custom__container 
+            .tab-content 
+                .tab-pane 
+                    .personal__list 
+                        .profile__wrapform 
+                            form
+                                margin-left: 8px
 @media screen and (max-width: 1370px)
     header
         .container-fluid
@@ -2094,7 +2113,7 @@
                             .menu__info
                                 &:first-child
             .menu__right
-                padding: 35px 54px 50px 64px
+                padding: 45px 54px 50px 64px
                 .close
                 .menu__title
                 .menu__catalog
@@ -2129,8 +2148,6 @@
     .mixbox
         .custom__container
             .title
-                font-size: 28px
-                line-height: 30px
                 margin-bottom: 30px
         .plaska
             top: 200px
@@ -2205,6 +2222,16 @@
                     .form__box
                         .registration
                             padding: 10px 5px
+    .contacts 
+        .custom__container 
+            h1
+                justify-content: flex-start
+            .contacts__content 
+                .tab-pane 
+                    .contacts__mapContainer
+                        width: 52vw
+                    .header__overlay
+                        display: none
 @media screen and (max-width: 1300px)
     .custom__container
         h1
@@ -2352,12 +2379,17 @@
                     display: none 
     .order
         padding-top: 100px
+    .personal
+        padding-top: 100px 
+        .custom__container 
+            .title
+                width: 100%
 @media screen and (max-width: 1199px)
     .custom__container
         max-width: 960px
     .bread__crumbs__container
         left: calc((100vw - 960px) / 2)
-        top: 130px
+        top: 100px
     .recomendation__close
         &.is-active
             display: none
@@ -2567,6 +2599,7 @@
                 line-height: 30px
                 margin-left: auto
                 text-align: center
+                justify-content: center
             .solutions-tab-content
                 display: block
                 .solutions-tab
@@ -3621,7 +3654,7 @@
                                             padding: 11px
                                             width: 280px
                                             position: absolute
-                                            top: 50%
+                                            top: 65%
                                             bottom: auto
                                             left: 50%
                                             transform: translate(-50%, 0)
@@ -3999,6 +4032,17 @@
                                 display: none
                             &.mobile
                                 display: block
+    .personal 
+        .custom__container 
+            .tab-content 
+                .tab-pane 
+                    .personal__list
+                        &.address 
+                            .profile__wrapinfo 
+                                .profile__item
+                                    &:first-child 
+                                        button
+                                            top: 50%
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
@@ -4147,13 +4191,13 @@
                 position: absolute
                 left: 15px
                 right: 15px
-                top: 96px 
+                top: 140px 
                 transition: all .2s linear
                 &.scrolled
                     position: fixed
                     left: 0
                     right: 0
-                    top: 60px   
+                    top: 0px   
                     z-index: 10  
                     background:#b13e04  
                     transition: all .2s linear     
@@ -5516,9 +5560,10 @@
                 padding: 0px
                 font-size: 24px
                 line-height: 29px
+                position: static
                 &::before
-                    top: 50%
-                    transform: translate(0px, -50%)
+                    top: 30px
+                    left: 20px
             .solutions-tab-content
                 padding: 0px
                 max-width: 100%
@@ -5700,7 +5745,7 @@
                 padding-bottom: 30px
                 padding-left: 35px
         &.category__05
-            padding: 90px 0px 25px
+            padding: 30px 0px 25px
             .custom__container
                 .category__title
                     padding-top: 0px
@@ -5785,6 +5830,11 @@
 
     .mixbox
         padding: 30px 15px 25px
+        .custom__container
+            .wrap__select  
+                top: 96px 
+                &.scrolled
+                    top: 60px    
     .personal
         padding-top: 30px
         .custom__container
@@ -5861,11 +5911,6 @@
                                                 .order__container
                                                     font-size: 14px
                                                     line-height: 17px
-
-
-
-    .form__overlay
-        // background: rgba(105, 29, 53, 0)
     .account__formWrap
         top: 60px
         padding: 0 15px
@@ -5881,6 +5926,7 @@
                     p
         .account__formRegistration
             .title
+                margin: 30px auto 30px
             .account__formContent
                 padding: 0px
         .account__formRecovery

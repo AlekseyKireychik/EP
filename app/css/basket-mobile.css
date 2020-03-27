@@ -998,3 +998,23 @@
   line-height: 17px;
   color: #691d35;
 }
+@media screen and (min-width: 576px) {
+  .basket__picup,
+  .basket__delivery,
+  .basket__payment {
+    padding: 90px 20px 25px;
+  }
+  .basket__picup .group__input,
+  .basket__delivery .group__input {
+    justify-content: center;
+  }
+  .basket__payment .group-01__bottom .btn__group {
+    justify-content: center;
+  }
+  .basket__payment .group-01__bottom .btn__group input {
+    margin: 0 15px;
+  }
+  .basket__payment .form__bottom .form-check .form__check-label::after {
+    top: 0px;
+  }
+}

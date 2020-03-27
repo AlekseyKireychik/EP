@@ -703,6 +703,7 @@ $(document).ready(function() {
         //здесь можно добавить обработчики выбора даты
     },
   });
+  
 });
 //BackForm input-file
 function getFileName() {
@@ -726,8 +727,10 @@ function RemoveFunc() {
   return false;
 }
 
+
   // Mask input tel 
 
+  
   var phoneAll = [].slice.call(document.querySelectorAll(".validate-numeric"),0);
     phoneAll.forEach(function(element){
       element.onfocus = function() {

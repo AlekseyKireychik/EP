@@ -3014,7 +3014,7 @@ header .nav .menu__right .menu__info p {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 20px;
-  margin-left: 90px;
+  margin-left: auto;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form p {
@@ -3046,6 +3046,10 @@ header .nav .menu__right .menu__info p {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group {
+  width: 100%;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group label {
@@ -6641,7 +6645,7 @@ header .nav .menu__right .menu__info p {
     display: inline-block;
   }
   header .nav .menu__right {
-    padding: 35px 114px 50px 124px;
+    padding: 60px 114px 50px 124px;
   }
 }
 
@@ -6780,7 +6784,7 @@ header .nav .menu__right .menu__info p {
     line-height: 46px;
   }
   header .nav .menu__right {
-    padding: 35px 84px 50px 94px;
+    padding: 60px 84px 50px 94px;
   }
 }
 
@@ -7211,9 +7215,6 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo:last-child {
     margin-bottom: 15px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form {
-    margin-left: 20px;
-  }
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input {
     padding: 10px;
   }
@@ -7261,6 +7262,15 @@ header .nav .menu__right .menu__info p {
   .basket {
     padding-top: 135px;
   }
+  .basket .custom__container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .basket .custom__container .basket__left {
+    width: 48%;
+  }
   .basket .custom__container .basket__left .basket__products .product__list .product__item .product__itemWrap .product__imgWrap {
     max-width: 110px;
   }
@@ -7286,6 +7296,10 @@ header .nav .menu__right .menu__info p {
   }
   .basket .custom__container .basket__left .basket__value .valueWrap .value {
     font-size: 32px;
+  }
+  .basket .custom__container .basket__right {
+    width: 48%;
+    margin-left: 0px;
   }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group {
     padding-left: 0px;
@@ -7383,7 +7397,7 @@ header .nav .menu__right .menu__info p {
     margin-bottom: 40px;
   }
   header .nav .menu__right {
-    padding: 35px 64px 50px 74px;
+    padding: 60px 64px 50px 74px;
   }
   header .nav .menu__right .menu__catalog .menu__item .menu__link img {
     max-width: 140px;
@@ -7409,8 +7423,8 @@ header .nav .menu__right .menu__info p {
     padding: 100px 0 50px;
   }
   .category .custom__container .category__title {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 40px;
     margin-bottom: 0px;
   }
   .category .custom__container .category__list {
@@ -7437,10 +7451,6 @@ header .nav .menu__right .menu__info p {
   .category.category__02 .custom__container .solutions-tab-content .solutions-tab .nav-pills, .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
     margin-bottom: 15px;
   }
-  .category .custom__container .category__title {
-    padding-top: 20px;
-    padding-bottom: 40px;
-  }
   .category.category__02 .custom__container .category__title {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -7460,7 +7470,7 @@ header .nav .menu__right .menu__info p {
     min-height: 130px;
   }
   .category.category__05 .custom__container .category__title {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 25px;
   }
   .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills {
@@ -7705,7 +7715,7 @@ header .nav .menu__right .menu__info p {
     padding: 30px 40px 30px 50px;
   }
   header .nav .menu__right {
-    padding: 35px 64px 50px 74px;
+    padding: 60px 64px 50px 74px;
   }
   header .nav .menu__right .menu__catalog {
     -webkit-box-pack: justify;
@@ -7731,6 +7741,12 @@ header .nav .menu__right .menu__info p {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
+    width: 52vw;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .header__overlay {
+    width: 52vw;
   }
 }
 
@@ -7817,7 +7833,7 @@ header .nav .menu__right .menu__info p {
     padding: 30px 40px 30px 50px;
   }
   header .nav .menu__right {
-    padding: 35px 64px 50px 74px;
+    padding: 50px 64px 50px 74px;
   }
   header .nav .menu__right .menu__catalog {
     -webkit-box-pack: justify;
@@ -7950,6 +7966,12 @@ header .nav .menu__right .menu__info p {
     line-height: 22px;
     max-width: 160px;
     width: 100%;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
+    width: 53.5vw;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .header__overlay {
+    width: 53.5vw;
   }
   .mixbox {
     padding-top: 100px;
@@ -8109,6 +8131,9 @@ header .nav .menu__right .menu__info p {
   .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
     padding-right: 0px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form {
+    margin-left: 8px;
+  }
 }
 
 @media screen and (max-width: 1370px) {
@@ -8116,7 +8141,7 @@ header .nav .menu__right .menu__info p {
     padding: 30px 30px 30px 40px;
   }
   header .nav .menu__right {
-    padding: 35px 54px 50px 64px;
+    padding: 45px 54px 50px 64px;
   }
   header .nav .menu__right .menu__catalog .menu__item .menu__link {
     -webkit-box-orient: vertical;
@@ -8153,8 +8178,6 @@ header .nav .menu__right .menu__info p {
     line-height: 30px;
   }
   .mixbox .custom__container .title {
-    font-size: 28px;
-    line-height: 30px;
     margin-bottom: 30px;
   }
   .mixbox .plaska {
@@ -8234,6 +8257,18 @@ header .nav .menu__right .menu__info p {
   }
   .account__formWrap .account__form .account__formContent .form__bottom .form__box .registration {
     padding: 10px 5px;
+  }
+  .contacts .custom__container h1 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .contacts__mapContainer {
+    width: 52vw;
+  }
+  .contacts .custom__container .contacts__content .tab-pane .header__overlay {
+    display: none;
   }
 }
 
@@ -8399,6 +8434,12 @@ header .nav .menu__right .menu__info p {
   .order {
     padding-top: 100px;
   }
+  .personal {
+    padding-top: 100px;
+  }
+  .personal .custom__container .title {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -8407,7 +8448,7 @@ header .nav .menu__right .menu__info p {
   }
   .bread__crumbs__container {
     left: calc((100vw - 960px) / 2);
-    top: 130px;
+    top: 100px;
   }
   .recomendation__close.is-active {
     display: none;
@@ -8642,6 +8683,10 @@ header .nav .menu__right .menu__info p {
     line-height: 30px;
     margin-left: auto;
     text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .contacts .custom__container .solutions-tab-content {
     display: block;
@@ -9776,7 +9821,7 @@ header .nav .menu__right .menu__info p {
     padding: 11px;
     width: 280px;
     position: absolute;
-    top: 50%;
+    top: 65%;
     bottom: auto;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
@@ -10207,6 +10252,9 @@ header .nav .menu__right .menu__info p {
   header .container-fluid.container__header .header .header__function .header__basket.mobile {
     display: block;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:first-child button {
+    top: 50%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -10390,7 +10438,7 @@ header .nav .menu__right .menu__info p {
     position: absolute;
     left: 15px;
     right: 15px;
-    top: 96px;
+    top: 140px;
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
@@ -10399,7 +10447,7 @@ header .nav .menu__right .menu__info p {
     position: fixed;
     left: 0;
     right: 0;
-    top: 60px;
+    top: 0px;
     z-index: 10;
     background: #b13e04;
     -webkit-transition: all .2s linear;
@@ -12075,12 +12123,11 @@ header .nav .menu__right .menu__info p {
     padding: 0px;
     font-size: 24px;
     line-height: 29px;
+    position: static;
   }
   .recomendation .custom__container .recomendation__title::before {
-    top: 50%;
-    -webkit-transform: translate(0px, -50%);
-        -ms-transform: translate(0px, -50%);
-            transform: translate(0px, -50%);
+    top: 30px;
+    left: 20px;
   }
   .recomendation .custom__container .solutions-tab-content {
     padding: 0px;
@@ -12309,7 +12356,7 @@ header .nav .menu__right .menu__info p {
     padding-left: 35px;
   }
   .category.category__05 {
-    padding: 90px 0px 25px;
+    padding: 30px 0px 25px;
   }
   .category.category__05 .custom__container .category__title {
     padding-top: 0px;
@@ -12399,6 +12446,12 @@ header .nav .menu__right .menu__info p {
   .mixbox {
     padding: 30px 15px 25px;
   }
+  .mixbox .custom__container .wrap__select {
+    top: 96px;
+  }
+  .mixbox .custom__container .wrap__select.scrolled {
+    top: 60px;
+  }
   .personal {
     padding-top: 30px;
   }
@@ -12481,6 +12534,9 @@ header .nav .menu__right .menu__info p {
   }
   .account__formWrap .account__form .account__formContent {
     padding: 0px;
+  }
+  .account__formWrap .account__formRegistration .title {
+    margin: 30px auto 30px;
   }
   .account__formWrap .account__formRegistration .account__formContent {
     padding: 0px;
