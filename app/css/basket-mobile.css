@@ -71,7 +71,7 @@
 
 /*** Basket Page start ***/
 .basket {
-  padding-top: 90px;
+  padding-top: 30px;
   padding-bottom: 0px;
   background: #691d35;
   text-align: center;
@@ -302,13 +302,12 @@
 
 /*** Delivery Page start ***/
 .basket__delivery {
-  padding: 90px 20px 25px;
+  padding: 30px 20px 25px;
   background: #691d35;
   text-align: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
-.basket__delivery .title {
-  
+.basket__delivery .title {  
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -524,7 +523,7 @@
   transition: 0.2s;
 }
 .basket__picup {
-  padding: 90px 20px 25px;
+  padding: 30px 20px 25px;
   background: #691d35;
   text-align: center;
   min-height: 100vh;
@@ -601,7 +600,7 @@
 }
 
 .basket__contacts {
-  padding: 90px 20px 25px;
+  padding: 30px 20px 25px;
   background: #691d35;
   text-align: center;
   min-height: 100vh;
@@ -654,7 +653,7 @@
 }
 
 .basket__payment {
-  padding: 90px 20px 25px;
+  padding: 30px 20px 25px;
   background: #691d35;
   text-align: center;
   min-height: 100vh;
