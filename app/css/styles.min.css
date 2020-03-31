@@ -711,6 +711,26 @@ main {
   margin-bottom: 15px;
 }
 
+.account__new__address .form__group .form__control::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.account__new__address .form__group .form__control::-moz-placeholder {
+  opacity: 0;
+}
+
+.account__new__address .form__group .form__control:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.account__new__address .form__group .form__control::-ms-input-placeholder {
+  opacity: 0;
+}
+
+.account__new__address .form__group .form__control::placeholder {
+  opacity: 0;
+}
+
 .account__new__address .form__group .form__control:last-child {
   margin-bottom: 20px;
 }
@@ -6336,7 +6356,6 @@ header .nav .menu__right .menu__info p {
 
 .recomendation .custom__container .recomendation__title {
   margin: 0 auto 80px;
-  position: relative;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -6345,8 +6364,8 @@ header .nav .menu__right .menu__info p {
 .recomendation .custom__container .recomendation__title::before {
   display: none;
   position: absolute;
-  left: -45px;
-  top: 0;
+  left: calc((100vw - 1140px) / 2);
+  top: 165px;
   content: url(../img/@2x/back.svg);
 }
 
@@ -8331,7 +8350,6 @@ header .nav .menu__right .menu__info p {
     margin-left: calc((100vw - 1200px) / 2);
   }
   .recomendation .custom__container .recomendation__title::before {
-    top: 2px;
     display: block;
   }
   .recomendation .custom__container .solutions-tab-content {
@@ -8464,6 +8482,8 @@ header .nav .menu__right .menu__info p {
   }
   .recomendation .custom__container .recomendation__title::before {
     display: block;
+    left: calc((100vw - 960px) / 2);
+    top: 100px;
   }
   .recomendation .custom__container .solutions-tab-content {
     max-width: 100%;
@@ -9351,6 +9371,10 @@ header .nav .menu__right .menu__info p {
   .recomendation .custom__container .recomendation__title {
     font-size: 24px;
     line-height: 29px;
+  }
+  .recomendation .custom__container .recomendation__title::before {
+    left: calc((100vw - 720px) / 2);
+    top: 90px;
   }
   .recomendation .custom__container .solutions-tab-content {
     max-width: 100%;
@@ -10241,32 +10265,145 @@ header .nav .menu__right .menu__info p {
 }
 
 @media screen and (max-width: 769px) {
+  input, textarea {
+    font-size: 16px !important;
+  }
   header .container-fluid.container__header .header .header__function .header__basket.pc {
     display: none;
   }
   header .container-fluid.container__header .header .header__function .header__basket.mobile {
     display: block;
   }
+  .bread__crumbs__container {
+    left: calc((100vw - 720px) / 2);
+  }
+  .account__new__address .form__group .form__control {
+    background: #FFFFFF;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    padding: 10px 15px;
+  }
+  .account__new__address .form__group .form__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+    opacity: 1;
+  }
+  .account__new__address .form__group .form__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+    opacity: 1;
+  }
+  .account__new__address .form__group .form__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+    opacity: 1;
+  }
+  .account__new__address .form__group .form__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+    opacity: 1;
+  }
+  .account__new__address .form__group .form__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+    opacity: 1;
+  }
+  .account__new__address .form__group .form__control:last-child {
+    margin-bottom: 20px;
+  }
+  .account__new__address .form__group .form__label {
+    display: none;
+  }
+  .account__new__address .form__box .btn {
+    width: 100%;
+    text-transform: initial;
+  }
+  .account__change__popup {
+    padding: 30px 15px 30px;
+  }
+  .account__change__popup .change__close {
+    right: 35px;
+    top: 30.5px;
+  }
+  .account__change__popup .title {
+    margin-bottom: 45px;
+  }
+  .account__change__popup .form__group .form__label {
+    display: none;
+  }
+  .account__change__popup .form__group .form__control {
+    background: #FFFFFF;
+    border: 1px solid #A1A4B1;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    padding: 10px 15px;
+  }
+  .account__change__popup .form__group .form__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+  }
+  .account__change__popup .form__group .form__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+  }
+  .account__change__popup .form__group .form__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+  }
+  .account__change__popup .form__group .form__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+  }
+  .account__change__popup .form__group .form__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8B90A0;
+  }
+  .account__change__popup .form__box .btn {
+    width: 100%;
+    text-transform: initial;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:first-child button {
     top: 50%;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .custom__container {
-    max-width: 540px;
-  }
-  .bread__crumbs__container {
-    left: calc((100vw - 540px) / 2);
-  }
   .recomendation {
     background: #C88C1C;
-    padding-top: 60px;
+    padding-top: 90px;
     padding-bottom: 0px;
     bottom: auto;
   }
   .recomendation .custom__container {
-    margin-left: calc((100vw - 540px) / 2);
+    margin-left: calc((100vw - 720px) / 2);
+  }
+  .recomendation .custom__container .recomendation__title::before {
+    left: calc((100vw - 720px) / 2);
+    top: 90px;
   }
   .recomendation .custom__container .solutions-tab-content {
     max-width: 100%;
@@ -10365,6 +10502,15 @@ header .nav .menu__right .menu__info p {
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__btnGroup {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .custom__container {
+    max-width: 540px;
+  }
+  .bread__crumbs__container {
+    left: calc((100vw - 540px) / 2);
   }
   header .container-fluid.container__header .header .header__logo {
     padding: 0px 15px 0 30px;
@@ -10977,78 +11123,6 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .bottom__wrap .form__box .btn {
     width: 100%;
-  }
-  .account__new__address .form__group .form__control::-webkit-input-placeholder {
-    color: transparent;
-  }
-  .account__new__address .form__group .form__control::-moz-placeholder {
-    color: transparent;
-  }
-  .account__new__address .form__group .form__control:-ms-input-placeholder {
-    color: transparent;
-  }
-  .account__new__address .form__group .form__control::-ms-input-placeholder {
-    color: transparent;
-  }
-  .account__new__address .form__group .form__control::placeholder {
-    color: transparent;
-  }
-  .account__change__popup {
-    padding: 30px 15px 30px;
-  }
-  .account__change__popup .change__close {
-    right: 35px;
-    top: 30.5px;
-  }
-  .account__change__popup .title {
-    margin-bottom: 45px;
-  }
-  .account__change__popup .form__group .form__label {
-    display: none;
-  }
-  .account__change__popup .form__group .form__control {
-    background: #FFFFFF;
-    border: 1px solid #A1A4B1;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #000;
-    padding: 10px 15px;
-  }
-  .account__change__popup .form__group .form__control::-webkit-input-placeholder {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8B90A0;
-  }
-  .account__change__popup .form__group .form__control::-moz-placeholder {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8B90A0;
-  }
-  .account__change__popup .form__group .form__control:-ms-input-placeholder {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8B90A0;
-  }
-  .account__change__popup .form__group .form__control::-ms-input-placeholder {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8B90A0;
-  }
-  .account__change__popup .form__group .form__control::placeholder {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: #8B90A0;
-  }
-  .account__change__popup .form__box .btn {
-    width: 100%;
-    text-transform: initial;
   }
   .account__formWrap .form__btnClose {
     top: 25px;
@@ -12455,6 +12529,12 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content {
     padding: 0 15px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap button {
+    top: auto;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap .form__group input {
+    font-size: 16px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__info {
     max-width: 200px;

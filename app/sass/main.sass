@@ -213,6 +213,8 @@ main
 			max-width: 664px
 			background-color: transparent
 			margin-bottom: 15px
+			&::placeholder
+				opacity: 0
 			&:last-child
 				margin-bottom: 20px
 		.form__label
@@ -3467,14 +3469,13 @@ header
 	.custom__container
 		margin-left: calc((100vw - 1676px) / 2)
 		.recomendation__title
-			margin: 0 auto 80px			
-			position: relative
+			margin: 0 auto 80px
 			width: max-content
 			&::before	
 				display: none			
 				position: absolute
-				left: -45px
-				top: 0
+				left: calc((100vw - 1140px) / 2)
+				top: 165px
 				content: url(../img/@2x/back.svg)				
 		.solutions-tab-content
 			max-width: 795px

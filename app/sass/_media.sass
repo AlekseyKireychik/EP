@@ -2288,7 +2288,6 @@
         .custom__container
             .recomendation__title
                 &::before	
-                    top: 2px
                     display: block	
             .solutions-tab-content
                 max-width: 555px
@@ -2406,7 +2405,9 @@
         .custom__container
             .recomendation__title
                 &::before	
-                    display: block		
+                    display: block	
+                    left: calc((100vw - 960px) / 2)
+                    top: 100px
             .solutions-tab-content
                 max-width: 100%
                 .solutions-tab
@@ -3271,6 +3272,9 @@
             .recomendation__title
                 font-size: 24px
                 line-height: 29px
+                &::before	
+                    left: calc((100vw - 720px) / 2)
+                    top: 90px
             .solutions-tab-content
                 max-width: 100%
                 .solutions-tab
@@ -4020,7 +4024,9 @@
             border-radius: 10px
             font-size: 14px
             line-height: 17px
-@media screen and (max-width: 769px)                                
+@media screen and (max-width: 769px)   
+    input, textarea
+        font-size: 16px!important                             
     header
         .container-fluid
             &.container__header
@@ -4031,6 +4037,62 @@
                                 display: none
                             &.mobile
                                 display: block
+    .bread__crumbs__container
+        left: calc((100vw - 720px) / 2)
+    .account__new__address
+        .form__group
+            .form__control
+                background: #FFFFFF
+                border: 1px solid #A1A4B1
+                border-radius: 4px
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #000
+                padding: 10px 15px
+                &::placeholder                    
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 14px
+                    color: #8B90A0
+                    opacity: 1
+                &:last-child
+                    margin-bottom: 20px            
+            .form__label
+                display: none
+
+        .form__box
+            .btn
+                width: 100%
+                text-transform: initial
+    .account__change__popup
+        padding: 30px 15px 30px
+        .change__close
+            right: 35px
+            top: 30.5px
+        .title
+            margin-bottom: 45px
+        .form__group
+            .form__label
+                display: none
+            .form__control
+                background: #FFFFFF
+                border: 1px solid #A1A4B1
+                border-radius: 4px
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #000
+                padding: 10px 15px
+                &::placeholder                    
+                    font-weight: 500
+                    font-size: 12px
+                    line-height: 14px
+                    color: #8B90A0
+        .form__box
+            .btn
+                width: 100%
+                text-transform: initial
     .personal 
         .custom__container 
             .tab-content 
@@ -4042,20 +4104,19 @@
                                     &:first-child 
                                         button
                                             top: 50%
-@media screen and (max-width: 767px)
-    .custom__container
-        max-width: 540px
-    .bread__crumbs__container
-        left: calc((100vw - 540px) / 2)
+                
     .recomendation
         .custom__container
-            margin-left: calc((100vw - 540px) / 2)
+            margin-left: calc((100vw - 720px) / 2)
         background: #C88C1C
-        padding-top: 60px
+        padding-top: 90px
         padding-bottom: 0px
         bottom: auto
         .custom__container
             .recomendation__title
+                &::before	
+                    left: calc((100vw - 720px) / 2)
+                    top: 90px
             .solutions-tab-content
                 max-width: 100%
                 .solutions-tab
@@ -4125,6 +4186,11 @@
                                             .recomendation__counter
                                                 .btn
 
+@media screen and (max-width: 767px)
+    .custom__container
+        max-width: 540px
+    .bread__crumbs__container
+        left: calc((100vw - 540px) / 2)
     header
         .container-fluid
             &.container__header
@@ -4644,39 +4710,6 @@
                                             width: 100%
                                             .btn
                                                 width: 100%
-    .account__new__address
-        .form__group
-            .form__control
-                &::placeholder 
-                    color: transparent
-    .account__change__popup
-        padding: 30px 15px 30px
-        .change__close
-            right: 35px
-            top: 30.5px
-        .title
-            margin-bottom: 45px
-        .form__group
-            .form__label
-                display: none
-            .form__control
-                background: #FFFFFF
-                border: 1px solid #A1A4B1
-                border-radius: 4px
-                font-weight: 500
-                font-size: 12px
-                line-height: 14px
-                color: #000
-                padding: 10px 15px
-                &::placeholder                    
-                    font-weight: 500
-                    font-size: 12px
-                    line-height: 14px
-                    color: #8B90A0
-        .form__box
-            .btn
-                width: 100%
-                text-transform: initial
     .account__formWrap
         .form__btnClose
             top: 25px
@@ -5845,6 +5878,15 @@
                 padding: 0 15px
                 .tab-pane
                     .personal__list
+                        &.profile 
+                            .profile__wrapform 
+                                #change-password-form 
+                                    .wrap 
+                                        button
+                                            top: auto
+                                        .form__group 
+                                            input
+                                                font-size: 16px
                         &.address
                             .profile__wrapinfo
                                 .profile__info
