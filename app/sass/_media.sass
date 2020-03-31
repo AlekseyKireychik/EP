@@ -3618,7 +3618,9 @@
                                     margin-bottom: 30px
                                     .btn__group
                                         .dell
-                                            display: flex
+                                            display: flex                                            
+                                            text-align: right
+                                            justify-content: flex-end
                                 &:last-child
                                     .btn__group
                                         .change
@@ -3665,6 +3667,8 @@
                                         text-align: left
                                         &:last-child
                                             margin: 0 auto
+                                        &.dell                                            
+                                            text-align: right
                                     .profile__btn
                                         font-size: 10px
                                         line-height: 12px
@@ -3672,8 +3676,7 @@
                                         max-width: 350px
                                         width: 100%
                                         .profile__info
-                                            margin-left: 0px
-                                            
+                                            margin-left: 0px                                            
                                             p
                                                 text-align: left
                                                 max-width: 350px
@@ -4026,7 +4029,8 @@
             line-height: 17px
 @media screen and (max-width: 769px)   
     input, textarea
-        font-size: 16px!important                             
+        font-size: 16px!important     
+        line-height: 16px!important                          
     header
         .container-fluid
             &.container__header
@@ -4039,11 +4043,21 @@
                                 display: block
     .bread__crumbs__container
         left: calc((100vw - 720px) / 2)
+        .bread__crumbs
+            position: static
+    .account__formWrap 
+        .account__form 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder  
+                                line-height: 16px
     .account__new__address
         .form__group
             .form__control
                 background: #FFFFFF
-                border: 1px solid #A1A4B1
+                border: none
                 border-radius: 4px
                 font-weight: 500
                 font-size: 12px
@@ -4053,7 +4067,7 @@
                 &::placeholder                    
                     font-weight: 500
                     font-size: 12px
-                    line-height: 14px
+                    line-height: 16px
                     color: #8B90A0
                     opacity: 1
                 &:last-child
@@ -4077,7 +4091,7 @@
                 display: none
             .form__control
                 background: #FFFFFF
-                border: 1px solid #A1A4B1
+                border: none
                 border-radius: 4px
                 font-weight: 500
                 font-size: 12px
@@ -4087,7 +4101,7 @@
                 &::placeholder                    
                     font-weight: 500
                     font-size: 12px
-                    line-height: 14px
+                    line-height: 16px
                     color: #8B90A0
         .form__box
             .btn
@@ -4103,7 +4117,21 @@
                                 .profile__item
                                     &:first-child 
                                         button
-                                            top: 50%
+                                            top: 52%
+                        &.reviews__formWrap 
+                            .reviews__form 
+                                .formWrap 
+                                    .mainform__group 
+                                        .mainform__control
+                                            color: #000
+                                            &::placeholder
+                                                line-height: 16px
+                                        &.comment                                            
+                                            .mainform__control
+                                                color: #000
+
+
+
                 
     .recomendation
         .custom__container
@@ -5540,6 +5568,8 @@
         .change__close
             right: 35px
             top: 15px
+            a                
+                position: static
         .title
             font-size: 24px
             line-height: 29px

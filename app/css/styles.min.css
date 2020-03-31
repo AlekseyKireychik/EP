@@ -9798,6 +9798,11 @@ header .nav .menu__right .menu__info p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    text-align: right;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo:last-child .btn__group .change {
     display: -webkit-box;
@@ -9852,6 +9857,9 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item button:last-child {
     margin: 0 auto;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item button.dell {
+    text-align: right;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item .profile__btn {
     font-size: 10px;
@@ -10267,6 +10275,7 @@ header .nav .menu__right .menu__info p {
 @media screen and (max-width: 769px) {
   input, textarea {
     font-size: 16px !important;
+    line-height: 16px !important;
   }
   header .container-fluid.container__header .header .header__function .header__basket.pc {
     display: none;
@@ -10277,9 +10286,27 @@ header .nav .menu__right .menu__info p {
   .bread__crumbs__container {
     left: calc((100vw - 720px) / 2);
   }
+  .bread__crumbs__container .bread__crumbs {
+    position: static;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    line-height: 16px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    line-height: 16px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    line-height: 16px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    line-height: 16px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    line-height: 16px;
+  }
   .account__new__address .form__group .form__control {
     background: #FFFFFF;
-    border: 1px solid #A1A4B1;
+    border: none;
     border-radius: 4px;
     font-weight: 500;
     font-size: 12px;
@@ -10290,35 +10317,35 @@ header .nav .menu__right .menu__info p {
   .account__new__address .form__group .form__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
     opacity: 1;
   }
@@ -10347,7 +10374,7 @@ header .nav .menu__right .menu__info p {
   }
   .account__change__popup .form__group .form__control {
     background: #FFFFFF;
-    border: 1px solid #A1A4B1;
+    border: none;
     border-radius: 4px;
     font-weight: 500;
     font-size: 12px;
@@ -10358,31 +10385,31 @@ header .nav .menu__right .menu__info p {
   .account__change__popup .form__group .form__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     color: #8B90A0;
   }
   .account__change__popup .form__box .btn {
@@ -10390,7 +10417,28 @@ header .nav .menu__right .menu__info p {
     text-transform: initial;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:first-child button {
-    top: 50%;
+    top: 52%;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control {
+    color: #000;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-webkit-input-placeholder {
+    line-height: 16px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-moz-placeholder {
+    line-height: 16px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control:-ms-input-placeholder {
+    line-height: 16px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-ms-input-placeholder {
+    line-height: 16px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::placeholder {
+    line-height: 16px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment .mainform__control {
+    color: #000;
   }
   .recomendation {
     background: #C88C1C;
@@ -12135,6 +12183,9 @@ header .nav .menu__right .menu__info p {
   .account__new__address .change__close {
     right: 35px;
     top: 15px;
+  }
+  .account__new__address .change__close a {
+    position: static;
   }
   .account__new__address .title {
     font-size: 24px;

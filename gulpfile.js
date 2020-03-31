@@ -52,6 +52,7 @@ gulp.task("scripts", function() {
     gulp
       .src([
         "app/js/libris.js",
+        "app/js/jquery.maskedinput.min.js",        
         "app/js/_custom.js" // Custom scripts. Always at the end
       ])
       .pipe(concat("scripts.min.js"))

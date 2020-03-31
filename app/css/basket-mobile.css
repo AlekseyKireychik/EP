@@ -42,7 +42,7 @@
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 16px;
   text-transform: initial;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -456,7 +456,7 @@
 .form__group.group__input .form__control::placeholder {
   color: #fff;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16px;
 }
 .form__group.group__input .form__control:first-child {
   margin-right: 20px;
@@ -596,7 +596,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 16px;
 }
 
 .basket__contacts {
@@ -644,7 +644,7 @@
   color: #8b90a0;
   font-weight: 500;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 16px;
 }
 .basket__contacts .form__box button {
   width: 100%;
@@ -850,6 +850,7 @@
   color: #8b90a0;
   font-weight: 500;
   font-size: 12px;
+  line-height: 16px;
 }
 .basket__payment .group-01__bottom .btn__group {
   width: 100%;
@@ -999,10 +1000,23 @@
   color: #691d35;
 }
 @media screen and (min-width: 576px) {
+  .basket {
+    padding-top: 90px;
+  }
+  .basket .basket__list {
+    padding-left: 0px; 
+    padding-right: 0px; 
+  }
+  .basket .form__promocode {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .basket__picup,
   .basket__delivery,
-  .basket__payment {
+  .basket__payment,
+  .basket__contacts {
     padding: 90px 20px 25px;
+    min-height: calc(100vh - 0px);
   }
   .basket__picup .group__input,
   .basket__delivery .group__input {
@@ -1017,4 +1031,8 @@
   .basket__payment .form__bottom .form-check .form__check-label::after {
     top: 0px;
   }
+  .basket__contacts .form__control::placeholder {
+    line-height: 16px;
+  }
+  
 }
