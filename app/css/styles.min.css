@@ -401,6 +401,14 @@ img {
 
 input, textarea {
   outline: none;
+  -webkit-user-select: auto !important;
+  -webkit-user-select--khtml-user-select: auto !important;
+  -webkit-user-select--moz-user-select: auto !important;
+  -webkit-user-select--ms-user-select: auto !important;
+  -webkit-user-select--o-user-select: auto !important;
+  -moz-user-select: auto !important;
+   -ms-user-select: auto !important;
+       user-select: auto !important;
 }
 
 input:focus:required:invalid, textarea:focus:required:invalid {
@@ -867,35 +875,35 @@ main {
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
@@ -1053,35 +1061,35 @@ main {
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
@@ -1186,35 +1194,35 @@ main {
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 22px;
   color: #fff;
 }
 
@@ -10278,24 +10286,10 @@ header .nav .menu__right .menu__info p {
   }
   .bread__crumbs__container {
     left: calc((100vw - 720px) / 2);
+    padding-left: 20px;
   }
   .bread__crumbs__container .bread__crumbs {
     position: static;
-  }
-  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
-    line-height: 16px;
-  }
-  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
-    line-height: 16px;
-  }
-  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
-    line-height: 16px;
-  }
-  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
-    line-height: 16px;
-  }
-  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
-    line-height: 16px;
   }
   .account__new__address .form__group .form__control {
     background: #FFFFFF;
@@ -10310,35 +10304,35 @@ header .nav .menu__right .menu__info p {
   .account__new__address .form__group .form__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
     opacity: 1;
   }
   .account__new__address .form__group .form__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
     opacity: 1;
   }
@@ -10378,31 +10372,31 @@ header .nav .menu__right .menu__info p {
   .account__change__popup .form__group .form__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__change__popup .form__group .form__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__change__popup .form__box .btn {
@@ -10416,19 +10410,19 @@ header .nav .menu__right .menu__info p {
     color: #000;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-webkit-input-placeholder {
-    line-height: 16px;
+    line-height: 22px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-moz-placeholder {
-    line-height: 16px;
+    line-height: 22px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control:-ms-input-placeholder {
-    line-height: 16px;
+    line-height: 22px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::-ms-input-placeholder {
-    line-height: 16px;
+    line-height: 22px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control::placeholder {
-    line-height: 16px;
+    line-height: 22px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment .mainform__control {
     color: #000;
@@ -11193,36 +11187,36 @@ header .nav .menu__right .menu__info p {
     padding: 7px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 22px;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__label {

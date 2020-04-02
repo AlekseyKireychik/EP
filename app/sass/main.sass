@@ -29,6 +29,12 @@ img
 
 input, textarea
 	outline: none
+	-webkit-user-select: auto !important
+    -khtml-user-select: auto !important
+    -moz-user-select: auto !important
+    -ms-user-select: auto !important
+    -o-user-select: auto !important
+	user-select: auto !important
 	&:focus:required:invalid
 		border-color: red
 	&:required:valid
@@ -295,7 +301,7 @@ main
 						&::placeholder
 							font-weight: normal
 							font-size: 14px
-							line-height: 14px
+							line-height: 22px
 							color: $accent
 					.mainform__label
 						position: absolute
@@ -389,7 +395,7 @@ main
 						&::placeholder
 							font-weight: normal
 							font-size: 14px
-							line-height: 14px
+							line-height: 22px
 							color: $accent
 					.mainform__label
 						position: absolute
@@ -451,7 +457,7 @@ main
 						&::placeholder
 							font-weight: normal
 							font-size: 14px
-							line-height: 14px
+							line-height: 22px
 							color: $accent
 					.mainform__label
 						position: absolute

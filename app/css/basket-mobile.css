@@ -28,7 +28,7 @@
   font-size: 12px;
   line-height: 15px;
   background-color: transparent;
-  padding: 7px 133px 7px 23px;
+  padding: 7px 133px 7px 15px;
   color: rgba(255, 255, 255, 0.3);
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -42,7 +42,7 @@
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 22px;
   text-transform: initial;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -456,7 +456,7 @@
 .form__group.group__input .form__control::placeholder {
   color: #fff;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 22px;
 }
 .form__group.group__input .form__control:first-child {
   margin-right: 20px;
@@ -596,7 +596,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 22px;
 }
 
 .basket__contacts {
@@ -638,13 +638,13 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
-  padding: 4.5px 15px;
+  padding: 8px 15px;
 }
 .basket__contacts .form__control::placeholder {
   color: #8b90a0;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 22px;
 }
 .basket__contacts .form__box button {
   width: 100%;
@@ -850,7 +850,7 @@
   color: #8b90a0;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 22px;
 }
 .basket__payment .group-01__bottom .btn__group {
   width: 100%;
@@ -865,8 +865,8 @@
   justify-content: space-between;
 }
 .basket__payment .group-01__bottom .btn__group input {
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 12px!important;
+  line-height: 24px!important;
   text-align: center;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -1032,7 +1032,7 @@
     top: 0px;
   }
   .basket__contacts .form__control::placeholder {
-    line-height: 16px;
+    line-height: 20px;
   }
   
 }
