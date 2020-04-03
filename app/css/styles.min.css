@@ -411,14 +411,6 @@ input, textarea {
        user-select: auto !important;
 }
 
-input:focus:required:invalid, textarea:focus:required:invalid {
-  border-color: red;
-}
-
-input:required:valid, textarea:required:valid {
-  border-color: green;
-}
-
 button:active, button:focus {
   outline: transparent;
 }
@@ -10285,7 +10277,8 @@ header .nav .menu__right .menu__info p {
     display: block;
   }
   .bread__crumbs__container {
-    left: calc((100vw - 720px) / 2);
+    left: 0px;
+    margin-left: calc((100vw - 720px) / 2);
     padding-left: 20px;
   }
   .bread__crumbs__container .bread__crumbs {
@@ -12152,7 +12145,8 @@ header .nav .menu__right .menu__info p {
     max-width: 100%;
   }
   .bread__crumbs__container {
-    left: 20px;
+    left: 0px;
+    margin-left: 20px;
     top: 30px;
     display: -webkit-box;
     display: -webkit-flex;
