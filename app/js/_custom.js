@@ -572,7 +572,7 @@ $(document).ready(function() {
   });
 //bread crumbs  
   if ($(window).width() < 1299) {
-    $(".bread__crumbs").text("");
+    $(".bread__crumbs__text").text("");
   }  
 
 //select busket pc

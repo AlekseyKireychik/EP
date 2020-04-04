@@ -1378,6 +1378,10 @@ main {
   cursor: pointer;
 }
 
+.bread__crumbs__container .bread__crumbs img {
+  display: none;
+}
+
 .bread__crumbs__container .bread__crumbs::before {
   -webkit-transition: 0.2s all linear;
   -o-transition: 0.2s all linear;
@@ -8302,13 +8306,16 @@ header .nav .menu__right .menu__info p {
   .bread__crumbs__container.hidden {
     display: none;
   }
-  .bread__crumbs__container .bread__crumbs:hover::before {
-    left: 0px;
+  .bread__crumbs__container .bread__crumbs img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
   .bread__crumbs__container .bread__crumbs::before {
     left: 0px;
     top: 0px;
-    content: url(../img/@2x/arr_bread_crumbs_mobile.svg);
+    content: "";
   }
   header .container-fluid.container__header .nav .menu__left nav {
     margin-bottom: 15px;
@@ -10279,7 +10286,7 @@ header .nav .menu__right .menu__info p {
   .bread__crumbs__container {
     left: 0px;
     margin-left: calc((100vw - 720px) / 2);
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .bread__crumbs__container .bread__crumbs {
     position: static;
