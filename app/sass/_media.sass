@@ -165,6 +165,13 @@
                                         .form__label
                                         .select
                                             option
+                                    .wrap
+                                        .form__group
+                                            &:last-child
+                                                .form__label
+                                                    width: 100px
+                                            .form__control
+                                                width: 200px
                                     .basket__check
                                         .form__check-input
                                         input[type="checkbox"]
@@ -284,6 +291,9 @@
                         &:after
                 .product__wrapImg
                     max-width: 600px
+    .product-two
+        &.popup-active
+            height: 900px
     .recomendation__close
         &.is-active
             // left: 60vw
@@ -302,6 +312,8 @@
                                 .recomendation__right
                                     .recomendation__btnGroup
                                         .recomendation__counter
+                                            .recomendation__count
+                                                margin-bottom: 15px
                                             button
                                                 padding: 2px 0
                                                 font-size: 46px
@@ -598,12 +610,12 @@
                                 .recomendation__left
                                     max-height: 510px
                                     .recomendation__positions
-                                        width: 325px
+                                        width: 300px
                                         .recomendation__elem
                                             .recomendation__link
                                                 align-items: center
                                                 .wrap__img
-                                                    max-width: 150px
+                                                    max-width: 120px
                                                     img
                                                 .text
                                                     .name
@@ -668,7 +680,7 @@
                                     .carousel-title
                                         line-height: 42px
     .about
-        padding-top: 135px
+        // padding-top: 165px
         .custom__container
             .about__list
                 margin-bottom: 20px
@@ -681,7 +693,7 @@
                         font-size: 18px
                         line-height: 22px
     .delivery
-        padding-top: 135px
+        // padding-top: 165px
         .custom__container
             .title
                 margin-bottom: 30px
@@ -692,7 +704,7 @@
                     font-size: 16px
                     line-height: 20px
     .page404, .page503
-        padding-top: 135px
+        // padding-top: 165px
         padding-bottom: 50px
         .custom__container
             .title
@@ -714,9 +726,9 @@
             .category__item
                 width: calc((100vw - (100vw - (1400px - 80px))) / 3)
     .akcii__page
-        padding-top: 135px
+        // padding-top: 165px
     .mixbox
-        padding-top: 135px
+        // padding-top: 165px
         .plaska
             top: 320px
             img
@@ -726,6 +738,10 @@
                 .tab-pane
                     .mixbox__list
                         .mixbox__item
+                            .mixbox__info 
+                                .mixbox__top 
+                                    .mixbox__positions
+                                        width: 560px
                             .mixbox__product
                                 max-width: 45%
                                 width: 100%
@@ -736,7 +752,7 @@
                                 .mixbox__top
                                     max-height: 400px
     .contacts
-        padding-top: 135px
+        // padding-top: 135px
         .custom__container
             .title
                 margin-left: 13%
@@ -765,7 +781,7 @@
                                     font-size: 18px
                                     line-height: 22px
     .personal
-        padding-top: 135px
+        // padding-top: 135px
         .custom__container
             .solutions-tab-content
                 padding-right: 40px
@@ -784,7 +800,7 @@
                         p
                             margin-bottom: 5px
                         .profile__wrapinfo
-                            margin-bottom: 20px
+                            // margin-bottom: 20px
                             .profile__title
                                 font-size: 18px
                             .profile__info
@@ -835,8 +851,12 @@
                                                 .order__top
                                                     margin-bottom: 20px
                     .personal__list
-                        &.reviews__formWrap
+                        &.reviews__formWrap                            
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start 
                             .reviews__form
+                                width: 100%
                                 padding: 20px 100px
                                 .title
                                     margin-bottom: 20px
@@ -853,7 +873,6 @@
         font-size: 14px
 
     .basket
-        padding-top: 135px
         .custom__container
             .title
         .custom__container
@@ -928,6 +947,7 @@
                                         padding-left: 0px
                                         margin-bottom: 20px
                                         .form__control
+                                            max-width: 700px
                                         .form__label
                                             top: -10px
                                             width: 100%
@@ -935,6 +955,17 @@
                                             left: 10px
                                         .select
                                             option
+                                    .wrap
+                                        .form__group
+                                            &:last-child
+                                                padding-left: 0px
+                                                margin-left: 20px
+                                                .form__label
+                                                    width: 100%
+                                            &:first-child
+                                                margin-right: 20px
+                                            .form__control
+                                                width: 100%
                                     .basket__check
                                         margin-bottom: 20px
                                         padding-left: 51px
@@ -948,8 +979,9 @@
                                             li
                                                 &:last-child
                                                 .address_title
+                                                    width: 125px
                                                 .address_text
-                                                    max-width: 170px
+                                                    max-width: 200px
                                         .basket__preorder
                                             .basket__check
                                                 .form__check-input
@@ -959,7 +991,7 @@
                                                     &::after
                                             .group__input
                                                 .form__control
-                                                    max-width: 100%
+                                                    max-width: 175px
                                                     &:first-child
 
                                     .form__box
@@ -1060,7 +1092,6 @@
                             padding: 22px 20px
     //Product 2 Page
     .product-two
-        padding-top: 125px
         .custom__container
             .product__left
                 .recomendation__wrap
@@ -1127,7 +1158,6 @@
                                         font-size: 24px
                                         line-height: 29px
     .category
-        padding: 100px 0 50px
         .custom__container
             .category__title
                 padding-top: 0px
@@ -1218,7 +1248,7 @@
         .custom__container
             margin-left: calc((100vw - 1400px) / 2)
     .category
-        padding-top: 100px
+        padding-top: 145px
         padding-bottom: 30px
         .category__list
             .category__item
@@ -1267,7 +1297,7 @@
                         p
                             margin-bottom: 5px
                         .profile__wrapinfo
-                            margin-bottom: 10px
+                            // margin-bottom: 10px
                             .profile__title
                                 font-size: 18px
                             .profile__info
@@ -1304,7 +1334,7 @@
                         max-height: 430px
                     .personal__list
                         &.reviews__formWrap
-                            .reviews__form
+                            .reviews__form      
                                 padding: 20px 100px
                                 .title
                                     margin-bottom: 20px
@@ -1752,8 +1782,8 @@
                                     .carousel-title
                                         font-size: 24px
                                         line-height: 29px
-
     .category
+        padding-top: 135px
         .custom__container
             .category__list
                 .category__item
@@ -2467,6 +2497,13 @@
                     .burger-menu__button
                         font-size: 24px
                         line-height: 37px
+                .header
+                    .header__function
+                        .header__basket
+                            &.pc
+                                display: none
+                            &.mobile
+                                display: block
         .nav
             &.is-active
             .menu__left
@@ -2502,7 +2539,7 @@
         .carousel
             .carousel-inner
                 .carousel-indicators
-                    margin-left: 20px
+                    margin-left: 10px
     .category
         .custom__container
             .title
@@ -2544,6 +2581,8 @@
                         justify-content: center
                     img
                         max-width: 100%
+                        width: 100%
+                        margin: 0 auto
                     p
                         font-size: 16px
                         line-height: 22px
@@ -3127,11 +3166,10 @@
             align-items: center
             .product__left
                 .product__wrapImg
-                    max-width: 80%
+                    max-width: 60%
                     margin: 0 auto
     //Product 2 Page
     .product-two
-        padding-top: 100px
         .custom__container
             .title
                 font-size: 28px
@@ -3148,6 +3186,57 @@
             .product__center
                 .product__wrapImg
                     margin-left: 20px
+    .product-two
+        padding-top: 100px
+        padding-bottom: 25px
+        &.is-active
+            .custom__container 
+                .product__center 
+                    .product__wrapImg 
+                        .product__img
+                            max-width: 0
+                            transition: 0.2s all linear
+                .product__right
+                    margin-top: 270px
+                    transition: 0.2s all linear
+        .custom__container
+            flex-direction: column
+            .product__left
+                .recomendation__wrap
+                    right: -117px
+                    left: auto
+                    top: 35%
+                    transform: translate(0, -50%) rotate(-90deg)
+                    .product__recomendation
+                        width: 225px
+                        padding: 5px 5px
+                        border-radius: 5px 5px 0px 0px
+                        font-size: 16px
+                        line-height: 20px
+                        &:after
+                            display: none
+                        span
+                            display: none
+                    .product__wrapImg
+                        display: none
+            .product__center
+                width: 100%
+                .product__wrapImg
+                    margin-left: 0px
+                    .product__img
+            .product__right
+                form
+                    .product__btnGroup
+                        .product__counter
+                            .product__btnReduction
+                                padding: 2px 0
+                                font-size: 46px
+                                line-height: 46px
+                            .product__count
+                            .product__btnIncrement
+                                padding: 2px 0
+                                font-size: 46px
+                                line-height: 46px
     .order
         padding-top: 100px
         .order__container
@@ -3160,6 +3249,10 @@
             .title
                 font-size: 28px
                 line-height: 30px
+    .account__formWrap 
+        .form__btnClose
+            top: 25px
+            right: 30px
 @media screen and (max-width: 1100px)
     header
         .header
@@ -4031,20 +4124,20 @@
     input, textarea
         font-size: 16px!important     
         line-height: 16px!important                          
-    header
-        .container-fluid
-            &.container__header
-                .header
-                    .header__function
-                        .header__basket
-                            &.pc
-                                display: none
-                            &.mobile
-                                display: block
+
+    .category 
+        &.category__05
+            .custom__container 
+                .solutions-tab-content 
+                    .solutions-tab 
+                        .nav-pills 
+                            .nav-item 
+                                a
+                                    &.active
+                                        min-height: 64px
     .bread__crumbs__container
         left: 0px
         margin-left: calc((100vw - 720px) / 2)
-        // padding-left: 20px
         padding-left: 0px
         .bread__crumbs
             position: static
@@ -5833,6 +5926,7 @@
                                     &.active
                                         font-size: 12px
                                         line-height: 15px
+                                        min-height: 100%
                 .tab-content
                     .tab-pane
                         .category__list

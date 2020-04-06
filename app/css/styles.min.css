@@ -2607,6 +2607,7 @@ header .nav .menu__right .menu__info p {
 
 .delivery {
   padding-top: 165px;
+  padding-bottom: 100px;
   background-color: #691D35;
   min-height: 100vh;
 }
@@ -2828,6 +2829,7 @@ header .nav .menu__right .menu__info p {
 }
 
 .personal .custom__container .title {
+  width: 100%;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -3202,6 +3204,7 @@ header .nav .menu__right .menu__info p {
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap {
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 
 .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap h2 {
@@ -5180,6 +5183,26 @@ header .nav .menu__right .menu__info p {
   line-height: 16px;
 }
 
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child {
+  padding-left: 100px;
+}
+
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child .form__label {
+  width: 90px;
+}
+
+.basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group .form__control {
+  width: 250px;
+}
+
 .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .address__select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .address__select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .address__select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .address__select, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .address__select {
   width: 100%;
   margin: 0 auto;
@@ -6743,6 +6766,12 @@ header .nav .menu__right .menu__info p {
     height: 85px;
     margin-right: 20px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child .form__label {
+    width: 100px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group .form__control {
+    width: 200px;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .group__input .form__control {
     max-width: 100%;
   }
@@ -6784,11 +6813,17 @@ header .nav .menu__right .menu__info p {
   .product .custom__container .product__left .product__wrapImg {
     max-width: 600px;
   }
+  .product-two.popup-active {
+    height: 900px;
+  }
   .recomendation .custom__container .solutions-tab-content {
     margin: 0 auto;
   }
   .recomendation .custom__container .tab-content {
     margin: 0 auto;
+  }
+  .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .recomendation__btnGroup .recomendation__counter .recomendation__count {
+    margin-bottom: 15px;
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .recomendation__btnGroup .recomendation__counter button {
     padding: 2px 0;
@@ -6987,7 +7022,7 @@ header .nav .menu__right .menu__info p {
     max-height: 510px;
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions {
-    width: 325px;
+    width: 300px;
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link {
     -webkit-box-align: center;
@@ -6996,7 +7031,7 @@ header .nav .menu__right .menu__info p {
             align-items: center;
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .wrap__img {
-    max-width: 150px;
+    max-width: 120px;
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__left .recomendation__positions .recomendation__elem .recomendation__link .text .name {
     min-height: auto;
@@ -7070,9 +7105,6 @@ header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     line-height: 42px;
   }
-  .about {
-    padding-top: 135px;
-  }
   .about .custom__container .about__list {
     margin-bottom: 20px;
   }
@@ -7086,9 +7118,6 @@ header .nav .menu__right .menu__info p {
     font-size: 18px;
     line-height: 22px;
   }
-  .delivery {
-    padding-top: 135px;
-  }
   .delivery .custom__container .title {
     margin-bottom: 30px;
   }
@@ -7100,7 +7129,6 @@ header .nav .menu__right .menu__info p {
     line-height: 20px;
   }
   .page404, .page503 {
-    padding-top: 135px;
     padding-bottom: 50px;
   }
   .page404 .custom__container .title, .page503 .custom__container .title {
@@ -7120,17 +7148,14 @@ header .nav .menu__right .menu__info p {
   .category .category__list .category__item {
     width: calc((100vw - (100vw - (1400px - 80px))) / 3);
   }
-  .akcii__page {
-    padding-top: 135px;
-  }
-  .mixbox {
-    padding-top: 135px;
-  }
   .mixbox .plaska {
     top: 320px;
   }
   .mixbox .plaska img {
     width: 100%;
+  }
+  .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top .mixbox__positions {
+    width: 560px;
   }
   .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__product {
     max-width: 45%;
@@ -7144,9 +7169,6 @@ header .nav .menu__right .menu__info p {
   }
   .mixbox .custom__container .tab-content .tab-pane .mixbox__list .mixbox__item .mixbox__info .mixbox__top {
     max-height: 400px;
-  }
-  .contacts {
-    padding-top: 135px;
   }
   .contacts .custom__container .title {
     margin-left: 13%;
@@ -7179,9 +7201,6 @@ header .nav .menu__right .menu__info p {
     font-size: 18px;
     line-height: 22px;
   }
-  .personal {
-    padding-top: 135px;
-  }
   .personal .custom__container .solutions-tab-content {
     padding-right: 40px;
   }
@@ -7201,9 +7220,6 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list p {
     margin-bottom: 5px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
-    margin-bottom: 20px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__title {
     font-size: 18px;
@@ -7252,7 +7268,22 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .order__box .orders__wrap .order__contentWrap .order__content .panel-group .panel .panel-heading .order__top {
     margin-bottom: 20px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
+    width: 100%;
     padding: 20px 100px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .title {
@@ -7269,9 +7300,6 @@ header .nav .menu__right .menu__info p {
   }
   .profile__btn {
     font-size: 14px;
-  }
-  .basket {
-    padding-top: 135px;
   }
   .basket .custom__container {
     -webkit-box-pack: justify;
@@ -7316,21 +7344,40 @@ header .nav .menu__right .menu__info p {
     padding-left: 0px;
     margin-bottom: 20px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__control {
+    max-width: 700px;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__group .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__group .form__label {
     top: -10px;
     width: 100%;
     text-align: left;
     left: 10px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child {
+    padding-left: 0px;
+    margin-left: 20px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child .form__label {
+    width: 100%;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:first-child, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:first-child {
+    margin-right: 20px;
+  }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group .form__control {
+    width: 100%;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__check, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__check {
     margin-bottom: 20px;
     padding-left: 51px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li .address_title, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li .address_title {
+    width: 125px;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__address li .address_text, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__address li .address_text {
-    max-width: 170px;
+    max-width: 200px;
   }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__info .basket__preorder .group__input .form__control, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__info .basket__preorder .group__input .form__control {
-    max-width: 100%;
+    max-width: 175px;
   }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box {
     padding-left: 0px;
@@ -7385,9 +7432,6 @@ header .nav .menu__right .menu__info p {
   .product .custom__container .product__right form .product__btnGroup .product__order {
     padding: 22px 20px;
   }
-  .product-two {
-    padding-top: 125px;
-  }
   .product-two .custom__container .product__left .recomendation__wrap {
     top: 230px;
     left: 90px;
@@ -7429,9 +7473,6 @@ header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
-  }
-  .category {
-    padding: 100px 0 50px;
   }
   .category .custom__container .category__title {
     padding-top: 0px;
@@ -7511,7 +7552,7 @@ header .nav .menu__right .menu__info p {
     margin-left: calc((100vw - 1400px) / 2);
   }
   .category {
-    padding-top: 100px;
+    padding-top: 145px;
     padding-bottom: 30px;
   }
   .category .category__list .category__item {
@@ -7547,9 +7588,6 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list p {
     margin-bottom: 5px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
-    margin-bottom: 10px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo .profile__title {
     font-size: 18px;
@@ -7901,6 +7939,9 @@ header .nav .menu__right .menu__info p {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
     font-size: 24px;
     line-height: 29px;
+  }
+  .category {
+    padding-top: 135px;
   }
   .category .custom__container .category__list .category__item {
     width: calc((100vw - (100vw - (1140px - 80px))) / 3);
@@ -8544,6 +8585,12 @@ header .nav .menu__right .menu__info p {
     font-size: 24px;
     line-height: 37px;
   }
+  header .container-fluid.container__header .header .header__function .header__basket.pc {
+    display: none;
+  }
+  header .container-fluid.container__header .header .header__function .header__basket.mobile {
+    display: block;
+  }
   header .nav .menu__left {
     padding: 30px 30px 30px 40px;
   }
@@ -8568,7 +8615,7 @@ header .nav .menu__right .menu__info p {
     line-height: 18px;
   }
   .home .carousel .carousel-inner .carousel-indicators {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .category .custom__container .title {
     font-size: 28px;
@@ -8626,6 +8673,8 @@ header .nav .menu__right .menu__info p {
   }
   .about .custom__container .about__list .about__item img {
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
   .about .custom__container .about__list .about__item p {
     font-size: 16px;
@@ -9182,11 +9231,8 @@ header .nav .menu__right .menu__info p {
             align-items: center;
   }
   .product .custom__container .product__left .product__wrapImg {
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
-  }
-  .product-two {
-    padding-top: 100px;
   }
   .product-two .custom__container .title {
     font-size: 28px;
@@ -9205,6 +9251,69 @@ header .nav .menu__right .menu__info p {
   .product-two .custom__container .product__center .product__wrapImg {
     margin-left: 20px;
   }
+  .product-two {
+    padding-top: 100px;
+    padding-bottom: 25px;
+  }
+  .product-two.is-active .custom__container .product__center .product__wrapImg .product__img {
+    max-width: 0;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+  }
+  .product-two.is-active .custom__container .product__right {
+    margin-top: 270px;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+  }
+  .product-two .custom__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-two .custom__container .product__left .recomendation__wrap {
+    right: -117px;
+    left: auto;
+    top: 35%;
+    -webkit-transform: translate(0, -50%) rotate(-90deg);
+        -ms-transform: translate(0, -50%) rotate(-90deg);
+            transform: translate(0, -50%) rotate(-90deg);
+  }
+  .product-two .custom__container .product__left .recomendation__wrap .product__recomendation {
+    width: 225px;
+    padding: 5px 5px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .product-two .custom__container .product__left .recomendation__wrap .product__recomendation:after {
+    display: none;
+  }
+  .product-two .custom__container .product__left .recomendation__wrap .product__recomendation span {
+    display: none;
+  }
+  .product-two .custom__container .product__left .recomendation__wrap .product__wrapImg {
+    display: none;
+  }
+  .product-two .custom__container .product__center {
+    width: 100%;
+  }
+  .product-two .custom__container .product__center .product__wrapImg {
+    margin-left: 0px;
+  }
+  .product-two .custom__container .product__right form .product__btnGroup .product__counter .product__btnReduction {
+    padding: 2px 0;
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .product-two .custom__container .product__right form .product__btnGroup .product__counter .product__btnIncrement {
+    padding: 2px 0;
+    font-size: 46px;
+    line-height: 46px;
+  }
   .order {
     padding-top: 100px;
   }
@@ -9219,6 +9328,10 @@ header .nav .menu__right .menu__info p {
   .order .custom__container .title {
     font-size: 28px;
     line-height: 30px;
+  }
+  .account__formWrap .form__btnClose {
+    top: 25px;
+    right: 30px;
   }
 }
 
@@ -10277,11 +10390,8 @@ header .nav .menu__right .menu__info p {
     font-size: 16px !important;
     line-height: 16px !important;
   }
-  header .container-fluid.container__header .header .header__function .header__basket.pc {
-    display: none;
-  }
-  header .container-fluid.container__header .header .header__function .header__basket.mobile {
-    display: block;
+  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    min-height: 64px;
   }
   .bread__crumbs__container {
     left: 0px;
@@ -12489,6 +12599,7 @@ header .nav .menu__right .menu__info p {
   .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
     font-size: 12px;
     line-height: 15px;
+    min-height: 100%;
   }
   .category.category__05 .custom__container .tab-content .tab-pane .category__list {
     padding: 0 15px 15px;
