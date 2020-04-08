@@ -852,12 +852,13 @@ main {
   border: 2px solid #fff;
   border-radius: 5px;
   color: #fff;
-  padding: 17px;
+  padding: 0 17px;
   width: 100%;
   background-color: transparent;
   margin-bottom: 15px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 46px;
+  height: 50px;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:last-child {
@@ -867,35 +868,35 @@ main {
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
@@ -1038,12 +1039,13 @@ main {
   border: 2px solid #fff;
   border-radius: 5px;
   color: #fff;
-  padding: 17px;
+  padding: 0 17px;
   width: 100%;
   background-color: transparent;
   margin-bottom: 15px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 46px;
+  height: 50px;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:last-child {
@@ -1053,35 +1055,35 @@ main {
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
@@ -1171,12 +1173,13 @@ main {
   border: 2px solid #fff;
   border-radius: 5px;
   color: #fff;
-  padding: 17px;
+  padding: 0 17px;
   width: 100%;
   background-color: transparent;
   margin-bottom: 15px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 46px;
+  height: 50px;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:last-child {
@@ -1186,35 +1189,35 @@ main {
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
 .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 46px;
   color: #fff;
 }
 
@@ -7385,6 +7388,9 @@ header .nav .menu__right .menu__info p {
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box.pickup, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .form__box.pickup {
     max-width: 650px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formTop .form__group .select__header, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formTop .form__group .select__header, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formTop .form__group .select__header, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formTop .form__group .select__header, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formTop .form__group .select__header {
+    max-width: 700px;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .basket__formCenter .basket__formRight, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .basket__formCenter .basket__formRight {
     margin-left: 20px;
   }
@@ -7395,7 +7401,7 @@ header .nav .menu__right .menu__info p {
     max-width: 48%;
   }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .address__select .select__body, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .address__select .select__body, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .address__select .select__body, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .address__select .select__body, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .address__select .select__body {
-    max-width: 664px;
+    max-width: 700px;
     left: 0;
   }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .basket__info .basket__formCenter .basket__formRight .group__input .form__control {
@@ -8627,6 +8633,9 @@ header .nav .menu__right .menu__info p {
   }
   .category .custom__container .category__list .category__item {
     width: calc((100vw - (100vw - (960px - 80px))) / 3);
+  }
+  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
+    height: 64px;
   }
   .about {
     max-height: 100%;
@@ -10390,9 +10399,6 @@ header .nav .menu__right .menu__info p {
     font-size: 16px !important;
     line-height: 16px !important;
   }
-  .category.category__05 .custom__container .solutions-tab-content .solutions-tab .nav-pills .nav-item a.active {
-    min-height: 64px;
-  }
   .bread__crumbs__container {
     left: 0px;
     margin-left: calc((100vw - 720px) / 2);
@@ -11294,39 +11300,40 @@ header .nav .menu__right .menu__info p {
     border: 1px solid #A1A4B1;
     border-radius: 4px;
     color: #000;
-    padding: 7px;
+    padding: 0 7px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px;
+    height: 30px;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__label {
@@ -11383,39 +11390,40 @@ header .nav .menu__right .menu__info p {
     border: 1px solid #A1A4B1;
     border-radius: 4px;
     color: #000;
-    padding: 7px;
+    padding: 0 7px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px;
+    height: 30px;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__label {
@@ -11444,39 +11452,40 @@ header .nav .menu__right .menu__info p {
     border: 1px solid #A1A4B1;
     border-radius: 4px;
     color: #000;
-    padding: 7px;
+    padding: 0 7px;
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px;
+    height: 30px;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 24px;
+    line-height: 28px !important;
     color: #8B90A0;
   }
   .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__label {

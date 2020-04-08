@@ -26,23 +26,23 @@
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px !important;
-  line-height: 15px !important;
+  line-height: 28.5px !important;
   background-color: transparent;
-  padding: 7px 133px 7px 15px;
+  padding: 0 133px 0 15px;
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 5px;
   width: 100%;
   outline-color: transparent;
   text-transform: none;
-  height: 30.88px;
+  height: 31px;
 }
 
 .input__promocode::placeholder {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 28.5px;
   text-transform: initial;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -659,6 +659,11 @@
   width: 100%;
   margin-top: 10px;
   text-transform: initial;
+  color: #691d35;
+  font-size: 14px;
+  line-height: 17px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .basket__payment {

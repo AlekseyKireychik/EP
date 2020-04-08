@@ -1000,6 +1000,9 @@
                                         &.pickup
                                             max-width: 650px
                                     .basket__formTop
+                                        .form__group
+                                            .select__header
+                                                max-width: 700px
                                     .basket__formCenter
                                         .basket__formLeft
                                             .form__group
@@ -1022,7 +1025,7 @@
                                             .select__current
                                             .tests__selectIcon
                                         .select__body
-                                            max-width: 664px
+                                            max-width: 700px
                                             left: 0
                                 .basket__pickup
                                     .basket__info
@@ -2552,6 +2555,15 @@
             .category__list
                 .category__item
                     width: calc((100vw - (100vw - (960px - 80px))) / 3)
+        &.category__05
+            .custom__container
+                .solutions-tab-content
+                    .solutions-tab
+                        .nav-pills
+                            .nav-item
+                                a
+                                    &.active
+                                        height: 64px 
     .about
         max-height: 100%
         padding-top: 100px
@@ -3320,6 +3332,7 @@
                     opacity: 0.4
                     align-items: center               
                     p
+                                                                                   .select__header
 @media screen and (max-width: 991px)
     .custom__container
         max-width: 720px
@@ -4125,16 +4138,7 @@
         font-size: 16px!important     
         line-height: 16px!important                          
 
-    .category 
-        &.category__05
-            .custom__container 
-                .solutions-tab-content 
-                    .solutions-tab 
-                        .nav-pills 
-                            .nav-item 
-                                a
-                                    &.active
-                                        min-height: 64px
+
     .bread__crumbs__container
         left: 0px
         margin-left: calc((100vw - 720px) / 2)
@@ -4856,14 +4860,15 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 0 7px
                             font-weight: 500
                             font-size: 12px
-                            line-height: 22px
+                            line-height: 28px
+                            height: 30px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
-                                line-height: 22px
+                                line-height: 28px!important
                                 color: #8B90A0
                             &:last-child
                         .mainform__label
@@ -4909,14 +4914,15 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 0 7px
                             font-weight: 500
                             font-size: 12px
-                            line-height: 24px
+                            line-height: 28px
+                            height: 30px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
-                                line-height: 24px
+                                line-height: 28px!important
                                 color: #8B90A0
                             &:last-child
                         .mainform__label
@@ -4942,14 +4948,15 @@
                             border: 1px solid #A1A4B1
                             border-radius: 4px
                             color: #000
-                            padding: 7px
+                            padding: 0 7px
                             font-weight: 500
                             font-size: 12px
-                            line-height: 24px
+                            line-height: 28px
+                            height: 30px
                             &::placeholder
                                 font-weight: 500
                                 font-size: 12px
-                                line-height: 24px
+                                line-height: 28px!important
                                 color: #8B90A0
                             &:last-child
                         .mainform__label
