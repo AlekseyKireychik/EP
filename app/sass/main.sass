@@ -907,8 +907,9 @@ header
 						&:hover
 							transition: all .3s linear
 							background: rgba(255, 255, 255, 0.1)
-							border-radius: 10px
+							border-radius: 10px                                
 						img
+							max-width: 150px 
 						span
 							font-family: 'Montserrat', sans-serif
 							font-weight: 600
@@ -1028,6 +1029,7 @@ header
 									text-transform: uppercase
 									color: $accent
 									margin-bottom: 0
+									max-width: 290px
 //Tab nav
 .solutions-tab-content
 	.solutions-tab
@@ -1096,10 +1098,23 @@ header
 	.category__list
 		display: flex
 		align-items: center
-		justify-content: space-between
+		justify-content: flex-start
+		// flex-wrap: wrap
+		overflow-x: auto
+		width: 100%				
+		&::-webkit-scrollbar
+			width: 6px	
+			max-height: 300px
+		&::-webkit-scrollbar-thumb
+			background: $accent	
+			border-radius: 10px		
 		.category__item			
 			width: calc((100vw - (100vw - (1676px - 80px))) / 3)
-			&:last-child
+			min-width: calc((1676px - 80px) / 3)
+			margin-bottom: 40px
+			margin-right: 40px
+			// &:nth-child(3n)		
+			&:last-child						
 				margin-right: 0
 			&:focus, &:active
 				outline: transparent
