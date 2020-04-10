@@ -960,6 +960,8 @@
                                             &:last-child
                                                 padding-left: 0px
                                                 margin-left: 20px
+                                                &.comment
+                                                    margin-left: 0px
                                                 .form__label
                                                     width: 100%
                                             &:first-child
@@ -1091,6 +1093,10 @@
             .product__right
                 form
                     .product__btnGroup
+                        .product__counter
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
                         .product__order
                             padding: 22px 20px
     //Product 2 Page
@@ -1110,6 +1116,15 @@
                 .product__wrapImg
                     .product__img
                         max-width: 200px
+            .product__right
+                form
+                    .product__btnGroup
+                        .product__counter
+                            display: flex
+                            align-items: center
+                            justify-content: flex-start
+                        .product__order
+                            padding: 22px 20px
     header
         .container-fluid
         .nav
@@ -4151,7 +4166,11 @@
                 .form__top 
                     .mainform__group 
                         .mainform__control
-                            &::placeholder  
+                            &::placeholder                   
+                                font-weight: 500
+                                font-size: 12px
+                                line-height: 46px
+                                opacity: 1  
     .account__new__address
         .form__group
             .form__control

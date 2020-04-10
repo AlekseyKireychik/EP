@@ -2820,6 +2820,20 @@ header .nav .menu__right .menu__info p {
           justify-content: space-between;
 }
 
+.about .custom__container .about__logos .about__logo img {
+  opacity: 0.5;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.about .custom__container .about__logos .about__logo img:hover {
+  opacity: 1;
+  -webkit-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
 .about .custom__container .about__logos .about__logo.empty {
   display: none;
 }
@@ -7360,6 +7374,9 @@ header .nav .menu__right .menu__info p {
     padding-left: 0px;
     margin-left: 20px;
   }
+  .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child.comment, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child.comment, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child.comment, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child.comment, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child.comment {
+    margin-left: 0px;
+  }
   .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formNew .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formProfile .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__pickup .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .wrap .form__group:last-child .form__label, .basket .custom__container .basket__right .basket__content .basket__tabinfo .tab-content .tab-pane .basket__formOrganization .wrap .form__group:last-child .form__label {
     width: 100%;
   }
@@ -7435,6 +7452,20 @@ header .nav .menu__right .menu__info p {
   .product .custom__container .product__left .product__wrapImg {
     max-width: 705px;
   }
+  .product .custom__container .product__right form .product__btnGroup .product__counter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .product .custom__container .product__right form .product__btnGroup .product__order {
     padding: 22px 20px;
   }
@@ -7450,6 +7481,23 @@ header .nav .menu__right .menu__info p {
   }
   .product-two .custom__container .product__center .product__wrapImg .product__img {
     max-width: 200px;
+  }
+  .product-two .custom__container .product__right form .product__btnGroup .product__counter {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .product-two .custom__container .product__right form .product__btnGroup .product__order {
+    padding: 22px 20px;
   }
   header .nav .menu__left {
     padding: 30px 40px 30px 50px;
@@ -10406,6 +10454,36 @@ header .nav .menu__right .menu__info p {
   }
   .bread__crumbs__container .bread__crumbs {
     position: static;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 46px;
+    opacity: 1;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 46px;
+    opacity: 1;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 46px;
+    opacity: 1;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 46px;
+    opacity: 1;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 46px;
+    opacity: 1;
   }
   .account__new__address .form__group .form__control {
     background: #FFFFFF;
