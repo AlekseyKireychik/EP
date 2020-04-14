@@ -217,7 +217,24 @@ $(document).ready(function() {
   if ($(window).width() > 765) {
     $('.carousel').carousel()
   }
+  $('.carousel').bind('DOMMouseScroll', function(e){
+    if(e.originalEvent.detail > 0) {
+        $('.carousel').carousel('next')
+    }else {
+        $('.carousel').carousel('prev')
+    }
+    return false;
+  });
 
+  $('.carousel').bind('mousewheel', function(e){
+    if(e.originalEvent.wheelDelta < 0) {
+      $('.carousel').carousel('next')
+    }else {
+        $('.carousel').carousel('prev')
+    }
+    return false;
+});
+  
   // basket page orders chek
   if($("#check-preorder-order").is(":checked")) {  
     $("#date-preorder").attr('disabled', false).removeClass("disabled");
@@ -715,7 +732,6 @@ $(document).ready(function() {
     },
   });
 
-  
 });
 //BackForm input-file
 function getFileName() {
