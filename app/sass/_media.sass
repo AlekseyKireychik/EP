@@ -79,6 +79,9 @@
                                     margin-bottom: 45px
                                     &:first-child
                                         margin-bottom: 45px
+                        form
+                            top: 140px
+                            right: 60px
                 .tab-pane
                     .order__box
                         padding: 40px 20px 40px 40px
@@ -783,7 +786,6 @@
                                     font-size: 18px
                                     line-height: 22px
     .personal
-        // padding-top: 135px
         .custom__container
             .solutions-tab-content
                 padding-right: 40px
@@ -799,10 +801,12 @@
                         padding: 25px 30px
                         min-height: 445px
                         max-height: 445px
+                        form
+                            top: 110px
+                            right: 30px
                         p
                             margin-bottom: 5px
                         .profile__wrapinfo
-                            // margin-bottom: 20px
                             .profile__title
                                 font-size: 18px
                             .profile__info
@@ -819,13 +823,13 @@
                                         margin-bottom: 35px
                                     &:last-child
                                         margin-bottom: 15px
-                            form
-                                .wrap
-                                    .form__group
-                                        input
-                                            padding: 10px
-                                            &:last-child
-                                                margin-bottom: 15px
+                            // form
+                            //     .wrap
+                            //         .form__group
+                            //             input
+                            //                 padding: 10px
+                            //                 &:last-child
+                            //                     margin-bottom: 15px
                         &.address
                             .profile__info
                                 p
@@ -1314,7 +1318,10 @@
                     .personal__list
                         padding: 15px 30px
                         min-height: 430px
-                        max-height: 430px
+                        max-height: 430px                        
+                        form
+                            top: 100px
+                            right: 30px
                         p
                             margin-bottom: 5px
                         .profile__wrapinfo
@@ -2143,9 +2150,16 @@
             .tab-content 
                 .tab-pane 
                     .personal__list 
-                        .profile__wrapform 
-                            form
-                                margin-left: 8px
+                        form
+                            right: 20px
+                            p
+                                margin-bottom: 10px
+                            .wrap
+                                .form__group
+                                    input
+                                        padding: 10px
+                                        &:last-child
+                                            margin-bottom: 10px
 @media screen and (max-width: 1370px)
     header
         .container-fluid
@@ -2815,27 +2829,22 @@
                                         display: none
                                 .change__password
                                     display: none
-                            .profile__wrapform
-                                .profile__container
-                                    .profile__wrapinfo
-                                        margin-bottom: 10px
-                                        &:first-child
-                                            margin-bottom: 10px
-                                        .profile__title
-                                        .profile__info
-                                            p
-                                            button
-                                #change-password-form
-                                    display: none
-                                    position: static
-                                    &.is-active
-                                        display: inline-block
-                                        margin: 66px auto
-                                    p
-                                    .wrap
-                                        .form__group
-                                            input
-                                        button
+                            .profile__wrapinfo
+                                margin-bottom: 15px
+                                &:first-child
+                                    margin-bottom: 15px
+                            #change-password-form
+                                display: none
+                                position: static
+                                &.is-active                                    
+                                    width: 100%
+                                    display: inline-block
+                                    margin: 66px auto
+                                p
+                                .wrap
+                                    .form__group
+                                        input
+                                    button
                         .change__password
                             display: block
                             margin: 20px auto 0
@@ -3644,6 +3653,10 @@
                             margin: 0 auto
                             .profile__wrapinfo
                                 margin-bottom: 25px
+                                &:nth-child(2)
+                                    .profile__info
+                                        p
+                                            margin-bottom: 0px 
                                 &:first-child
                                     .profile__info
                                         p
@@ -3663,83 +3676,82 @@
                                         button
                                             font-size: 10px
                                             line-height: 12px
-                            .profile__wrapform
-                                margin-bottom: 0px
-                                .profile__container
-                                    width: 100%
-                                    .profile__wrapinfo
-                                        margin-bottom: 25px
-                                        &:nth-child(1)
-                                            .profile__info
-                                                p
-                                                    margin-bottom: 0px  
-                                        &:nth-child(2)
-                                            .profile__info
-                                                p
-                                                    font-size: 12px
-                                                    line-height: 15px
-                                        &:nth-child(3)
-                                            .profile__info
-                                                p
-                                                    font-size: 12px
-                                                    line-height: 15px
-                                        &:first-child
-                                            margin-bottom: 25px
-                                        .profile__title
-                                        .profile__info
-                                            p
-                                            button
-                                                font-size: 10px
-                                                line-height: 12px
+                            // .profile__wrapform
+                            //     margin-bottom: 0px
+                            //     .profile__container
+                            //         width: 100%
+                            //         .profile__wrapinfo
+                            //             margin-bottom: 25px
+                            //             &:nth-child(1)
+                            //                 .profile__info
+                            //                     p
+                            //                         margin-bottom: 0px  
+                            //             &:nth-child(2)
+                            //                 .profile__info
+                            //                     p
+                            //                         font-size: 12px
+                            //                         line-height: 15px
+                            //             &:nth-child(3)
+                            //                 .profile__info
+                            //                     p
+                            //                         font-size: 12px
+                            //                         line-height: 15px
+                            //             &:first-child
+                            //                 margin-bottom: 25px
+                            //             .profile__title
+                            //             .profile__info
+                            //                 p
+                            //                 button
+                            //                     font-size: 10px
+                            //                     line-height: 12px
                                 
-                                #change-password-form
+                        #change-password-form
+                            width: 100%
+                            background: transparent
+                            padding: 10px 0 
+                            &.is-active
+                                margin: 0px auto
+                            p
+                                font-weight: 600
+                                font-size: 18px
+                                line-height: 22px
+                                text-transform: initial
+                                margin-bottom: 30px
+                            .wrap
+                                .form__group
                                     width: 100%
-                                    background: transparent
-                                    padding: 10px 0 
-                                    &.is-active
-                                        margin: 0px auto
-
-                                    p
+                                    label
+                                        display: block
                                         font-weight: 600
-                                        font-size: 18px
-                                        line-height: 22px
-                                        text-transform: initial
-                                        margin-bottom: 30px
-                                    .wrap
-                                        .form__group
-                                            width: 100%
-                                            label
-                                                display: block
-                                                font-weight: 600
-                                                font-size: 14px
-                                                line-height: 16px
-                                            input
-                                                background: #FFFFFF
-                                                border: 1px solid #A1A4B1
-                                                border-radius: 4px
-                                                font-weight: 500
-                                                font-size: 12px
-                                                line-height: 14px
-                                                color: #000
-                                                padding: 10px 15px
-                                        button
-                                            font-weight: 600
-                                            font-size: 14px
-                                            line-height: 16px
-                                            text-align: center
-                                            color: #FFFFFF
-                                            background: transparent
-                                            border: 1px solid #FFFFFF
-                                            border-radius: 10px
-                                            text-transform: initial
-                                            padding: 11px
-                                            width: 280px
-                                            position: absolute
-                                            top: 45%
-                                            bottom: auto
-                                            left: 50%
-                                            transform: translate(-50%, 0)
-                                            opacity: 1
+                                        font-size: 14px
+                                        line-height: 16px
+                                    input
+                                        background: #FFFFFF
+                                        border: 1px solid #A1A4B1
+                                        border-radius: 4px
+                                        font-weight: 500
+                                        font-size: 12px
+                                        line-height: 14px
+                                        color: #000
+                                        padding: 10px 15px
+                                button
+                                    font-weight: 600
+                                    font-size: 14px
+                                    line-height: 16px
+                                    text-align: center
+                                    color: #FFFFFF
+                                    background: transparent
+                                    border: 1px solid #FFFFFF
+                                    border-radius: 10px
+                                    text-transform: initial
+                                    padding: 11px
+                                    width: 280px
+                                    position: absolute
+                                    top: auto
+                                    bottom: 5px
+                                    left: 50%
+                                    transform: translate(-50%, 0)
+                                    opacity: 1
                         .change__password
                         &.address                                
                             .profile__wrapinfo
@@ -3788,8 +3800,8 @@
                                             padding: 11px
                                             width: 280px
                                             position: absolute
-                                            top: 65%
-                                            bottom: auto
+                                            top: auto
+                                            bottom: 5px
                                             left: 50%
                                             transform: translate(-50%, 0)
                                     button
@@ -4159,9 +4171,7 @@
 @media screen and (max-width: 769px)   
     input, textarea
         font-size: 16px!important     
-        line-height: 16px!important                          
-
-
+        line-height: 16px!important
     .bread__crumbs__container
         left: 0px
         margin-left: calc((100vw - 720px) / 2)
@@ -4177,8 +4187,28 @@
                             &::placeholder                   
                                 font-weight: 500
                                 font-size: 12px
-                                line-height: 46px
-                                opacity: 1  
+                                line-height: 22px                                  
+                                opacity: 1 
+        .account__formRecovery 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder                   
+                                font-weight: 500
+                                font-size: 12px
+                                line-height: 22px                                  
+                                opacity: 1 
+        .account__formRegistration 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder                   
+                                font-weight: 500
+                                font-size: 12px
+                                line-height: 22px                                  
+                                opacity: 1 
     .account__new__address
         .form__group
             .form__control
@@ -4238,12 +4268,6 @@
             .tab-content 
                 .tab-pane 
                     .personal__list
-                        &.address 
-                            .profile__wrapinfo 
-                                .profile__item
-                                    &:first-child 
-                                        button
-                                            top: 52%
                         &.reviews__formWrap 
                             .reviews__form 
                                 .formWrap 
@@ -4255,6 +4279,10 @@
                                         &.comment                                            
                                             .mainform__control
                                                 color: #000
+                        &.address 
+                            .profile__wrapinfo
+                                &:last-child
+                                    margin-bottom: 50px
 
 
 
@@ -4339,7 +4367,32 @@
                                             display: none
                                             .recomendation__counter
                                                 .btn
-
+@-moz-document url-prefix() 
+    .account__formWrap 
+        .account__form 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder  
+                                font-size: 12px
+                                line-height: 46px 
+        .account__formRecovery 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder 
+                                font-size: 12px
+                                line-height: 46px
+        .account__formRegistration 
+            .account__formContent 
+                .form__top 
+                    .mainform__group 
+                        .mainform__control
+                            &::placeholder 
+                                font-size: 12px
+                                line-height: 46px
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
@@ -4704,7 +4757,8 @@
                                     .btn__group
                                         .dell
                                             display: flex
-                                &:last-child
+                                &:last-child                                    
+                                    margin-bottom: 50px
                                     .btn__group
                                         .change
                                             display: flex
@@ -4740,7 +4794,6 @@
                                             width: 280px
                                             position: absolute
                                             top: auto
-                                            bottom: 25px
                                             left: 50%
                                             transform: translate(-50%, 0)
                                     button

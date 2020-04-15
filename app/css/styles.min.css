@@ -1962,15 +1962,17 @@ header .nav .menu__right .menu__info p {
           justify-content: flex-start;
   overflow-x: auto;
   width: 100%;
+  scrollbar-width: none;
 }
 
 .category .category__list::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
+  background: transparent;
   max-height: 300px;
 }
 
 .category .category__list::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: transparent;
   border-radius: 10px;
 }
 
@@ -2627,6 +2629,127 @@ header .nav .menu__right .menu__info p {
   min-height: 700px;
   max-height: 700px;
   overflow: hidden;
+  position: relative;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form {
+  position: absolute;
+  top: 170px;
+  right: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group {
+  width: 100%;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group label {
+  display: none;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 15px;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input:last-child {
+  margin-bottom: 20px;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input::-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input::placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap button {
+  background: -o-linear-gradient(357.79deg, #E40007 0.36%, #C70006 99.67%);
+  background: linear-gradient(92.21deg, #E40007 0.36%, #C70006 99.67%);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 14px 18px;
+  border: none;
+  margin: 0 auto;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list form .wrap button:disabled {
+  opacity: 0.5;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapinfo {
@@ -2841,9 +2964,12 @@ header .nav .menu__right .menu__info p {
   text-transform: uppercase;
   color: #fff;
   padding: 14px 18px;
-  opacity: 0.5;
   border: none;
   margin: 0 auto;
+}
+
+.personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap button:disabled {
+  opacity: 0.5;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list .change__password {
@@ -6436,6 +6562,10 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo:first-child {
     margin-bottom: 45px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list form {
+    top: 140px;
+    right: 60px;
+  }
   .personal .custom__container .tab-content .tab-pane .order__box {
     padding: 40px 20px 40px 40px;
     min-height: 605px;
@@ -6923,6 +7053,10 @@ header .nav .menu__right .menu__info p {
     min-height: 445px;
     max-height: 445px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list form {
+    top: 110px;
+    right: 30px;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list p {
     margin-bottom: 5px;
   }
@@ -6945,12 +7079,6 @@ header .nav .menu__right .menu__info p {
     margin-bottom: 35px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform .profile__container .profile__wrapinfo:last-child {
-    margin-bottom: 15px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input {
-    padding: 10px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form .wrap .form__group input:last-child {
     margin-bottom: 15px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__info p {
@@ -7328,6 +7456,10 @@ header .nav .menu__right .menu__info p {
     padding: 15px 30px;
     min-height: 430px;
     max-height: 430px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list form {
+    top: 100px;
+    right: 30px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list p {
     margin-bottom: 5px;
@@ -7927,8 +8059,17 @@ header .nav .menu__right .menu__info p {
   .basket .custom__container .basket__right .basket__content.payment__method .basket__tabinfo .tab-content .tab-pane .basket__formIndividual .form__box {
     padding-right: 0px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list .profile__wrapform form {
-    margin-left: 8px;
+  .personal .custom__container .tab-content .tab-pane .personal__list form {
+    right: 20px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list form p {
+    margin-bottom: 10px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input {
+    padding: 10px;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list form .wrap .form__group input:last-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -8718,17 +8859,18 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list.profile.is-active .change__password {
     display: none;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo {
-    margin-bottom: 10px;
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo {
+    margin-bottom: 15px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:first-child {
-    margin-bottom: 10px;
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo:first-child {
+    margin-bottom: 15px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form {
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile #change-password-form {
     display: none;
     position: static;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form.is-active {
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile #change-password-form.is-active {
+    width: 100%;
     display: inline-block;
     margin: 66px auto;
   }
@@ -9553,6 +9695,9 @@ header .nav .menu__right .menu__info p {
   .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo {
     margin-bottom: 25px;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo:nth-child(2) .profile__info p {
+    margin-bottom: 0px;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapinfo:first-child .profile__info p {
     font-size: 18px;
     line-height: 19px;
@@ -9572,58 +9717,31 @@ header .nav .menu__right .menu__info p {
     font-size: 10px;
     line-height: 12px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform {
-    margin-bottom: 0px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container {
-    width: 100%;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo {
-    margin-bottom: 25px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:nth-child(1) .profile__info p {
-    margin-bottom: 0px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:nth-child(2) .profile__info p {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:nth-child(3) .profile__info p {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo:first-child {
-    margin-bottom: 25px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform .profile__container .profile__wrapinfo .profile__info button {
-    font-size: 10px;
-    line-height: 12px;
-  }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form {
     width: 100%;
     background: transparent;
     padding: 10px 0;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form.is-active {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form.is-active {
     margin: 0px auto;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form p {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form p {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-transform: initial;
     margin-bottom: 30px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap .form__group {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form .wrap .form__group {
     width: 100%;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap .form__group label {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form .wrap .form__group label {
     display: block;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap .form__group input {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form .wrap .form__group input {
     background: #FFFFFF;
     border: 1px solid #A1A4B1;
     border-radius: 4px;
@@ -9633,7 +9751,7 @@ header .nav .menu__right .menu__info p {
     color: #000;
     padding: 10px 15px;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.profile .profile__wrapform #change-password-form .wrap button {
+  .personal .custom__container .tab-content .tab-pane .personal__list #change-password-form .wrap button {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
@@ -9646,8 +9764,8 @@ header .nav .menu__right .menu__info p {
     padding: 11px;
     width: 280px;
     position: absolute;
-    top: 45%;
-    bottom: auto;
+    top: auto;
+    bottom: 5px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -9709,8 +9827,8 @@ header .nav .menu__right .menu__info p {
     padding: 11px;
     width: 280px;
     position: absolute;
-    top: 65%;
-    bottom: auto;
+    top: auto;
+    bottom: 5px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
@@ -10152,31 +10270,91 @@ header .nav .menu__right .menu__info p {
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 46px;
+    line-height: 22px;
     opacity: 1;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 46px;
+    line-height: 22px;
     opacity: 1;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 46px;
+    line-height: 22px;
     opacity: 1;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 46px;
+    line-height: 22px;
     opacity: 1;
   }
   .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
     font-weight: 500;
     font-size: 12px;
-    line-height: 46px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 1;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
     opacity: 1;
   }
   .account__new__address .form__group .form__control {
@@ -10291,9 +10469,6 @@ header .nav .menu__right .menu__info p {
     width: 100%;
     text-transform: initial;
   }
-  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo .profile__item:first-child button {
-    top: 52%;
-  }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control {
     color: #000;
   }
@@ -10314,6 +10489,9 @@ header .nav .menu__right .menu__info p {
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group.comment .mainform__control {
     color: #000;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo:last-child {
+    margin-bottom: 50px;
   }
   .recomendation {
     background: #C88C1C;
@@ -10425,6 +10603,33 @@ header .nav .menu__right .menu__info p {
   }
   .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .tab-pane .recomendation__btnGroup {
     display: none;
+  }
+}
+
+@-moz-document url-prefix() {
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-size: 12px;
+    line-height: 46px;
+  }
+  .account__formWrap .account__form .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-size: 12px;
+    line-height: 46px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-size: 12px;
+    line-height: 46px;
+  }
+  .account__formWrap .account__formRecovery .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-size: 12px;
+    line-height: 46px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::-moz-placeholder {
+    font-size: 12px;
+    line-height: 46px;
+  }
+  .account__formWrap .account__formRegistration .account__formContent .form__top .mainform__group .mainform__control::placeholder {
+    font-size: 12px;
+    line-height: 46px;
   }
 }
 
@@ -10842,6 +11047,9 @@ header .nav .menu__right .menu__info p {
     display: -ms-flexbox;
     display: flex;
   }
+  .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo:last-child {
+    margin-bottom: 50px;
+  }
   .personal .custom__container .tab-content .tab-pane .personal__list.address .profile__wrapinfo:last-child .btn__group .change {
     display: -webkit-box;
     display: -webkit-flex;
@@ -10879,7 +11087,6 @@ header .nav .menu__right .menu__info p {
     width: 280px;
     position: absolute;
     top: auto;
-    bottom: 25px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);

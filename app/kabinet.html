@@ -700,19 +700,55 @@
                   <p class="profile__title">ФИО</p>
                   <div class="profile__info">
                     <p>Баркун Пётр Дмитриевич</p>
-                    <button id="profile-change-name-btn" class="profile__btn">
+                    <button id="profile-change-name-btn" class="profile__btn">Изменить</button>
+                  </div>
+                </div>
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">Телефон</p>
+                  <div class="profile__info">
+                    <p><a href="tel:+375441111111">+375 (44) 111-11-11</a></p>
+                    <div class="btn__group">
+                      <button
+                        id="profile-add-phone-btn"
+                        class="profile__btn">
+                        Добавить
+                      </button>
+                      <button
+                        id="profile-change-phone-btn"
+                        class="profile__btn">
+                        Изменить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">Дата Рождения</p>
+                  <div class="profile__info">
+                    <p>07.08.1998</p>
+                    <button
+                      id="profile-change-date-btn"
+                      class="profile__btn">
                       Изменить
                     </button>
                   </div>
                 </div>
-                <div class="profile__wrapform">
+                <div class="profile__wrapinfo">
+                  <p class="profile__title">Пол</p>
+                  <div class="profile__info">
+                    <p>Мужской</p>
+                    <button
+                      id="profile-change-gender-btn"
+                      class="profile__btn">
+                      Изменить
+                    </button>
+                  </div>
+                </div>
+                <!-- <div class="profile__wrapform">
                   <div class="profile__container">
                     <div class="profile__wrapinfo">
                       <p class="profile__title">Телефон</p>
                       <div class="profile__info">
-                        <p>
-                          <a href="tel:+375441111111">+375 (44) 111-11-11</a>
-                        </p>
+                        <p><a href="tel:+375441111111">+375 (44) 111-11-11</a></p>
                         <div class="btn__group">
                           <button
                             id="profile-add-phone-btn"
@@ -776,7 +812,33 @@
                       </button>
                     </div>
                   </form>
-                </div>
+                </div> -->
+                <form id="change-password-form" class="" action="">
+                  <p>Изменить пароль</p>
+                  <div class="wrap">
+                    <div class="form__group">
+                      <label
+                        for="input-change-password-new"
+                        class="form__label">Новый пароль</label>
+                      <input
+                        id="input-change-password-new"
+                        placeholder="Введите новый пароль"
+                        type="text"/>
+                    </div>
+                    <div class="form__group">
+                      <label
+                        for="input-change-password-repied"
+                        class="form__label">Подтверждение нового пароля</label>
+                      <input
+                        id="input-change-password-repied"
+                        placeholder="Повторите новый пароль"
+                        type="text"/>
+                    </div>
+                    <button id="save-password-btn">
+                      Сохранить изменения
+                    </button>
+                  </div>
+                </form>
                 <div class="profile__wrapinfo">
                   <p class="profile__title">E-MAIL</p>
                   <div class="profile__info">

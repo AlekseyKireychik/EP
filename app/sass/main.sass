@@ -1098,12 +1098,14 @@ header
 		justify-content: flex-start
 		// flex-wrap: wrap
 		overflow-x: auto
-		width: 100%				
+		width: 100%	
+		scrollbar-width: none	
 		&::-webkit-scrollbar
-			width: 6px	
+			width: 0px	
+			background: transparent
 			max-height: 300px
 		&::-webkit-scrollbar-thumb
-			background: $accent	
+			background: transparent
 			border-radius: 10px		
 		.category__item			
 			width: calc((100vw - (100vw - (1676px - 80px))) / 3)
@@ -1514,6 +1516,65 @@ header
 					min-height: 700px
 					max-height: 700px
 					overflow: hidden
+					position: relative
+					form
+						position: absolute
+						top: 170px
+						right: 80px
+						background: rgba(255, 255, 255, 0.1)
+						border-radius: 10px
+						padding: 20px
+						margin-left: auto
+						p
+							font-weight: 600
+							font-size: 20px
+							line-height: 24px
+							text-align: center
+							letter-spacing: 0.03em
+							text-transform: uppercase
+							color: $accent
+							margin-bottom: 20px
+						.wrap
+							display: flex
+							align-items: center
+							justify-content: flex-start
+							flex-direction: column
+							.form__group									
+								width: 100%
+								label
+									display: none
+								input
+									border: 2px solid $accent
+									border-radius: 5px
+									color: $accent										
+									font-size: 14px
+									line-height: 14px
+									padding: 15px
+									width: 100%
+									background-color: transparent
+									margin-bottom: 15px
+									&:last-child
+										margin-bottom: 20px
+									&::placeholder
+										font-weight: normal
+										font-size: 14px
+										line-height: 14px
+										color: $accent
+							button
+								background: linear-gradient(92.21deg, #E40007 0.36%, #C70006 99.67%)
+								border-radius: 5px
+								font-weight: bold
+								font-size: 14px
+								line-height: 17px
+								text-align: center
+								letter-spacing: 0.03em
+								text-transform: uppercase
+								color: $accent
+								padding: 14px 18px
+								border: none
+								margin: 0 auto
+								&:disabled										
+									opacity: 0.5
 					.profile__wrapinfo
 						display: flex
 						align-items: flex-start
@@ -1615,9 +1676,11 @@ header
 									text-transform: uppercase
 									color: $accent
 									padding: 14px 18px
-									opacity: 0.5
 									border: none
 									margin: 0 auto
+									&:disabled										
+										opacity: 0.5
+										
 					.change__password
 						display: none
 					&.address
