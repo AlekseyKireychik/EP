@@ -6422,6 +6422,10 @@ header .nav .menu__right .menu__info p {
   margin-bottom: 10px;
 }
 
+.recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .recomendation__product .wrap__img img {
+  width: 100%;
+}
+
 .recomendation .custom__container .tab-content .tab-pane .recomendation__list .recomendation__item .recomendation__info .recomendation__right .recomendation__product .total {
   font-weight: bold;
   font-size: 36px;
