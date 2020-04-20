@@ -591,9 +591,9 @@ $(document).ready(function() {
     $(".solutions-tab-content").removeClass("is-active");
   });
 //bread crumbs  
-  if ($(window).width() < 1299) {
-    $(".bread__crumbs__text").text("");
-  }  
+  // if ($(window).width() < 1299) {
+  //   $(".bread__crumbs__text").text("");
+  // }  
 
 //select busket pc
   $(".select__header").on("click", function(event) {

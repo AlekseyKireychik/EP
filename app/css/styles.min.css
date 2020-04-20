@@ -8247,6 +8247,9 @@ header .nav .menu__right .menu__info p {
     top: 0px;
     content: "";
   }
+  .bread__crumbs__container .bread__crumbs .bread__crumbs__text {
+    display: none;
+  }
   header .container-fluid.container__header .nav .menu__left nav {
     margin-bottom: 15px;
   }
