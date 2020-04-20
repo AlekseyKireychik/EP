@@ -6675,19 +6675,19 @@ header .nav .menu__right .menu__info p {
 
 @media screen and (min-width: 1200px) and (min-height: 999px) and (max-height: 1050px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 275px;
+    max-width: 350px;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-height: 951px) and (max-height: 999px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 255px;
+    max-width: 320px;
   }
 }
 
 @media screen and (min-width: 1200px) and (min-height: 899px) and (max-height: 950px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 240px;
+    max-width: 300px;
   }
   .account__formWrap .account__form .account__formContent .form__top {
     margin-bottom: 160px;
@@ -6702,7 +6702,7 @@ header .nav .menu__right .menu__info p {
 
 @media screen and (min-width: 1200px) and (min-height: 800px) and (max-height: 899px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 230px;
+    max-width: 290px;
   }
   .account__formWrap .account__form .account__formContent .form__top {
     margin-bottom: 80px;
@@ -6711,7 +6711,7 @@ header .nav .menu__right .menu__info p {
 
 @media screen and (min-width: 1200px) and (min-height: 700px) and (max-height: 799px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 205px;
+    max-width: 270px;
   }
   .account__formWrap .account__form .title {
     margin: 90px auto 60px;
@@ -6735,7 +6735,7 @@ header .nav .menu__right .menu__info p {
 
 @media screen and (min-width: 1200px) and (min-height: 600px) and (max-height: 699px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 150px;
+    max-width: 180px;
   }
   .account__formWrap .account__form .title {
     margin: 90px auto 60px;
@@ -6759,7 +6759,7 @@ header .nav .menu__right .menu__info p {
 
 @media screen and (min-width: 1200px) and (min-height: 500px) and (max-height: 599px) {
   .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-img__wrap .carousel-img {
-    max-width: 140px;
+    max-width: 170px;
   }
 }
 
