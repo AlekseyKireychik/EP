@@ -823,13 +823,6 @@
                                         margin-bottom: 35px
                                     &:last-child
                                         margin-bottom: 15px
-                            // form
-                            //     .wrap
-                            //         .form__group
-                            //             input
-                            //                 padding: 10px
-                            //                 &:last-child
-                            //                     margin-bottom: 15px
                         &.address
                             .profile__info
                                 p
@@ -857,7 +850,7 @@
                                                 .order__top
                                                     margin-bottom: 20px
                     .personal__list
-                        &.reviews__formWrap                            
+                        &.reviews__formWrap                         
                             display: flex
                             align-items: center
                             justify-content: flex-start 
@@ -2642,7 +2635,7 @@
                     img
                         max-width: 120px
     .akcii__page
-        padding-top: 100px
+        padding-top: 100px        
         .custom__container
             .title
                 font-size: 28px
@@ -3559,7 +3552,7 @@
                     .category__item
                         width: 50%
     .akcii__page
-        padding: 90px 15px 0
+        padding: 90px 15px 25px
         .custom__container
             .title
                 font-size: 24px
@@ -4271,7 +4264,10 @@
                 .tab-pane 
                     .personal__list
                         &.reviews__formWrap 
-                            .reviews__form 
+                            min-height: 75vh                            
+                            .reviews__form
+                                transform: translate(0px, 0px)
+                                top: 30px 
                                 .formWrap 
                                     .mainform__group 
                                         .mainform__control

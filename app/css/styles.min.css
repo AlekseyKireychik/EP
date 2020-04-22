@@ -1,47 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,600i,700,700i&display=swap&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic");
-::-webkit-input-placeholder {
-  color: #481120;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-::-moz-placeholder {
-  color: #481120;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-:-ms-input-placeholder {
-  color: #481120;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-::-ms-input-placeholder {
-  color: #481120;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-::placeholder {
-  color: #481120;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-::-moz-selection {
-  background-color: #fff;
-  color: #fff;
-}
-
-::selection {
-  background-color: #fff;
-  color: #fff;
-}
-
 a {
   color: #fff;
 }
@@ -2183,7 +2142,7 @@ header .nav .menu__right .menu__info p {
 
 .akcii__page {
   padding-top: 260px;
-  padding-bottom: 25px;
+  padding-bottom: 100px;
   min-height: 100vh;
   background-color: #691D35;
 }
@@ -2448,9 +2407,9 @@ header .nav .menu__right .menu__info p {
 
 .about {
   padding-top: 260px;
+  padding-bottom: 90px;
   background-color: #691D35;
   min-height: 100vh;
-  max-height: 100vh;
 }
 
 .about .custom__container .about__list {
@@ -3217,7 +3176,15 @@ header .nav .menu__right .menu__info p {
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
-  padding: 108px 148px;
+  top: 50%;
+  right: 0px;
+  left: 0px;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  padding: 0px 148px;
+  border-radius: 0px;
+  background: transparent;
 }
 
 .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .title {
@@ -9589,7 +9556,7 @@ header .nav .menu__right .menu__info p {
     width: 50%;
   }
   .akcii__page {
-    padding: 90px 15px 0;
+    padding: 90px 15px 25px;
   }
   .akcii__page .custom__container .title {
     font-size: 24px;
@@ -10475,6 +10442,15 @@ header .nav .menu__right .menu__info p {
   .account__change__popup .form__box .btn {
     width: 100%;
     text-transform: initial;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap {
+    min-height: 75vh;
+  }
+  .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form {
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    top: 30px;
   }
   .personal .custom__container .tab-content .tab-pane .personal__list.reviews__formWrap .reviews__form .formWrap .mainform__group .mainform__control {
     color: #000;

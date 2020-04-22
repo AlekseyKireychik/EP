@@ -2,15 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500,500i,600,600i,700,700i&display=swap&subset=cyrillic')
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic')
 
-::placeholder
-	color: $accentTwo
-	font-weight: 600
-	font-size: 16px
-	line-height: 19px
-
-::selection
-	background-color: $accent
-	color: #fff
+// ::selection
+// 	background-color: #b6ccd9
+// 	color: #fff
 a
 	color: #fff
 	&:hover
@@ -1222,7 +1216,7 @@ header
 //Akcii-page Page
 .akcii__page
 	padding-top: 260px
-	padding-bottom: 25px
+	padding-bottom: 100px
 	min-height: 100vh
 	background-color: $accentThree
 	.custom__container
@@ -1399,9 +1393,9 @@ header
 //about Page
 .about
 	padding-top: 260px
+	padding-bottom: 90px
 	background-color: $accentThree
 	min-height: 100vh
-	max-height: 100vh
 	.custom__container
 		.about__list
 			display: flex
@@ -1842,7 +1836,13 @@ header
 					&.reviews__formWrap
 						padding: 0
 						.reviews__form
-							padding: 108px 148px
+							top: 50%
+							right: 0px
+							left: 0px
+							transform: translate(0px, -50%)
+							padding: 0px 148px
+							border-radius: 0px
+							background: transparent
 							.title
 								font-weight: 600
 								font-size: 20px
