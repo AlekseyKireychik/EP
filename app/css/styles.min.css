@@ -987,7 +987,7 @@ main {
 .bread__crumbs__container {
   position: absolute;
   left: 300px;
-  top: 45px;
+  top: 55px;
   z-index: 100;
 }
 
@@ -1828,7 +1828,7 @@ header .nav .menu__right .menu__info p {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 0;
-  max-width: 290px;
+  max-width: 500px;
 }
 
 .solutions-tab-content .solutions-tab .nav-pills {
@@ -2195,6 +2195,11 @@ header .nav .menu__right .menu__info p {
   font-size: 20px;
   line-height: 24px;
   text-align: left;
+  margin-bottom: 30px;
+}
+
+.akcii__page .custom__container .akcii__list .akcii__item.description img {
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -6488,6 +6493,9 @@ header .nav .menu__right .menu__info p {
   .custom__container {
     max-width: 1500px;
   }
+  .home .carousel .carousel-inner .carousel-item .carousel__list .carousel__content .carousel__link .carousel-title__wrap .carousel-title {
+    max-width: 290px;
+  }
   .recomendation .custom__container {
     margin-left: calc((100vw - 1600px) / 2);
   }
@@ -7653,7 +7661,7 @@ header .nav .menu__right .menu__info p {
     max-width: 500px;
   }
   .bread__crumbs__container {
-    top: 22px;
+    top: 35px;
     left: 250px;
   }
   .bread__crumbs__container .bread__crumbs {
