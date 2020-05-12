@@ -1070,6 +1070,9 @@ header
 			position: relative
 			padding-bottom: 55px
 			.category__list
+				overflow-x: inherit
+				.slick-list
+					height: 450px
 				.category__item
 					a 
 						.category__imgWrap
@@ -1088,7 +1091,7 @@ header
 		padding-bottom: 138px
 	.category__list
 		display: flex
-		align-items: center
+		align-items: flex-start
 		justify-content: flex-start
 		// flex-wrap: wrap
 		overflow-x: auto
@@ -2139,6 +2142,7 @@ header
 							text-transform: uppercase
 							color: $accent
 							padding: 0 25px
+							width: 70px
 						.product__btnIncrement
 							background: $accent
 							border-radius: 5px
@@ -2217,6 +2221,7 @@ header
 								font-size: 30px
 								line-height: 37px
 				.product__tabinfo
+					width: 420px
 					.solutions-tab-content
 						.solutions-tab
 							.nav-pills
@@ -2224,7 +2229,7 @@ header
 									a
 										white-space: nowrap
 										min-width: 191px
-										padding: 6px 20px
+										padding: 6px 18px
 										font-size: 16px
 										line-height: 20px
 					.tab-content
@@ -2234,6 +2239,7 @@ header
 								align-items: flex-start
 								justify-content: flex-start
 								flex-direction: column
+								min-height: 180px
 								.product__item
 									display: flex
 									align-items: flex-start
@@ -2432,6 +2438,7 @@ header
 							text-transform: uppercase
 							color: $accent
 							padding: 0 25px
+							width: 70px
 						.product__btnIncrement
 							background: $accent
 							border-radius: 5px
@@ -2447,6 +2454,7 @@ header
 							color: #E67300
 				.product__tabinfo
 					width: 100%
+					width: 420px
 					.product__tabtitle
 						text-align: left
 						padding-bottom: 10px
@@ -3737,6 +3745,7 @@ header
 											letter-spacing: 0.03em
 											text-transform: uppercase
 											color: $accent
-											padding: 5px 25px	
+											padding: 5px 25px
+											width: 70px
 
 @import media

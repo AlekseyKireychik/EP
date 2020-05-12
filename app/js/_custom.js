@@ -29,7 +29,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -64,7 +64,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -99,7 +99,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -134,7 +134,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -169,7 +169,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -204,7 +204,7 @@ $(document).ready(function() {
     slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: false,
-    variableWidth: false,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 992,
@@ -739,22 +739,25 @@ $(document).ready(function() {
 });
 if ($(window).width() > 992){
   //category gorizont scroll
-  document.querySelector(".category__scroll")
-    .addEventListener('wheel', function(event) {
-      if (event.deltaMode == event.DOM_DELTA_PIXEL) {
-        var modifier = 1;
-        // иные режимы возможны в Firefox
-      } else if (event.deltaMode == event.DOM_DELTA_LINE) {
-        var modifier = parseInt(getComputedStyle(this).lineHeight);
-      } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
-        var modifier = this.clientHeight;
-      }
-      if (event.deltaY != 0) {
-        // замена вертикальной прокрутки горизонтальной
-        this.scrollLeft += modifier * event.deltaY;
-        event.preventDefault();
-      }
-  });
+  var products = $(".category__item");
+  if (products.length > 3){
+    document.querySelector(".category__scroll")
+      .addEventListener('wheel', function(event) {
+        if (event.deltaMode == event.DOM_DELTA_PIXEL) {
+          var modifier = 1;
+          // иные режимы возможны в Firefox
+        } else if (event.deltaMode == event.DOM_DELTA_LINE) {
+          var modifier = parseInt(getComputedStyle(this).lineHeight);
+        } else if (event.deltaMode == event.DOM_DELTA_PAGE) {
+          var modifier = this.clientHeight;
+        }
+        if (event.deltaY != 0) {
+          // замена вертикальной прокрутки горизонтальной
+          this.scrollLeft += modifier * event.deltaY;
+          event.preventDefault();
+        }
+    });
+  };
 };
 
 //BackForm input-file

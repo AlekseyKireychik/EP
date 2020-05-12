@@ -34,16 +34,6 @@
 @media screen and (max-width: 1700px)
     .custom__container
         max-width: 1500px
-    .home 
-        .carousel 
-            .carousel-inner 
-                .carousel-item 
-                    .carousel__list 
-                        .carousel__content 
-                            .carousel__link 
-                                .carousel-title__wrap 
-                                    .carousel-title
-                                        max-width: 290px
     .recomendation
         .custom__container
             margin-left: calc((100vw - 1600px) / 2)
@@ -1192,7 +1182,7 @@
                 margin-bottom: 0px
         .custom__container
             .category__list
-                justify-content: space-between
+                justify-content: flex-start
                 .category__item
                     a
                         .category__imgWrap
@@ -2453,6 +2443,12 @@
         .custom__container 
             .title
                 width: 100%
+    .category
+        padding-top: 100px
+        &.category__02
+            .custom__container
+                .category__title
+                    padding-top: 0px
 @media screen and (max-width: 1199px)
     .custom__container
         max-width: 960px
@@ -4173,6 +4169,7 @@
             border-radius: 10px
             font-size: 14px
             line-height: 17px
+
 @media screen and (max-width: 769px)   
     input, textarea
         font-size: 16px!important     
@@ -4401,6 +4398,18 @@
                             &::placeholder 
                                 font-size: 12px
                                 line-height: 46px
+@media screen and (min-width: 840px) and (max-width: 971px)
+    .home
+        .carousel
+            .carousel-inner
+                .carousel-item
+                    .carousel__list
+                        .carousel__content
+                            &:nth-child(1)
+                                .carousel__link
+                                    .carousel-title__wrap
+                                        .carousel-title
+                                            max-width: 190px
 @media screen and (max-width: 767px)
     .custom__container
         max-width: 540px
@@ -4431,6 +4440,59 @@
                     float: none
                 .carousel-indicators
                     display: none
+    .home
+        .carousel
+            background: #481120
+            padding-top: 75px
+            .carousel-inner
+                padding-top: 0px
+                .carousel-item
+                    .carousel__list
+                        .carousel__content
+                            height: calc((100vh - 60px) / 6)
+                            width: 100vw
+                            overflow: hidden
+                            &.item01
+                                padding-top: 0px
+                            &.item02
+                                padding-top: 0px
+                            &.item03
+                                padding-top: 0px
+                            &.item04
+                                padding-top: 0px
+                            &.item05
+                                padding-top: 0px
+                            &.item06
+                                padding-top: 0px
+                            &.item07
+                                padding-top: 0px
+                            &.item08
+                                padding-top: 0px
+                            &.item09
+                                padding-top: 0px
+                            &.item10
+                                padding-top: 0px
+                            &.item11
+                                padding-top: 0px
+                            &.item12
+                                padding-top: 0px
+                            .carousel__link
+                                flex-direction: row
+                                justify-content: space-between
+                                .carousel-img__wrap
+                                    max-width: 184px
+                                    margin-left: 10px
+                                    width: 100%
+                                    text-align: center
+                                    .carousel-img
+                                        max-width: 140px
+                                        margin-bottom: -55px
+                                .carousel-title__wrap
+                                    margin-right: 10px
+                                    width: 160px
+                                    .carousel-title
+                                        font-size: 12px
+                                        line-height: 15px
     .about
         .custom__container
             &:last-child
@@ -5697,55 +5759,7 @@
     .home
         .carousel
             background-color: transparent
-            .carousel-inner                   
-                padding-top: 0px  
-                .carousel-item   
-                    .carousel__list  
-                        .carousel__content
-                            height: calc((100vh - 60px) / 6)
-                            width: 100vw
-                            overflow: hidden
-                            &.item01,
-                                padding-top: 0px
-                            &.item02
-                                padding-top: 0px
-                            &.item03
-                                padding-top: 0px
-                            &.item04
-                                padding-top: 0px
-                            &.item05
-                                padding-top: 0px
-                            &.item06
-                                padding-top: 0px
-                            &.item07
-                                padding-top: 0px
-                            &.item08
-                                padding-top: 0px
-                            &.item09
-                                padding-top: 0px
-                            &.item10
-                                padding-top: 0px
-                            &.item11
-                                padding-top: 0px
-                            &.item12
-                                padding-top: 0px
-                            .carousel__link
-                                flex-direction: row
-                                justify-content: space-between
-                                .carousel-img__wrap
-                                    max-width: 184px
-                                    margin-left: 10px
-                                    width: 100%
-                                    text-align: center
-                                    .carousel-img
-                                        max-width: 140px
-                                        margin-bottom: -55px
-                                .carousel-title__wrap
-                                    margin-right: 10px
-                                    width: 160px
-                                    .carousel-title
-                                        font-size: 12px
-                                        line-height: 15px
+            padding-top: 0px
     .custom__container
         max-width: 100%
     .bread__crumbs__container
